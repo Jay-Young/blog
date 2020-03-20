@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>浏览器小技巧：通过注册表为Chrome和Edge安装扩展 | Jay - My blog</title>
+        <meta name="Description" content="这是我的全新 Hugo 网站"><meta property="og:title" content="浏览器小技巧：通过注册表为Chrome和Edge安装扩展" />
+<meta property="og:description" content="如何为Edge安装本地扩展" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/install-edge-extensions-via-registry/" />
+<meta property="article:published_time" content="2020-03-20T22:42:34+08:00" />
+<meta property="article:modified_time" content="2020-03-20T22:42:34+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="浏览器小技巧：通过注册表为Chrome和Edge安装扩展"/>
+<meta name="twitter:description" content="如何为Edge安装本地扩展"/>
+<meta name="theme-color" content="#ffffff">
+<meta name="msapplication-TileColor" content="#da532c">
+<link rel="canonical" href="/install-edge-extensions-via-registry/" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><link rel="stylesheet" href="/css/style.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "浏览器小技巧：通过注册表为Chrome和Edge安装扩展",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/install-edge-extensions-via-registry\/"
+        },"image": {
+                "@type": "ImageObject",
+                "url": "\/cover.png",
+                "width":  800 ,
+                "height":  600 
+            },"genre": "posts","keywords": "edge","wordcount":  1378 ,
+        "url": "\/install-edge-extensions-via-registry\/","datePublished": "2020-03-20","dateModified": "2020-03-20","publisher": {
+                "@type": "Organization",
+                "name": "xxxx",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "\/logo.png",
+                "width":  127 ,
+                "height":  40 
+                }
+            },"author": {
+                "@type": "Person",
+                "name": "Jay"
+            },"description": ""
+    }
+    </script></head>
+    <body><script>
+            if (!window.localStorage || !window.localStorage.getItem('theme')) {window.isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;} else {
+                window.isDark = (window.localStorage && window.localStorage.getItem('theme')) === 'dark';
+            }
+            window.isDark && document.body.classList.add('dark-theme');
+        </script><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/">Jay - My blog</a>
+        </div>
+        <div class="menu"><a class="menu-item" href="/" rel="noopener noreffer">首页</a><a class="menu-item" href="/posts/" rel="noopener noreffer">文章</a><a class="menu-item" href="/tags/" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" rel="noopener noreffer">分类</a><a class="menu-item" href="/about/" rel="noopener noreffer">关于</a><span class="menu-item">|</span>
+            <a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-wrapper">
+        <div class="header-container">
+            <div class="header-title">
+                <a href="/">Jay - My blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/" title="" rel="noopener noreffer">首页</a><a class="menu-item" href="/posts/" title="" rel="noopener noreffer">文章</a><a class="menu-item" href="/tags/" title="" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" title="" rel="noopener noreffer">分类</a><a class="menu-item" href="/about/" title="" rel="noopener noreffer">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+
+<script>
+    window.desktopHeaderMode = "fixed";
+    window.mobileHeaderMode = "auto";
+</script>
+<main class="main">
+                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">浏览器小技巧：通过注册表为Chrome和Edge安装扩展</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Jay</a>
+</span>&nbsp;
+                    <span class="post-category">收录于<a href="/categories/trick">
+                                <i class="far fa-folder fa-fw"></i>Trick
+                            </a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-03-20>2020-03-20</time>&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 1378 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>预计阅读 3 分钟&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-sizes="auto"
+        data-srcset="https://qna.smzdm.com/202002/22/5e50ff86e490d9132.jpg_fo742.jpg, https://qna.smzdm.com/202002/22/5e50ff86e490d9132.jpg_fo742.jpg 1.5x, https://qna.smzdm.com/202002/22/5e50ff86e490d9132.jpg_fo742.jpg 2x"
+        data-src="https://qna.smzdm.com/202002/22/5e50ff86e490d9132.jpg_fo742.jpg"
+        alt=""
+        title="" /></div><div class="toc" id="toc-auto">
+                <h2 class="toc-title">目录</h2>
+                <div class="toc-content" id="toc-content-auto"></div>
+            </div>
+            <div class="toc" id="toc-static">
+                <details>
+                    <summary>
+                        <div class="toc-title">
+                            <span>目录</span>
+                            <span><i class="details icon fas fa-angle-down"></i></span>
+                        </div>
+                    </summary>
+                    <div class="toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#0x00-前言">0x00 前言</a></li>
+    <li><a href="#0x01-手动修改注册表">0x01 手动修改注册表</a>
+      <ul>
+        <li><a href="#本地版">本地版</a></li>
+        <li><a href="#在线版">在线版</a></li>
+      </ul>
+    </li>
+    <li><a href="#0x02-编写reg文件批量导入">0x02 编写reg文件批量导入</a></li>
+    <li><a href="#0x03-后记">0x03 后记</a></li>
+  </ul>
+</nav></div>
+                </details>
+            </div><div class="content" id="content"><p>如何为Edge安装本地扩展</p>
+<h2 id="0x00-前言">0x00 前言</h2>
+<p>如果你想绕过开发者模式直接部署本地crx文件，如果你是一个IT运维管理着几十台PC想要快速部署大量在线扩展，如果你也只是跟我一样闲得蛋疼，不妨接着往下看看如何在Windows上通过注册表来实现安装扩展。</p>
+<p>本文基于Windows 10 1909专业版、Chrome 80.0.3987.116正式版和Edge 80.0.361.57正式版测试实现。</p>
+<p>警告：修改注册表有风险，请提前做好注册表和浏览器数据备份。想要删除扩展需要删除相应的注册表键值，直接在浏览器中删除可能会发生奇奇怪怪的问题。</p>
+<h2 id="0x01-手动修改注册表">0x01 手动修改注册表</h2>
+<h3 id="本地版">本地版</h3>
+<p>如果你拥有本地crx文件，苦于开发模式加载压缩包每次启动的提示，可以通过构造如下注册表值来实现。</p>
+<ol>
+<li>打开<a href="https://robwu.nl/crxviewer" target="_blank" rel="noopener noreffer">https://robwu.nl/crxviewer</a>
+这个网址，上传你的crx文件</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.small.min.svg"
+        data-sizes="auto"
+        data-srcset="https://i.loli.net/2020/02/22/uvQZoR1SAzhPLXB.png,  1.5x,  2x"
+        data-src=""
+        alt="robwu"
+        title="robwu" /></p>
+<ol start="2">
+<li>在左边栏点击<code>manifest.json</code>，记录下<code>version</code>后面的版本号</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.small.min.svg"
+        data-sizes="auto"
+        data-srcset="https://i.loli.net/2020/02/22/qUWBm7Xi5kQFCgK.png,  1.5x,  2x"
+        data-src=""
+        alt="manifest"
+        title="manifest" /></p>
+<ol start="3">
+<li>点击上方的<code>Show analysis</code>，记录下<code>Extension ID</code>后面那一串字母</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.small.min.svg"
+        data-sizes="auto"
+        data-srcset="https://i.loli.net/2020/02/22/qsklcopI4idROwt.png,  1.5x,  2x"
+        data-src=""
+        alt="showanalysis"
+        title="showanalysis" /></p>
+<ol start="4">
+<li>打开注册表，Edge在<code>HKEY_CURRENT_USER\Software\Microsoft\Edge\Extensions</code>下面新建项，名字是第3步中那一串字母。如果是Chrome，根据谷歌官方介绍，32位Windows是在<code>HKEY_LOCAL_MACHINE\Software\Google\Chrome\Extensions</code>，64位Windows在<code>HKEY_LOCAL_MACHINE\Software\Wow6432Node\Google\Chrome\Extensions</code></li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.small.min.svg"
+        data-sizes="auto"
+        data-srcset="https://i.loli.net/2020/02/22/fLK5OSnUv9pi3xr.png,  1.5x,  2x"
+        data-src=""
+        alt="regedit_edge"
+        title="regedit_edge" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.small.min.svg"
+        data-sizes="auto"
+        data-srcset="https://i.loli.net/2020/02/22/XzBl4cMhDw58JHu.png,  1.5x,  2x"
+        data-src=""
+        alt="regedit_chrome"
+        title="regedit_chrome" /></p>
+<ol start="5">
+<li>在右边新建一个字符串<code>path</code>，将它的值修改为crx文件在你电脑上的绝对路径，比如<code>C:\Program Files (x86)\Internet Download Manager\IDMGCExt.crx</code>（IDM的扩展就是在安装软件的时候这样被自动安装上去的）</li>
+<li>继续新建一个字符串，命名为<code>version</code>，将它的值修改为第2步中的版本号，比如<code>6.36.5</code></li>
+<li>等待扩展安装成功，然后手动启用下扩展。</li>
+</ol>
+<h3 id="在线版">在线版</h3>
+<p>如果你想安装来自微软扩展商店或Chrome扩展商店的扩展，也可以通过构造如下注册表值来实现。</p>
+<ol>
+<li>从官方商店直接搜索扩展，记录下网址。</li>
+<li>在<code>HKEY_CURRENT_USER\Software\Microsoft\Edge\Extensions</code>下新建项（Chrome的注册表位置见本地版第4步），名字就是上面记录的网址后缀类似<code>oogbnpmeihfgnccdnmmlgicknopghhma</code>这样的一串唯一ID</li>
+<li>右边新建两个字符串<code>path</code>和<code>update_url</code>，<code>path</code>的值是第1步的网址，而<code>update_url</code>的值，Edge商店是<code>https://extensionwebstorebase.edgesv.net/v1/crx</code>，Chrome商店是<code>http://clients2.google.com/service/update2/crx</code></li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.small.min.svg"
+        data-sizes="auto"
+        data-srcset="https://i.loli.net/2020/02/22/AyzlIhwC3PrxQeK.png,  1.5x,  2x"
+        data-src=""
+        alt="regedit_online"
+        title="regedit_online" /></p>
+<ol start="4">
+<li>等待扩展安装成功，然后手动启用下扩展。在线版的扩展后续应该能够自动更新，这个要等待时间验证了。</li>
+</ol>
+<h2 id="0x02-编写reg文件批量导入">0x02 编写reg文件批量导入</h2>
+<p>示例：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-reg" data-lang="reg">Windows Registry Editor Version 5.00
+
+<span class="k">[</span><span class="nb">HKEY_CURRENT_USER</span><span class="k">\Software\Microsoft\Edge\Extensions\llhcnbijpnechllogkacbcjmkcgjbjfi]</span>
+<span class="na">&#34;path&#34;</span><span class="o">=</span><span class="s">&#34;https://microsoftedge.microsoft.com/addons/detail/llhcnbijpnechllogkacbcjmkcgjbjfi&#34;</span>
+<span class="na">&#34;update_url&#34;</span><span class="o">=</span><span class="s">&#34;https://extensionwebstorebase.edgesv.net/v1/crx&#34;</span>
+<span class="k">[</span><span class="nb">HKEY_CURRENT_USER</span><span class="k">\Software\Microsoft\Edge\Extensions\ngpampappnmepgilojfohadhhmbhlaek]</span>
+<span class="na">&#34;path&#34;</span><span class="o">=</span><span class="s">&#34;C:\Program Files (x86)\Internet Download Manager\IDMGCExt.crx&#34;</span>
+<span class="na">&#34;version&#34;</span><span class="o">=</span><span class="s">&#34;6.36.5&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>用任意文本编辑器保存为reg文件，然后导入注册表来实现扩展的批量部署安装。</p>
+<h2 id="0x03-后记">0x03 后记</h2>
+<p>折腾到此结束，再次强调删除扩展须删除相应的注册表键值，否则可能会发生意外。</p>
+<p>部分内容引用自：<a href="https://developer.chrome.com/apps/external_extensions#registry" target="_blank" rel="noopener noreffer">Google Chrome Dev</a>
+</p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>本文于 2020-03-20 更新</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/install-edge-extensions-via-registry/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="/install-edge-extensions-via-registry/" data-title="浏览器小技巧：通过注册表为Chrome和Edge安装扩展" data-image="https://qna.smzdm.com/202002/22/5e50ff86e490d9132.jpg_fo742.jpg" data-ralateuid="jayyoung1"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="/install-edge-extensions-via-registry/" data-title="浏览器小技巧：通过注册表为Chrome和Edge安装扩展"><i class="fab fa-evernote fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/edge">edge</a></section>
+        <section>
+            <span><a href="javascript:window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"></div>
+</div>
+<div class="comment"></div>
+    </article></div>
+            </main><footer class="footer">
+    <div class="copyright"><div class="copyright-line">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreffer">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="external nofollow noopener noreffer"><i class="far fa-heart fa-fw"></i> LoveIt</a>
+        </div>
+
+        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Jay</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+    </div>
+</footer>
+</div><a href="#" class="dynamic-to-top animated faster" id="dynamic-to-top">
+            <i class="fas fa-chevron-up fa-fw"></i>
+        </a><script>
+        document.addEventListener('DOMContentLoaded', function () {
+            lightGallery(document.getElementById('content'), {
+                selector: '.lightgallery',
+                speed: 400,
+                hideBarsDelay: 2000,
+                thumbnail: true,
+                exThumbImage: 'data-thumbnail',
+                thumbWidth: 80,
+                thumbContHeight: 80,
+            });
+        });
+    </script><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script src="/lib/smooth-scroll/smooth-scroll.polyfills.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/lg-zoom.min.js"></script><script src="/js/theme.min.js"></script></body>
+</html>
