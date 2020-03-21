@@ -55,7 +55,7 @@ ln -sf /your-hugo-path/hugo /usr/local/bin/hugo
 ## :(fa fa-play-circle): 使用
 
 如果使用`hugo help`测试运行返回如下信息，则说明 Hugo 已经成功安装。
-{{< admonition success "" true >}}
+{{< admonition success "点击展开" true >}}
 ```bash
 $ hugo help
 hugo is the main command, used to build your Hugo site.
@@ -250,9 +250,9 @@ comment: true
 
 在发布自己的文章之前，还需要一点点的设置：将第一篇文章的`draft`属性设置为`false`
 
-### 构建网站
+### :(fa fa-server): 构建网站
 
-当你准备号部署你的网站时，执行以下命令:
+当你准备好部署你的网站时，执行以下命令:
 
 ```bash
 hugo
