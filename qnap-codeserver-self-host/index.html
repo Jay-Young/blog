@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>威联通：“私人定制”在线代码编辑器 | Jay - My blog</title>
+        <meta name="Description" content="本文介绍如何在威联通NAS上部署自己的vscode编辑器"><meta property="og:title" content="威联通：“私人定制”在线代码编辑器" />
+<meta property="og:description" content="本文介绍如何在威联通NAS上部署自己的vscode编辑器" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/qnap-codeserver-self-host/" />
+<meta property="article:published_time" content="2020-03-21T15:39:58+08:00" />
+<meta property="article:modified_time" content="2020-03-21T15:39:58+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="威联通：“私人定制”在线代码编辑器"/>
+<meta name="twitter:description" content="本文介绍如何在威联通NAS上部署自己的vscode编辑器"/>
+<meta name="generator" content="Hugo 0.67.1" /><meta name="theme-color" content="#ffffff">
+<meta name="msapplication-TileColor" content="#da532c">
+<link rel="canonical" href="/qnap-codeserver-self-host/" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="prev" href="/install-edge-extensions-via-registry/" /><link rel="next" href="/emoji-support/" /><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><link rel="stylesheet" href="/css/style.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "威联通：“私人定制”在线代码编辑器",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/qnap-codeserver-self-host\/"
+        },"image": {
+                "@type": "ImageObject",
+                "url": "\/cover.png",
+                "width":  800 ,
+                "height":  600 
+            },"genre": "posts","keywords": "QNAP, vscode, 威联通, codeserver, NAS","wordcount":  1843 ,
+        "url": "\/qnap-codeserver-self-host\/","datePublished": "2020-03-21","dateModified": "2020-03-21","publisher": {
+                "@type": "Organization",
+                "name": "xxxx",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "\/logo.png",
+                "width":  127 ,
+                "height":  40 
+                }
+            },"author": {
+                "@type": "Person",
+                "name": "Jay"
+            },"description": "本文介绍如何在威联通NAS上部署自己的vscode编辑器"
+    }
+    </script></head>
+    <body><script>
+            if (!window.localStorage || !window.localStorage.getItem('theme')) {window.isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;} else {
+                window.isDark = (window.localStorage && window.localStorage.getItem('theme')) === 'dark';
+            }
+            window.isDark && document.body.classList.add('dark-theme');
+        </script><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/">Jay - My blog</a>
+        </div>
+        <div class="menu"><a class="menu-item" href="/" rel="noopener noreffer">首页</a><a class="menu-item" href="/posts/" rel="noopener noreffer">文章</a><a class="menu-item" href="/tags/" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" rel="noopener noreffer">分类</a><a class="menu-item" href="/categories/documentation/" rel="noopener noreffer">文档</a><a class="menu-item" href="/about/" rel="noopener noreffer">关于</a><span class="menu-item">|</span>
+            <a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-wrapper">
+        <div class="header-container">
+            <div class="header-title">
+                <a href="/">Jay - My blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/" title="" rel="noopener noreffer">首页</a><a class="menu-item" href="/posts/" title="" rel="noopener noreffer">文章</a><a class="menu-item" href="/tags/" title="" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" title="" rel="noopener noreffer">分类</a><a class="menu-item" href="/categories/documentation/" title="" rel="noopener noreffer">文档</a><a class="menu-item" href="/about/" title="" rel="noopener noreffer">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+
+<script>
+    window.desktopHeaderMode = "fixed";
+    window.mobileHeaderMode = "auto";
+</script>
+<main class="main">
+                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">威联通：“私人定制”在线代码编辑器</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://weibo.com/jayyoung1" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Jay</a></span>&nbsp;
+                    <span class="post-category">收录于<a href="/categories/nas">
+                                <i class="far fa-folder fa-fw"></i>Nas
+                            </a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-03-21>2020-03-21</time>&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 1843 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>预计阅读 4 分钟&nbsp;<span id="/qnap-codeserver-self-host/" class="leancloud_visitors" data-flag-title="威联通：“私人定制”在线代码编辑器">
+                        <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-sizes="auto"
+        data-srcset="https://i.loli.net/2020/03/21/fJTWe25iobw7uXM.png, https://i.loli.net/2020/03/21/fJTWe25iobw7uXM.png 1.5x, https://i.loli.net/2020/03/21/fJTWe25iobw7uXM.png 2x"
+        data-src="https://i.loli.net/2020/03/21/fJTWe25iobw7uXM.png"
+        alt="本文介绍如何在威联通NAS上部署自己的vscode编辑器"
+        title="本文介绍如何在威联通NAS上部署自己的vscode编辑器" /></div><div class="toc" id="toc-auto">
+                <h2 class="toc-title">目录</h2>
+                <div class="toc-content" id="toc-content-auto"></div>
+            </div>
+            <div class="toc" id="toc-static">
+                <details>
+                    <summary>
+                        <div class="toc-title">
+                            <span>目录</span>
+                            <span><i class="details icon fas fa-angle-down"></i></span>
+                        </div>
+                    </summary>
+                    <div class="toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#fa-fa-comment-dots-前言"><i class="fa fa-comment-dots fa-fw"></i>&nbsp;前言</a></li>
+    <li><a href="#fa-fa-terminal-安装"><i class="fa fa-terminal fa-fw"></i>&nbsp;安装</a>
+      <ul>
+        <li><a href="#fa-fa-download-下载并安装中文语言包"><i class="fa fa-download fa-fw"></i>&nbsp;下载并安装中文语言包</a></li>
+        <li><a href="#fa-fa-file-code-脚本启动-codes-erver"><i class="fa fa-file-code fa-fw"></i>&nbsp;脚本启动 codes-erver</a></li>
+      </ul>
+    </li>
+    <li><a href="#fa-fa-feather-alt-后记"><i class="fa fa-feather-alt fa-fw"></i>&nbsp;后记</a></li>
+  </ul>
+</nav></div>
+                </details>
+            </div><div class="content" id="content"><p><a href="https://github.com/cdr/code-server" target="_blank" rel="noopener noreffer">code-server</a> 是基于微软 <a href="https://github.com/Microsoft/vscode" target="_blank" rel="noopener noreffer">Visual Studio Code</a> 项目打造的远程编辑器，可以运行在服务器，客户端通过浏览器访问即可使用。</p>
+<div class="admonition note">
+            <p class="admonition-title"><i class="icon fas fa-pencil-alt"></i>更新</p>
+            <div class="admonition-content">目前 code-server 已经发布 3.0 Pre-release，版本改动比较大，可以期待正式版。</div>
+        </div>
+<h2 id="fa-fa-comment-dots-前言"><i class="fa fa-comment-dots fa-fw"></i>&nbsp;前言</h2>
+<div class="admonition info">
+            <p class="admonition-title"><i class="icon fas fa-info-circle"></i>说明</p>
+            <div class="admonition-content">本文基于以下软硬件系统测试，不能完全保证其他系统的兼容性。</p>
+<ul>
+<li>QNAP TS-453Bmini 2+8G 内存</li>
+<li>QTS 4.4.1.1216</li>
+<li>code-server 1.41.1 with chinese-language-pack 1.41.0</li>
+</ul></div>
+        </div>
+<p>基于 docker 的 code-server 安装教程有很多，比如这一篇<a href="https://post.smzdm.com/p/aekz3q4q/" target="_blank" rel="noopener noreffer">群晖的安装</a>。打包好的镜像也有很多，官方的 <a href="https://hub.docker.com/r/codercom/code-server" target="_blank" rel="noopener noreffer">codercom/code-server</a>，第三方的比如 <a href="https://hub.docker.com/r/linuxserver/code-server" target="_blank" rel="noopener noreffer">linuxserver/code-server</a> 和 <a href="https://hub.docker.com/r/xiumu/code-server-zh-cn" target="_blank" rel="noopener noreffer">xiumu/code-server-zh-cn</a>。另外你也可以自己打包，容器的好处确实很多，即开即用，但是我的原则就是<del>能上实机就上实机，能瞎折腾就瞎折腾</del>。</p>
+<p>废话不多说，直接开始！</p>
+<h2 id="fa-fa-terminal-安装"><i class="fa fa-terminal fa-fw"></i>&nbsp;安装</h2>
+<div class="admonition warning">
+            <p class="admonition-title"><i class="icon fas fa-exclamation-triangle"></i>警告</p>
+            <div class="admonition-content">任何基于实机的操作都有可能造成 QTS 系统无法挽回的错误，除非你很明确知道这条命令要做什么。</div>
+        </div>
+<h3 id="fa-fa-download-下载并安装中文语言包"><i class="fa fa-download fa-fw"></i>&nbsp;下载并安装中文语言包</h3>
+<p>从 <a href="https://github.com/cdr/code-server/releases" target="_blank" rel="noopener noreffer">code-server</a> 项目的 Release 页面根据你的机型选择 linux-arm64 或者 linux-x86_64 下载下来，解压到 NAS 上，注意 code-server 这个文件就是我们所需的已经编译好的程序文件。</p>
+<p>SSH 连接到 NAS 系统，切换到 code-server 所在目录。<a href="https://jingyan.baidu.com/article/4d58d541fe487eddd4e9c0f6.html" target="_blank" rel="noopener noreffer">如何开启 SSH</a></p>
+<p>首先我们先安装中文语言包插件，从 <a href="https://marketplace.visualstudio.com" target="_blank" rel="noopener noreffer">vscode官方市场</a> 下载适配的中文语言包。目前 code-server 最新的版本是 1.41.1，我测试了 1.41.0 版本的中文语言包能够正常使用，通过浏览器抓包（F12）得到下载地址，替换相应的版本号即可构造需要版本的地址。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">https://marketplace.visualstudio.com/_apis/public/gallery/publishers/MS-CEINTL/vsextensions/vscode-language-pack-zh-hans/&lt;version&gt;/vspackage
+</code></pre></td></tr></table>
+</div>
+</div><figure>
+    <img src="https://i.loli.net/2020/02/27/wkrBYj5EfAZ6DoU.png"/> <figcaption>
+            <h4>Chinese-Language-Pack</h4>
+        </figcaption>
+</figure>
+
+<p>插件安装命令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">./code-server --install-extension &lt;your-language-pack-path&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>插件卸载命令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">./code-server --uninstall-extension &lt;extension-id&gt;
+<span class="c1"># extesion-id在/&lt;your-user-path&gt;/.local/share/code-server/extensions目录下面查看</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="admonition note">
+            <p class="admonition-title"><i class="icon fas fa-pencil-alt"></i>注意</p>
+            <div class="admonition-content">更多 code-server 命令请使用帮助命令查看 <code>code-server -h</code></div>
+        </div>
+<h3 id="fa-fa-file-code-脚本启动-codes-erver"><i class="fa fa-file-code fa-fw"></i>&nbsp;脚本启动 codes-erver</h3>
+<p>由于 SSH 直接启动 code-server，断开 SSH 以后会关闭，而且也需要避免重启和系统升级带来的问题，所以需要写个 shell 脚本加入计划任务和开机启动。</p>
+<p>启用默认级别日志，不启用 ssl 证书，不启用密码认证，默认使用 8080 端口，如果与其他服务有冲突请使用<code>--port &lt;port-number&gt;</code>自行修改。有需要可以使用<code>--cert &lt;your-cert-path&gt;</code>和<code>--cert-key &lt;your-cert-key-path&gt;</code>选项启用 ssl 证书（腾讯云有免费一年的 TrustAsia 证书），使用<code>--auth password</code>选项，同时设置系统环境变量<code>export PASSWORD=&quot;your-own-password&quot;</code>来设置密码认证。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/sh
+</span><span class="cp"></span><span class="c1"># 本脚本用于管理code-server的启动、停止、重启</span>
+<span class="c1"># 请提前安装好code-server版本对应的中文语言包，vscode官方插件市场（https://marketplace.visualstudio.com/）：</span>
+<span class="c1"># code-server --install-extension &lt;your-language-pack-path&gt; 安装插件</span>
+<span class="c1"># code-server -v 查看版本</span>
+<span class="c1"># code-server -log &lt;level&gt; 设置日志输出级别，默认info，一共有&#39;critical&#39;, &#39;error&#39;,&#39;warn&#39;, &#39;info&#39;, &#39;debug&#39;, &#39;trace&#39;, &#39;off&#39;7个级别</span>
+<span class="c1"># 日志存储位置：&lt;your-user-path&gt;/.local/code-server/logs，建议定时清理</span>
+<span class="c1"># 更多code-server命令请使用帮助 code-server -h</span>
+#
+<span class="k">case</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span> in
+  start<span class="o">)</span>
+    sudo /&lt;your-code-server-path&gt;/code-server --locale zh-cn --auth none <span class="p">&amp;</span>&gt;/dev/null
+    <span class="p">;;</span>
+
+  stop<span class="o">)</span>
+    sudo killall -9 code-server <span class="p">&amp;</span>&gt;/dev/null
+    <span class="p">;;</span>
+
+  restart<span class="o">)</span>
+    <span class="nv">$0</span> stop
+    <span class="nv">$0</span> start
+    <span class="p">;;</span>
+
+  *<span class="o">)</span>
+    <span class="nb">echo</span> <span class="s2">&#34;Usage: </span><span class="nv">$0</span><span class="s2"> {start|stop|restart}&#34;</span>
+    <span class="nb">exit</span> <span class="m">1</span>
+<span class="k">esac</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>本来想通过修改 daemon_mgr.conf 守护进程配置文件加入后台，发现重启 NAS 后会丢失用户修改的内容，还是只能通过计划任务和开机启动脚本来实现稳定运行。</p>
+<p>QTS 的计划任务配置文件在 /etc/config/crontab，可以按照自己的需求设置定时重启任务</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="m">0</span> <span class="m">0</span> * * * /&lt;your-shell-script-path&gt;/&lt;you-shell-script&gt; restart <span class="p">&amp;</span>&gt;/dev/null
+</code></pre></td></tr></table>
+</div>
+</div><p>crontab 命令编写可以参考<a href="https://www.runoob.com/linux/linux-comm-crontab.html" target="_blank" rel="noopener noreffer">此处</a></p>
+<p>QTS 自带也有 autorun.sh 开机脚本管理，虽然重启 NAS 不会丢失，但是 QTS 系统升级后会丢失，所以推荐安装<a href="https://www.qnapclub.eu/en/qpkg/232" target="_blank" rel="noopener noreffer">第三方商店</a>里的 BashIT 来管理。想要做到完美可以用 QDK 打包成 qpkg 安装。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">daemon_mgr code-server start <span class="s2">&#34;/&lt;your-shell-script-path&gt;/&lt;you-shell-script&gt; start&#34;</span> <span class="p">&amp;</span>&gt;/dev/null
+</code></pre></td></tr></table>
+</div>
+</div><p>重启 NAS 后，管理脚本会自动运行 code-server，浏览器打开<code>http://&lt;your-nas-ip&gt;:8080/</code>即可使用。</p>
+<figure>
+    <img src="https://i.loli.net/2020/02/28/G3PyStwl6h7TVdq.png"/> <figcaption>
+            <h4>code-server-online-in-browser</h4>
+        </figcaption>
+</figure>
+
+<h2 id="fa-fa-feather-alt-后记"><i class="fa fa-feather-alt fa-fw"></i>&nbsp;后记</h2>
+<p>如果你的 Windows 上安装了 vscode，那么可以把 %userprofile%/.vscode/ 下面的 extensions 目录直接复制到<code>/&lt;your-user-path&gt;/.local/share/code-server/</code>下面覆盖相应的插件目录，如果插件能够兼容，启动 code-server 后就能直接使用了。（不推荐使用，避免隐形的不兼容问题）</p>
+<div class="admonition info">
+            <p class="admonition-title"><i class="icon fas fa-info-circle"></i>查看 log 来定位问题</p>
+            <div class="admonition-content">/&lt;your-user-path&gt;/.local/share/code-server/logs</div>
+        </div>
+<div class="admonition info">
+            <p class="admonition-title"><i class="icon fas fa-info-circle"></i>搜索 issues 来解决问题</p>
+            <div class="admonition-content"><a href="https://github.com/cdr/code-server/issues">https://github.com/cdr/code-server/issues</a></div>
+        </div>
+<p>本文只是介绍编辑器的安装，不是集成开发环境的 IDE 的部署，所以能不能兼容大多数开发环境就不清楚了。</p>
+<p>威联通在B站有个比较惨的官方号，没事可以关注，也许能获得有用的信息，<a href="https://space.bilibili.com/351726918" target="_blank" rel="noopener noreffer">传送门</a>。</p>
+<div class="admonition info">
+            <p class="admonition-title"><i class="icon fas fa-info-circle"></i>说明</p>
+            <div class="admonition-content">本文首发于<a href="https://post.smzdm.com/p/awx03zpp/" target="_blank" rel="noopener noreffer">什么值得买平台</a></div>
+        </div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>本文于 2020-03-21 更新</span>
+            </div>
+            <div class="post-info-license"><span>采用 CC BY-NC 4.0 协议发布</span></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/qnap-codeserver-self-host/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="/qnap-codeserver-self-host/" data-title="威联通：“私人定制”在线代码编辑器" data-image="https://i.loli.net/2020/03/21/fJTWe25iobw7uXM.png" data-ralateuid="jayyoung1"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="/qnap-codeserver-self-host/" data-title="威联通：“私人定制”在线代码编辑器"><i class="fab fa-evernote fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/qnap">QNAP</a>,&nbsp;<a href="/tags/vscode">vscode</a>,&nbsp;<a href="/tags/%E5%A8%81%E8%81%94%E9%80%9A">威联通</a>,&nbsp;<a href="/tags/codeserver">codeserver</a>,&nbsp;<a href="/tags/nas">NAS</a></section>
+        <section>
+            <span><a href="javascript:window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/install-edge-extensions-via-registry/" class="prev" rel="prev" title="浏览器小技巧：通过注册表为Chromium Edge安装扩展"><i class="fas fa-angle-left fa-fw"></i>浏览器小技巧：通过注册表为Chromium Edge安装扩展</a>
+            <a href="/emoji-support/" class="next" rel="next" title="Emoji 支持">Emoji 支持<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="valine" class="comment"></div><script>
+            document.addEventListener("DOMContentLoaded", function(event) {
+                new Valine({
+                    el: '#valine',
+                    appId: 'iRP94IPVb6nLbnvVlYl3acIX-gzGzoHsz',
+                    appKey: 'cMInmDt3V8IqJDnkANRw9Faf',placeholder: '请留下你善意的评论……',notify: true,verify: true,pageSize: 10,lang: 'zh-cn',visitor: true,recordIP: true,});
+            });
+        </script>
+        <noscript>
+            Please enable JavaScript to view the <a href="https://valine.js.org/">comments powered by Valine.</a>
+        </noscript></article></div>
+            </main><footer class="footer">
+    <div class="copyright"><div class="copyright-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.67.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.0"><i class="far fa-heart fa-fw"></i> LoveIt</a>
+        </div>
+
+        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Jay</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+    </div>
+</footer>
+</div>
+
+        <div id="fixed-buttons" class="animated faster"><a href="#" id="top-button" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="comment-button" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script>
+        document.addEventListener('DOMContentLoaded', function () {
+            lightGallery(document.getElementById('content'), {
+                selector: '.lightgallery',
+                speed: 400,
+                hideBarsDelay: 2000,
+                thumbnail: true,
+                exThumbImage: 'data-thumbnail',
+                thumbWidth: 80,
+                thumbContHeight: 80,
+                actualSize: false,
+            });
+        });
+    </script><script>
+        document.addEventListener('DOMContentLoaded', function () {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    { left: '$$', right: '$$', display: true },
+                    { left: '\\[', right: '\\]', display: true },{ left: '$', right: '$', display: false },
+                    { left: '\\(', right: '\\)', display: false },],
+                strict: false,
+            });
+        });
+    </script><link rel="stylesheet" href="/lib/valine/valine.css"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><script src="/lib/valine/Valine.min.js"></script><script src="/lib/smooth-scroll/smooth-scroll.polyfills.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/lg-zoom.min.js"></script><script src="/lib/katex/katex.min.js"></script><script src="/lib/katex/auto-render.min.js"></script><script src="/lib/katex/copy-tex.min.js"></script><script src="/lib/katex/mhchem.min.js"></script><script src="/js/theme.min.js"></script></body>
+</html>
