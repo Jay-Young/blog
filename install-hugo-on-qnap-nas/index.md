@@ -11,7 +11,7 @@ Hugo 是一个用 Go 语言实现的静态博客系统生成工具。基于 Mark
 
 {{< admonition quote "作者说" false >}}
 - 独立二进制文件，免去各种复杂的环境配置，部署简单快速
-- 基于 markdown 写作，学习成本低
+- 基于 Markdown 写作，学习成本低
 - 免费开源，渲染速度快，主题扩展丰富
 {{< /admonition >}}
 
@@ -47,10 +47,15 @@ ln -sf /your-hugo-path/hugo /usr/local/bin/hugo
 ```
 
 {{< admonition note "" false >}}
-替换`your-hugo-path`为你自己的 hugo 所在目录
+- `libstdc++.so.6` 需要安装 `CodexPack` 套件，这是多媒体管理的硬件加速转码用的，一般都会装的
+- 替换`your-hugo-path`为你自己的 hugo 所在目录
 {{< /admonition >}}
 
 为避免长期运行失效，可以将上面的 shell 脚本加入开机启动和定时任务，具体请参考[另一篇博文](https://blog.233so.com/qnap-codeserver-self-host/)。
+
+{{< admonition note "" false >}}
+当然，你也可以选择我打包的 qpkg 安装包：[下载地址](https://www.lanzous.com/iaj4r4j)，密码:233so
+{{< /admonition >}}
 
 ## :(fa fa-play-circle): 使用
 

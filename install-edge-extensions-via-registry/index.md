@@ -12,7 +12,7 @@
 如果你想绕过开发者模式直接部署本地 crx 文件，如果你是一个IT运维管理着几十台 PC 想要快速部署大量在线扩展，如果你也只是跟我一样闲得蛋疼，不妨接着往下看看如何在 Windows 上通过注册表来实现安装扩展。
 
 {{< admonition info "说明" false >}}
-本文基于 Windows 10 1909 专业版、Chrome 80.0.3987.116 正式版测试实现
+本文基于 Windows 10 1909 专业版、Edge 80.0.361.57 正式版测试实现
 {{< /admonition >}}
 
 {{< admonition warning "警告" false >}}

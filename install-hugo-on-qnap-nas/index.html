@@ -37,7 +37,7 @@
                 "url": "\/cover.png",
                 "width":  800 ,
                 "height":  600 
-            },"genre": "posts","keywords": "QNAP, hugo, 威联通, 博客, NAS, LoveIt","wordcount":  2128 ,
+            },"genre": "posts","keywords": "QNAP, hugo, 威联通, 博客, NAS, LoveIt","wordcount":  2193 ,
         "url": "\/install-hugo-on-qnap-nas\/","datePublished": "2020-03-21","dateModified": "2020-03-21","publisher": {
                 "@type": "Organization",
                 "name": "xxxx",
@@ -95,7 +95,7 @@
                                 <i class="far fa-folder fa-fw"></i>Hugo
                             </a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-03-21>2020-03-21</time>&nbsp;
-                <i class="fas fa-pencil-alt fa-fw"></i>约 2128 字&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 2193 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>预计阅读 5 分钟&nbsp;<span id="/install-hugo-on-qnap-nas/" class="leancloud_visitors" data-flag-title="Hugo: 在威联通 NAS 上生成博客并部署 Pages 服务">
                         <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
@@ -133,7 +133,7 @@
   </ul>
 </nav></div>
                 </details>
-            </div><div class="content" id="content"><div class="typeit"><div id="id-34d96b" class=""></div></div>
+            </div><div class="content" id="content"><div class="typeit"><div id="id-d041cd" class=""></div></div>
 
 <h2 id="fa-fa-comment-dots-前言"><i class="fa fa-comment-dots fa-fw"></i>&nbsp;前言</h2>
 <p>静态博客系统有很多，为什么选择 Hugo 呢？</p>
@@ -141,7 +141,7 @@
             <p class="admonition-title"><i class="icon fas fa-quote-right"></i>作者说</p>
             <div class="admonition-content"><ul>
 <li>独立二进制文件，免去各种复杂的环境配置，部署简单快速</li>
-<li>基于 markdown 写作，学习成本低</li>
+<li>基于 Markdown 写作，学习成本低</li>
 <li>免费开源，渲染速度快，主题扩展丰富</li>
 </ul></div>
         </div>
@@ -180,9 +180,16 @@ ln -sf /your-hugo-path/hugo /usr/local/bin/hugo
 </div>
 </div><div class="admonition note">
             <p class="admonition-title"><i class="icon fas fa-pencil-alt"></i>注意</p>
-            <div class="admonition-content">替换<code>your-hugo-path</code>为你自己的 hugo 所在目录</div>
+            <div class="admonition-content"><ul>
+<li><code>libstdc++.so.6</code> 需要安装 <code>CodexPack</code> 套件，这是多媒体管理的硬件加速转码用的，一般都会装的</li>
+<li>替换<code>your-hugo-path</code>为你自己的 hugo 所在目录</li>
+</ul></div>
         </div>
 <p>为避免长期运行失效，可以将上面的 shell 脚本加入开机启动和定时任务，具体请参考<a href="https://blog.233so.com/qnap-codeserver-self-host/" target="_blank" rel="noopener noreffer">另一篇博文</a>。</p>
+<div class="admonition note">
+            <p class="admonition-title"><i class="icon fas fa-pencil-alt"></i>注意</p>
+            <div class="admonition-content">当然，你也可以选择我打包的 qpkg 安装包：<a href="https://www.lanzous.com/iaj4r4j" target="_blank" rel="noopener noreffer">下载地址</a>，密码:233so</div>
+        </div>
 <h2 id="fa-fa-play-circle-使用"><i class="fa fa-play-circle fa-fw"></i>&nbsp;使用</h2>
 <p>如果使用<code>hugo help</code>测试运行返回如下信息，则说明 Hugo 已经成功安装。
 <details class="admonition success">
@@ -613,7 +620,7 @@ comment: true
             });
         });
     </script><script>
-        window.typeitArr = [["id-34d96b"]];
+        window.typeitArr = [["id-d041cd"]];
     </script><script>
         document.addEventListener('DOMContentLoaded', function () {
             renderMathInElement(document.body, {
@@ -625,6 +632,6 @@ comment: true
             });
         });
     </script><script>
-        window.contentMap = {"id-34d96b":"Hugo 是一个用 Go 语言实现的静态博客系统生成工具。基于 Markdown 撰写博文，不改变你已有的习惯，拥有快速部署、简单易用、主题丰富、易扩展等特点。你可以在任何地方启动 Hugo，实现毫秒级渲染。"};
+        window.contentMap = {"id-d041cd":"Hugo 是一个用 Go 语言实现的静态博客系统生成工具。基于 Markdown 撰写博文，不改变你已有的习惯，拥有快速部署、简单易用、主题丰富、易扩展等特点。你可以在任何地方启动 Hugo，实现毫秒级渲染。"};
     </script><link rel="stylesheet" href="/lib/valine/valine.css"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><script src="/lib/valine/Valine.min.js"></script><script src="/lib/smooth-scroll/smooth-scroll.polyfills.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/lg-zoom.min.js"></script><script src="/lib/typeit/typeit.min.js"></script><script src="/lib/katex/katex.min.js"></script><script src="/lib/katex/auto-render.min.js"></script><script src="/lib/katex/copy-tex.min.js"></script><script src="/lib/katex/mhchem.min.js"></script><script src="/js/theme.min.js"></script></body>
 </html>
