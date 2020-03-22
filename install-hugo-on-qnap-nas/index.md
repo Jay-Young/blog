@@ -1,4 +1,4 @@
-# Hugo: 在威联通 NAS 上生成博客并部署 Pages 服务
+# Hugo 篇一: 在威联通 NAS 上生成博客并部署 Pages 服务
 
 
 {{< typeit >}}
@@ -9,11 +9,9 @@ Hugo 是一个用 Go 语言实现的静态博客系统生成工具。基于 Mark
 
 静态博客系统有很多，为什么选择 Hugo 呢？
 
-{{< admonition quote "作者说" false >}}
-- 独立二进制文件，免去各种复杂的环境配置，部署简单快速
-- 基于 Markdown 写作，学习成本低
-- 免费开源，渲染速度快，主题扩展丰富
-{{< /admonition >}}
+> - 独立二进制文件，免去各种复杂的环境配置，部署简单快速
+> - 基于 Markdown 写作，学习成本低
+> - 免费开源，渲染速度快，主题扩展丰富
 
 {{< admonition info "说明" false >}}
 本文基于以下软硬件系统测试，不能完全保证其他系统的兼容性。
@@ -60,6 +58,7 @@ ln -sf /your-hugo-path/hugo /usr/local/bin/hugo
 ## :(fa fa-play-circle): 使用
 
 如果使用`hugo help`测试运行返回如下信息，则说明 Hugo 已经成功安装。
+
 {{< admonition success "点击展开" true >}}
 ```bash
 $ hugo help
@@ -189,6 +188,7 @@ cp -f themes/LoveIt/exampleSite/config.toml config.toml
 cp -rf themes/LoveIt/exampleSite/static static
 cp -rf themes/LoveIt/archetypes archetypes
 ```
+
 将站点根目录下的`config.toml`中的第 10 行内容注释掉
 
 ```properties
@@ -214,6 +214,7 @@ title = "LoveIt"
 ```bash
 hugo new posts/first-post.md
 ```
+
 用 markdown 编辑器打开 first-post.md 文件，显示如下信息:
 
 ```markdown
@@ -271,6 +272,72 @@ vscode 打开 public 目录，安装 Live Server 插件，点击状态栏右下�
 
 {{< figure src="https://i.loli.net/2020/03/21/L4ZHcNxepdg7vOG.png" title="站点运行效果" >}}
 
+### :(fa fa-cloud-upload-alt): 发布到 Coding Pages
+
+为什么选择 Coding Pages，而不是 Github Pages 呢？
+
+> 因为 Coding Pages 是国内的服务，整体来说 Git 访问速度很很快，提供静态网站的服务器位于香港，也无需备案，想要套个 Cloudflare 的 CDN 也很方便。如果以后想要迁移到腾讯云也可以，顺便买个域名，申请个亚洲诚信的免费证书也是美滋滋的。而 Github 因为众所周知的原因，想要流畅访问一直是个痛点，但是可以作为备份仓库只是存储所有的静态资源文件。
+
+首先在 https://coding.net 注册账号，并新建一个空白的代码托管项目，同时打开项目设置—功能开关—构建与部署。
+
+然后在 QTS 系统上安装 Git: https://www.qnapclub.eu/en/qpkg/197
+
+接下来在 public 目录进行 git 操作
+
+设置你的用户名称与邮件地址，此后每次 Git 的提交都会使用这些信息。在终端输入一下命令即可设置你的用户信息。
+
+```bash
+git config --global user.name "你的名称"
+git config --global user.email "你的邮箱"
+```
+
+例如你的 Coding 账户昵称叫『大黑』，用户信息配置为：『名称 – 大白』，『邮箱 – dabai@coding.net 』。当你推送代码到 Coding 仓库后，动态显示如下图：
+
+{{< figure src="https://i.loli.net/2020/03/22/gRCm7v81YSAtIrL.png" title="用户信息" >}}
+
+头像和『大黑』是 Coding 账户的用户头像和昵称，『大白』是配置的提交代码时的用户名称信息。
+
+{{< admonition note "" false >}}
+Git 配置的用户信息可以和 Coding 账户名称一致，也可以不一致，建议填写为 Coding 用户名和注册邮箱，以便更好的协作。
+{{< / admonition >}}
+
+设置让 Git 记住密码凭证
+
+```bash
+git config --global credential.helper store
+```
+
+创建本地仓库，执行```git init```后显示如下信息：
+
+```
+Initialized empty Git repository in X:/XXX/.git/
+```
+
+跟踪文件、提交文件并推送文件到远程仓库：
+
+```bash
+git add .
+git commit -m "随便写点什么"
+git remote add 项目名称 远程项目地址
+git push 项目名称
+```
+
+{{< admonition note "" false >}}
+更多详细的 Git 信息：https://help.coding.net/docs/host/git/installation.html
+{{< /admonition >}}
+
+输入 Coding 账户用户名和密码之后，如果没有显示错误信息就表示推送成功，可以通过`git status`查看是否`up to date`
+
+最后去 Coding 项目的构建与部署—静态网站发布。具体可参阅 Coding 官方文档：[如何搭建静态网站](https://help.coding.net/docs/devops/cd/static-website.html)
+
 {{< admonition tip "" false >}}
 网站内容可以通过 [Netlify](https://www.netlify.com/) 自动发布和托管 (了解有关[通过 Netlify 进行 HUGO 自动化部署](https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/) 的更多信息)。或者，您可以使用 [AWS Amplify](https://gohugo.io/hosting-and-deployment/hosting-on-aws-amplify/), [Github pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/), [Render](https://gohugo.io/hosting-and-deployment/hosting-on-render/) 以及更多…
+{{< /admonition >}}
+
+## :(fa fa-feather-alt): 后记
+
+折腾博客其实并不是最重要的，最重要的是你有写博客的动力。希望自己能够坚持下去，为中文博客社区贡献微薄的力量。
+
+{{< admonition info "" false >}}
+本文首发于[我的博客](https://blog.233so.com/install-hugo-on-qnap-nas)
 {{< /admonition >}}
