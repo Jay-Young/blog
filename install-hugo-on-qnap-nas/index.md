@@ -323,7 +323,7 @@ git push 项目名称
 ```
 
 {{< admonition note "" false >}}
-更多详细的 Git 信息：https://help.coding.net/docs/host/git/installation.html
+更多详细的 Git 信息：[https://help.coding.net/docs/host/git/installation.html](https://help.coding.net/docs/host/git/installation.html)
 {{< /admonition >}}
 
 输入 Coding 账户用户名和密码之后，如果没有显示错误信息就表示推送成功，可以通过`git status`查看是否`up to date`
@@ -337,6 +337,10 @@ git push 项目名称
 ## :(fa fa-feather-alt): 后记
 
 折腾博客其实并不是最重要的，最重要的是你有写博客的动力。希望自己能够坚持下去，为中文博客社区贡献微薄的力量。
+
+本文部分内容引用来自：
+- [https://hugoloveit.com/zh-cn/theme-documentation-basics](https://hugoloveit.com/zh-cn/theme-documentation-basics)
+- [https://help.coding.net/docs/host/git/installation.html](https://help.coding.net/docs/host/git/installation.html)
 
 {{< admonition info "" false >}}
 本文首发于[我的博客](https://blog.233so.com/install-hugo-on-qnap-nas)

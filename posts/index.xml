@@ -2,75 +2,75 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Jay - My blog</title>
-    <link>/posts/</link>
+    <link>https://blog.233so.com/posts/</link>
     <description>Recent content in Posts on Jay - My blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sat, 21 Mar 2020 18:27:28 +0800</lastBuildDate>
     
-	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.233so.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>主题文档 - 基本概念</title>
-      <link>/theme-documentation-basics/</link>
+      <link>https://blog.233so.com/theme-documentation-basics/</link>
       <pubDate>Fri, 06 Mar 2020 21:40:32 +0800</pubDate>
       
-      <guid>/theme-documentation-basics/</guid>
+      <guid>https://blog.233so.com/theme-documentation-basics/</guid>
       <description>&lt;p&gt;探索 Hugo - &lt;strong&gt;LoveIt&lt;/strong&gt; 主题的全部内容和背后的核心概念.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>主题文档 - 内容</title>
-      <link>/theme-documentation-content/</link>
+      <link>https://blog.233so.com/theme-documentation-content/</link>
       <pubDate>Thu, 05 Mar 2020 16:30:05 +0800</pubDate>
       
-      <guid>/theme-documentation-content/</guid>
+      <guid>https://blog.233so.com/theme-documentation-content/</guid>
       <description>&lt;p&gt;了解如何在 &lt;strong&gt;LoveIt&lt;/strong&gt; 主题中快速, 直观地创建和组织内容.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Markdown 基本语法</title>
-      <link>/basic-markdown-syntax/</link>
+      <link>https://blog.233so.com/basic-markdown-syntax/</link>
       <pubDate>Sun, 01 Dec 2019 21:57:40 +0800</pubDate>
       
-      <guid>/basic-markdown-syntax/</guid>
+      <guid>https://blog.233so.com/basic-markdown-syntax/</guid>
       <description>&lt;p&gt;这篇文章提供了可以在 Hugo 的文章中使用的基本 Markdown 语法示例.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Emoji 支持</title>
-      <link>/emoji-support/</link>
+      <link>https://blog.233so.com/emoji-support/</link>
       <pubDate>Tue, 01 Oct 2019 17:55:28 +0800</pubDate>
       
-      <guid>/emoji-support/</guid>
+      <guid>https://blog.233so.com/emoji-support/</guid>
       <description>&lt;p&gt;Emoji 可以通过多种方式在 Hugo 项目中启用.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Hugo 篇一: 在威联通 NAS 上生成博客并部署 Pages 服务</title>
-      <link>/install-hugo-on-qnap-nas/</link>
+      <link>https://blog.233so.com/install-hugo-on-qnap-nas/</link>
       <pubDate>Sat, 21 Mar 2020 18:27:28 +0800</pubDate>
       
-      <guid>/install-hugo-on-qnap-nas/</guid>
+      <guid>https://blog.233so.com/install-hugo-on-qnap-nas/</guid>
       <description>Hugo 是一个用 Go 语言实现的静态博客系统生成工具。基于 Markdown 撰写博文，不改变你已有的习惯，拥有快速部署、简单易用、主题丰富、易扩展等特点。你可以在任何地方启动 Hugo，实现毫秒级渲染。</description>
     </item>
     
     <item>
       <title>威联通：“私人定制”在线代码编辑器</title>
-      <link>/qnap-codeserver-self-host/</link>
+      <link>https://blog.233so.com/qnap-codeserver-self-host/</link>
       <pubDate>Sat, 21 Mar 2020 15:39:58 +0800</pubDate>
       
-      <guid>/qnap-codeserver-self-host/</guid>
+      <guid>https://blog.233so.com/qnap-codeserver-self-host/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/cdr/code-server&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;code-server&lt;/a&gt; 是基于微软 &lt;a href=&#34;https://github.com/Microsoft/vscode&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Visual Studio Code&lt;/a&gt; 项目打造的远程编辑器，可以运行在服务器，客户端通过浏览器访问即可使用。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>浏览器小技巧：通过注册表为Chromium Edge安装扩展</title>
-      <link>/install-edge-extensions-via-registry/</link>
+      <link>https://blog.233so.com/install-edge-extensions-via-registry/</link>
       <pubDate>Fri, 20 Mar 2020 22:42:34 +0800</pubDate>
       
-      <guid>/install-edge-extensions-via-registry/</guid>
+      <guid>https://blog.233so.com/install-edge-extensions-via-registry/</guid>
       <description>&lt;p&gt;新 &lt;a href=&#34;https://www.microsoft.com/zh-cn/edge&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Microsoft Edge&lt;/a&gt; 浏览器基于 Google 的开源项目 &lt;a href=&#34;https://github.com/chromium/chromium&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Chromium&lt;/a&gt; ，针对 Windows 10 进行优化。一个微软账号，跨平台同步，和 Chrome 扩展通用，官方扩展商店也越来越完善。&lt;/p&gt;</description>
     </item>
     

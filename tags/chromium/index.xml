@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chromium on Jay - My blog</title>
-    <link>/tags/chromium/</link>
+    <link>https://blog.233so.com/tags/chromium/</link>
     <description>Recent content in Chromium on Jay - My blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 20 Mar 2020 22:42:34 +0800</lastBuildDate>
     
-	<atom:link href="/tags/chromium/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.233so.com/tags/chromium/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>浏览器小技巧：通过注册表为Chromium Edge安装扩展</title>
-      <link>/install-edge-extensions-via-registry/</link>
+      <link>https://blog.233so.com/install-edge-extensions-via-registry/</link>
       <pubDate>Fri, 20 Mar 2020 22:42:34 +0800</pubDate>
       
-      <guid>/install-edge-extensions-via-registry/</guid>
+      <guid>https://blog.233so.com/install-edge-extensions-via-registry/</guid>
       <description>&lt;p&gt;新 &lt;a href=&#34;https://www.microsoft.com/zh-cn/edge&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Microsoft Edge&lt;/a&gt; 浏览器基于 Google 的开源项目 &lt;a href=&#34;https://github.com/chromium/chromium&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Chromium&lt;/a&gt; ，针对 Windows 10 进行优化。一个微软账号，跨平台同步，和 Chrome 扩展通用，官方扩展商店也越来越完善。&lt;/p&gt;</description>
     </item>
     

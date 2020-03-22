@@ -1,20 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Jay - My blog | Jay - My blog</title>
-        <link>/</link>
+        <link>https://blog.233so.com/</link>
         <description>Jay - My blog | Jay - My blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 02 Aug 2019 11:04:49 &#43;0800</lastBuildDate><atom:link href="/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 02 Aug 2019 11:04:49 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/" rel="self" type="application/rss+xml" /><item>
                 <title>Posts</title>
-                <link>/posts/</link>
-                <pubDate>Sat, 21 Mar 2020 18:27:28 &#43;0800</pubDate><guid>/posts/</guid>
+                <link>https://blog.233so.com/posts/</link>
+                <pubDate>Sat, 21 Mar 2020 18:27:28 &#43;0800</pubDate><guid>https://blog.233so.com/posts/</guid>
                 <description></description>
             </item><item>
                 <title>关于 LoveIt</title>
-                <link>/about/</link>
-                <pubDate>Fri, 02 Aug 2019 11:04:49 &#43;0800</pubDate><guid>/about/</guid>
+                <link>https://blog.233so.com/about/</link>
+                <pubDate>Fri, 02 Aug 2019 11:04:49 &#43;0800</pubDate><guid>https://blog.233so.com/about/</guid>
                 <description>&lt;p&gt;&lt;a href=&#34;https://github.com/dillonzq/LoveIt/releases&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;&lt;img
         class=&#34;lazyload&#34;
-        src=&#34;/svg/loading.small.min.svg&#34;
+        src=&#34;https://blog.233so.com/svg/loading.small.min.svg&#34;
         data-sizes=&#34;auto&#34;
         data-srcset=&#34;https://img.shields.io/github/v/release/dillonzq/LoveIt?style=flat-square, https://img.shields.io/github/v/release/dillonzq/LoveIt?style=flat-square 1.5x, https://img.shields.io/github/v/release/dillonzq/LoveIt?style=flat-square 2x&#34;
         data-src=&#34;https://img.shields.io/github/v/release/dillonzq/LoveIt?style=flat-square&#34;
@@ -22,7 +22,7 @@
         title=&#34;GitHub release (latest by date)&#34; /&gt;&lt;/a&gt;
 &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;&lt;img
         class=&#34;lazyload&#34;
-        src=&#34;/svg/loading.small.min.svg&#34;
+        src=&#34;https://blog.233so.com/svg/loading.small.min.svg&#34;
         data-sizes=&#34;auto&#34;
         data-srcset=&#34;https://img.shields.io/badge/Hugo-%5E0.62.0-ff4088?style=flat-square&amp;amp;logo=hugo, https://img.shields.io/badge/Hugo-%5E0.62.0-ff4088?style=flat-square&amp;amp;logo=hugo 1.5x, https://img.shields.io/badge/Hugo-%5E0.62.0-ff4088?style=flat-square&amp;amp;logo=hugo 2x&#34;
         data-src=&#34;https://img.shields.io/badge/Hugo-%5E0.62.0-ff4088?style=flat-square&amp;amp;logo=hugo&#34;
@@ -30,7 +30,7 @@
         title=&#34;Hugo&#34; /&gt;&lt;/a&gt;
 &lt;a href=&#34;https://github.com/dillonzq/LoveIt/blob/master/LICENSE&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;&lt;img
         class=&#34;lazyload&#34;
-        src=&#34;/svg/loading.small.min.svg&#34;
+        src=&#34;https://blog.233so.com/svg/loading.small.min.svg&#34;
         data-sizes=&#34;auto&#34;
         data-srcset=&#34;https://img.shields.io/github/license/dillonzq/LoveIt?style=flat-square, https://img.shields.io/github/license/dillonzq/LoveIt?style=flat-square 1.5x, https://img.shields.io/github/license/dillonzq/LoveIt?style=flat-square 2x&#34;
         data-src=&#34;https://img.shields.io/github/license/dillonzq/LoveIt?style=flat-square&#34;
@@ -38,7 +38,7 @@
         title=&#34;License&#34; /&gt;&lt;/a&gt;
 &lt;a href=&#34;https://github.com/dillonzq/LoveIt&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;&lt;img
         class=&#34;lazyload&#34;
-        src=&#34;/svg/loading.small.min.svg&#34;
+        src=&#34;https://blog.233so.com/svg/loading.small.min.svg&#34;
         data-sizes=&#34;auto&#34;
         data-srcset=&#34;https://img.shields.io/github/stars/dillonzq/LoveIt?style=social, https://img.shields.io/github/stars/dillonzq/LoveIt?style=social 1.5x, https://img.shields.io/github/stars/dillonzq/LoveIt?style=social 2x&#34;
         data-src=&#34;https://img.shields.io/github/stars/dillonzq/LoveIt?style=social&#34;
@@ -46,7 +46,7 @@
         title=&#34;GitHub stars&#34; /&gt;&lt;/a&gt;
 &lt;a href=&#34;https://github.com/dillonzq/LoveIt/fork&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;&lt;img
         class=&#34;lazyload&#34;
-        src=&#34;/svg/loading.small.min.svg&#34;
+        src=&#34;https://blog.233so.com/svg/loading.small.min.svg&#34;
         data-sizes=&#34;auto&#34;
         data-srcset=&#34;https://img.shields.io/github/forks/dillonzq/LoveIt?style=social, https://img.shields.io/github/forks/dillonzq/LoveIt?style=social 1.5x, https://img.shields.io/github/forks/dillonzq/LoveIt?style=social 2x&#34;
         data-src=&#34;https://img.shields.io/github/forks/dillonzq/LoveIt?style=social&#34;
@@ -54,13 +54,13 @@
         title=&#34;GitHub forks&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/dillonzq/LoveIt&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;LoveIt :(far fa-heart):&lt;/a&gt; 是一个由 &lt;a href=&#34;https://dillonzq.com&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Dillon&lt;/a&gt; 开发的&lt;strong&gt;简洁&lt;/strong&gt;、&lt;strong&gt;优雅&lt;/strong&gt;且&lt;strong&gt;高效&lt;/strong&gt;的 &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Hugo&lt;/a&gt; 博客主题。&lt;/p&gt;
 &lt;p&gt;它的原型基于 &lt;a href=&#34;https://github.com/liuzc/LeaveIt/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;LeaveIt 主题&lt;/a&gt; 和 &lt;a href=&#34;https://github.com/liuzc/LeaveIt/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;KeepIt 主题&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;/images/Apple-Devices-Preview.png&#34; title=&#34;Hugo 主题 LoveIt&#34; data-thumbnail=&#34;/images/Apple-Devices-Preview.png&#34; data-sub-html=&#34;&lt;h2&gt;Hugo Theme LoveIt&lt;/h2&gt;&lt;p&gt;Hugo 主题 LoveIt&lt;/p&gt;&#34;&gt;
+&lt;p&gt;&lt;figure&gt;&lt;a class=&#34;lightgallery&#34; href=&#34;https://blog.233so.com/images/Apple-Devices-Preview.png&#34; title=&#34;Hugo 主题 LoveIt&#34; data-thumbnail=&#34;/images/Apple-Devices-Preview.png&#34; data-sub-html=&#34;&lt;h2&gt;Hugo Theme LoveIt&lt;/h2&gt;&lt;p&gt;Hugo 主题 LoveIt&lt;/p&gt;&#34;&gt;
         &lt;img
             class=&#34;lazyload&#34;
-            src=&#34;/svg/loading.min.svg&#34;
+            src=&#34;https://blog.233so.com/svg/loading.min.svg&#34;
             data-sizes=&#34;auto&#34;
-            data-srcset=&#34;/images/Apple-Devices-Preview.png, /images/Apple-Devices-Preview.png 1.5x, /images/Apple-Devices-Preview.png 2x&#34;
-            data-src=&#34;/images/Apple-Devices-Preview.png&#34;
+            data-srcset=&#34;https://blog.233so.com/images/Apple-Devices-Preview.png, https://blog.233so.com/images/Apple-Devices-Preview.png 1.5x, https://blog.233so.com/images/Apple-Devices-Preview.png 2x&#34;
+            data-src=&#34;https://blog.233so.com/images/Apple-Devices-Preview.png&#34;
             alt=&#34;Hugo 主题 LoveIt&#34; /&gt;
     &lt;/a&gt;&lt;figcaption class=&#34;image-caption&#34;&gt;Hugo Theme LoveIt&lt;/figcaption&gt;
     &lt;/figure&gt;&lt;/p&gt;
