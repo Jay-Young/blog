@@ -336,7 +336,7 @@ git push 项目名称
 
 ## :(fa fa-feather-alt): 后记
 
-折腾博客其实并不是最重要的，最重要的是你有写博客的动力。希望自己能够坚持下去，为中文博客社区贡献微薄的力量。
+折腾博客其实并不是最重要的，最重要的是你有写博客的动力，希望自己能够坚持下去。
 
 本文部分内容引用来自：
 - [https://hugoloveit.com/zh-cn/theme-documentation-basics](https://hugoloveit.com/zh-cn/theme-documentation-basics)
