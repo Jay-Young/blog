@@ -9,14 +9,14 @@ nps 是一款轻量级、高性能、功能强大的内网穿透代理服务器�
 
 内网穿透解决方案有不少，开源的比如 nps、frp、lanproxy、ngrok 和 zerotier 等，现成的商业服务有贝锐科技提供的花生壳、蒲公英之类的产品。个人现在同时部署的有三款产品，nps、ksa（看雪论坛的服务）和蒲公英 X1。今天要介绍的是这款 nps，自带 web 管理界面，支持 p2p 连接，支持数据压缩传输。
 
-{{< admonition info "" fasle >}}
+{{< admonition info "" false >}}
 本文基于以下软硬件系统测试，不能完全保证其他系统的兼容性。
 
 - QNAP TS-453Bmini 2+8G 内存
 - QTS 4.4.1.1216
 - nps 0.26.5
 - Windows 10 1909 64 位 专业版和家庭版
-  {{< /admonition >}}
+{{< /admonition >}}
 
 ### :(fa fa-info-circle): 背景
 
@@ -198,5 +198,5 @@ npc nat -stun_addr=stun.stunprotocol.org:3478
 
 {{< admonition info "" false >}}
 本文首发于[我的博客](https://blog.233so.com/install-nps-on-qnap-nas)
-{{< /admonition >}}}
+{{< /admonition >}}
 
