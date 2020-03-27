@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>蒲公英 on Jay - My blog</title>
+    <link>https://blog.233so.com/tags/%E8%92%B2%E5%85%AC%E8%8B%B1/</link>
+    <description>Recent content in 蒲公英 on Jay - My blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 27 Mar 2020 16:28:47 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.233so.com/tags/%E8%92%B2%E5%85%AC%E8%8B%B1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>威联通：内网穿透服务之蒲公英X1和KSA</title>
+      <link>https://blog.233so.com/intranet-penetration-with-pgyx1-or-ksa/</link>
+      <pubDate>Fri, 27 Mar 2020 16:28:47 +0800</pubDate>
+      
+      <guid>https://blog.233so.com/intranet-penetration-with-pgyx1-or-ksa/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://blog.233so.com/install-nps-on-qnap-nas&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;上一篇&lt;/a&gt;博文介绍了 nps 内网穿透服务&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>威联通：内网穿透服务之蒲公英X1和KSA | Jay - My blog</title>
+        <meta name="Description" content="一个博客，简单记录"><meta property="og:title" content="威联通：内网穿透服务之蒲公英X1和KSA" />
+<meta property="og:description" content="上一篇博文介绍了 nps 内网穿透服务" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.233so.com/intranet-penetration-with-pgyx1-or-ksa/" />
+<meta property="article:published_time" content="2020-03-27T16:28:47+08:00" />
+<meta property="article:modified_time" content="2020-03-27T16:28:47+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="威联通：内网穿透服务之蒲公英X1和KSA"/>
+<meta name="twitter:description" content="上一篇博文介绍了 nps 内网穿透服务"/>
+<meta name="generator" content="Hugo 0.67.1" /><meta name="theme-color" content="#ffffff">
+<meta name="msapplication-TileColor" content="#da532c">
+<link rel="canonical" href="https://blog.233so.com/intranet-penetration-with-pgyx1-or-ksa/" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="prev" href="https://blog.233so.com/install-nps-on-qnap-nas/" /><link rel="next" href="https://blog.233so.com/emoji-support/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/css/search.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+<script src="https://res.cloudinary.com/jimmysong/raw/upload/rootsongjc-hugo/algoliasearch.min.js"></script>
+<script src="https://res.cloudinary.com/jimmysong/raw/upload/rootsongjc-hugo/autocomplete.min.js"></script>
+
+
+ 
+<script src= "/js/search.js" type="text/javascript"></script><meta name="msvalidate.01" content="9E6BC727410AE14F6E9442F540992717" /><meta name="baidu-site-verification" content="apixhlrtUN" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "威联通：内网穿透服务之蒲公英X1和KSA",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/blog.233so.com\/intranet-penetration-with-pgyx1-or-ksa\/"
+        },"image": {
+                "@type": "ImageObject",
+                "url": "https:\/\/blog.233so.com\/cover.png",
+                "width":  800 ,
+                "height":  600 
+            },"genre": "posts","keywords": "内网穿透, 威联通, 蒲公英, ksa, 贝锐科技","wordcount":  15 ,
+        "url": "https:\/\/blog.233so.com\/intranet-penetration-with-pgyx1-or-ksa\/","datePublished": "2020-03-27","dateModified": "2020-03-27","publisher": {
+                "@type": "Organization",
+                "name": "Jay",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/blog.233so.com\/logo.png",
+                "width":  127 ,
+                "height":  40 
+                }
+            },"author": {
+                "@type": "Person",
+                "name": "Jay"
+            },"description": ""
+    }
+    </script></head>
+    <body><script>
+            if (!window.localStorage || !window.localStorage.getItem('theme')) {window.isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;} else {
+                window.isDark = (window.localStorage && window.localStorage.getItem('theme')) === 'dark';
+            }
+            window.isDark && document.body.classList.add('dark-theme');
+        </script><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/">Jay - My blog</a>
+        </div>
+        <div class="menu"><a class="menu-item" href="/" rel="noopener noreffer">首页</a><a class="menu-item" href="/posts/" rel="noopener noreffer">文章</a><a class="menu-item" href="/tags/" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" rel="noopener noreffer">分类</a><a class="menu-item" href="/categories/documentation/" rel="noopener noreffer">文档</a><a class="menu-item" href="/about/" rel="noopener noreffer">关于</a><span class="menu-item">|</span>
+            <a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a>
+            
+            <a href="#ex1" rel="modal:open"><i class="fas fa-search fa-fw"></i></a>
+            </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-wrapper">
+        <div class="header-container">
+            <div class="header-title">
+                <a href="/">Jay - My blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/" title="" rel="noopener noreffer">首页</a><a class="menu-item" href="/posts/" title="" rel="noopener noreffer">文章</a><a class="menu-item" href="/tags/" title="" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" title="" rel="noopener noreffer">分类</a><a class="menu-item" href="/categories/documentation/" title="" rel="noopener noreffer">文档</a><a class="menu-item" href="/about/" title="" rel="noopener noreffer">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a>
+            
+            <a href="#ex1" rel="modal:open"><i class="fas fa-search fa-fw"></i></a>
+            </div>
+    </div>
+</header>
+
+<script>
+    window.desktopHeaderMode = "fixed";
+    window.mobileHeaderMode = "auto";
+</script>
+<main class="main">
+                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">威联通：内网穿透服务之蒲公英X1和KSA</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://weibo.com/jayyoung1" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Jay</a></span>&nbsp;
+                    <span class="post-category">收录于<a href="/categories/nas">
+                                <i class="far fa-folder fa-fw"></i>Nas
+                            </a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-03-27>2020-03-27</time>&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 15 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>预计阅读 1 分钟&nbsp;<span id="/intranet-penetration-with-pgyx1-or-ksa/" class="leancloud_visitors" data-flag-title="威联通：内网穿透服务之蒲公英X1和KSA">
+                        <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-sizes="auto"
+        data-srcset="https://i.loli.net/2020/03/27/ah5qIjkzwOyPo6Q.png, https://i.loli.net/2020/03/27/ah5qIjkzwOyPo6Q.png 1.5x, https://i.loli.net/2020/03/27/ah5qIjkzwOyPo6Q.png 2x"
+        data-src="https://i.loli.net/2020/03/27/ah5qIjkzwOyPo6Q.png"
+        alt="https://i.loli.net/2020/03/27/ah5qIjkzwOyPo6Q.png"
+        title="https://i.loli.net/2020/03/27/ah5qIjkzwOyPo6Q.png" /></div><div class="toc" id="toc-auto">
+                <h2 class="toc-title">目录</h2>
+                <div class="toc-content" id="toc-content-auto"></div>
+            </div>
+            <div class="toc" id="toc-static">
+                <details>
+                    <summary>
+                        <div class="toc-title">
+                            <span>目录</span>
+                            <span><i class="details icon fas fa-angle-down"></i></span>
+                        </div>
+                    </summary>
+                    <div class="toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+                </details>
+            </div><div class="content" id="content"><p><a href="https://blog.233so.com/install-nps-on-qnap-nas" target="_blank" rel="noopener noreffer">上一篇</a>博文介绍了 nps 内网穿透服务</p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>本文于 2020-03-27 更新</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/intranet-penetration-with-pgyx1-or-ksa/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://blog.233so.com/intranet-penetration-with-pgyx1-or-ksa/" data-title="威联通：内网穿透服务之蒲公英X1和KSA" data-image="https://i.loli.net/2020/03/27/ah5qIjkzwOyPo6Q.png" data-ralateuid="jayyoung1"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="https://blog.233so.com/intranet-penetration-with-pgyx1-or-ksa/" data-title="威联通：内网穿透服务之蒲公英X1和KSA"><i class="fab fa-evernote fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F">内网穿透</a>,&nbsp;<a href="/tags/%E5%A8%81%E8%81%94%E9%80%9A">威联通</a>,&nbsp;<a href="/tags/%E8%92%B2%E5%85%AC%E8%8B%B1">蒲公英</a>,&nbsp;<a href="/tags/ksa">ksa</a>,&nbsp;<a href="/tags/%E8%B4%9D%E9%94%90%E7%A7%91%E6%8A%80">贝锐科技</a></section>
+        <section>
+            <span><a href="javascript:window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/install-nps-on-qnap-nas/" class="prev" rel="prev" title="威联通：内网穿透解决方案之自建NPS服务"><i class="fas fa-angle-left fa-fw"></i>威联通：内网穿透解决方案之自建NPS服务</a>
+            <a href="/emoji-support/" class="next" rel="next" title="Emoji 支持">Emoji 支持<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="valine" class="comment"></div><script>
+            document.addEventListener("DOMContentLoaded", function(event) {
+                new Valine({
+                    el: '#valine',
+                    appId: 'iRP94IPVb6nLbnvVlYl3acIX-gzGzoHsz',
+                    appKey: 'cMInmDt3V8IqJDnkANRw9Faf',placeholder: '请留下你善意的评论……',verify: true,pageSize: 10,lang: 'zh-cn',visitor: true,recordIP: true,});
+            });
+        </script>
+        <noscript>
+            Please enable JavaScript to view the <a href="https://valine.js.org/">comments powered by Valine.</a>
+        </noscript></article></div>
+            </main><footer class="footer">
+    <div class="copyright"><div class="copyright-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.67.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.0"><i class="far fa-heart fa-fw"></i> LoveIt</a>
+        </div>
+
+        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://weibo.com/jayyoung1" target="_blank">Jay</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+    </div>
+</footer>
+</div>
+
+        <div id="fixed-buttons" class="animated faster"><a href="#" id="top-button" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="comment-button" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script>
+        document.addEventListener('DOMContentLoaded', function () {
+            lightGallery(document.getElementById('content'), {
+                selector: '.lightgallery',
+                speed: 400,
+                hideBarsDelay: 2000,
+                thumbnail: true,
+                exThumbImage: 'data-thumbnail',
+                thumbWidth: 80,
+                thumbContHeight: 80,
+                actualSize: false,
+            });
+        });
+    </script><script>
+        document.addEventListener('DOMContentLoaded', function () {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    { left: '$$', right: '$$', display: true },
+                    { left: '\\[', right: '\\]', display: true },{ left: '$', right: '$', display: false },
+                    { left: '\\(', right: '\\)', display: false },],
+                strict: false,
+            });
+        });
+    </script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css"><link rel="stylesheet" href="/lib/valine/valine.css"><script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script><script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.2/dist/smooth-scroll.polyfills.min.js"></script><script src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/js/lightgallery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lg-thumbnail@1.1.0/dist/lg-thumbnail.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lg-zoom@1.1.0/dist/lg-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js"></script><script src="/js/theme.min.js"></script>
+    <div id="ex1" class="modal">
+        <div class="aa-input-container" id="aa-input-container">
+    <input type="search" id="aa-search-input" class="aa-input-search" placeholder="搜索标题或内容..." name="search" autocomplete="off" />
+    <svg class="aa-input-icon" viewBox="654 -372 1664 1664">
+        <path d="M1806,332c0-123.3-43.8-228.8-131.5-316.5C1586.8-72.2,1481.3-116,1358-116s-228.8,43.8-316.5,131.5  C953.8,103.2,910,208.7,910,332s43.8,228.8,131.5,316.5C1129.2,736.2,1234.7,780,1358,780s228.8-43.8,316.5-131.5  C1762.2,560.8,1806,455.3,1806,332z M2318,1164c0,34.7-12.7,64.7-38,90s-55.3,38-90,38c-36,0-66-12.7-90-38l-343-342  c-119.3,82.7-252.3,124-399,124c-95.3,0-186.5-18.5-273.5-55.5s-162-87-225-150s-113-138-150-225S654,427.3,654,332  s18.5-186.5,55.5-273.5s87-162,150-225s138-113,225-150S1262.7-372,1358-372s186.5,18.5,273.5,55.5s162,87,225,150s113,138,150,225  S2062,236.7,2062,332c0,146.7-41.3,279.7-124,399l343,343C2305.7,1098.7,2318,1128.7,2318,1164z" />
+    </svg>
+</div>
+    </div>
+
+    </body>
+</html>
