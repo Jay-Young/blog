@@ -16,7 +16,7 @@ nps 是一款轻量级、高性能、功能强大的内网穿透代理服务器�
 - QTS 4.4.1.1216
 - nps 0.26.5
 - Windows 10 1909 64 位 专业版和家庭版
-{{< /admonition >}}
+  {{< /admonition >}}
 
 ### :(fa fa-info-circle): 背景
 
