@@ -112,7 +112,7 @@ nps-update update
 
 ### :(fa fa-desktop): 客户端
 
-#### :(fa fa-chrome): Web 配置
+#### :(fa fa-edge): Web 配置
 
 nps 支持配置文件和无配置文件使用，这里介绍无配置文件，所有配置在 web 端设置。
 
