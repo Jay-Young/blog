@@ -92,7 +92,7 @@
         "author": "Jay",
         "authorLink": "https://weibo.com/jayyoung1/",
         "description": "本文介绍基于注册表安装在线和本地扩展的小技巧",
-        "license": "CC BY-NC 4.0",
+        "license": "<a rel=\"license external nofollow noopener noreffer\" href=\"https://creativecommons.org/licenses/by-nc/4.0/deed.zh\" target=\"_blank\">CC BY-NC 4.0</a>",
         "tags": [
             "Edge",
             "Chromium",
@@ -128,7 +128,7 @@
         "authorLink": "https://weibo.com/jayyoung1/",
         "description": "本文介绍如何在威联通NAS上部署hugo博客系统",
         "summary": "Hugo 是一个用 Go 语言实现的静态博客系统生成工具。基于 Markdown 撰写博文，不改变你已有的习惯，拥有快速部署、简单易用、主题丰富、易扩展等特点。你可以在任何地方启动 Hugo，实现毫秒级渲染。",
-        "license": "CC BY-NC 4.0",
+        "license": "<a rel=\"license external nofollow noopener noreffer\" href=\"https://creativecommons.org/licenses/by-nc/4.0/deed.zh\" target=\"_blank\">CC BY-NC 4.0</a>",
         "tags": [
             "QNAP",
             "hugo",
@@ -165,7 +165,7 @@
         "author": "Jay",
         "authorLink": "https://weibo.com/jayyoung1/",
         "description": "本文介绍如何用NPS实现威联通内网穿透",
-        "license": "",
+        "license": "<a rel=\"license external nofollow noopener noreffer\" href=\"https://creativecommons.org/licenses/by-nc/4.0/deed.zh\" target=\"_blank\">CC BY-NC 4.0</a>",
         "tags": [
             "内网穿透",
             "威联通",
@@ -200,7 +200,7 @@
         "author": "Jay",
         "authorLink": "https://weibo.com/jayyoung1/",
         "description": "本文介绍蒲公英 X1 和 KSA 如何打通外网访问内网资源",
-        "license": "",
+        "license": "<a rel=\"license external nofollow noopener noreffer\" href=\"https://creativecommons.org/licenses/by-nc/4.0/deed.zh\" target=\"_blank\">CC BY-NC 4.0</a>",
         "tags": [
             "内网穿透",
             "威联通",
@@ -234,7 +234,7 @@
         "author": "Jay",
         "authorLink": "https://weibo.com/jayyoung1/",
         "description": "本文介绍如何在威联通NAS上部署自己的vscode编辑器",
-        "license": "CC BY-NC 4.0",
+        "license": "<a rel=\"license external nofollow noopener noreffer\" href=\"https://creativecommons.org/licenses/by-nc/4.0/deed.zh\" target=\"_blank\">CC BY-NC 4.0</a>",
         "tags": [
             "QNAP",
             "vscode",
