@@ -1,7 +1,7 @@
 # 浏览器小技巧：通过注册表为Chromium Edge安装扩展
 
 
-新 [Microsoft Edge](https://www.microsoft.com/zh-cn/edge) 浏览器基于 Google 的开源项目 [Chromium](https://github.com/chromium/chromium) ，针对 Windows 10 进行优化。一个微软账号，跨平台同步，和 Chrome 扩展通用，官方扩展商店也越来越完善。
+新 [Microsoft Edge](https://www.microsoft.com/zh-cn/edge/) 浏览器基于 Google 的开源项目 [Chromium](https://github.com/chromium/chromium/) ，针对 Windows 10 进行优化。一个微软账号，跨平台同步，和 Chrome 扩展通用，官方扩展商店也越来越完善。
 
 <!--more-->
 
@@ -25,7 +25,7 @@
 
 如果你拥有本地 crx 文件，苦于开发模式加载压缩包每次启动的提示，可以通过构造如下注册表值来实现。
 
-1. 打开[https://robwu.nl/crxviewer](https://robwu.nl/crxviewer)这个网址，上传你的 crx 文件
+1. 打开[https://robwu.nl/crxviewer](https://robwu.nl/crxviewer/)这个网址，上传你的 crx 文件
 
 {{< figure src="https://i.loli.net/2020/02/22/uvQZoR1SAzhPLXB.png" title="robwu网站" >}}
 
@@ -49,7 +49,7 @@
 
 ### :(fa fa-server): 在线版
 
-如果你想安装来自 [Edge 扩展商店](https://microsoftedge.microsoft.com/insider-addons) 或 [Chrome 扩展商店](https://chrome.google.com/webstore) 的扩展，也可以通过构造如下注册表值来实现。
+如果你想安装来自 [Edge 扩展商店](https://microsoftedge.microsoft.com/insider-addons/) 或 [Chrome 扩展商店](https://chrome.google.com/webstore/) 的扩展，也可以通过构造如下注册表值来实现。
 
 1. 从官方商店直接搜索扩展，记录下网址。
 

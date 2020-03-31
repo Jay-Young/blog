@@ -90,7 +90,7 @@
         "date": "2020-03-20T14:42:34.000Z",
         "draft": false,
         "author": "Jay",
-        "authorLink": "https://weibo.com/jayyoung1",
+        "authorLink": "https://weibo.com/jayyoung1/",
         "description": "本文介绍基于注册表安装在线和本地扩展的小技巧",
         "license": "CC BY-NC 4.0",
         "tags": [
@@ -125,7 +125,7 @@
         "date": "2020-03-21T10:27:28.000Z",
         "draft": false,
         "author": "Jay",
-        "authorLink": "https://weibo.com/jayyoung1",
+        "authorLink": "https://weibo.com/jayyoung1/",
         "description": "本文介绍如何在威联通NAS上部署hugo博客系统",
         "summary": "Hugo 是一个用 Go 语言实现的静态博客系统生成工具。基于 Markdown 撰写博文，不改变你已有的习惯，拥有快速部署、简单易用、主题丰富、易扩展等特点。你可以在任何地方启动 Hugo，实现毫秒级渲染。",
         "license": "CC BY-NC 4.0",
@@ -163,7 +163,7 @@
         "lastmod": "2020-03-24T07:55:51.000Z",
         "draft": false,
         "author": "Jay",
-        "authorLink": "https://weibo.com/jayyoung1",
+        "authorLink": "https://weibo.com/jayyoung1/",
         "description": "本文介绍如何用NPS实现威联通内网穿透",
         "license": "",
         "tags": [
@@ -189,14 +189,50 @@
         "comment": true
     },
     {
+        "title": "威联通：内网穿透服务之蒲公英 X1 和 KSA",
+        "uri": "posts/intranet-penetration-with-pgyx1-or-ksa",
+        "content": "nps             Web                                                                          white_flower      X1     X1               Cloud VPN                                                             2233 org       ddns                                            70    X 70    X 18        CPU  MT7628A    RAM   64MB    FLASH  16MB    Micro USB        1 100 Mbps      1 USB A   1        2 4GHz 300Mbps IEEE 802 11 b g n            108         98     78                                                                                                  X1 LAN       LAN     DHCP           https   pgybox oray com     SN                      admin                                       oray            X1                                                                        X1                   VPN                                       X1                        192 168 1 0 24       192 168 1 0       255 255 255 0            24             PC                   oray                4G 5G                                         NAT                p2p                                          P2P            UPNP   X1                    2M                                                earth_asia  KSA KAS                           Windows MacOS   Linux  x86  x64  arm64 mipsel      KSA                                      computer  Windows           ksa_win exe     KSA           KSA ID          KSA ID                            computer  MacOS   Windows                           KSA        KSA ID                                   computer  Linux        sudo chmod  x ksa     ksa                   bash chmod  x ksa    ksa_x64              KSA ID   PSK                 ksa log                        Linux          ksa conf               ksa               x64      killall  9 ksa_x64                    KSA ID   PSK       uid     psk                                             ksa_x64                        IP      192 168 1                                                                                     KSA ID                                  KSA ID           Windows                    MacOS                        p2p     NAT         KSA       p2p                                   p2p          KSA     NAT                                         AES 256 CFB                             NAT                                                             memo                                                          X1             Linux   MacOS        KSA                  KSA                          https   ksa kanxue com index down htm",
+        "objectID": "posts/intranet-penetration-with-pgyx1-or-ksa",
+        "subtitle": "",
+        "date": "2020-03-27T08:28:47.000Z",
+        "lastmod": "2020-03-27T08:28:47.000Z",
+        "draft": false,
+        "author": "Jay",
+        "authorLink": "https://weibo.com/jayyoung1/",
+        "description": "本文介绍蒲公英 X1 和 KSA 如何打通外网访问内网资源",
+        "license": "",
+        "tags": [
+            "内网穿透",
+            "威联通",
+            "蒲公英",
+            "ksa",
+            "贝锐科技"
+        ],
+        "categories": [
+            "Nas"
+        ],
+        "hiddenFromHomePage": false,
+        "featuredImage": "https://i.loli.net/2020/03/31/tkKaQmYTlw5pSvZ.png",
+        "featuredImagePreview": "",
+        "toc": true,
+        "autoCollapseToc": true,
+        "math": true,
+        "lightgallery": true,
+        "linkToMarkdown": true,
+        "share": {
+            "enable": true
+        },
+        "comment": true
+    },
+    {
         "title": "威联通：“私人定制”在线代码编辑器",
         "uri": "posts/qnap-codeserver-self-host",
-        "content": "code server       Visual Studio Code                                             code server      3 0 Pre release                         fa fa comment dots                                         QNAP TS 453Bmini 2 8G    QTS 4 4 1 1216 code server 1 41 1 chinese language pack 1 41 0         docker   code server                                   codercom code server        linuxserver code server   xiumu code server zh cn                                                                    fa fa terminal                           QTS                                    fa fa download                code server     Release            linux arm64    linux x86_64          NAS      code server                        SSH     NAS        code server           SSH                  vscode                   code server        1 41 1      1 41 0                        F12                             https   marketplace visualstudio com _apis public gallery publishers MS CEINTL vsextensions vscode language pack zh hans  vspackage               code server   install extension          code server   uninstall extension extesion id    local share code server extensions               code server             code server  h        fa fa file code        codes erver    SSH      code server    SSH                                  shell                             ssl                 8080                   port               cert    cert key      ssl              TrustAsia         auth password             export PASSWORD  your own password             bin sh        code server                code server           vscode       https   marketplace visualstudio com    code server   install extension      code server  v      code server  log            info     critical    error   warn    info    debug    trace    off 7             local code server logs          code server        code server  h case   1  start  sudo   code server   locale zh cn   auth none    dev null    stop  sudo killall  9 code server    dev null    restart   0 stop  0 start       echo  Usage   0  start stop restart   exit 1 esac         daemon_mgr conf                   NAS                                       QTS             etc config crontab                   0 0          restart    dev null crontab            QTS      autorun sh             NAS         QTS                        BashIT               QDK     qpkg     daemon_mgr code server start     start     dev null    NAS             code server      http    8080              fa fa feather alt           Windows      vscode        userprofile   vscode      extensions           local share code server                         code server                                      local share code server logs           https   github com cdr code server issues                             IDE                              B",
+        "content": "code server       Visual Studio Code                                             code server      3 0 Pre release                         fa fa comment dots                                         QNAP TS 453Bmini 2 8G    QTS 4 4 1 1216 code server 1 41 1 chinese language pack 1 41 0         docker   code server                                   codercom code server        linuxserver code server   xiumu code server zh cn                                                                    fa fa terminal                           QTS                                    fa fa download                code server     Release            linux arm64    linux x86_64          NAS      code server                        SSH     NAS        code server           SSH                  vscode                   code server        1 41 1      1 41 0                        F12                             https   marketplace visualstudio com _apis public gallery publishers MS CEINTL vsextensions vscode language pack zh hans  vspackage               code server   install extension          code server   uninstall extension extesion id    local share code server extensions               code server             code server  h        fa fa file code        codes erver    SSH      code server    SSH                                  shell                             ssl                 8080                   port               cert    cert key      ssl              TrustAsia         auth password             export PASSWORD  your own password             bin sh        code server                code server           vscode       https   marketplace visualstudio com    code server   install extension      code server  v      code server  log            info     critical    error   warn    info    debug    trace    off 7             local code server logs          code server        code server  h case   1  start  sudo   code server   locale zh cn   auth none    dev null    stop  sudo killall  9 code server    dev null    restart   0 stop  0 start       echo  Usage   0  start stop restart   exit 1 esac exit 0         daemon_mgr conf                   NAS                                       QTS             etc config crontab                   0 0          restart    dev null crontab            QTS      autorun sh             NAS         QTS                        BashIT               QDK     qpkg     daemon_mgr code server start     start     dev null    NAS             code server      http    8080              fa fa feather alt           Windows      vscode        userprofile   vscode      extensions           local share code server                         code server                                      local share code server logs           https   github com cdr code server issues                             IDE                              B",
         "objectID": "posts/qnap-codeserver-self-host",
         "date": "2020-03-21T07:39:58.000Z",
         "draft": "flase",
         "author": "Jay",
-        "authorLink": "https://weibo.com/jayyoung1",
+        "authorLink": "https://weibo.com/jayyoung1/",
         "description": "本文介绍如何在威联通NAS上部署自己的vscode编辑器",
         "license": "CC BY-NC 4.0",
         "tags": [

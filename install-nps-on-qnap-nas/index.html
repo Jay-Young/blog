@@ -23,7 +23,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="prev" href="https://blog.233so.com/install-hugo-on-qnap-nas/" /><link rel="next" href="https://blog.233so.com/emoji-support/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/css/search.min.css">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="prev" href="https://blog.233so.com/install-hugo-on-qnap-nas/" /><link rel="next" href="https://blog.233so.com/intranet-penetration-with-pgyx1-or-ksa/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/css/search.min.css">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
@@ -109,7 +109,7 @@
 </script>
 <main class="main">
                 <div class="container"><article class="page single"><h1 class="single-title animated flipInX">威联通：内网穿透解决方案之自建NPS服务</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="https://weibo.com/jayyoung1" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Jay</a></span>&nbsp;
+            <div class="post-meta-line"><span class="post-author"><a href="https://weibo.com/jayyoung1/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Jay</a></span>&nbsp;
                     <span class="post-category">收录于<a href="/categories/nas">
                                 <i class="far fa-folder fa-fw"></i>Nas
                             </a></span></div>
@@ -164,7 +164,7 @@
 <h2 id="fa-fa-comment-dots-前言"><i class="fa fa-comment-dots fa-fw"></i>&nbsp;前言</h2>
 <p>内网穿透解决方案有不少，开源的比如 nps、frp、lanproxy、ngrok 和 zerotier 等，现成的商业服务有贝锐科技提供的花生壳、蒲公英之类的产品。个人现在同时部署的有三款产品，nps、ksa（看雪论坛的服务）和蒲公英 X1。今天要介绍的是这款 nps，自带 web 管理界面，支持 p2p 连接，支持数据压缩传输。</p>
 <div class="admonition info">
-            <p class="admonition-title"><i class="icon fas fa-info-circle"></i>信息</p>
+            <p class="admonition-title"><i class="icon fas fa-info-circle"></i>说明</p>
             <div class="admonition-content">本文基于以下软硬件系统测试，不能完全保证其他系统的兼容性。</p>
 <ul>
 <li>QNAP TS-453Bmini 2+8G 内存</li>
@@ -195,8 +195,8 @@
 </ul>
 <h2 id="fa-fa-terminal-安装"><i class="fa fa-terminal fa-fw"></i>&nbsp;安装</h2>
 <p>nps 分为服务端和客户端。服务端安装需要一台公有云服务器，比如白嫖的腾讯云、阿里云的学生主机。客户端使用分为两部分：被访问端和访问端，比如内网的 TS 453Bmini 即被访问端，在外使用的笔记本或者单位的台式机即访问端。</p>
-<p>项目地址：<a href="https://github.com/ehang-io/nps" target="_blank" rel="noopener noreffer">https://github.com/ehang-io/nps</a></p>
-<p><a href="https://github.com/ehang-io/nps/releases" target="_blank" rel="noopener noreffer">release</a> 页面 TS 453Bmini 对应版本服务端和客户端。</p>
+<p>项目地址：<a href="https://github.com/ehang-io/nps/" target="_blank" rel="noopener noreffer">https://github.com/ehang-io/nps</a></p>
+<p><a href="https://github.com/ehang-io/nps/releases/" target="_blank" rel="noopener noreffer">release</a> 页面 TS 453Bmini 对应版本服务端和客户端。</p>
 <a class="lightgallery" href="https://i.loli.net/2020/03/24/hPjpzXRe7JOo6kc.png" title="客户端和服务端" data-thumbnail="https://i.loli.net/2020/03/24/hPjpzXRe7JOo6kc.png">
         <img
             class="lazyload"
@@ -458,10 +458,10 @@ npc start
 </div>
         </div>
 <h2 id="fa-fa-feather-alt-后记"><i class="fa fa-feather-alt fa-fw"></i>&nbsp;后记</h2>
-<p>这款内网穿透工具的功能还是很丰富的，其他隧道模式可以参考<a href="https://ehang-io.github.io/nps" target="_blank" rel="noopener noreffer">官方文档</a>研究下。</p>
+<p>这款内网穿透工具的功能还是很丰富的，其他隧道模式可以参考<a href="https://ehang-io.github.io/nps/" target="_blank" rel="noopener noreffer">官方文档</a>研究下。</p>
 <div class="admonition info">
-            <p class="admonition-title"><i class="icon fas fa-info-circle"></i>信息</p>
-            <div class="admonition-content">本文首发于<a href="https://blog.233so.com/install-nps-on-qnap-nas" target="_blank" rel="noopener noreffer">我的博客</a></div>
+            <p class="admonition-title"><i class="icon fas fa-info-circle"></i>说明</p>
+            <div class="admonition-content">本文首发于<a href="https://blog.233so.com/install-nps-on-qnap-nas/" target="_blank" rel="noopener noreffer">我的博客</a></div>
         </div></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
@@ -488,7 +488,7 @@ npc start
     </div>
 
     <div class="post-nav"><a href="/install-hugo-on-qnap-nas/" class="prev" rel="prev" title="Hugo 篇一: 在威联通 NAS 上生成博客并部署 Pages 服务"><i class="fas fa-angle-left fa-fw"></i>Hugo 篇一: 在威联通 NAS 上生成博客并部署 Pages 服务</a>
-            <a href="/emoji-support/" class="next" rel="next" title="Emoji 支持">Emoji 支持<i class="fas fa-angle-right fa-fw"></i></a></div>
+            <a href="/intranet-penetration-with-pgyx1-or-ksa/" class="next" rel="next" title="威联通：内网穿透服务之蒲公英 X1 和 KSA">威联通：内网穿透服务之蒲公英 X1 和 KSA<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id="valine" class="comment"></div><script>
             document.addEventListener("DOMContentLoaded", function(event) {

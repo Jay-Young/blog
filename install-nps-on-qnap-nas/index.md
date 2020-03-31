@@ -9,7 +9,7 @@ nps 是一款轻量级、高性能、功能强大的内网穿透代理服务器�
 
 内网穿透解决方案有不少，开源的比如 nps、frp、lanproxy、ngrok 和 zerotier 等，现成的商业服务有贝锐科技提供的花生壳、蒲公英之类的产品。个人现在同时部署的有三款产品，nps、ksa（看雪论坛的服务）和蒲公英 X1。今天要介绍的是这款 nps，自带 web 管理界面，支持 p2p 连接，支持数据压缩传输。
 
-{{< admonition info "" false >}}
+{{< admonition info "说明" false >}}
 本文基于以下软硬件系统测试，不能完全保证其他系统的兼容性。
 
 - QNAP TS-453Bmini 2+8G 内存
@@ -42,9 +42,9 @@ nps 是一款轻量级、高性能、功能强大的内网穿透代理服务器�
 
 nps 分为服务端和客户端。服务端安装需要一台公有云服务器，比如白嫖的腾讯云、阿里云的学生主机。客户端使用分为两部分：被访问端和访问端，比如内网的 TS 453Bmini 即被访问端，在外使用的笔记本或者单位的台式机即访问端。
 
-项目地址：[https://github.com/ehang-io/nps](https://github.com/ehang-io/nps)
+项目地址：[https://github.com/ehang-io/nps](https://github.com/ehang-io/nps/)
 
-[release](https://github.com/ehang-io/nps/releases) 页面 TS 453Bmini 对应版本服务端和客户端。
+[release](https://github.com/ehang-io/nps/releases/) 页面 TS 453Bmini 对应版本服务端和客户端。
 
 {{< image src="https://i.loli.net/2020/03/24/hPjpzXRe7JOo6kc.png" title="客户端和服务端" >}}
 
@@ -194,9 +194,9 @@ npc nat -stun_addr=stun.stunprotocol.org:3478
 
 ## :(fa fa-feather-alt): 后记
 
-这款内网穿透工具的功能还是很丰富的，其他隧道模式可以参考[官方文档](https://ehang-io.github.io/nps)研究下。
+这款内网穿透工具的功能还是很丰富的，其他隧道模式可以参考[官方文档](https://ehang-io.github.io/nps/)研究下。
 
-{{< admonition info "" false >}}
-本文首发于[我的博客](https://blog.233so.com/install-nps-on-qnap-nas)
+{{< admonition info "说明" false >}}
+本文首发于[我的博客](https://blog.233so.com/install-nps-on-qnap-nas/)
 {{< /admonition >}}
 

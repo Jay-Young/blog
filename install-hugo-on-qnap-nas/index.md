@@ -26,7 +26,7 @@ Hugo 是一个用 Go 语言实现的静态博客系统生成工具。基于 Mark
 任何基于实机的操作都有可能造成 QTS 系统无法挽回的错误，除非你很明确知道这条命令要做什么。
 {{< /admonition >}}
 
-从 [Hugo](https://github.com/gohugoio/hugo/releases) 选择适合 TS-453Bmini 系统的 hugo_extended_0.67.1_Linux-64bit.tar.gz 下载到 NAS。
+从 [Hugo](https://github.com/gohugoio/hugo/releases/) 选择适合 TS-453Bmini 系统的 hugo_extended_0.67.1_Linux-64bit.tar.gz 下载到 NAS。
 
 `tar -zxvf hugo_extended_0.67.1_Linux-64bit.tar.gz`解压得到 hugo 二进制文件。
 
@@ -37,7 +37,7 @@ Hugo 是一个用 Go 语言实现的静态博客系统生成工具。基于 Mark
 `/lib/libstdc++.so.6: version `GLIBCXX_3.4.21' not found`
 {{< /admonition >}}
 
-查阅[相关资料](https://blog.csdn.net/phdsky/article/details/84104769)后发现，需要将`/share/CACHEDEV1_DATA/.qpkg/CodexPack/usr/lib/x86_64-linux-gnu/libstdc++.so.6`软链接到`/lib/libstdc++.so.6`，并将 hugo 加入 PATH 实现全局运行。
+查阅[相关资料](https://blog.csdn.net/phdsky/article/details/84104769/)后发现，需要将`/share/CACHEDEV1_DATA/.qpkg/CodexPack/usr/lib/x86_64-linux-gnu/libstdc++.so.6`软链接到`/lib/libstdc++.so.6`，并将 hugo 加入 PATH 实现全局运行。
 
 ```bash
 ln -sf /share/CACHEDEV1_DATA/.qpkg/CodexPack/usr/lib/x86_64-linux-gnu/libstdc++.so.6 /lib/libstdc++.so.6
@@ -52,7 +52,7 @@ ln -sf /your-hugo-path/hugo /usr/local/bin/hugo
 为避免长期运行失效，可以将上面的 shell 脚本加入开机启动和定时任务，具体请参考[另一篇博文](https://blog.233so.com/qnap-codeserver-self-host/)。
 
 {{< admonition note "" false >}}
-当然，你也可以选择我打包的 qpkg 安装包：[下载地址](https://www.lanzous.com/iaj4r4j)，密码:233so
+当然，你也可以选择我打包的 qpkg 安装包：[下载地址](https://www.lanzous.com/iaj4r4j/)，密码:233so
 {{< /admonition >}}
 
 ## :(fa fa-play-circle): 使用
@@ -164,7 +164,7 @@ LoveIt 是一个简洁、优雅且高效的 Hugo 博客主题。
 
 LoveIt 主题的仓库是: https://github.com/dillonzq/LoveIt
 
-你可以下载主题的 [最新版本 :(fa fa-file-archive): .zip 文件](https://github.com/dillonzq/LoveIt/releases) 并且解压放到 themes 目录。
+你可以下载主题的 [最新版本 :(fa fa-file-archive): .zip 文件](https://github.com/dillonzq/LoveIt/releases/) 并且解压放到 themes 目录。
 
 另外, 也可以直接把这个主题克隆到 themes 目录:
 
@@ -323,12 +323,12 @@ git push 项目名称
 ```
 
 {{< admonition note "" false >}}
-更多详细的 Git 信息：[https://help.coding.net/docs/host/git/installation.html](https://help.coding.net/docs/host/git/installation.html)
+更多详细的 Git 信息：[https://help.coding.net/docs/host/git/installation.html](https://help.coding.net/docs/host/git/installation.html/)
 {{< /admonition >}}
 
 输入 Coding 账户用户名和密码之后，如果没有显示错误信息就表示推送成功，可以通过`git status`查看是否`up to date`
 
-最后去 Coding 项目的构建与部署—静态网站发布。具体可参阅 Coding 官方文档：[如何搭建静态网站](https://help.coding.net/docs/devops/cd/static-website.html)
+最后去 Coding 项目的构建与部署—静态网站发布。具体可参阅 Coding 官方文档：[如何搭建静态网站](https://help.coding.net/docs/devops/cd/static-website.html/)
 
 {{< admonition tip "" false >}}
 网站内容可以通过 [Netlify](https://www.netlify.com/) 自动发布和托管 (了解有关[通过 Netlify 进行 HUGO 自动化部署](https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/) 的更多信息)。或者，您可以使用 [AWS Amplify](https://gohugo.io/hosting-and-deployment/hosting-on-aws-amplify/), [Github pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/), [Render](https://gohugo.io/hosting-and-deployment/hosting-on-render/) 以及更多…
@@ -339,9 +339,9 @@ git push 项目名称
 折腾博客其实并不是最重要的，最重要的是你有写博客的动力，希望自己能够坚持下去。
 
 本文部分内容引用来自：
-- [https://hugoloveit.com/zh-cn/theme-documentation-basics](https://hugoloveit.com/zh-cn/theme-documentation-basics)
-- [https://help.coding.net/docs/host/git/installation.html](https://help.coding.net/docs/host/git/installation.html)
+- [https://hugoloveit.com/zh-cn/theme-documentation-basics](https://hugoloveit.com/zh-cn/theme-documentation-basics/)
+- [https://help.coding.net/docs/host/git/installation.html](https://help.coding.net/docs/host/git/installation.html/)
 
-{{< admonition info "" false >}}
-本文首发于[我的博客](https://blog.233so.com/install-hugo-on-qnap-nas)
+{{< admonition info "说明" false >}}
+本文首发于[我的博客](https://blog.233so.com/install-hugo-on-qnap-nas/)
 {{< /admonition >}}

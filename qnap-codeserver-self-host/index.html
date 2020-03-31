@@ -50,7 +50,7 @@
                 "url": "https:\/\/blog.233so.com\/cover.png",
                 "width":  800 ,
                 "height":  600 
-            },"genre": "posts","keywords": "QNAP, vscode, 威联通, codeserver, NAS","wordcount":  1843 ,
+            },"genre": "posts","keywords": "QNAP, vscode, 威联通, codeserver, NAS","wordcount":  1847 ,
         "url": "https:\/\/blog.233so.com\/qnap-codeserver-self-host\/","datePublished": "2020-03-21","dateModified": "2020-03-21","publisher": {
                 "@type": "Organization",
                 "name": "Jay",
@@ -109,12 +109,12 @@
 </script>
 <main class="main">
                 <div class="container"><article class="page single"><h1 class="single-title animated flipInX">威联通：“私人定制”在线代码编辑器</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="https://weibo.com/jayyoung1" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Jay</a></span>&nbsp;
+            <div class="post-meta-line"><span class="post-author"><a href="https://weibo.com/jayyoung1/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Jay</a></span>&nbsp;
                     <span class="post-category">收录于<a href="/categories/nas">
                                 <i class="far fa-folder fa-fw"></i>Nas
                             </a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-03-21>2020-03-21</time>&nbsp;
-                <i class="fas fa-pencil-alt fa-fw"></i>约 1843 字&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 1847 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>预计阅读 4 分钟&nbsp;<span id="/qnap-codeserver-self-host/" class="leancloud_visitors" data-flag-title="威联通：“私人定制”在线代码编辑器">
                         <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
@@ -150,7 +150,7 @@
   </ul>
 </nav></div>
                 </details>
-            </div><div class="content" id="content"><p><a href="https://github.com/cdr/code-server" target="_blank" rel="noopener noreffer">code-server</a> 是基于微软 <a href="https://github.com/Microsoft/vscode" target="_blank" rel="noopener noreffer">Visual Studio Code</a> 项目打造的远程编辑器，可以运行在服务器，客户端通过浏览器访问即可使用。</p>
+            </div><div class="content" id="content"><p><a href="https://github.com/cdr/code-server/" target="_blank" rel="noopener noreffer">code-server</a> 是基于微软 <a href="https://github.com/Microsoft/vscode/" target="_blank" rel="noopener noreffer">Visual Studio Code</a> 项目打造的远程编辑器，可以运行在服务器，客户端通过浏览器访问即可使用。</p>
 <div class="admonition note">
             <p class="admonition-title"><i class="icon fas fa-pencil-alt"></i>更新</p>
             <div class="admonition-content">目前 code-server 已经发布 3.0 Pre-release，版本改动比较大，可以期待正式版。</div>
@@ -165,7 +165,7 @@
 <li>code-server 1.41.1 with chinese-language-pack 1.41.0</li>
 </ul></div>
         </div>
-<p>基于 docker 的 code-server 安装教程有很多，比如这一篇<a href="https://post.smzdm.com/p/aekz3q4q/" target="_blank" rel="noopener noreffer">群晖的安装</a>。打包好的镜像也有很多，官方的 <a href="https://hub.docker.com/r/codercom/code-server" target="_blank" rel="noopener noreffer">codercom/code-server</a>，第三方的比如 <a href="https://hub.docker.com/r/linuxserver/code-server" target="_blank" rel="noopener noreffer">linuxserver/code-server</a> 和 <a href="https://hub.docker.com/r/xiumu/code-server-zh-cn" target="_blank" rel="noopener noreffer">xiumu/code-server-zh-cn</a>。另外你也可以自己打包，容器的好处确实很多，即开即用，但是我的原则就是<del>能上实机就上实机，能瞎折腾就瞎折腾</del>。</p>
+<p>基于 docker 的 code-server 安装教程有很多，比如这一篇<a href="https://post.smzdm.com/p/aekz3q4q/" target="_blank" rel="noopener noreffer">群晖的安装</a>。打包好的镜像也有很多，官方的 <a href="https://hub.docker.com/r/codercom/code-server/" target="_blank" rel="noopener noreffer">codercom/code-server</a>，第三方的比如 <a href="https://hub.docker.com/r/linuxserver/code-server/" target="_blank" rel="noopener noreffer">linuxserver/code-server</a> 和 <a href="https://hub.docker.com/r/xiumu/code-server-zh-cn/" target="_blank" rel="noopener noreffer">xiumu/code-server-zh-cn</a>。另外你也可以自己打包，容器的好处确实很多，即开即用，但是我的原则就是<del>能上实机就上实机，能瞎折腾就瞎折腾</del>。</p>
 <p>废话不多说，直接开始！</p>
 <h2 id="fa-fa-terminal-安装"><i class="fa fa-terminal fa-fw"></i>&nbsp;安装</h2>
 <div class="admonition warning">
@@ -173,9 +173,9 @@
             <div class="admonition-content">任何基于实机的操作都有可能造成 QTS 系统无法挽回的错误，除非你很明确知道这条命令要做什么。</div>
         </div>
 <h3 id="fa-fa-download-下载并安装中文语言包"><i class="fa fa-download fa-fw"></i>&nbsp;下载并安装中文语言包</h3>
-<p>从 <a href="https://github.com/cdr/code-server/releases" target="_blank" rel="noopener noreffer">code-server</a> 项目的 Release 页面根据你的机型选择 linux-arm64 或者 linux-x86_64 下载下来，解压到 NAS 上，注意 code-server 这个文件就是我们所需的已经编译好的程序文件。</p>
-<p>SSH 连接到 NAS 系统，切换到 code-server 所在目录。<a href="https://jingyan.baidu.com/article/4d58d541fe487eddd4e9c0f6.html" target="_blank" rel="noopener noreffer">如何开启 SSH</a></p>
-<p>首先我们先安装中文语言包插件，从 <a href="https://marketplace.visualstudio.com" target="_blank" rel="noopener noreffer">vscode官方市场</a> 下载适配的中文语言包。目前 code-server 最新的版本是 1.41.1，我测试了 1.41.0 版本的中文语言包能够正常使用，通过浏览器抓包（F12）得到下载地址，替换相应的版本号即可构造需要版本的地址。</p>
+<p>从 <a href="https://github.com/cdr/code-server/releases/" target="_blank" rel="noopener noreffer">code-server</a> 项目的 Release 页面根据你的机型选择 linux-arm64 或者 linux-x86_64 下载下来，解压到 NAS 上，注意 code-server 这个文件就是我们所需的已经编译好的程序文件。</p>
+<p>SSH 连接到 NAS 系统，切换到 code-server 所在目录。<a href="https://jingyan.baidu.com/article/4d58d541fe487eddd4e9c0f6.html/" target="_blank" rel="noopener noreffer">如何开启 SSH</a></p>
+<p>首先我们先安装中文语言包插件，从 <a href="https://marketplace.visualstudio.com/" target="_blank" rel="noopener noreffer">vscode官方市场</a> 下载适配的中文语言包。目前 code-server 最新的版本是 1.41.1，我测试了 1.41.0 版本的中文语言包能够正常使用，通过浏览器抓包（F12）得到下载地址，替换相应的版本号即可构造需要版本的地址。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -246,6 +246,8 @@
 </span><span class="lnt">25
 </span><span class="lnt">26
 </span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/sh
@@ -275,6 +277,8 @@
     <span class="nb">echo</span> <span class="s2">&#34;Usage: </span><span class="nv">$0</span><span class="s2"> {start|stop|restart}&#34;</span>
     <span class="nb">exit</span> <span class="m">1</span>
 <span class="k">esac</span>
+
+<span class="nb">exit</span> <span class="m">0</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>本来想通过修改 daemon_mgr.conf 守护进程配置文件加入后台，发现重启 NAS 后会丢失用户修改的内容，还是只能通过计划任务和开机启动脚本来实现稳定运行。</p>
@@ -287,8 +291,8 @@
 <pre class="chroma"><code class="language-bash" data-lang="bash"><span class="m">0</span> <span class="m">0</span> * * * /&lt;your-shell-script-path&gt;/&lt;you-shell-script&gt; restart <span class="p">&amp;</span>&gt;/dev/null
 </code></pre></td></tr></table>
 </div>
-</div><p>crontab 命令编写可以参考<a href="https://www.runoob.com/linux/linux-comm-crontab.html" target="_blank" rel="noopener noreffer">此处</a></p>
-<p>QTS 自带也有 autorun.sh 开机脚本管理，虽然重启 NAS 不会丢失，但是 QTS 系统升级后会丢失，所以推荐安装<a href="https://www.qnapclub.eu/en/qpkg/232" target="_blank" rel="noopener noreffer">第三方商店</a>里的 BashIT 来管理。想要做到完美可以用 QDK 打包成 qpkg 安装。</p>
+</div><p>crontab 命令编写可以参考<a href="https://www.runoob.com/linux/linux-comm-crontab.html/" target="_blank" rel="noopener noreffer">此处</a></p>
+<p>QTS 自带也有 autorun.sh 开机脚本管理，虽然重启 NAS 不会丢失，但是 QTS 系统升级后会丢失，所以推荐安装<a href="https://www.qnapclub.eu/en/qpkg/232/" target="_blank" rel="noopener noreffer">第三方商店</a>里的 BashIT 来管理。想要做到完美可以用 QDK 打包成 qpkg 安装。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -315,7 +319,7 @@
             <div class="admonition-content"><a href="https://github.com/cdr/code-server/issues">https://github.com/cdr/code-server/issues</a></div>
         </div>
 <p>本文只是介绍编辑器的安装，不是集成开发环境的 IDE 的部署，所以能不能兼容大多数开发环境就不清楚了。</p>
-<p>威联通在B站有个比较惨的官方号，没事可以关注，也许能获得有用的信息，<a href="https://space.bilibili.com/351726918" target="_blank" rel="noopener noreffer">传送门</a>。</p>
+<p>威联通在B站有个比较惨的官方号，没事可以关注，也许能获得有用的信息，<a href="https://space.bilibili.com/351726918/" target="_blank" rel="noopener noreffer">传送门</a>。</p>
 <div class="admonition info">
             <p class="admonition-title"><i class="icon fas fa-info-circle"></i>说明</p>
             <div class="admonition-content">本文首发于<a href="https://post.smzdm.com/p/awx03zpp/" target="_blank" rel="noopener noreffer">什么值得买平台</a></div>

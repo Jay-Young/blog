@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Jay - My blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 24 Mar 2020 15:55:51 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2020 16:28:47 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.233so.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -48,6 +48,15 @@
     </item>
     
     <item>
+      <title>威联通：内网穿透服务之蒲公英 X1 和 KSA</title>
+      <link>https://blog.233so.com/intranet-penetration-with-pgyx1-or-ksa/</link>
+      <pubDate>Fri, 27 Mar 2020 16:28:47 +0800</pubDate>
+      
+      <guid>https://blog.233so.com/intranet-penetration-with-pgyx1-or-ksa/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://blog.233so.com/install-nps-on-qnap-nas/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;上一篇&lt;/a&gt;博文介绍了 nps 内网穿透服务，虽然拥有 Web 配置界面，但对于新手来说可能还是略显不友好，毕竟也还需要拥有一台公网服务器。那么今天要介绍的两款产品或者说服务绝对算得上是开箱即用，老少皆宜。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>威联通：内网穿透解决方案之自建NPS服务</title>
       <link>https://blog.233so.com/install-nps-on-qnap-nas/</link>
       <pubDate>Tue, 24 Mar 2020 15:55:51 +0800</pubDate>
@@ -71,7 +80,7 @@
       <pubDate>Sat, 21 Mar 2020 15:39:58 +0800</pubDate>
       
       <guid>https://blog.233so.com/qnap-codeserver-self-host/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/cdr/code-server&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;code-server&lt;/a&gt; 是基于微软 &lt;a href=&#34;https://github.com/Microsoft/vscode&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Visual Studio Code&lt;/a&gt; 项目打造的远程编辑器，可以运行在服务器，客户端通过浏览器访问即可使用。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/cdr/code-server/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;code-server&lt;/a&gt; 是基于微软 &lt;a href=&#34;https://github.com/Microsoft/vscode/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Visual Studio Code&lt;/a&gt; 项目打造的远程编辑器，可以运行在服务器，客户端通过浏览器访问即可使用。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -80,7 +89,7 @@
       <pubDate>Fri, 20 Mar 2020 22:42:34 +0800</pubDate>
       
       <guid>https://blog.233so.com/install-edge-extensions-via-registry/</guid>
-      <description>&lt;p&gt;新 &lt;a href=&#34;https://www.microsoft.com/zh-cn/edge&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Microsoft Edge&lt;/a&gt; 浏览器基于 Google 的开源项目 &lt;a href=&#34;https://github.com/chromium/chromium&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Chromium&lt;/a&gt; ，针对 Windows 10 进行优化。一个微软账号，跨平台同步，和 Chrome 扩展通用，官方扩展商店也越来越完善。&lt;/p&gt;</description>
+      <description>&lt;p&gt;新 &lt;a href=&#34;https://www.microsoft.com/zh-cn/edge/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Microsoft Edge&lt;/a&gt; 浏览器基于 Google 的开源项目 &lt;a href=&#34;https://github.com/chromium/chromium/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Chromium&lt;/a&gt; ，针对 Windows 10 进行优化。一个微软账号，跨平台同步，和 Chrome 扩展通用，官方扩展商店也越来越完善。&lt;/p&gt;</description>
     </item>
     
   </channel>

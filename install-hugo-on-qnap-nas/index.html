@@ -109,7 +109,7 @@
 </script>
 <main class="main">
                 <div class="container"><article class="page single"><h1 class="single-title animated flipInX">Hugo 篇一: 在威联通 NAS 上生成博客并部署 Pages 服务</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="https://weibo.com/jayyoung1" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Jay</a></span>&nbsp;
+            <div class="post-meta-line"><span class="post-author"><a href="https://weibo.com/jayyoung1/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Jay</a></span>&nbsp;
                     <span class="post-category">收录于<a href="/categories/hugo">
                                 <i class="far fa-folder fa-fw"></i>Hugo
                             </a></span></div>
@@ -154,7 +154,7 @@
   </ul>
 </nav></div>
                 </details>
-            </div><div class="content" id="content"><div class="typeit"><div id="id-3880e0" class=""></div></div>
+            </div><div class="content" id="content"><div class="typeit"><div id="id-b8104e" class=""></div></div>
 
 <h2 id="fa-fa-comment-dots-前言"><i class="fa fa-comment-dots fa-fw"></i>&nbsp;前言</h2>
 <p>静态博客系统有很多，为什么选择 Hugo 呢？</p>
@@ -179,7 +179,7 @@
             <p class="admonition-title"><i class="icon fas fa-exclamation-triangle"></i>警告</p>
             <div class="admonition-content">任何基于实机的操作都有可能造成 QTS 系统无法挽回的错误，除非你很明确知道这条命令要做什么。</div>
         </div>
-<p>从 <a href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener noreffer">Hugo</a> 选择适合 TS-453Bmini 系统的 hugo_extended_0.67.1_Linux-64bit.tar.gz 下载到 NAS。</p>
+<p>从 <a href="https://github.com/gohugoio/hugo/releases/" target="_blank" rel="noopener noreffer">Hugo</a> 选择适合 TS-453Bmini 系统的 hugo_extended_0.67.1_Linux-64bit.tar.gz 下载到 NAS。</p>
 <p><code>tar -zxvf hugo_extended_0.67.1_Linux-64bit.tar.gz</code>解压得到 hugo 二进制文件。</p>
 <p>将 hugo 复制到自己认为合适的目录，并以<code>chmod +x hugo</code>命令赋予可执行权限。</p>
 <p>此时通过 hugo help 测试运行发现会报错
@@ -187,7 +187,7 @@
             <p class="admonition-title"><i class="icon fas fa-times-circle"></i>错误</p>
             <div class="admonition-content"><code>/lib/libstdc++.so.6: version </code>GLIBCXX_3.4.21&rsquo; not found`</div>
         </div></p>
-<p>查阅<a href="https://blog.csdn.net/phdsky/article/details/84104769" target="_blank" rel="noopener noreffer">相关资料</a>后发现，需要将<code>/share/CACHEDEV1_DATA/.qpkg/CodexPack/usr/lib/x86_64-linux-gnu/libstdc++.so.6</code>软链接到<code>/lib/libstdc++.so.6</code>，并将 hugo 加入 PATH 实现全局运行。</p>
+<p>查阅<a href="https://blog.csdn.net/phdsky/article/details/84104769/" target="_blank" rel="noopener noreffer">相关资料</a>后发现，需要将<code>/share/CACHEDEV1_DATA/.qpkg/CodexPack/usr/lib/x86_64-linux-gnu/libstdc++.so.6</code>软链接到<code>/lib/libstdc++.so.6</code>，并将 hugo 加入 PATH 实现全局运行。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -208,7 +208,7 @@ ln -sf /your-hugo-path/hugo /usr/local/bin/hugo
 <p>为避免长期运行失效，可以将上面的 shell 脚本加入开机启动和定时任务，具体请参考<a href="https://blog.233so.com/qnap-codeserver-self-host/" target="_blank" rel="noopener noreffer">另一篇博文</a>。</p>
 <div class="admonition note">
             <p class="admonition-title"><i class="icon fas fa-pencil-alt"></i>注意</p>
-            <div class="admonition-content">当然，你也可以选择我打包的 qpkg 安装包：<a href="https://www.lanzous.com/iaj4r4j" target="_blank" rel="noopener noreffer">下载地址</a>，密码:233so</div>
+            <div class="admonition-content">当然，你也可以选择我打包的 qpkg 安装包：<a href="https://www.lanzous.com/iaj4r4j/" target="_blank" rel="noopener noreffer">下载地址</a>，密码:233so</div>
         </div>
 <h2 id="fa-fa-play-circle-使用"><i class="fa fa-play-circle fa-fw"></i>&nbsp;使用</h2>
 <p>如果使用<code>hugo help</code>测试运行返回如下信息，则说明 Hugo 已经成功安装。</p>
@@ -399,7 +399,7 @@ ls
 <p>LoveIt 是一个简洁、优雅且高效的 Hugo 博客主题。</p>
 <p>它的原型基于 LeaveIt 主题 和 KeepIt 主题。</p>
 <p>LoveIt 主题的仓库是: <a href="https://github.com/dillonzq/LoveIt">https://github.com/dillonzq/LoveIt</a></p>
-<p>你可以下载主题的 <a href="https://github.com/dillonzq/LoveIt/releases" target="_blank" rel="noopener noreffer">最新版本 <i class="fa fa-file-archive fa-fw"></i>&nbsp;.zip 文件</a> 并且解压放到 themes 目录。</p>
+<p>你可以下载主题的 <a href="https://github.com/dillonzq/LoveIt/releases/" target="_blank" rel="noopener noreffer">最新版本 <i class="fa fa-file-archive fa-fw"></i>&nbsp;.zip 文件</a> 并且解压放到 themes 目录。</p>
 <p>另外, 也可以直接把这个主题克隆到 themes 目录:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -635,10 +635,10 @@ git push 项目名称
 </div>
 </div><div class="admonition note">
             <p class="admonition-title"><i class="icon fas fa-pencil-alt"></i>注意</p>
-            <div class="admonition-content">更多详细的 Git 信息：<a href="https://help.coding.net/docs/host/git/installation.html" target="_blank" rel="noopener noreffer">https://help.coding.net/docs/host/git/installation.html</a></div>
+            <div class="admonition-content">更多详细的 Git 信息：<a href="https://help.coding.net/docs/host/git/installation.html/" target="_blank" rel="noopener noreffer">https://help.coding.net/docs/host/git/installation.html</a></div>
         </div>
 <p>输入 Coding 账户用户名和密码之后，如果没有显示错误信息就表示推送成功，可以通过<code>git status</code>查看是否<code>up to date</code></p>
-<p>最后去 Coding 项目的构建与部署—静态网站发布。具体可参阅 Coding 官方文档：<a href="https://help.coding.net/docs/devops/cd/static-website.html" target="_blank" rel="noopener noreffer">如何搭建静态网站</a></p>
+<p>最后去 Coding 项目的构建与部署—静态网站发布。具体可参阅 Coding 官方文档：<a href="https://help.coding.net/docs/devops/cd/static-website.html/" target="_blank" rel="noopener noreffer">如何搭建静态网站</a></p>
 <div class="admonition tip">
             <p class="admonition-title"><i class="icon fas fa-lightbulb"></i>技巧</p>
             <div class="admonition-content">网站内容可以通过 <a href="https://www.netlify.com/" target="_blank" rel="noopener noreffer">Netlify</a> 自动发布和托管 (了解有关<a href="https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/" target="_blank" rel="noopener noreffer">通过 Netlify 进行 HUGO 自动化部署</a> 的更多信息)。或者，您可以使用 <a href="https://gohugo.io/hosting-and-deployment/hosting-on-aws-amplify/" target="_blank" rel="noopener noreffer">AWS Amplify</a>, <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/" target="_blank" rel="noopener noreffer">Github pages</a>, <a href="https://gohugo.io/hosting-and-deployment/hosting-on-render/" target="_blank" rel="noopener noreffer">Render</a> 以及更多…</div>
@@ -647,12 +647,12 @@ git push 项目名称
 <p>折腾博客其实并不是最重要的，最重要的是你有写博客的动力，希望自己能够坚持下去。</p>
 <p>本文部分内容引用来自：</p>
 <ul>
-<li><a href="https://hugoloveit.com/zh-cn/theme-documentation-basics" target="_blank" rel="noopener noreffer">https://hugoloveit.com/zh-cn/theme-documentation-basics</a></li>
-<li><a href="https://help.coding.net/docs/host/git/installation.html" target="_blank" rel="noopener noreffer">https://help.coding.net/docs/host/git/installation.html</a></li>
+<li><a href="https://hugoloveit.com/zh-cn/theme-documentation-basics/" target="_blank" rel="noopener noreffer">https://hugoloveit.com/zh-cn/theme-documentation-basics</a></li>
+<li><a href="https://help.coding.net/docs/host/git/installation.html/" target="_blank" rel="noopener noreffer">https://help.coding.net/docs/host/git/installation.html</a></li>
 </ul>
 <div class="admonition info">
-            <p class="admonition-title"><i class="icon fas fa-info-circle"></i>信息</p>
-            <div class="admonition-content">本文首发于<a href="https://blog.233so.com/install-hugo-on-qnap-nas" target="_blank" rel="noopener noreffer">我的博客</a></div>
+            <p class="admonition-title"><i class="icon fas fa-info-circle"></i>说明</p>
+            <div class="admonition-content">本文首发于<a href="https://blog.233so.com/install-hugo-on-qnap-nas/" target="_blank" rel="noopener noreffer">我的博客</a></div>
         </div>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
@@ -721,7 +721,7 @@ git push 项目名称
             });
         });
     </script><script>
-        window.typeitArr = [["id-3880e0"]];
+        window.typeitArr = [["id-b8104e"]];
     </script><script>
         document.addEventListener('DOMContentLoaded', function () {
             renderMathInElement(document.body, {
@@ -733,7 +733,7 @@ git push 项目名称
             });
         });
     </script><script>
-        window.contentMap = {"id-3880e0":"Hugo 是一个用 Go 语言实现的静态博客系统生成工具。基于 Markdown 撰写博文，不改变你已有的习惯，拥有快速部署、简单易用、主题丰富、易扩展等特点。你可以在任何地方启动 Hugo，实现毫秒级渲染。"};
+        window.contentMap = {"id-b8104e":"Hugo 是一个用 Go 语言实现的静态博客系统生成工具。基于 Markdown 撰写博文，不改变你已有的习惯，拥有快速部署、简单易用、主题丰富、易扩展等特点。你可以在任何地方启动 Hugo，实现毫秒级渲染。"};
     </script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css"><link rel="stylesheet" href="/lib/valine/valine.css"><script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script><script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.2/dist/smooth-scroll.polyfills.min.js"></script><script src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/js/lightgallery.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sachinchoolur/lg-thumbnail.js@1.1.0/dist/lg-thumbnail.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sachinchoolur/lg-zoom.js@1.0.1/dist/lg-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/typeit@6.5.1/dist/typeit.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js"></script><script src="/js/theme.min.js"></script>
     <div id="ex1" class="modal">
         <div class="aa-input-container" id="aa-input-container">
