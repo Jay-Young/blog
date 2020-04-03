@@ -1,4 +1,4 @@
-# Hugo 篇一: 在威联通 NAS 上生成博客并部署 Pages 服务
+# Hugo 篇一：在威联通 NAS 上生成博客并部署 Pages 服务
 
 
 {{< typeit >}}
