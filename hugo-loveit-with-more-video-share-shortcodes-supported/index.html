@@ -50,7 +50,7 @@
                 "url": "https:\/\/blog.233so.com\/cover.png",
                 "width":  800 ,
                 "height":  600 
-            },"genre": "posts","keywords": "Hugo, shortcodes, 腾讯视频, 爱奇艺, 优酷","wordcount":  1125 ,
+            },"genre": "posts","keywords": "Hugo, shortcodes, 腾讯视频, 爱奇艺, 优酷","wordcount":  1218 ,
         "url": "https:\/\/blog.233so.com\/hugo-loveit-with-more-video-share-shortcodes-supported\/","datePublished": "2020-04-02","dateModified": "2020-04-02","publisher": {
                 "@type": "Organization",
                 "name": "Jay",
@@ -114,7 +114,7 @@
                                 <i class="far fa-folder fa-fw"></i>Hugo
                             </a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-04-02>2020-04-02</time>&nbsp;
-                <i class="fas fa-pencil-alt fa-fw"></i>约 1125 字&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 1218 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>预计阅读 3 分钟&nbsp;<span id="/hugo-loveit-with-more-video-share-shortcodes-supported/" class="leancloud_visitors" data-flag-title="Hugo 篇二：为 LoveIt 主题添加更多视频分享 shortcodes">
                         <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
@@ -335,11 +335,45 @@ themes/LoveIt/assets/css/_page/_single.scss
 <h2 id="fa-fa-feather-alt-后记"><i class="fa fa-feather-alt fa-fw"></i>&nbsp;后记</h2>
 <p>在寻找各视频网站官方分享链接的过程中，意外发现了 <strong>TGideas</strong> 这个团队的内容，作为一个小白感觉就像在沙漠中找到了一片绿洲。</p>
 <ul>
-<li><a href="https://tgideas.qq.com/doc/index.html">https://tgideas.qq.com/doc/index.html</a></li>
-<li><a href="https://tgideas.qq.com/intro.html">https://tgideas.qq.com/intro.html</a></li>
+<li><a href="https://tgideas.qq.com/doc/index.html" target="_blank" rel="noopener noreffer">https://tgideas.qq.com/doc/index.html</a></li>
+<li><a href="https://tgideas.qq.com/intro.html" target="_blank" rel="noopener noreffer">https://tgideas.qq.com/intro.html</a></li>
 </ul>
 <p>如果需要更多视频网站 <code>shortcodes</code> 的成品的话，可以去我 fork 的<a href="https://github.com/Jay-Young/LoveIt" target="_blank" rel="noopener noreffer">项目地址</a>，切换到 <code>develop</code> 分支查看。目前支持 <strong>爱奇艺</strong>，<strong>腾讯视频</strong>，<strong>优酷</strong>，<strong>搜狐视频</strong>，<strong>Acfun</strong>。</p>
-<p>0202年还在使用 flash 技术的视频网站，祝你们新年快乐。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">爱奇艺和搜狐不能直接用播放页面地址的视频 id，使用页面的分享按钮获取完整 iframe 地址
+爱奇艺是 tvid 部分，搜狐是 bid 部分。
+
+用法示例：
+
+{{&lt; iqiyi 3060730600 &gt;}}
+
+{{&lt; qqvideo r0029muuhfj &gt;}}
+
+{{&lt; youku XMzk1NjM1MjAw &gt;}}
+
+{{&lt; sohu 90742150 &gt;}}
+
+{{&lt; acfun ac14349183 &gt;}}
+</code></pre></td></tr></table>
+</div>
+</div><p>0202年还在使用 flash 技术的视频网站，祝你们新年快乐。</p>
 <div class="admonition info">
             <p class="admonition-title"><i class="icon fas fa-info-circle"></i>说明</p>
             <div class="admonition-content">本文首发于<a href="https://blog.233so.com/hugo-loveit-with-more-video-share-shortcodes-supported/" target="_blank" rel="noopener noreffer">我的博客</a></div>
@@ -419,7 +453,7 @@ themes/LoveIt/assets/css/_page/_single.scss
                 strict: false,
             });
         });
-    </script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css"><link rel="stylesheet" href="/lib/valine/valine.css"><script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script><script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.2/dist/smooth-scroll.polyfills.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Jay-Young/blog@latest/lib/sharer/sharer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/js/lightgallery.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sachinchoolur/lg-thumbnail.js@1.1.0/dist/lg-thumbnail.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sachinchoolur/lg-zoom.js@1.0.1/dist/lg-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js"></script><script src="/js/theme.min.js"></script>
+    </script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css"><link rel="stylesheet" href="/lib/valine/valine.css"><script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script><script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.2/dist/smooth-scroll.polyfills.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/js/lightgallery.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sachinchoolur/lg-thumbnail.js@1.1.0/dist/lg-thumbnail.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sachinchoolur/lg-zoom.js@1.0.1/dist/lg-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/js/theme.min.js"></script>
     <div id="ex1" class="modal">
         <div class="aa-input-container" id="aa-input-container">
     <input type="search" id="aa-search-input" class="aa-input-search" placeholder="搜索标题或内容..." name="search" autocomplete="off" />

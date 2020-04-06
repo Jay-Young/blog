@@ -126,10 +126,27 @@ player.bilibili.com/player.html?aid=[av号]&page=[分p号]
 
 在寻找各视频网站官方分享链接的过程中，意外发现了 **TGideas** 这个团队的内容，作为一个小白感觉就像在沙漠中找到了一片绿洲。
 
-- https://tgideas.qq.com/doc/index.html
-- https://tgideas.qq.com/intro.html
+- [https://tgideas.qq.com/doc/index.html](https://tgideas.qq.com/doc/index.html)
+- [https://tgideas.qq.com/intro.html](https://tgideas.qq.com/intro.html)
 
 如果需要更多视频网站 `shortcodes` 的成品的话，可以去我 fork 的[项目地址](https://github.com/Jay-Young/LoveIt)，切换到 `develop` 分支查看。目前支持 **爱奇艺**，**腾讯视频**，**优酷**，**搜狐视频**，**Acfun**。
+
+```markdown
+爱奇艺和搜狐不能直接用播放页面地址的视频 id，使用页面的分享按钮获取完整 iframe 地址
+爱奇艺是 tvid 部分，搜狐是 bid 部分。
+
+用法示例：
+
+{{</* iqiyi 3060730600 */>}}
+
+{{</* qqvideo r0029muuhfj */>}}
+
+{{</* youku XMzk1NjM1MjAw */>}}
+
+{{</* sohu 90742150 */>}}
+
+{{</* acfun ac14349183 */>}}
+```
 
 0202年还在使用 flash 技术的视频网站，祝你们新年快乐。
 
