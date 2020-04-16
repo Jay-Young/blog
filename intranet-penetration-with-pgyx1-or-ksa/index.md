@@ -58,13 +58,13 @@ KAS 是安全社区[看雪论坛](https://ksa.kanxue.com/)开发的一款内网�
 
 双击运行可执行文件 ksa_win.exe，左半部分KSA服务端已经默认生成好 KSA ID 和密码，记住这个 KSA ID 和密码即可。点击**启动服务**开始运行服务端：
 
-{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/01.PNG" title="Windows 客户端" >}}
+{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/01.png" title="Windows 客户端" >}}
 
 ### :computer: MacOS
 
 与 Windows 类似，左侧是服务端，右侧是客户端，右侧的“远程接入到KSA服务端”中输入 KSA ID 和密码，点击“接入服务端”即可。接入成功后如下图所示：
 
-{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/02.PNG" title="MacOS 客户端" >}}
+{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/02.png" title="MacOS 客户端" >}}
 
 ### :computer: Linux
 
