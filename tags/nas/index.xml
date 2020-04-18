@@ -6,10 +6,19 @@
     <description>Recent content in NAS on Jay - My blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 21 Mar 2020 18:27:28 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2020 11:26:01 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.233so.com/tags/nas/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>威联通：升级 Code Server 编辑器 3.x</title>
+      <link>https://blog.233so.com/upgrade-code-server-to-v3/</link>
+      <pubDate>Fri, 17 Apr 2020 11:26:01 +0800</pubDate>
+      
+      <guid>https://blog.233so.com/upgrade-code-server-to-v3/</guid>
+      <description>&lt;p&gt;Code Server 3.x 版本发布也有几周了，最新版本 3.1.1 看起来应该可用度比较高了，于是就打算升级了。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Hugo 篇一：在威联通 NAS 上生成博客并部署 Pages 服务</title>

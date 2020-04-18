@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Jay - My blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 14 Apr 2020 14:19:28 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2020 11:26:01 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.233so.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -45,6 +45,15 @@
       
       <guid>https://blog.233so.com/emoji-support/</guid>
       <description>&lt;p&gt;Emoji 可以通过多种方式在 Hugo 项目中启用.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>威联通：升级 Code Server 编辑器 3.x</title>
+      <link>https://blog.233so.com/upgrade-code-server-to-v3/</link>
+      <pubDate>Fri, 17 Apr 2020 11:26:01 +0800</pubDate>
+      
+      <guid>https://blog.233so.com/upgrade-code-server-to-v3/</guid>
+      <description>&lt;p&gt;Code Server 3.x 版本发布也有几周了，最新版本 3.1.1 看起来应该可用度比较高了，于是就打算升级了。&lt;/p&gt;</description>
     </item>
     
     <item>

@@ -1,0 +1,1 @@
+console.log("%c ","background:url(https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/cache/Konachan.com%20-%20305021%20sample.jpg) no-repeat center;background-size:cover;padding-left:100%;padding-bottom:55%;overflow:hidden;border-radius:10px;margin:5px 0");
