@@ -202,6 +202,6 @@ qbuild
 ![屏幕截图(9).png](https://i.loli.net/2020/04/18/zCayub6Y5P4IH1E.png)
 
 {{< admonition info "说明" false >}}
-本文首发于[我的博客](https://blog.233so.com/upgrade-code-server-to-V3/)
+本文首发于[我的博客](https://blog.233so.com/upgrade-code-server-to-v3/)
 {{< /admonition >}}
 

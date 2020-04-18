@@ -6,10 +6,19 @@
     <description>Recent content in Nas on Jay - My blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 17 Apr 2020 11:26:01 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2020 00:25:02 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.233so.com/categories/nas/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>解决华硕路由器 CPU 核心占用 100% 问题的崎岖之路</title>
+      <link>https://blog.233so.com/asus-router-cpu-high-occupancy-fixed/</link>
+      <pubDate>Sun, 19 Apr 2020 00:25:02 +0800</pubDate>
+      
+      <guid>https://blog.233so.com/asus-router-cpu-high-occupancy-fixed/</guid>
+      <description>今天手机正愉快地刷着 B 站，突然发现视频卡顿，于是到电脑上打开网页测试发现 DNS 解析有问题了，解析时好时坏，就像乌龟一样。 跑到路由器里一看 CPU 其中一</description>
+    </item>
     
     <item>
       <title>威联通：升级 Code Server 编辑器 3.x</title>
