@@ -37,7 +37,7 @@
                 "url": "https:\/\/blog.233so.com\/cover.png",
                 "width":  800 ,
                 "height":  600 
-            },"genre": "posts","keywords": "威联通, QNAP, Code Server, NAS, VS Code","wordcount":  1587 ,
+            },"genre": "posts","keywords": "威联通, QNAP, Code Server, NAS, VS Code","wordcount":  1582 ,
         "url": "https:\/\/blog.233so.com\/upgrade-code-server-to-v3\/","datePublished": "2020-04-17","dateModified": "2020-04-17","publisher": {
                 "@type": "Organization",
                 "name": "Jay",
@@ -125,7 +125,7 @@
                                 <i class="far fa-folder fa-fw"></i>Nas
                             </a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-04-17>2020-04-17</time>&nbsp;
-                <i class="fas fa-pencil-alt fa-fw"></i>约 1587 字&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 1582 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>预计阅读 4 分钟&nbsp;<span id="/upgrade-code-server-to-v3/" class="leancloud_visitors" data-flag-title="威联通：升级 Code Server 编辑器 3.x">
                         <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
@@ -212,7 +212,7 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">qbuild -V
-# 返回信息：qbuild 2.3.3 表示安装成功
+# 返回信息：qbuild 2.3.10 表示安装成功
 </code></pre></td></tr></table>
 </div>
 </div><p>创建项目，名字随便取，比如 codeserver：</p>
@@ -221,10 +221,10 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">qbuild --create-env &lt;project name&gt;
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">qbuild --create-env codeserver
 </code></pre></td></tr></table>
 </div>
-</div><p>查看 test 目录文件结果如下：</p>
+</div><p>查看 codeserver 目录文件结果如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -256,7 +256,7 @@
 ├─config
 ├─icons
 ├─shared
-│ test.sh
+│ codeserver.sh
 │
 ├─x86
 ├─x86_64
@@ -270,7 +270,7 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">cd test
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">cd codeserver
 rm -rf ./arm* &amp; rm -rf ./x86* &amp; rm -rf ./config
 </code></pre></td></tr></table>
 </div>
@@ -348,7 +348,7 @@ cp -rf &lt;code-server目录绝对路径&gt;/* ./shared/bin
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">vi ./shared/&lt;project name&gt;.sh
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">vi ./shared/codeserver.sh
 </code></pre></td></tr></table>
 </div>
 </div><details class="admonition info">
@@ -441,9 +441,9 @@ cp -rf &lt;code-server目录绝对路径&gt;/* ./shared/bin
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-markdown" data-lang="markdown">&lt;project name&gt;.gif 64×64 px 彩色
-&lt;project name&gt;_80.gif 80×80 px 彩色
-&lt;project name&gt;_gray.gif 64×64 px 灰色 App Center 未启用状态时显示
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">codeserver.gif 64×64 px 彩色
+codeserver_80.gif 80×80 px 彩色
+codeserver_gray.gif 64×64 px 灰色 App Center 未启用状态时显示
 </code></pre></td></tr></table>
 </div>
 </div><p>在项目根目录运行下面的命令构建安装包，完成后从 <code>App Center</code> 手动安装即可：</p>
@@ -460,18 +460,18 @@ cp -rf &lt;code-server目录绝对路径&gt;/* ./shared/bin
         class="lazyload"
         src="/svg/loading.small.min.svg"
         data-sizes="auto"
-        data-srcset="https://i.loli.net/2020/04/18/AVm6nX9p4g8rCNH.png, https://i.loli.net/2020/04/18/AVm6nX9p4g8rCNH.png 1.5x, https://i.loli.net/2020/04/18/AVm6nX9p4g8rCNH.png 2x"
-        data-src="https://i.loli.net/2020/04/18/AVm6nX9p4g8rCNH.png"
-        alt="企业微信截图_20200417110813.png"
-        title="企业微信截图_20200417110813.png" /></p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.small.min.svg"
-        data-sizes="auto"
         data-srcset="https://i.loli.net/2020/04/18/zCayub6Y5P4IH1E.png, https://i.loli.net/2020/04/18/zCayub6Y5P4IH1E.png 1.5x, https://i.loli.net/2020/04/18/zCayub6Y5P4IH1E.png 2x"
         data-src="https://i.loli.net/2020/04/18/zCayub6Y5P4IH1E.png"
         alt="屏幕截图(9).png"
         title="屏幕截图(9).png" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.small.min.svg"
+        data-sizes="auto"
+        data-srcset="https://i.loli.net/2020/04/18/AVm6nX9p4g8rCNH.png, https://i.loli.net/2020/04/18/AVm6nX9p4g8rCNH.png 1.5x, https://i.loli.net/2020/04/18/AVm6nX9p4g8rCNH.png 2x"
+        data-src="https://i.loli.net/2020/04/18/AVm6nX9p4g8rCNH.png"
+        alt="企业微信截图_20200417110813.png"
+        title="企业微信截图_20200417110813.png" /></p>
 <div class="admonition info">
             <p class="admonition-title"><i class="icon fas fa-info-circle"></i>说明</p>
             <div class="admonition-content">本文首发于<a href="https://blog.233so.com/upgrade-code-server-to-v3/" target="_blank" rel="noopener noreffer">我的博客</a></div>

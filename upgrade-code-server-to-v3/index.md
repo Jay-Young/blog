@@ -52,16 +52,16 @@ export ITEM_URL=https://marketplace.visualstudio.com/items
 
 ```
 qbuild -V
-# 返回信息：qbuild 2.3.3 表示安装成功
+# 返回信息：qbuild 2.3.10 表示安装成功
 ```
 
 创建项目，名字随便取，比如 codeserver：
 
 ```
-qbuild --create-env <project name>
+qbuild --create-env codeserver
 ```
 
-查看 test 目录文件结果如下：
+查看 codeserver 目录文件结果如下：
 
 ```markdown
 │ build_sign.csv
@@ -75,7 +75,7 @@ qbuild --create-env <project name>
 ├─config
 ├─icons
 ├─shared
-│ test.sh
+│ codeserver.sh
 │
 ├─x86
 ├─x86_64
@@ -85,7 +85,7 @@ qbuild --create-env <project name>
 arm 以及 x86 开头的目录是存放相应架构的文件，shared 目录是存放所有架构通用的文件，如果不需要同时开发跨架构的程序，可以直接删除所有架构对应的目录：
 
 ```
-cd test
+cd codeserver
 rm -rf ./arm* & rm -rf ./x86* & rm -rf ./config
 ```
 
@@ -134,7 +134,7 @@ cp -rf <code-server目录绝对路径>/* ./shared/bin
 配置初始化脚本，其他的代码保持默认即可：
 
 ```
-vi ./shared/<project name>.sh
+vi ./shared/codeserver.sh
 ```
 
 {{< admonition info "点击查看代码" true >}}
@@ -184,9 +184,9 @@ exit 0
 如果还需要自定义图标的话，设计 3 个图标文件存放到 icons 目录：
 
 ```markdown
-<project name>.gif 64×64 px 彩色
-<project name>_80.gif 80×80 px 彩色
-<project name>_gray.gif 64×64 px 灰色 App Center 未启用状态时显示
+codeserver.gif 64×64 px 彩色
+codeserver_80.gif 80×80 px 彩色
+codeserver_gray.gif 64×64 px 灰色 App Center 未启用状态时显示
 ```
 
 在项目根目录运行下面的命令构建安装包，完成后从 `App Center` 手动安装即可：
@@ -197,9 +197,9 @@ qbuild
 
 以 Web App 形式运行从外观上看和本地的 vs code 也没什么区别了
 
-![企业微信截图_20200417110813.png](https://i.loli.net/2020/04/18/AVm6nX9p4g8rCNH.png)
-
 ![屏幕截图(9).png](https://i.loli.net/2020/04/18/zCayub6Y5P4IH1E.png)
+
+![企业微信截图_20200417110813.png](https://i.loli.net/2020/04/18/AVm6nX9p4g8rCNH.png)
 
 {{< admonition info "说明" false >}}
 本文首发于[我的博客](https://blog.233so.com/upgrade-code-server-to-v3/)
