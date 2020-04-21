@@ -13,10 +13,10 @@
     
     <item>
       <title>Hugo 篇一：在威联通 NAS 上生成博客并部署 Pages 服务</title>
-      <link>https://blog.233so.com/install-hugo-on-qnap-nas/</link>
+      <link>https://blog.233so.com/2020/03/install-hugo-on-qnap-nas/</link>
       <pubDate>Sat, 21 Mar 2020 18:27:28 +0800</pubDate>
       
-      <guid>https://blog.233so.com/install-hugo-on-qnap-nas/</guid>
+      <guid>https://blog.233so.com/2020/03/install-hugo-on-qnap-nas/</guid>
       <description>Hugo 是一个用 Go 语言实现的静态博客系统生成工具。基于 Markdown 撰写博文，不改变你已有的习惯，拥有快速部署、简单易用、主题丰富、易扩展等特点。你可以在任何地方启动 Hugo，实现毫秒级渲染。</description>
     </item>
     

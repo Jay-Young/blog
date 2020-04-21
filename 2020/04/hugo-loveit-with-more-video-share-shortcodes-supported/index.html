@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Hugo 篇二：为 LoveIt 主题添加更多视频分享 shortcodes | Jay - My blog</title>
+        <meta name="Description" content="本文介绍如何为 Hugo LoveIt 主题添加更多 shortcodes"><meta property="og:title" content="Hugo 篇二：为 LoveIt 主题添加更多视频分享 shortcodes" />
+<meta property="og:description" content="本文介绍如何为 Hugo LoveIt 主题添加更多 shortcodes" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.233so.com/2020/04/hugo-loveit-with-more-video-share-shortcodes-supported/" />
+<meta property="article:published_time" content="2020-04-02T18:56:12+08:00" />
+<meta property="article:modified_time" content="2020-04-02T18:56:12+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugo 篇二：为 LoveIt 主题添加更多视频分享 shortcodes"/>
+<meta name="twitter:description" content="本文介绍如何为 Hugo LoveIt 主题添加更多 shortcodes"/>
+<meta name="generator" content="Hugo 0.67.1" /><meta name="theme-color" content="#ffffff">
+<meta name="msapplication-TileColor" content="#da532c">
+<link rel="canonical" href="https://blog.233so.com/2020/04/hugo-loveit-with-more-video-share-shortcodes-supported/" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="prev" href="https://blog.233so.com/2020/03/intranet-penetration-with-pgyx1-or-ksa/" /><link rel="next" href="https://blog.233so.com/2020/04/hugo-loveit-with-dplayer-supported/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="msvalidate.01" content="9E6BC727410AE14F6E9442F540992717" /><meta name="baidu-site-verification" content="apixhlrtUN" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Hugo 篇二：为 LoveIt 主题添加更多视频分享 shortcodes",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/blog.233so.com\/2020\/04\/hugo-loveit-with-more-video-share-shortcodes-supported\/"
+        },"image": {
+                "@type": "ImageObject",
+                "url": "https:\/\/blog.233so.com\/cover.png",
+                "width":  800 ,
+                "height":  600 
+            },"genre": "posts","keywords": "Hugo, shortcodes, 腾讯视频, 爱奇艺, 优酷","wordcount":  1207 ,
+        "url": "https:\/\/blog.233so.com\/2020\/04\/hugo-loveit-with-more-video-share-shortcodes-supported\/","datePublished": "2020-04-02","dateModified": "2020-04-02","publisher": {
+                "@type": "Organization",
+                "name": "Jay",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/blog.233so.com\/logo.png",
+                "width":  127 ,
+                "height":  40 
+                }
+            },"author": {
+                "@type": "Person",
+                "name": "Jay"
+            },"description": "本文介绍如何为 Hugo LoveIt 主题添加更多 shortcodes"
+    }
+    </script></head>
+    <body><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.classList.add('dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/">Jay - My blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/" rel="noopener noreffer">首页</a><a class="menu-item" href="/posts/" rel="noopener noreffer">文章</a><a class="menu-item" href="/tags/" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" rel="noopener noreffer">分类</a><a class="menu-item" href="/categories/documentation/" rel="noopener noreffer">文档</a><a class="menu-item" href="/about/" rel="noopener noreffer">关于</a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/">Jay - My blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/" title="" rel="noopener noreffer">首页</a><a class="menu-item" href="/posts/" title="" rel="noopener noreffer">文章</a><a class="menu-item" href="/tags/" title="" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" title="" rel="noopener noreffer">分类</a><a class="menu-item" href="/categories/documentation/" title="" rel="noopener noreffer">文档</a><a class="menu-item" href="/about/" title="" rel="noopener noreffer">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Hugo 篇二：为 LoveIt 主题添加更多视频分享 shortcodes</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://weibo.com/jayyoung1/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Jay</a></span>&nbsp;
+                    <span class="post-category">收录于<a href="/categories/hugo">
+                                <i class="far fa-folder fa-fw"></i>Hugo
+                            </a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-04-02>2020-04-02</time>&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 1207 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>预计阅读 3 分钟&nbsp;<span id="/2020/04/hugo-loveit-with-more-video-share-shortcodes-supported/" class="leancloud_visitors" data-flag-title="Hugo 篇二：为 LoveIt 主题添加更多视频分享 shortcodes">
+                        <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading/normal.min.svg"
+        data-sizes="auto"
+        data-srcset="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/hugo-loveit-with-more-video-share-shortcodes-supported/featuredImage.png, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/hugo-loveit-with-more-video-share-shortcodes-supported/featuredImage.png 1.5x, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/hugo-loveit-with-more-video-share-shortcodes-supported/featuredImage.png 2x"
+        data-src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/hugo-loveit-with-more-video-share-shortcodes-supported/featuredImage.png"
+        alt="本文介绍如何为 Hugo LoveIt 主题添加更多 shortcodes"
+        title="本文介绍如何为 Hugo LoveIt 主题添加更多 shortcodes" /></div><div class="toc" id="toc-static">
+                <details>
+                    <summary>
+                        <div class="toc-title">
+                            <span>目录</span>
+                            <span><i class="details icon fas fa-angle-down"></i></span>
+                        </div>
+                    </summary>
+                    <div class="toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#fa-fa-comment-dots-前言"><i class="fa fa-comment-dots fa-fw"></i>&nbsp;前言</a></li>
+    <li><a href="#fa-fa-tools-bv-大改造"><i class="fa fa-tools fa-fw"></i>&nbsp;BV 大改造</a>
+      <ul>
+        <li><a href="#fa-fa-code-分享代码"><i class="fa fa-code fa-fw"></i>&nbsp;分享代码</a></li>
+        <li><a href="#fa-fa-tools-修改样式"><i class="fa fa-tools fa-fw"></i>&nbsp;修改样式</a></li>
+        <li><a href="#fab-fa-css3-alt-引入样式"><i class="fab fa-css3-alt fa-fw"></i>&nbsp;引入样式</a></li>
+      </ul>
+    </li>
+    <li><a href="#fa-fa-feather-alt-后记"><i class="fa fa-feather-alt fa-fw"></i>&nbsp;后记</a></li>
+  </ul>
+</nav></div>
+                </details>
+            </div><div class="content" id="content"><p><code>Hugo LoveIt</code> 主题虽然支持了 <code>bilibili</code> 视频的插入，再加上 <code>hugo</code> 自带的 <code>youtube</code> 和 <code>vimeo</code> 视频，但是也还是有点少。没有国内视频三大巨头（优酷现在掉队有点严重，可能名不副实了）似乎有些遗憾。又加上最近 B 站去 <code>av</code> 化，正好看到 <code>LoveIt</code> 项目的 <a href="https://github.com/dillonzq/LoveIt/issues/208" target="_blank" rel="noopener noreffer">issue#208</a> 中有人提到这一点，我就试着看看能不能改改，并加点东西进去。</p>
+<h2 id="fa-fa-comment-dots-前言"><i class="fa fa-comment-dots fa-fw"></i>&nbsp;前言</h2>
+<p>以某位咕咕咕 up 主的最新视频为例，旧 <code>av</code> 时代插入 B 站视频是下面这个样子的</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">视频地址：https://www.bilibili.com/video/av882566744
+
+插入方式：
+{{&lt; bilibili 882566744 &gt;}}
+或者
+{{&lt; bilibili av=882566744 &gt;}}
+</code></pre></td></tr></table>
+</div>
+</div><p>而新 <code>bv</code> 时代 B 站视频默认只显示 <code>bv</code> 号了，用老方法插入会失败。当然目前你可以用浏览器扩展或者其他方法获取到 <code>av</code> 号来插入，但是总有一天会迎来全面 <code>bv</code> 的时代。那么就需要我们手动来改造了。</p>
+<h2 id="fa-fa-tools-bv-大改造"><i class="fa fa-tools fa-fw"></i>&nbsp;BV 大改造</h2>
+<p>看了下 <code>LoveIt</code> 主题的结构，发现 <code>bilibili shortcodes</code> 的引入和三个文件有关：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">themes/LoveIt/layouts/shortcodes/bilibili.html
+themes/LoveIt/assets/css/_partial/_single/_bilibili.scss
+themes/LoveIt/assets/css/_page/_single.scss
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="fa-fa-code-分享代码"><i class="fa fa-code fa-fw"></i>&nbsp;分享代码</h3>
+<p>首先来看 <code>bilibili.html</code>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bilibili&#34;</span><span class="p">&gt;</span>
+    {{- if .IsNamedParams -}}
+        <span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;//player.bilibili.com/player.html?aid={{ .Get `av` }}&amp;page={{ .Get `p` | default 1 }}&#34;</span> <span class="na">scrolling</span><span class="o">=</span><span class="s">&#34;no&#34;</span> <span class="na">border</span><span class="o">=</span><span class="s">&#34;0&#34;</span> <span class="na">frameborder</span><span class="o">=</span><span class="s">&#34;no&#34;</span> <span class="na">framespacing</span><span class="o">=</span><span class="s">&#34;0&#34;</span> <span class="na">allowfullscreen</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+    {{- else -}}
+        <span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;//player.bilibili.com/player.html?aid={{ .Get 0 }}&amp;page={{ .Get 1 | default 1 }}&#34;</span> <span class="na">scrolling</span><span class="o">=</span><span class="s">&#34;no&#34;</span> <span class="na">border</span><span class="o">=</span><span class="s">&#34;0&#34;</span> <span class="na">frameborder</span><span class="o">=</span><span class="s">&#34;no&#34;</span> <span class="na">framespacing</span><span class="o">=</span><span class="s">&#34;0&#34;</span> <span class="na">allowfullscreen</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+    {{- end -}}
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>不难发现，其实就是对官方 <code>iframe</code> 分享链接改造。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">player.bilibili.com/player.html?aid=[av号]&amp;page=[分p号]
+</code></pre></td></tr></table>
+</div>
+</div><p>那么拿到 <code>bv</code> 时代的官方分享链接就可以了。</p>
+<a class="lightgallery" href="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/hugo-loveit-with-more-video-share-shortcodes-supported/bilibili-share-iframe-code.png" title="获取分享链接" data-thumbnail="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/hugo-loveit-with-more-video-share-shortcodes-supported/bilibili-share-iframe-code.png">
+        <img
+            class="lazyload"
+            src="/svg/loading/normal.min.svg"
+            data-sizes="auto"
+            data-srcset="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/hugo-loveit-with-more-video-share-shortcodes-supported/bilibili-share-iframe-code.png, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/hugo-loveit-with-more-video-share-shortcodes-supported/bilibili-share-iframe-code.png 1.5x, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/hugo-loveit-with-more-video-share-shortcodes-supported/bilibili-share-iframe-code.png 2x"
+            data-src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/hugo-loveit-with-more-video-share-shortcodes-supported/bilibili-share-iframe-code.png"
+            alt="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/hugo-loveit-with-more-video-share-shortcodes-supported/bilibili-share-iframe-code.png" />
+    </a>
+<p>获取的原始分享链接是下面这个样子的：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;//player.bilibili.com/player.html?aid=882566744&amp;bvid=BV1YK4y1C7CU&amp;cid=172274931&amp;page=1&#34;</span> <span class="na">scrolling</span><span class="o">=</span><span class="s">&#34;no&#34;</span> <span class="na">border</span><span class="o">=</span><span class="s">&#34;0&#34;</span> <span class="na">frameborder</span><span class="o">=</span><span class="s">&#34;no&#34;</span> <span class="na">framespacing</span><span class="o">=</span><span class="s">&#34;0&#34;</span> <span class="na">allowfullscreen</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>看起来目前官方还是 <code>av</code> 和 <code>bv</code> 并行的，为了不破坏原来的博文 <code>av</code> 时代视频的效果，我们新建一个 <code>bilibilibv.html</code> 文件：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bilibilibv&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;//player.bilibili.com/player.html?bvid={{ .Get 0 }}&amp;page={{ .Get 1 | default 1 }}&#34;</span> <span class="na">scrolling</span><span class="o">=</span><span class="s">&#34;no&#34;</span>
+    <span class="na">border</span><span class="o">=</span><span class="s">&#34;0&#34;</span> <span class="na">frameborder</span><span class="o">=</span><span class="s">&#34;no&#34;</span> <span class="na">framespacing</span><span class="o">=</span><span class="s">&#34;0&#34;</span> <span class="na">allowfullscreen</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>为了方便也不要搞 <code>av</code> 时代的两种使用方法了，直接上最简单的一种方式。</p>
+<h3 id="fa-fa-tools-修改样式"><i class="fa fa-tools fa-fw"></i>&nbsp;修改样式</h3>
+<p>到此为止，其实我们的 <code>bv</code> 时代 <code>shortcodes</code> 已经可以用了，但是没有修改样式，不管从外观还是排版来看都是很丑的。</p>
+<p>回到开头提到的三个文件之二，新建一个 <code>_bilibilibv.scss</code> 的文件，就是改个类名，复制了 <code>av</code> 时代的样式：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-scss" data-lang="scss"><span class="nc">.bilibilibv</span> <span class="p">{</span>
+  <span class="nt">position</span><span class="nd">:</span> <span class="nt">relative</span><span class="p">;</span>
+  <span class="nt">width</span><span class="nd">:</span> <span class="nt">100</span><span class="err">%</span><span class="p">;</span>
+  <span class="nt">height</span><span class="nd">:</span> <span class="nt">0</span><span class="p">;</span>
+  <span class="nt">padding-bottom</span><span class="nd">:</span> <span class="nt">75</span><span class="err">%</span><span class="p">;</span>
+  <span class="nt">margin</span><span class="nd">:</span> <span class="nt">3</span><span class="err">%</span> <span class="nt">auto</span><span class="p">;</span>
+  <span class="nt">text-align</span><span class="nd">:</span> <span class="nt">center</span><span class="p">;</span>
+
+  <span class="nt">iframe</span> <span class="p">{</span>
+    <span class="nt">position</span><span class="nd">:</span> <span class="nt">absolute</span><span class="p">;</span>
+    <span class="nt">width</span><span class="nd">:</span> <span class="nt">100</span><span class="err">%</span><span class="p">;</span>
+    <span class="nt">height</span><span class="nd">:</span> <span class="nt">100</span><span class="err">%</span><span class="p">;</span>
+    <span class="nt">left</span><span class="nd">:</span> <span class="nt">0</span><span class="p">;</span>
+    <span class="nt">top</span><span class="nd">:</span> <span class="nt">0</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="fab-fa-css3-alt-引入样式"><i class="fab fa-css3-alt fa-fw"></i>&nbsp;引入样式</h3>
+<p>刚刚新建的样式文件还需要用到开头的三个文件之三来引入，修改 <code>_single.scss</code> 如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-scss" data-lang="scss">    <span class="k">@import</span> <span class="s2">&#34;../_partial/_single/code&#34;</span><span class="p">;</span>
+    <span class="k">@import</span> <span class="s2">&#34;../_partial/_single/instagram&#34;</span><span class="p">;</span>
+    <span class="k">@import</span> <span class="s2">&#34;../_partial/_single/admonition&#34;</span><span class="p">;</span>
+    <span class="k">@import</span> <span class="s2">&#34;../_partial/_single/echarts&#34;</span><span class="p">;</span>
+    <span class="k">@import</span> <span class="s2">&#34;../_partial/_single/bilibili&#34;</span><span class="p">;</span>
+    <span class="k">@import</span> <span class="s2">&#34;../_partial/_single/bilibilibv&#34;</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>在引入样式的地方，新增一行 <code>@import &quot;../_partial/_single/bilibilibv&quot;;</code>，到此大功告成。</p>
+<p>使用方法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">{{&lt; bilibilibv BV1YK4y1C7CU &gt;}}
+</code></pre></td></tr></table>
+</div>
+</div><div class="bilibilibv">
+  <iframe src="//player.bilibili.com/player.html?bvid=BV1YK4y1C7CU&page=1" scrolling="no"
+    border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+</div>
+<div class="admonition tip">
+            <p class="admonition-title"><i class="icon fas fa-lightbulb"></i>小技巧</p>
+            <div class="admonition-content">其他视频网站的引入也是如此，先获取到官方的 <code>iframe</code> 分享链接，然后改造三个文件即可。</div>
+        </div>
+<h2 id="fa-fa-feather-alt-后记"><i class="fa fa-feather-alt fa-fw"></i>&nbsp;后记</h2>
+<p>在寻找各视频网站官方分享链接的过程中，意外发现了 <strong>TGideas</strong> 这个团队的内容，作为一个小白感觉就像在沙漠中找到了一片绿洲。</p>
+<ul>
+<li><a href="https://tgideas.qq.com/doc/index.html" target="_blank" rel="noopener noreffer">https://tgideas.qq.com/doc/index.html</a></li>
+<li><a href="https://tgideas.qq.com/intro.html" target="_blank" rel="noopener noreffer">https://tgideas.qq.com/intro.html</a></li>
+</ul>
+<p>如果需要更多视频网站 <code>shortcodes</code> 的成品的话，可以去我 fork 的<a href="https://github.com/Jay-Young/LoveIt" target="_blank" rel="noopener noreffer">项目地址</a>，切换到 <code>develop</code> 分支查看。目前支持 <strong>爱奇艺</strong>，<strong>腾讯视频</strong>，<strong>优酷</strong>，<strong>搜狐视频</strong>，<strong>Acfun</strong>。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">爱奇艺和搜狐不能直接用播放页面地址的视频 id，使用页面的分享按钮获取完整 iframe 地址
+爱奇艺是 tvid 部分，搜狐是 bid 部分。
+
+用法示例：
+
+{{&lt; iqiyi 3060730600 &gt;}}
+
+{{&lt; qqvideo r0029muuhfj &gt;}}
+
+{{&lt; youku XMzk1NjM1MjAw &gt;}}
+
+{{&lt; sohu 90742150 &gt;}}
+
+{{&lt; acfun ac14349183 &gt;}}
+</code></pre></td></tr></table>
+</div>
+</div><p>0202年还在使用 flash 技术的视频网站，祝你们新年快乐。</p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>本文于 2020-04-02 更新</span>
+            </div>
+            <div class="post-info-license"><span>采用 <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh" target="_blank">CC BY-NC 4.0</a> 协议发布</span></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/2020/04/hugo-loveit-with-more-video-share-shortcodes-supported/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://blog.233so.com/2020/04/hugo-loveit-with-more-video-share-shortcodes-supported/" data-title="Hugo 篇二：为 LoveIt 主题添加更多视频分享 shortcodes" data-image="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/hugo-loveit-with-more-video-share-shortcodes-supported/featuredImage.png" data-ralateuid="jayyoung1"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="https://blog.233so.com/2020/04/hugo-loveit-with-more-video-share-shortcodes-supported/" data-title="Hugo 篇二：为 LoveIt 主题添加更多视频分享 shortcodes"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微信" data-sharer="weixin" data-url="https://blog.233so.com/2020/04/hugo-loveit-with-more-video-share-shortcodes-supported/"><i class="fab fa-weixin fa-fw"></i></a><a href="javascript:void(0);" title="分享到 QQ空间" data-sharer="qzone" data-url="https://blog.233so.com/2020/04/hugo-loveit-with-more-video-share-shortcodes-supported/" data-title="Hugo 篇二：为 LoveIt 主题添加更多视频分享 shortcodes" data-description="本文介绍如何为 Hugo LoveIt 主题添加更多 shortcodes" data-image="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/hugo-loveit-with-more-video-share-shortcodes-supported/featuredImage.png"><i class="fab fa-qq fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/hugo">Hugo</a>,&nbsp;<a href="/tags/shortcodes">shortcodes</a>,&nbsp;<a href="/tags/%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91">腾讯视频</a>,&nbsp;<a href="/tags/%E7%88%B1%E5%A5%87%E8%89%BA">爱奇艺</a>,&nbsp;<a href="/tags/%E4%BC%98%E9%85%B7">优酷</a></section>
+        <section>
+            <span><a href="javascript:window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/2020/03/intranet-penetration-with-pgyx1-or-ksa/" class="prev" rel="prev" title="威联通：内网穿透服务之蒲公英 X1 和 KSA"><i class="fas fa-angle-left fa-fw"></i>威联通：内网穿透服务之蒲公英 X1 和 KSA</a>
+            <a href="/2020/04/hugo-loveit-with-dplayer-supported/" class="next" rel="next" title="Hugo 篇三：添加 DPlayer 播放器">Hugo 篇三：添加 DPlayer 播放器<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+    <div class="copyright"><div class="copyright-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.67.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.0"><i class="far fa-heart fa-fw"></i> LoveIt</a>
+        </div>
+
+        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://weibo.com/jayyoung1/" target="_blank">Jay</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh" target="_blank">CC BY-NC 4.0</a></span></div>
+    </div>
+</footer>
+</div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css"><script type="text/javascript">
+    window.config = {"clipboard":{"title":"复制到剪贴板"},"comment":{"valine":{"appId":"iRP94IPVb6nLbnvVlYl3acIX-gzGzoHsz","appKey":"cMInmDt3V8IqJDnkANRw9Faf","el":"#valine","lang":"zh-cn","notify":false,"pageSize":10,"placeholder":"请留下你善意的评论……","recordIP":true,"verify":true,"visitor":true}},"desktopHeaderMode":"fixed","lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"mobileHeaderMode":"fixed","search":{"algoliaAppID":"99SEOT1H0K","algoliaIndex":"index","algoliaSearchKey":"5f32c3a605ca6aba6c73407aa305e495","noResultsFound":"没有找到结果","type":"algolia"}};
+</script><script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script><script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.2/dist/smooth-scroll.polyfills.min.js"></script><script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script><script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.1.0/dist/algoliasearch.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/js/lightgallery.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sachinchoolur/lg-thumbnail.js@1.1.0/dist/lg-thumbnail.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sachinchoolur/lg-zoom.js@1.0.1/dist/lg-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Jay-Young/blog@latest/lib/sharer/sharer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Jay-Young/live2d-widget@master/autoload.min.js"></script><script type="text/javascript" src="/js/custom.js"></script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

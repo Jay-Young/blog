@@ -13,19 +13,19 @@
     
     <item>
       <title>威联通：升级 Code Server 编辑器 3.x</title>
-      <link>https://blog.233so.com/upgrade-code-server-to-v3/</link>
+      <link>https://blog.233so.com/2020/04/upgrade-code-server-to-v3/</link>
       <pubDate>Fri, 17 Apr 2020 11:26:01 +0800</pubDate>
       
-      <guid>https://blog.233so.com/upgrade-code-server-to-v3/</guid>
+      <guid>https://blog.233so.com/2020/04/upgrade-code-server-to-v3/</guid>
       <description>&lt;p&gt;Code Server 3.x 版本发布也有几周了，最新版本 3.1.1 看起来应该可用度比较高了，于是就打算升级了。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>威联通：“私人定制”在线代码编辑器</title>
-      <link>https://blog.233so.com/qnap-codeserver-self-host/</link>
+      <link>https://blog.233so.com/2020/03/qnap-codeserver-self-host/</link>
       <pubDate>Sat, 21 Mar 2020 15:39:58 +0800</pubDate>
       
-      <guid>https://blog.233so.com/qnap-codeserver-self-host/</guid>
+      <guid>https://blog.233so.com/2020/03/qnap-codeserver-self-host/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/cdr/code-server/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;code-server&lt;/a&gt; 是基于微软 &lt;a href=&#34;https://github.com/Microsoft/vscode/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Visual Studio Code&lt;/a&gt; 项目打造的远程编辑器，可以运行在服务器，客户端通过浏览器访问即可使用。&lt;/p&gt;</description>
     </item>
     
