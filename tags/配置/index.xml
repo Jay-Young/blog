@@ -1,24 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>配置 on Jay - My blog</title>
-    <link>https://blog.233so.com/tags/%E9%85%8D%E7%BD%AE/</link>
-    <description>Recent content in 配置 on Jay - My blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Fri, 06 Mar 2020 21:40:32 +0800</lastBuildDate>
-    
-	<atom:link href="https://blog.233so.com/tags/%E9%85%8D%E7%BD%AE/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>主题文档 - 基本概念</title>
-      <link>https://blog.233so.com/2020/03/theme-documentation-basics/</link>
-      <pubDate>Fri, 06 Mar 2020 21:40:32 +0800</pubDate>
-      
-      <guid>https://blog.233so.com/2020/03/theme-documentation-basics/</guid>
-      <description>&lt;p&gt;探索 Hugo - &lt;strong&gt;LoveIt&lt;/strong&gt; 主题的全部内容和背后的核心概念.&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>配置 | 标签 | Jay - My blog</title>
+        <link>https://blog.233so.com/tags/%E9%85%8D%E7%BD%AE/</link>
+        <description>配置 | 标签 | Jay - My blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 06 Mar 2020 21:40:32 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/%E9%85%8D%E7%BD%AE/" rel="self" type="application/rss+xml" /><item>
+                <title>主题文档 - 基本概念</title>
+                <link>https://blog.233so.com/2020/03/theme-documentation-basics/</link>
+                <pubDate>Fri, 06 Mar 2020 21:40:32 &#43;0800</pubDate>
+                <author>Dillon</author>
+                <guid>https://blog.233so.com/2020/03/theme-documentation-basics/</guid>
+                <description>探索 Hugo - LoveIt 主题的全部内容和背后的核心概念.
+</description>
+            </item></channel>
 </rss>
