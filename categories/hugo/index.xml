@@ -6,10 +6,19 @@
     <description>Recent content in Hugo on Jay - My blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 14 Apr 2020 14:19:28 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 25 Apr 2020 23:08:48 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.233so.com/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo 篇四：添加友链卡片 shortcodes</title>
+      <link>https://blog.233so.com/2020/04/friend-link-shortcodes-for-hugo-loveit/</link>
+      <pubDate>Sat, 25 Apr 2020 23:08:48 +0800</pubDate>
+      
+      <guid>https://blog.233so.com/2020/04/friend-link-shortcodes-for-hugo-loveit/</guid>
+      <description>&lt;p&gt;在前辈大佬的基础上，为本博客使用的主题实现友链卡片功能，并加入简单的移动页面适配。代码借鉴来自 &lt;a href=&#34;https://github.com/kkkgo/hugo-friendlinks/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;kissshot&lt;/a&gt; 和 &lt;a href=&#34;https://github.com/MatNoble/hugo-shortcodes-sets/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;数学小兵儿&lt;/a&gt; 两位大佬。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Hugo 篇三：添加 DPlayer 播放器</title>
