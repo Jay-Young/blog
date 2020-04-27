@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>威联通：内网穿透服务之蒲公英 X1 和 KSA | Jay</title>
+        <meta name="Description" content="本文介绍蒲公英 X1 和 KSA 如何打通外网访问内网资源"><meta property="og:title" content="威联通：内网穿透服务之蒲公英 X1 和 KSA" />
+<meta property="og:description" content="本文介绍蒲公英 X1 和 KSA 如何打通外网访问内网资源" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.233so.com/2020/03/intranet-penetration-with-pgyx1-or-ksa/" />
+<meta property="article:published_time" content="2020-03-27T16:28:47+08:00" />
+<meta property="article:modified_time" content="2020-03-27T16:28:47+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="威联通：内网穿透服务之蒲公英 X1 和 KSA"/>
+<meta name="twitter:description" content="本文介绍蒲公英 X1 和 KSA 如何打通外网访问内网资源"/>
+<meta name="application-name" content="Jay">
+<meta name="apple-mobile-web-app-title" content="Jay"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.233so.com/2020/03/intranet-penetration-with-pgyx1-or-ksa/" /><link rel="prev" href="https://blog.233so.com/2020/03/install-nps-on-qnap-nas/" /><link rel="next" href="https://blog.233so.com/2020/04/hugo-loveit-with-more-video-share-shortcodes-supported/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="msvalidate.01" content="9E6BC727410AE14F6E9442F540992717" /><meta name="baidu-site-verification" content="apixhlrtUN" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "威联通：内网穿透服务之蒲公英 X1 和 KSA",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/blog.233so.com\/2020\/03\/intranet-penetration-with-pgyx1-or-ksa\/"
+        },"image": {
+                "@type": "ImageObject",
+                "url": "https:\/\/blog.233so.com\/cover.png",
+                "width":  800 ,
+                "height":  600 
+            },"genre": "posts","keywords": "内网穿透, 威联通, 蒲公英, ksa, 贝锐科技","wordcount":  1958 ,
+        "url": "https:\/\/blog.233so.com\/2020\/03\/intranet-penetration-with-pgyx1-or-ksa\/","datePublished": "2020-03-27T16:28:47+08:00","dateModified": "2020-03-27T16:28:47+08:00","license": "This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.","publisher": {
+                "@type": "Organization",
+                "name": "Jay",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/blog.233so.com\/logo.png",
+                "width":  127 ,
+                "height":  40 
+                }
+            },"author": {
+                "@type": "Person",
+                "name": "Jay"
+            },"description": "本文介绍蒲公英 X1 和 KSA 如何打通外网访问内网资源"
+    }
+    </script></head>
+    <body><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.classList.add('dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Jay">Jay</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/"> 首页 </a><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/friends/"> 友链 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Jay">Jay</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/" title="">首页</a><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/friends/" title="">友链</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">威联通：内网穿透服务之蒲公英 X1 和 KSA</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://weibo.com/jayyoung1/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Jay</a></span>&nbsp;
+                    <span class="post-category">收录于<a href="/categories/nas/">
+                                <i class="far fa-folder fa-fw"></i>NAS
+                            </a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-03-27>2020-03-27</time>&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 1958 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>预计阅读 4 分钟&nbsp;<span id="/2020/03/intranet-penetration-with-pgyx1-or-ksa/" class="leancloud_visitors" data-flag-title="威联通：内网穿透服务之蒲公英 X1 和 KSA">
+                        <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading/normal.min.svg"
+        data-sizes="auto"
+        data-srcset="https://i.loli.net/2020/03/31/tkKaQmYTlw5pSvZ.png, https://i.loli.net/2020/03/31/tkKaQmYTlw5pSvZ.png 1.5x, https://i.loli.net/2020/03/31/tkKaQmYTlw5pSvZ.png 2x"
+        data-src="https://i.loli.net/2020/03/31/tkKaQmYTlw5pSvZ.png"
+        alt="本文介绍蒲公英 X1 和 KSA 如何打通外网访问内网资源"
+        title="本文介绍蒲公英 X1 和 KSA 如何打通外网访问内网资源" /></div><div class="details toc" id="toc-static">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-down"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#蒲公英-x1">蒲公英 X1</a></li>
+    <li><a href="#ksa">KSA</a>
+      <ul>
+        <li><a href="#windows">Windows</a></li>
+        <li><a href="#macos">MacOS</a></li>
+        <li><a href="#linux">Linux</a></li>
+      </ul>
+    </li>
+    <li><a href="#后记">后记</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p><a href="https://blog.233so.com/2020/03/install-nps-on-qnap-nas/" target="_blank" rel="noopener noreffer">上一篇</a>博文介绍了 nps 内网穿透服务，虽然拥有 Web 配置界面，但对于新手来说可能还是略显不友好，毕竟也还需要拥有一台公网服务器。那么今天要介绍的两款产品或者说服务绝对算得上是开箱即用，老少皆宜。</p>
+<h2 id="蒲公英-x1">蒲公英 X1</h2>
+<p>蒲公英 X1 是贝锐科技公司旗下一款采用 Cloud VPN 技术的企业级智能组网路由器。没错，它是一台路由器。而贝锐科技旗下还拥有花生壳、向日葵等知名的产品。以前上大学的时候用过 2233.org 的二级域名 ddns 服务，印象中好像是这家公司的早期产品。</p>
+<a class="lightgallery" href="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201808240935145249.jpg" title="蒲公英 X1 外观" data-thumbnail="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201808240935145249.jpg">
+        <img
+            class="lazyload"
+            src="/svg/loading/normal.min.svg"
+            data-sizes="auto"
+            data-srcset="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201808240935145249.jpg, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201808240935145249.jpg 1.5x, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201808240935145249.jpg 2x"
+            data-src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201808240935145249.jpg"
+            alt="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201808240935145249.jpg" />
+    </a>
+<a class="lightgallery" href="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201905061953093581.png" title="接口图示" data-thumbnail="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201905061953093581.png">
+        <img
+            class="lazyload"
+            src="/svg/loading/normal.min.svg"
+            data-sizes="auto"
+            data-srcset="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201905061953093581.png, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201905061953093581.png 1.5x, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201905061953093581.png 2x"
+            data-src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201905061953093581.png"
+            alt="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201905061953093581.png" />
+    </a>
+<a class="lightgallery" href="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201905061953189315.png" title="接口说明" data-thumbnail="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201905061953189315.png">
+        <img
+            class="lazyload"
+            src="/svg/loading/normal.min.svg"
+            data-sizes="auto"
+            data-srcset="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201905061953189315.png, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201905061953189315.png 1.5x, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201905061953189315.png 2x"
+            data-src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201905061953189315.png"
+            alt="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201905061953189315.png" />
+    </a>
+<div class="admonition info">
+            <div class="admonition-title"><i class="icon fas fa-info-circle"></i>蒲公英 X1 简要参数</div>
+            <div class="admonition-content"><ul>
+<li>尺寸：70 毫米 X 70 毫米 X 18 毫米</li>
+<li>处理器（CPU）：MT7628A</li>
+<li>内存（RAM）： 64MB</li>
+<li>闪存（FLASH）：16MB</li>
+<li>接口：Micro USB 电源接口 × 1，100 Mbps 网口 × 1，USB-A × 1</li>
+<li>无线网络标准：2.4GHz 300Mbps：IEEE 802.11 b/g/n</li>
+</ul></div>
+        </div>
+<p>日常价格 ￥ 108，一般活动价格 ￥ 98，我是 ￥ 78 拿下的。看参数想要拿它做主路由我觉得还是算了吧，反正我看上的也只是它的旁路组网功能，即不改变现有的家庭网络结构直接通过组网实现专属内网穿透隧道。</p>
+<a class="lightgallery" href="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/LW7xN1Evem2ZGMh.png" title="指示灯说明" data-thumbnail="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/LW7xN1Evem2ZGMh.png">
+        <img
+            class="lazyload"
+            src="/svg/loading/normal.min.svg"
+            data-sizes="auto"
+            data-srcset="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/LW7xN1Evem2ZGMh.png, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/LW7xN1Evem2ZGMh.png 1.5x, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/LW7xN1Evem2ZGMh.png 2x"
+            data-src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/LW7xN1Evem2ZGMh.png"
+            alt="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/LW7xN1Evem2ZGMh.png" />
+    </a>
+<a class="lightgallery" href="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/ah5qIjkzwOyPo6Q.png" title="旁路组网" data-thumbnail="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/ah5qIjkzwOyPo6Q.png">
+        <img
+            class="lazyload"
+            src="/svg/loading/normal.min.svg"
+            data-sizes="auto"
+            data-srcset="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/ah5qIjkzwOyPo6Q.png, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/ah5qIjkzwOyPo6Q.png 1.5x, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/ah5qIjkzwOyPo6Q.png 2x"
+            data-src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/ah5qIjkzwOyPo6Q.png"
+            alt="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/ah5qIjkzwOyPo6Q.png" />
+    </a>
+<ol>
+<li>电源线插电，通过网线直接将 X1 LAN 口与主路由 LAN 口连接（DHCP 功能需开启），</li>
+<li>打开 <a href="https://pgybox.oray.com/" target="_blank" rel="noopener noreffer">https://pgybox.oray.com/</a>，通过 SN 码登录（可在路由器背面查看），默认密码是 admin</li>
+<li>进入蒲公英管理平台，路由器首次使用需进行初始化，输入对应信息点击提交</li>
+<li>注册 oray 账号，在智能组网栏将 X1 绑定到账号下面</li>
+<li>点击“我要组网”，跳转至蒲公英官网管理页面，点击“立即创建网络”</li>
+<li>填写网络名称，选择网络类型；然后添加网络成员（目前只有一台 X1），点击完成</li>
+<li>在已经创建好了的蒲公英 VPN 网络中，点击“旁路设置”</li>
+<li>进入旁路路由设置页面，点击“添加旁路路由”</li>
+<li>选择 X1 为旁路路由，目标地址填写主路由所在网段，比如 192.168.1.0/24，表示网段是 192.168.1.0,子网掩码为:255.255.255.0，若子网掩码的位数不是 24 位，请根据实际情况填写</li>
+<li>PC 或手机端安装相应的蒲公英客户端，通过 oray 账号登录轻松组网，在外面通过 4G/5G 移动网络或者公司网络就可以直接访问内网的资源了。</li>
+<li>如果你运气还不错的话，两边的 NAT 类型还算给力的话，有可能打通 p2p 点对点隧道，无需通过蒲公英的公网服务器转发数据，实现高速访问。</li>
+</ol>
+<div class="admonition note">
+            <div class="admonition-title"><i class="icon fas fa-pencil-alt"></i>注意</div>
+            <div class="admonition-content"><ul>
+<li>为了提高 P2P 连通率，建议开启主路由的 UPNP 功能</li>
+<li>X1 提供终身免费的标准版转发服务，带宽是 2M，如果需要更高的转发带宽可以花钱购买，每个客户端需要额外费用</li>
+</ul></div>
+        </div>
+<p>更多内容参考<a href="http://service.oray.com/question/4288.html" target="_blank" rel="noopener noreffer">官方文档</a></p>
+<h2 id="ksa">KSA</h2>
+<p>KAS 是安全社区<a href="https://ksa.kanxue.com/" target="_blank" rel="noopener noreffer">看雪论坛</a>开发的一款内网穿透软件，目前提供 Windows，MacOS 和 Linux (x86, x64, arm64,mipsel)的客户端。KSA 的服务端和客户端集成在一个可执行文件之中，真正做到了无需配置，点击就用。</p>
+<h3 id="windows">Windows</h3>
+<p>双击运行可执行文件 ksa_win.exe，左半部分 KSA 服务端已经默认生成好 KSA ID 和密码，记住这个 KSA ID 和密码即可。点击<strong>启动服务</strong>开始运行服务端：</p>
+<a class="lightgallery" href="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/01.png" title="Windows 客户端" data-thumbnail="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/01.png">
+        <img
+            class="lazyload"
+            src="/svg/loading/normal.min.svg"
+            data-sizes="auto"
+            data-srcset="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/01.png, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/01.png 1.5x, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/01.png 2x"
+            data-src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/01.png"
+            alt="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/01.png" />
+    </a>
+<h3 id="macos">MacOS</h3>
+<p>与 Windows 类似，左侧是服务端，右侧是客户端，右侧的“远程接入到 KSA 服务端”中输入 KSA ID 和密码，点击“接入服务端”即可。接入成功后如下图所示：</p>
+<a class="lightgallery" href="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/02.png" title="MacOS 客户端" data-thumbnail="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/02.png">
+        <img
+            class="lazyload"
+            src="/svg/loading/normal.min.svg"
+            data-sizes="auto"
+            data-srcset="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/02.png, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/02.png 1.5x, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/02.png 2x"
+            data-src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/02.png"
+            alt="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/02.png" />
+    </a>
+<h3 id="linux">Linux</h3>
+<p>解压之后，使用 sudo chmod +x ksa*命令，给 ksa 软件添加可执行权限，然后启动即可。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">chmod +x ksa*
+./ksa_x64
+</code></pre></td></tr></table>
+</div>
+</div><p>服务端即会开启并运行，KSA ID 和 PSK 都会出现。也可以查看同目录下的 ksa.log 文件，启动日志已经写入到该文件中。</p>
+<a class="lightgallery" href="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_R3BAW5WHHK2HU2W.png" title="Linux 服务端运行" data-thumbnail="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_R3BAW5WHHK2HU2W.png">
+        <img
+            class="lazyload"
+            src="/svg/loading/normal.min.svg"
+            data-sizes="auto"
+            data-srcset="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_R3BAW5WHHK2HU2W.png, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_R3BAW5WHHK2HU2W.png 1.5x, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_R3BAW5WHHK2HU2W.png 2x"
+            data-src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_R3BAW5WHHK2HU2W.png"
+            alt="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_R3BAW5WHHK2HU2W.png" />
+    </a>
+<p>Linux 客户端需要先配置 <code>ksa.conf</code> 文件。</p>
+<p>首先请确保没有任何 ksa 进程在执行，有则先关闭。以 x64 版本为例，<code>killall -9 ksa_x64</code> 杀死进程。</p>
+<p>将被访问设备服务端生成的 KSA ID 和 PSK 对应填到 [uid] 和 [psk] 后面并取消注释 # 号，使其生效。最终效果如下图：</p>
+<a class="lightgallery" href="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_DXKCHPVK42VZBPY.png" title="Linux 配置文件" data-thumbnail="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_DXKCHPVK42VZBPY.png">
+        <img
+            class="lazyload"
+            src="/svg/loading/normal.min.svg"
+            data-sizes="auto"
+            data-srcset="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_DXKCHPVK42VZBPY.png, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_DXKCHPVK42VZBPY.png 1.5x, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_DXKCHPVK42VZBPY.png 2x"
+            data-src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_DXKCHPVK42VZBPY.png"
+            alt="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_DXKCHPVK42VZBPY.png" />
+    </a>
+<p>配置完成之后，运行 <code>./ksa_x64</code> 来启动即可。</p>
+<p>连接成功之后服务端所在的局域网的 IP（我们假设为 192.168.1.*），在客户端机器上都可以直接访问了，比如内网网络邻居也可以打开：</p>
+<a class="lightgallery" href="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_XMY2BMBQZ2XEUVV.png" title="成功访问内网" data-thumbnail="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_XMY2BMBQZ2XEUVV.png">
+        <img
+            class="lazyload"
+            src="/svg/loading/normal.min.svg"
+            data-sizes="auto"
+            data-srcset="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_XMY2BMBQZ2XEUVV.png, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_XMY2BMBQZ2XEUVV.png 1.5x, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_XMY2BMBQZ2XEUVV.png 2x"
+            data-src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_XMY2BMBQZ2XEUVV.png"
+            alt="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_XMY2BMBQZ2XEUVV.png" />
+    </a>
+<div class="admonition note">
+            <div class="admonition-title"><i class="icon fas fa-pencil-alt"></i>注意</div>
+            <div class="admonition-content"><ul>
+<li>此产品尚处于内测阶段，请勿在生产环境中部署，由此带来的一切后果，看雪不予承担。</li>
+<li>KSA ID 和密码仅作为客户端与服务端连接时互相校验的用途，看雪服务器并不保存 KSA ID 和密码。</li>
+<li>初次使用时 Windows 平台会弹出安装驱动，请允许安装驱动。</li>
+<li>MacOS 平台可能会要求输入管理员密码。</li>
+<li>远程接入分为 p2p 直连和 NAT 中转两种模式。</li>
+<li>KSA 会优先选择 p2p 直连的模式，在该模式下服务端与客户端直接连接，速度快，不限量。</li>
+<li>在 p2p 尝试失败的情况下，KSA 会启用 NAT 中转模式，在该模式下服务端与客户端之间的连接会经过看雪服务器中转，所有流量使用 AES-256-CFB 模式全局加密，看雪服务器不会保存流量、也无法解密。</li>
+<li>在 NAT 中转模式，由于看雪服务器资源有限，会进行一定的限速限量措施，内测阶段会根据流量进行动态调整，恕不另行告知。</li>
+</ul></div>
+        </div>
+<h2 id="后记">后记</h2>
+<p>总的来说，这两款产品对于新手来说是非常友好的，算不上折腾。如果注重稳定有移动端需求，提供商业服务的蒲公英 X1 是比较适合的。如果需求 Linux 和 MacOS 的使用，那么 KSA 是比较合适的。这里本人是比较期待 KSA 后续能够开源中转服务器上的服务端。</p>
+<p>部分内容引用：<a href="https://ksa.kanxue.com/index-down.htm/" target="_blank" rel="noopener noreffer">https://ksa.kanxue.com/index-down.htm</a></p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>本文于 2020-03-27 更新</span>
+            </div>
+            <div class="post-info-license"><span>采用 <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh" target="_blank">CC BY-NC 4.0</a> 协议发布</span></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/2020/03/intranet-penetration-with-pgyx1-or-ksa/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://blog.233so.com/2020/03/intranet-penetration-with-pgyx1-or-ksa/" data-title="威联通：内网穿透服务之蒲公英 X1 和 KSA" data-hashtags="内网穿透,威联通,蒲公英,ksa,贝锐科技"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://blog.233so.com/2020/03/intranet-penetration-with-pgyx1-or-ksa/" data-title="威联通：内网穿透服务之蒲公英 X1 和 KSA" data-image="https://i.loli.net/2020/03/31/tkKaQmYTlw5pSvZ.png" data-ralateuid="jayyoung1"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="https://blog.233so.com/2020/03/intranet-penetration-with-pgyx1-or-ksa/" data-title="威联通：内网穿透服务之蒲公英 X1 和 KSA"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微信" data-sharer="weixin" data-url="https://blog.233so.com/2020/03/intranet-penetration-with-pgyx1-or-ksa/"><i class="fab fa-weixin fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">内网穿透</a>,&nbsp;<a href="/tags/%E5%A8%81%E8%81%94%E9%80%9A/">威联通</a>,&nbsp;<a href="/tags/%E8%92%B2%E5%85%AC%E8%8B%B1/">蒲公英</a>,&nbsp;<a href="/tags/ksa/">ksa</a>,&nbsp;<a href="/tags/%E8%B4%9D%E9%94%90%E7%A7%91%E6%8A%80/">贝锐科技</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/2020/03/install-nps-on-qnap-nas/" class="prev" rel="prev" title="威联通：内网穿透解决方案之自建NPS服务"><i class="fas fa-angle-left fa-fw"></i>威联通：内网穿透解决方案之自建NPS服务</a>
+            <a href="/2020/04/hugo-loveit-with-more-video-share-shortcodes-supported/" class="next" rel="next" title="Hugo 篇二：为 LoveIt 主题添加更多视频分享 shortcodes">Hugo 篇二：为 LoveIt 主题添加更多视频分享 shortcodes<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.67.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.0"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://weibo.com/jayyoung1/" target="_blank">Jay</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css"><script type="text/javascript">
+    window.config = {"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"valine":{"appId":"iRP94IPVb6nLbnvVlYl3acIX-gzGzoHsz","appKey":"cMInmDt3V8IqJDnkANRw9Faf","avatar":"mp","el":"#valine","lang":"zh-cn","pageSize":10,"placeholder":"请留下你善意的评论……","recordIP":true,"visitor":true}},"headerMode":{"desktop":"fixed","mobile":"fixed"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"99SEOT1H0K","algoliaIndex":"index","algoliaSearchKey":"5f32c3a605ca6aba6c73407aa305e495","noResultsFound":"没有找到结果","type":"algolia"},"twemoji":true};
+</script><script src="https://cdn.jsdelivr.net/npm/valine@1.4.9/dist/Valine.min.js"></script><script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script><script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js"></script><script src="https://cdn.jsdelivr.net/npm/twemoji@12.1.5/dist/twemoji.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/js/lightgallery.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sachinchoolur/lg-thumbnail.js@1.1.0/dist/lg-thumbnail.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sachinchoolur/lg-zoom.js@1.0.1/dist/lg-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Jay-Young/blog@master/lib/sharer/sharer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Jay-Young/live2d-widget@master/autoload.min.js"></script><script type="text/javascript" src="/js/custom.js"></script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-16630170-6','auto');ga('set', 'anonymizeIp', true);ga('send', 'pageview');
+        </script><script type="text/javascript" src="https://www.google-analytics.com/analytics.js" async></script></body>
+</html>

@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>华硕 | 标签 | Jay</title>
+        <link>https://blog.233so.com/tags/%E5%8D%8E%E7%A1%95/</link>
+        <description>华硕 | 标签 | Jay</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 19 Apr 2020 00:25:02 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/%E5%8D%8E%E7%A1%95/" rel="self" type="application/rss+xml" /><item>
+                <title>解决华硕路由器 CPU 核心占用 100% 问题的崎岖之路</title>
+                <link>https://blog.233so.com/2020/04/asus-router-cpu-high-occupancy-fixed/</link>
+                <pubDate>Sun, 19 Apr 2020 00:25:02 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/04/asus-router-cpu-high-occupancy-fixed/</guid>
+                <description>今天手机正愉快地刷着 B 站，突然发现视频卡顿，于是到电脑上打开网页测试发现 DNS 解析有问题了，解析时好时坏，就像乌龟一样。 跑到路由器里一看 CPU 其中一</description>
+            </item></channel>
+</rss>

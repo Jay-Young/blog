@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>友情链接 | 标签 | Jay</title>
+        <link>https://blog.233so.com/tags/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/</link>
+        <description>友情链接 | 标签 | Jay</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 25 Apr 2020 23:08:48 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/" rel="self" type="application/rss+xml" /><item>
+                <title>Hugo 篇四：添加友链卡片 shortcodes</title>
+                <link>https://blog.233so.com/2020/04/friend-link-shortcodes-for-hugo-loveit/</link>
+                <pubDate>Sat, 25 Apr 2020 23:08:48 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/04/friend-link-shortcodes-for-hugo-loveit/</guid>
+                <description>在前辈大佬的基础上，为本博客使用的主题实现友链卡片功能，并加入简单的移动页面适配。代码借鉴来自 kissshot 和 数学小兵儿 两位大佬。
+</description>
+            </item></channel>
+</rss>

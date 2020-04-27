@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>浏览器 | 标签 | Jay</title>
+        <link>https://blog.233so.com/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/</link>
+        <description>浏览器 | 标签 | Jay</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 20 Mar 2020 22:42:34 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/" rel="self" type="application/rss+xml" /><item>
+                <title>浏览器小技巧：通过注册表为Chromium Edge安装扩展</title>
+                <link>https://blog.233so.com/2020/03/install-edge-extensions-via-registry/</link>
+                <pubDate>Fri, 20 Mar 2020 22:42:34 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/03/install-edge-extensions-via-registry/</guid>
+                <description>新 Microsoft Edge 浏览器基于 Google 的开源项目 Chromium ，针对 Windows 10 进行优化。一个微软账号，跨平台同步，和 Chrome 扩展通用，官方扩展商店也越来越完善。
+</description>
+            </item></channel>
+</rss>

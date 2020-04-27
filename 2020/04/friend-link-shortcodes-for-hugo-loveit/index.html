@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Hugo 篇四：添加友链卡片 shortcodes | Jay</title>
+        <meta name="Description" content="友链卡片"><meta property="og:title" content="Hugo 篇四：添加友链卡片 shortcodes" />
+<meta property="og:description" content="友链卡片" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.233so.com/2020/04/friend-link-shortcodes-for-hugo-loveit/" />
+<meta property="article:published_time" content="2020-04-25T23:08:48+08:00" />
+<meta property="article:modified_time" content="2020-04-25T23:08:48+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugo 篇四：添加友链卡片 shortcodes"/>
+<meta name="twitter:description" content="友链卡片"/>
+<meta name="application-name" content="Jay">
+<meta name="apple-mobile-web-app-title" content="Jay"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.233so.com/2020/04/friend-link-shortcodes-for-hugo-loveit/" /><link rel="prev" href="https://blog.233so.com/2020/04/snapchat-baidu-netdisk/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="msvalidate.01" content="9E6BC727410AE14F6E9442F540992717" /><meta name="baidu-site-verification" content="apixhlrtUN" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Hugo 篇四：添加友链卡片 shortcodes",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/blog.233so.com\/2020\/04\/friend-link-shortcodes-for-hugo-loveit\/"
+        },"image": {
+                "@type": "ImageObject",
+                "url": "https:\/\/blog.233so.com\/cover.png",
+                "width":  800 ,
+                "height":  600 
+            },"genre": "posts","keywords": "Hugo, LoveIt, shortcodes, 友链, 友情链接","wordcount":  539 ,
+        "url": "https:\/\/blog.233so.com\/2020\/04\/friend-link-shortcodes-for-hugo-loveit\/","datePublished": "2020-04-25T23:08:48+08:00","dateModified": "2020-04-25T23:08:48+08:00","license": "This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.","publisher": {
+                "@type": "Organization",
+                "name": "Jay",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/blog.233so.com\/logo.png",
+                "width":  127 ,
+                "height":  40 
+                }
+            },"author": {
+                "@type": "Person",
+                "name": "Jay"
+            },"description": "友链卡片"
+    }
+    </script></head>
+    <body><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.classList.add('dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Jay">Jay</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/"> 首页 </a><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/friends/"> 友链 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Jay">Jay</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/" title="">首页</a><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/friends/" title="">友链</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Hugo 篇四：添加友链卡片 shortcodes</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://weibo.com/jayyoung1/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Jay</a></span>&nbsp;
+                    <span class="post-category">收录于<a href="/categories/hugo/">
+                                <i class="far fa-folder fa-fw"></i>Hugo
+                            </a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-04-25>2020-04-25</time>&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 539 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>预计阅读 2 分钟&nbsp;<span id="/2020/04/friend-link-shortcodes-for-hugo-loveit/" class="leancloud_visitors" data-flag-title="Hugo 篇四：添加友链卡片 shortcodes">
+                        <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading/normal.min.svg"
+        data-sizes="auto"
+        data-srcset="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/friend-link-shortcodes-for-hugo-loveit/Konachan.com-304807.jpg, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/friend-link-shortcodes-for-hugo-loveit/Konachan.com-304807.jpg 1.5x, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/friend-link-shortcodes-for-hugo-loveit/Konachan.com-304807.jpg 2x"
+        data-src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/friend-link-shortcodes-for-hugo-loveit/Konachan.com-304807.jpg"
+        alt="友链卡片"
+        title="友链卡片" /></div><div class="details toc" id="toc-static">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-down"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#代码部分">代码部分</a></li>
+    <li><a href="#展示效果">展示效果</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>在前辈大佬的基础上，为本博客使用的主题实现友链卡片功能，并加入简单的移动页面适配。代码借鉴来自 <a href="https://github.com/kkkgo/hugo-friendlinks/" target="_blank" rel="noopener noreffer">kissshot</a> 和 <a href="https://github.com/MatNoble/hugo-shortcodes-sets/" target="_blank" rel="noopener noreffer">数学小兵儿</a> 两位大佬。</p>
+<h2 id="代码部分">代码部分</h2>
+<p><code>LoveIt/layouts/shortcodes/</code> 下面新建 <code>friend.html</code> 文件：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">{{ if .IsNamedParams }}
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">target</span><span class="o">=</span><span class="s">&#34;_blank&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">{{</span> <span class="err">.</span><span class="na">Get</span> <span class="err">&#34;</span><span class="na">url</span><span class="err">&#34;</span> <span class="err">}}</span> <span class="na">title</span><span class="o">=</span><span class="s">{{</span> <span class="err">.</span><span class="na">Get</span> <span class="err">&#34;</span><span class="na">name</span><span class="err">&#34;</span> <span class="err">}}</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;friendurl&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;frienddiv&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;frienddivleft&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">img</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;myfriend&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">{{</span> <span class="err">.</span><span class="na">Get</span> <span class="err">&#34;</span><span class="na">logo</span><span class="err">&#34;</span> <span class="err">}}</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;frienddivright&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;friendname&#34;</span><span class="p">&gt;</span>{{ .Get &#34;name&#34; }}<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;friendinfo&#34;</span><span class="p">&gt;</span>{{ .Get &#34;word&#34; }}<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+{{ end }}
+</code></pre></td></tr></table>
+</div>
+</div><p><code>LoveIt/assets/css/_partial/_single/</code> 下面新建 <code>_friend.scss</code> 文件：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span><span class="lnt">81
+</span><span class="lnt">82
+</span><span class="lnt">83
+</span><span class="lnt">84
+</span><span class="lnt">85
+</span><span class="lnt">86
+</span><span class="lnt">87
+</span><span class="lnt">88
+</span><span class="lnt">89
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-scss" data-lang="scss"><span class="nc">.friendurl</span> <span class="p">{</span>
+	<span class="nt">text-decoration</span><span class="nd">:</span> <span class="nt">none</span> <span class="o">!</span><span class="nt">important</span><span class="p">;</span>
+	<span class="nt">color</span><span class="nd">:</span> <span class="nt">black</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.myfriend</span> <span class="p">{</span>
+	<span class="nt">width</span><span class="nd">:</span> <span class="nt">56px</span> <span class="o">!</span><span class="nt">important</span><span class="p">;</span>
+	<span class="nt">height</span><span class="nd">:</span> <span class="nt">56px</span> <span class="o">!</span><span class="nt">important</span><span class="p">;</span>
+	<span class="nt">border-radius</span><span class="nd">:</span> <span class="nt">50</span><span class="err">%</span><span class="p">;</span>
+	<span class="nt">border</span><span class="nd">:</span> <span class="nt">1px</span> <span class="nt">solid</span> <span class="nn">#ddd</span><span class="p">;</span>
+	<span class="nt">padding</span><span class="nd">:</span> <span class="nt">2px</span><span class="p">;</span>
+	<span class="nt">box-shadow</span><span class="nd">:</span> <span class="nt">1px</span> <span class="nt">1px</span> <span class="nt">1px</span> <span class="nt">rgba</span><span class="o">(</span><span class="nt">0</span><span class="o">,</span> <span class="nt">0</span><span class="o">,</span> <span class="nt">0</span><span class="o">,</span> <span class="nt">0</span><span class="nc">.15</span><span class="o">)</span><span class="p">;</span>
+	<span class="nt">margin-top</span><span class="nd">:</span> <span class="nt">14px</span> <span class="o">!</span><span class="nt">important</span><span class="p">;</span>
+	<span class="nt">margin-left</span><span class="nd">:</span> <span class="nt">14px</span> <span class="o">!</span><span class="nt">important</span><span class="p">;</span>
+	<span class="nt">background-color</span><span class="nd">:</span> <span class="nn">#fff</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.frienddiv</span> <span class="p">{</span>
+	<span class="nt">height</span><span class="nd">:</span> <span class="nt">92px</span><span class="p">;</span>
+	<span class="nt">margin-top</span><span class="nd">:</span> <span class="nt">10px</span><span class="p">;</span>
+	<span class="nt">width</span><span class="nd">:</span> <span class="nt">48</span><span class="err">%</span><span class="p">;</span>
+	<span class="nt">display</span><span class="nd">:</span> <span class="nt">inline-block</span> <span class="o">!</span><span class="nt">important</span><span class="p">;</span>
+	<span class="nt">border-radius</span><span class="nd">:</span> <span class="nt">5px</span><span class="p">;</span>
+	<span class="nt">background</span><span class="nd">:</span> <span class="nt">rgba</span><span class="o">(</span><span class="nt">255</span><span class="o">,</span> <span class="nt">255</span><span class="o">,</span> <span class="nt">255</span><span class="o">,</span> <span class="nt">0</span><span class="nc">.2</span><span class="o">)</span><span class="p">;</span>
+	<span class="nt">box-shadow</span><span class="nd">:</span> <span class="nt">4px</span> <span class="nt">4px</span> <span class="nt">2px</span> <span class="nt">1px</span> <span class="nt">rgba</span><span class="o">(</span><span class="nt">0</span><span class="o">,</span> <span class="nt">0</span><span class="o">,</span> <span class="nt">255</span><span class="o">,</span> <span class="nt">0</span><span class="nc">.2</span><span class="o">)</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.frienddiv</span><span class="nd">:hover</span> <span class="p">{</span>
+	<span class="nt">background</span><span class="nd">:</span> <span class="nt">rgba</span><span class="o">(</span><span class="nt">87</span><span class="o">,</span> <span class="nt">142</span><span class="o">,</span> <span class="nt">224</span><span class="o">,</span> <span class="nt">0</span><span class="nc">.15</span><span class="o">)</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.frienddiv</span><span class="nd">:hover</span> <span class="nc">.frienddivleft</span> <span class="nt">img</span> <span class="p">{</span>
+	<span class="nt">transition</span><span class="nd">:</span> <span class="nt">0</span><span class="nc">.9s</span> <span class="o">!</span><span class="nt">important</span><span class="p">;</span>
+	<span class="nt">-webkit-transition</span><span class="nd">:</span> <span class="nt">0</span><span class="nc">.9s</span> <span class="o">!</span><span class="nt">important</span><span class="p">;</span>
+	<span class="nt">-moz-transition</span><span class="nd">:</span> <span class="nt">0</span><span class="nc">.9s</span> <span class="o">!</span><span class="nt">important</span><span class="p">;</span>
+	<span class="nt">-o-transition</span><span class="nd">:</span> <span class="nt">0</span><span class="nc">.9s</span> <span class="o">!</span><span class="nt">important</span><span class="p">;</span>
+	<span class="nt">-ms-transition</span><span class="nd">:</span> <span class="nt">0</span><span class="nc">.9s</span> <span class="o">!</span><span class="nt">important</span><span class="p">;</span>
+	<span class="nt">transform</span><span class="nd">:</span> <span class="nt">rotate</span><span class="o">(</span><span class="nt">360deg</span><span class="o">)</span> <span class="o">!</span><span class="nt">important</span><span class="p">;</span>
+	<span class="nt">-webkit-transform</span><span class="nd">:</span> <span class="nt">rotate</span><span class="o">(</span><span class="nt">360deg</span><span class="o">)</span> <span class="o">!</span><span class="nt">important</span><span class="p">;</span>
+	<span class="nt">-moz-transform</span><span class="nd">:</span> <span class="nt">rotate</span><span class="o">(</span><span class="nt">360deg</span><span class="o">)</span> <span class="o">!</span><span class="nt">important</span><span class="p">;</span>
+	<span class="nt">-o-transform</span><span class="nd">:</span> <span class="nt">rotate</span><span class="o">(</span><span class="nt">360deg</span><span class="o">)</span> <span class="o">!</span><span class="nt">important</span><span class="p">;</span>
+	<span class="nt">-ms-transform</span><span class="nd">:</span> <span class="nt">rotate</span><span class="o">(</span><span class="nt">360deg</span><span class="o">)</span> <span class="o">!</span><span class="nt">important</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.frienddivleft</span> <span class="p">{</span>
+	<span class="nt">width</span><span class="nd">:</span> <span class="nt">92px</span><span class="p">;</span>
+	<span class="nt">float</span><span class="nd">:</span> <span class="nt">left</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.frienddivleft</span> <span class="p">{</span>
+	<span class="nt">margin-right</span><span class="nd">:</span> <span class="nt">2px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.frienddivright</span> <span class="p">{</span>
+	<span class="nt">margin-top</span><span class="nd">:</span> <span class="nt">18px</span><span class="p">;</span>
+	<span class="nt">margin-right</span><span class="nd">:</span> <span class="nt">18px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.friendname</span> <span class="p">{</span>
+	<span class="nt">text-overflow</span><span class="nd">:</span> <span class="nt">ellipsis</span><span class="p">;</span>
+	<span class="nt">overflow</span><span class="nd">:</span> <span class="nt">hidden</span><span class="p">;</span>
+	<span class="nt">white-space</span><span class="nd">:</span> <span class="nt">nowrap</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.friendinfo</span> <span class="p">{</span>
+	<span class="nt">text-overflow</span><span class="nd">:</span> <span class="nt">ellipsis</span><span class="p">;</span>
+	<span class="nt">overflow</span><span class="nd">:</span> <span class="nt">hidden</span><span class="p">;</span>
+	<span class="nt">white-space</span><span class="nd">:</span> <span class="nt">nowrap</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="n">screen</span> <span class="ow">and</span> <span class="p">(</span><span class="no">max-width</span><span class="o">:</span> <span class="mi">600</span><span class="kt">px</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nc">.friendinfo</span> <span class="p">{</span>
+		<span class="nt">display</span><span class="nd">:</span> <span class="nt">none</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="nc">.frienddivleft</span> <span class="p">{</span>
+		<span class="nt">width</span><span class="nd">:</span> <span class="nt">84px</span><span class="p">;</span>
+		<span class="nt">margin</span><span class="nd">:</span> <span class="nt">auto</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="nc">.frienddivright</span> <span class="p">{</span>
+		<span class="nt">height</span><span class="nd">:</span> <span class="nt">100</span><span class="err">%</span><span class="p">;</span>
+		<span class="nt">margin</span><span class="nd">:</span> <span class="nt">auto</span><span class="p">;</span>
+		<span class="nt">display</span><span class="nd">:</span> <span class="nt">flex</span><span class="p">;</span>
+		<span class="nt">align-items</span><span class="nd">:</span> <span class="nt">center</span><span class="p">;</span>
+		<span class="nt">justify-content</span><span class="nd">:</span> <span class="nt">center</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="nc">.friendname</span> <span class="p">{</span>
+		<span class="nt">font-size</span><span class="nd">:</span> <span class="nt">14px</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><code>LoveIt/assets/css/_page/</code> 下面修改 <code>_single.scss</code>，引入下面一行：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-scss" data-lang="scss"><span class="k">@import</span> <span class="s2">&#34;../_partial/_single/friend&#34;</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="展示效果">展示效果</h2>
+<p>使用示例：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">{{&lt; friend name=&#34;Dillon&#34; url=&#34;https://github.com/dillonzq/&#34; logo=&#34;https://avatars0.githubusercontent.com/u/30786232?s=460&amp;u=5fc878f67c869ce6628cf65121b8d73e1733f941&amp;v=4&#34; word=&#34;LoveIt主题作者&#34; &gt;}}
+</code></pre></td></tr></table>
+</div>
+</div>
+<a target="_blank" href=https://github.com/dillonzq/ title=Dillon class="friendurl">
+  <div class="frienddiv">
+    <div class="frienddivleft">
+      <img class="myfriend" src=https://avatars0.githubusercontent.com/u/30786232?s&#61;460&amp;u&#61;5fc878f67c869ce6628cf65121b8d73e1733f941&amp;v&#61;4 />
+    </div>
+    <div class="frienddivright">
+      <div class="friendname">Dillon</div>
+      <div class="friendinfo">LoveIt主题作者</div>
+    </div>
+  </div>
+</a>
+
+
+<a target="_blank" href=https://03k.org/ title=kissshot class="friendurl">
+  <div class="frienddiv">
+    <div class="frienddivleft">
+      <img class="myfriend" src=https://avatars0.githubusercontent.com/u/4530897?s&#61;460&amp;u&#61;1e701a77877331e691d7f6dfe3a5bda7b30e0676&amp;v&#61;4 />
+    </div>
+    <div class="frienddivright">
+      <div class="friendname">kissshot</div>
+      <div class="friendinfo">提供了某知名kms服务的大佬</div>
+    </div>
+  </div>
+</a>
+
+
+<a target="_blank" href=https://matnoble.me/ title=数学小兵儿 class="friendurl">
+  <div class="frienddiv">
+    <div class="frienddivleft">
+      <img class="myfriend" src=https://matnoble.me/icons/android-chrome-512x512.png />
+    </div>
+    <div class="frienddivright">
+      <div class="friendname">数学小兵儿</div>
+      <div class="friendinfo">数学＆计算机 我都爱</div>
+    </div>
+  </div>
+</a>
+
+<p>移动端隐藏说明文字，只留下名称：</p>
+<figure>
+    <img src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/friend-link-shortcodes-for-hugo-loveit/QQ%e6%8b%bc%e9%9f%b3%e6%88%aa%e5%9b%be20200425232808.png"/> 
+</figure></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>本文于 2020-04-25 更新</span>
+            </div>
+            <div class="post-info-license"><span>采用 <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh" target="_blank">CC BY-NC 4.0</a> 协议发布</span></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/2020/04/friend-link-shortcodes-for-hugo-loveit/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://blog.233so.com/2020/04/friend-link-shortcodes-for-hugo-loveit/" data-title="Hugo 篇四：添加友链卡片 shortcodes" data-hashtags="Hugo,LoveIt,shortcodes,友链,友情链接"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://blog.233so.com/2020/04/friend-link-shortcodes-for-hugo-loveit/" data-title="Hugo 篇四：添加友链卡片 shortcodes" data-image="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/friend-link-shortcodes-for-hugo-loveit/Konachan.com-304807.jpg" data-ralateuid="jayyoung1"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="https://blog.233so.com/2020/04/friend-link-shortcodes-for-hugo-loveit/" data-title="Hugo 篇四：添加友链卡片 shortcodes"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微信" data-sharer="weixin" data-url="https://blog.233so.com/2020/04/friend-link-shortcodes-for-hugo-loveit/"><i class="fab fa-weixin fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/hugo/">Hugo</a>,&nbsp;<a href="/tags/loveit/">LoveIt</a>,&nbsp;<a href="/tags/shortcodes/">shortcodes</a>,&nbsp;<a href="/tags/%E5%8F%8B%E9%93%BE/">友链</a>,&nbsp;<a href="/tags/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/">友情链接</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/2020/04/snapchat-baidu-netdisk/" class="prev" rel="prev" title="闲聊百度网盘的骚操作“用户激励计划”"><i class="fas fa-angle-left fa-fw"></i>闲聊百度网盘的骚操作“用户激励计划”</a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.67.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.0"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://weibo.com/jayyoung1/" target="_blank">Jay</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css"><script type="text/javascript">
+    window.config = {"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"valine":{"appId":"iRP94IPVb6nLbnvVlYl3acIX-gzGzoHsz","appKey":"cMInmDt3V8IqJDnkANRw9Faf","avatar":"mp","el":"#valine","lang":"zh-cn","pageSize":10,"placeholder":"请留下你善意的评论……","recordIP":true,"visitor":true}},"headerMode":{"desktop":"fixed","mobile":"fixed"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"99SEOT1H0K","algoliaIndex":"index","algoliaSearchKey":"5f32c3a605ca6aba6c73407aa305e495","noResultsFound":"没有找到结果","type":"algolia"},"twemoji":true};
+</script><script src="https://cdn.jsdelivr.net/npm/valine@1.4.9/dist/Valine.min.js"></script><script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script><script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js"></script><script src="https://cdn.jsdelivr.net/npm/twemoji@12.1.5/dist/twemoji.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/js/lightgallery.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sachinchoolur/lg-thumbnail.js@1.1.0/dist/lg-thumbnail.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sachinchoolur/lg-zoom.js@1.0.1/dist/lg-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Jay-Young/blog@master/lib/sharer/sharer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Jay-Young/live2d-widget@master/autoload.min.js"></script><script type="text/javascript" src="/js/custom.js"></script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-16630170-6','auto');ga('set', 'anonymizeIp', true);ga('send', 'pageview');
+        </script><script type="text/javascript" src="https://www.google-analytics.com/analytics.js" async></script></body>
+</html>

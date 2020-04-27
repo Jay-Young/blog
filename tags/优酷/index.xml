@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>优酷 | 标签 | Jay</title>
+        <link>https://blog.233so.com/tags/%E4%BC%98%E9%85%B7/</link>
+        <description>优酷 | 标签 | Jay</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 02 Apr 2020 18:56:12 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/%E4%BC%98%E9%85%B7/" rel="self" type="application/rss+xml" /><item>
+                <title>Hugo 篇二：为 LoveIt 主题添加更多视频分享 shortcodes</title>
+                <link>https://blog.233so.com/2020/04/hugo-loveit-with-more-video-share-shortcodes-supported/</link>
+                <pubDate>Thu, 02 Apr 2020 18:56:12 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/04/hugo-loveit-with-more-video-share-shortcodes-supported/</guid>
+                <description>Hugo LoveIt 主题虽然支持了 bilibili 视频的插入，再加上 hugo 自带的 youtube 和 vimeo 视频，但是也还是有点少。没有国内视频三大巨头（优酷现在掉队有点严重，可能名不副实了）似乎有些遗憾。又加上最近 B 站去 av 化，正好看到 LoveIt 项目的 issue#208 中有人提到这一点，我就试着看看能不能改改，并加点东西进去。
+</description>
+            </item></channel>
+</rss>
