@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/</link>
         <description>一个博客，简单记录</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 25 Apr 2020 23:08:48 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 12 May 2020 21:34:34 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/" rel="self" type="application/rss+xml" /><item>
+                <title>个人打包的 QNAP QPKG 应用下载汇总</title>
+                <link>https://blog.233so.com/2020/05/my-own-qnap-apps-list/</link>
+                <pubDate>Tue, 12 May 2020 21:34:34 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/05/my-own-qnap-apps-list/</guid>
+                <description>个人用 QDK 将一些开源项目打包成了威联通可以直接安装的 QPKG 安装程序，方便使用，留个备份，不定时更新。
+</description>
+            </item><item>
                 <title>Hugo 篇四：添加友链卡片 shortcodes</title>
                 <link>https://blog.233so.com/2020/04/friend-link-shortcodes-for-hugo-loveit/</link>
                 <pubDate>Sat, 25 Apr 2020 23:08:48 &#43;0800</pubDate>
@@ -74,13 +82,5 @@
                 <author>Jay</author>
                 <guid>https://blog.233so.com/2020/03/install-hugo-on-qnap-nas/</guid>
                 <description>Hugo 是一个用 Go 语言实现的静态博客系统生成工具。基于 Markdown 撰写博文，不改变你已有的习惯，拥有快速部署、简单易用、主题丰富、易扩展等特点。你可以在任何地方启动 Hugo，实现毫秒级渲染。</description>
-            </item><item>
-                <title>威联通：“私人定制”在线代码编辑器</title>
-                <link>https://blog.233so.com/2020/03/qnap-codeserver-self-host/</link>
-                <pubDate>Sat, 21 Mar 2020 15:39:58 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/03/qnap-codeserver-self-host/</guid>
-                <description>code-server 是基于微软 Visual Studio Code 项目打造的远程编辑器，可以运行在服务器，客户端通过浏览器访问即可使用。
-</description>
             </item></channel>
 </rss>

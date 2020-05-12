@@ -2,15 +2,22 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://blog.233so.com/categories/</loc><lastmod>2020-04-25T23:08:48&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/categories/</loc><lastmod>2020-05-12T21:34:34&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/</loc><lastmod>2020-05-12T21:34:34&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/nas/</loc><lastmod>2020-05-12T21:34:34&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/categories/nas/</loc><lastmod>2020-05-12T21:34:34&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/posts/</loc><lastmod>2020-05-12T21:34:34&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/qdk/</loc><lastmod>2020-05-12T21:34:34&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/qnap/</loc><lastmod>2020-05-12T21:34:34&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/qpkg/</loc><lastmod>2020-05-12T21:34:34&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/</loc><lastmod>2020-05-12T21:34:34&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/2020/05/my-own-qnap-apps-list/</loc><lastmod>2020-05-12T21:34:34&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/%E5%A8%81%E8%81%94%E9%80%9A/</loc><lastmod>2020-05-12T21:34:34&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/hugo/</loc><lastmod>2020-04-25T23:08:48&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/categories/hugo/</loc><lastmod>2020-04-25T23:08:48&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/2020/04/friend-link-shortcodes-for-hugo-loveit/</loc><lastmod>2020-04-25T23:08:48&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.233so.com/</loc><lastmod>2020-04-25T23:08:48&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/loveit/</loc><lastmod>2020-04-25T23:08:48&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.233so.com/posts/</loc><lastmod>2020-04-25T23:08:48&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/shortcodes/</loc><lastmod>2020-04-25T23:08:48&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.233so.com/tags/</loc><lastmod>2020-04-25T23:08:48&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/</loc><lastmod>2020-04-25T23:08:48&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/%E5%8F%8B%E9%93%BE/</loc><lastmod>2020-04-25T23:08:48&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/p2p/</loc><lastmod>2020-04-21T09:31:31&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -23,14 +30,10 @@
             <loc>https://blog.233so.com/tags/dnsmasq/</loc><lastmod>2020-04-19T00:25:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/ksoftirqd/</loc><lastmod>2020-04-19T00:25:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/kworker/</loc><lastmod>2020-04-19T00:25:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.233so.com/categories/nas/</loc><lastmod>2020-04-19T00:25:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.233so.com/tags/qnap/</loc><lastmod>2020-04-19T00:25:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/%E5%8D%8E%E7%A1%95/</loc><lastmod>2020-04-19T00:25:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.233so.com/tags/%E5%A8%81%E8%81%94%E9%80%9A/</loc><lastmod>2020-04-19T00:25:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/2020/04/asus-router-cpu-high-occupancy-fixed/</loc><lastmod>2020-04-19T00:25:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/</loc><lastmod>2020-04-19T00:25:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/code-server/</loc><lastmod>2020-04-17T11:26:01&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.233so.com/tags/nas/</loc><lastmod>2020-04-17T11:26:01&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/vs-code/</loc><lastmod>2020-04-17T11:26:01&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/2020/04/upgrade-code-server-to-v3/</loc><lastmod>2020-04-17T11:26:01&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/dplayer/</loc><lastmod>2020-04-14T14:19:28&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
