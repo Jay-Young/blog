@@ -152,7 +152,7 @@
     <li><a href="#后记">后记</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><div class="typeit"><div id="id-547713" class=""></div></div>
+            </div><div class="content" id="content"><div class="typeit"><div id="id-0c3a02" class=""></div></div>
 
 <h2 id="前言">前言</h2>
 <p>静态博客系统有很多，为什么选择 Hugo 呢？</p>
@@ -165,12 +165,13 @@
 </blockquote>
 <div class="admonition info">
             <div class="admonition-title"><i class="icon fas fa-info-circle"></i>说明</div>
-            <div class="admonition-content">本文基于以下软硬件系统测试，不能完全保证其他系统的兼容性。</p>
+            <div class="admonition-content"><p>本文基于以下软硬件系统测试，不能完全保证其他系统的兼容性。</p>
 <ul>
 <li>QNAP TS-453Bmini 2+8G 内存</li>
 <li>QTS 4.4.1.1216</li>
 <li>hugo_extended_0.67.1_Linux-64bit.tar.gz</li>
-</ul></div>
+</ul>
+</div>
         </div>
 <h2 id="安装">安装</h2>
 <div class="admonition warning">
@@ -201,7 +202,8 @@ ln -sf /your-hugo-path/hugo /usr/local/bin/hugo
             <div class="admonition-content"><ul>
 <li><code>libstdc++.so.6</code> 需要安装 <code>CodexPack</code> 套件，这是多媒体管理的硬件加速转码用的，一般都会装的</li>
 <li>替换<code>your-hugo-path</code>为你自己的 hugo 所在目录</li>
-</ul></div>
+</ul>
+</div>
         </div>
 <p>为避免长期运行失效，可以将上面的 shell 脚本加入开机启动和定时任务，具体请参考<a href="https://blog.233so.com/2020/03/qnap-codeserver-self-host/" target="_blank" rel="noopener noreffer">另一篇博文</a>。</p>
 <div class="admonition note">
@@ -547,7 +549,8 @@ comment: true
             <div class="admonition-content"><ul>
 <li>如果你对比<code>themes/LoveIt/archetypes</code>目录下的<code>default.md</code>和创建的第一篇文章<code>first-post.md</code>，它们非常相像，因为文章就是以<code>default.md</code>为模板创建的</li>
 <li>默认情况下, 所有文章和页面均作为草稿创建。如果想要渲染这些页面，请从元数据中删除属性 <code>draft: true</code>, 或者设置属性 <code>draft: false</code></li>
-</ul></div>
+</ul>
+</div>
         </div>
 <p>在发布自己的文章之前，还需要一点点的设置：将第一篇文章的<code>draft</code>属性设置为<code>false</code></p>
 <h3 id="构建网站">构建网站</h3>
@@ -682,7 +685,7 @@ git push 项目名称
                 Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.67.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.0"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.70.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.0"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://weibo.com/jayyoung1/" target="_blank">Jay</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
@@ -693,7 +696,7 @@ git push 项目名称
                 <i class="fas fa-comment fa-fw"></i>
             </a>
         </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css"><script type="text/javascript">
-    window.config = {"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"valine":{"appId":"iRP94IPVb6nLbnvVlYl3acIX-gzGzoHsz","appKey":"cMInmDt3V8IqJDnkANRw9Faf","avatar":"mp","el":"#valine","lang":"zh-cn","pageSize":10,"placeholder":"请留下你善意的评论……","recordIP":true,"visitor":true}},"data":{"id-547713":"Hugo 是一个用 Go 语言实现的静态博客系统生成工具。基于 Markdown 撰写博文，不改变你已有的习惯，拥有快速部署、简单易用、主题丰富、易扩展等特点。你可以在任何地方启动 Hugo，实现毫秒级渲染。"},"headerMode":{"desktop":"fixed","mobile":"fixed"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"99SEOT1H0K","algoliaIndex":"index","algoliaSearchKey":"5f32c3a605ca6aba6c73407aa305e495","noResultsFound":"没有找到结果","type":"algolia"},"twemoji":true,"typeit":[["id-547713"]]};
+    window.config = {"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"valine":{"appId":"iRP94IPVb6nLbnvVlYl3acIX-gzGzoHsz","appKey":"cMInmDt3V8IqJDnkANRw9Faf","avatar":"mp","el":"#valine","lang":"zh-cn","pageSize":10,"placeholder":"请留下你善意的评论……","recordIP":true,"visitor":true}},"data":{"id-0c3a02":"Hugo 是一个用 Go 语言实现的静态博客系统生成工具。基于 Markdown 撰写博文，不改变你已有的习惯，拥有快速部署、简单易用、主题丰富、易扩展等特点。你可以在任何地方启动 Hugo，实现毫秒级渲染。"},"headerMode":{"desktop":"fixed","mobile":"fixed"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"99SEOT1H0K","algoliaIndex":"index","algoliaSearchKey":"5f32c3a605ca6aba6c73407aa305e495","noResultsFound":"没有找到结果","type":"algolia"},"twemoji":true,"typeit":[["id-0c3a02"]]};
 </script><script src="https://cdn.jsdelivr.net/npm/valine@1.4.9/dist/Valine.min.js"></script><script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script><script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js"></script><script src="https://cdn.jsdelivr.net/npm/twemoji@12.1.5/dist/twemoji.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/js/lightgallery.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sachinchoolur/lg-thumbnail.js@1.1.0/dist/lg-thumbnail.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sachinchoolur/lg-zoom.js@1.0.1/dist/lg-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/js/sharer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/typeit@7.0.3/dist/typeit.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Jay-Young/live2d-widget@master/autoload.min.js"></script><script type="text/javascript" src="/js/custom.js"></script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
             window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
             ga('create', 'UA-16630170-6','auto');ga('set', 'anonymizeIp', true);ga('send', 'pageview');

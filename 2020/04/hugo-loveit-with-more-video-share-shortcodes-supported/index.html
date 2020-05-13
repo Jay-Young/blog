@@ -165,9 +165,9 @@
 <pre class="chroma"><code class="language-markdown" data-lang="markdown">视频地址：https://www.bilibili.com/video/av882566744
 
 插入方式：
-{{&lt; bilibili 882566744 &gt;}}
+{{<span class="p">&lt;</span> <span class="nt">bilibili</span> <span class="na">882566744</span> <span class="p">&gt;</span>}}
 或者
-{{&lt; bilibili av=882566744 &gt;}}
+{{<span class="p">&lt;</span> <span class="nt">bilibili</span> <span class="na">av</span><span class="o">=</span><span class="s">882566744</span> <span class="p">&gt;</span>}}
 </code></pre></td></tr></table>
 </div>
 </div><p>而新 <code>bv</code> 时代 B 站视频默认只显示 <code>bv</code> 号了，用老方法插入会失败。当然目前你可以用浏览器扩展或者其他方法获取到 <code>av</code> 号来插入，但是总有一天会迎来全面 <code>bv</code> 的时代。那么就需要我们手动来改造了。</p>
@@ -213,7 +213,7 @@ themes/LoveIt/assets/css/_page/_single.scss
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-markdown" data-lang="markdown">player.bilibili.com/player.html?aid=[av号]&amp;page=[分p号]
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">player.bilibili.com/player.html?aid=[av号]<span class="err">&amp;</span>page=[分p号]
 </code></pre></td></tr></table>
 </div>
 </div><p>那么拿到 <code>bv</code> 时代的官方分享链接就可以了。</p>
@@ -319,7 +319,7 @@ themes/LoveIt/assets/css/_page/_single.scss
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-markdown" data-lang="markdown">{{&lt; bilibilibv BV1YK4y1C7CU &gt;}}
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">{{<span class="p">&lt;</span> <span class="nt">bilibilibv</span> <span class="na">BV1YK4y1C7CU</span> <span class="p">&gt;</span>}}
 </code></pre></td></tr></table>
 </div>
 </div><div class="bilibilibv">
@@ -360,15 +360,15 @@ themes/LoveIt/assets/css/_page/_single.scss
 
 用法示例：
 
-{{&lt; iqiyi 3060730600 &gt;}}
+{{<span class="p">&lt;</span> <span class="nt">iqiyi</span> <span class="na">3060730600</span> <span class="p">&gt;</span>}}
 
-{{&lt; qqvideo r0029muuhfj &gt;}}
+{{<span class="p">&lt;</span> <span class="nt">qqvideo</span> <span class="na">r0029muuhfj</span> <span class="p">&gt;</span>}}
 
-{{&lt; youku XMzk1NjM1MjAw &gt;}}
+{{<span class="p">&lt;</span> <span class="nt">youku</span> <span class="na">XMzk1NjM1MjAw</span> <span class="p">&gt;</span>}}
 
-{{&lt; sohu 90742150 &gt;}}
+{{<span class="p">&lt;</span> <span class="nt">sohu</span> <span class="na">90742150</span> <span class="p">&gt;</span>}}
 
-{{&lt; acfun ac14349183 &gt;}}
+{{<span class="p">&lt;</span> <span class="nt">acfun</span> <span class="na">ac14349183</span> <span class="p">&gt;</span>}}
 </code></pre></td></tr></table>
 </div>
 </div><p>0202年还在使用 flash 技术的视频网站，祝你们新年快乐。</p></div><div class="post-footer" id="post-footer">
@@ -403,7 +403,7 @@ themes/LoveIt/assets/css/_page/_single.scss
                 Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.67.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.0"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.70.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.0"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://weibo.com/jayyoung1/" target="_blank">Jay</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
