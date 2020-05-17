@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Guide | 标签 | Jay</title>
+        <link>https://blog.233so.com/tags/guide/</link>
+        <description>Guide | 标签 | Jay</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 17 May 2020 13:45:17 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/guide/" rel="self" type="application/rss+xml" /><item>
+                <title>QDK 快速开发指南中文版</title>
+                <link>https://blog.233so.com/2020/05/qdk-quick-start-guide-zh/</link>
+                <pubDate>Sun, 17 May 2020 13:45:17 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/05/qdk-quick-start-guide-zh/</guid>
+                <description>QDK 是用于构建威联通 QTS 系统 QPKG 应用的一套开发工具. QPKG 应用不仅能让用户方便地安装和删除软件包，还能让应用开发者/维护者完全控制应用在 NAS 上的安装过程.
+</description>
+            </item></channel>
+</rss>

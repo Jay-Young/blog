@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/posts/</link>
         <description>所有文章 | Jay</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 12 May 2020 21:34:34 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 17 May 2020 13:45:17 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+                <title>QDK 快速开发指南中文版</title>
+                <link>https://blog.233so.com/2020/05/qdk-quick-start-guide-zh/</link>
+                <pubDate>Sun, 17 May 2020 13:45:17 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/05/qdk-quick-start-guide-zh/</guid>
+                <description>QDK 是用于构建威联通 QTS 系统 QPKG 应用的一套开发工具. QPKG 应用不仅能让用户方便地安装和删除软件包，还能让应用开发者/维护者完全控制应用在 NAS 上的安装过程.
+</description>
+            </item><item>
                 <title>个人打包的 QNAP QPKG 应用下载汇总</title>
                 <link>https://blog.233so.com/2020/05/my-own-qnap-apps-list/</link>
                 <pubDate>Tue, 12 May 2020 21:34:34 &#43;0800</pubDate>
@@ -75,12 +83,5 @@
                 <guid>https://blog.233so.com/2020/03/install-nps-on-qnap-nas/</guid>
                 <description>nps 是一款轻量级、高性能、功能强大的内网穿透代理服务器。目前支持 tcp、udp 流量转发，可支持任何 tcp、udp 上层协议（访问内网网站、本地支付接口调试、ssh 访问、远程桌面，内网 dns 解析等等……），此外还支持内网 http 代理、内网 socks5 代理、p2p 等，并带有功能强大的 web 管理端。
 </description>
-            </item><item>
-                <title>Hugo 篇一：在威联通 NAS 上生成博客并部署 Pages 服务</title>
-                <link>https://blog.233so.com/2020/03/install-hugo-on-qnap-nas/</link>
-                <pubDate>Sat, 21 Mar 2020 18:27:28 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/03/install-hugo-on-qnap-nas/</guid>
-                <description>Hugo 是一个用 Go 语言实现的静态博客系统生成工具。基于 Markdown 撰写博文，不改变你已有的习惯，拥有快速部署、简单易用、主题丰富、易扩展等特点。你可以在任何地方启动 Hugo，实现毫秒级渲染。</description>
             </item></channel>
 </rss>
