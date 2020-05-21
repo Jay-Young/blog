@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>PowerShell | 标签 | Jay</title>
+        <link>https://blog.233so.com/tags/powershell/</link>
+        <description>PowerShell | 标签 | Jay</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 21 May 2020 08:46:40 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/powershell/" rel="self" type="application/rss+xml" /><item>
+                <title>Windows Terminal 安装和配置手记</title>
+                <link>https://blog.233so.com/2020/05/windows-terminal-installation-and-settings/</link>
+                <pubDate>Thu, 21 May 2020 08:46:40 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/05/windows-terminal-installation-and-settings/</guid>
+                <description>Windows Terminal（Windows 终端）[1] 是一个面向命令行工具和 shell（如命令提示符、PowerShell 和适用于 Linux 的 Windows 子系统 (WSL)）用户的新式终端应用程序。 它的主要功能包括多个选项卡、窗格、Unicode 和 UTF-8 字符支持、GPU 加速文本呈现引擎，还可以用于创建你自己的主题并自定义文本、颜色、背景和快捷键绑定。如今它迎来了 1.0 正式版，记录下安装和配置过程，以后也可以少翻阅点文档。
+</description>
+            </item></channel>
+</rss>
