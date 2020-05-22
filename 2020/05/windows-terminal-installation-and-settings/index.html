@@ -11,7 +11,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.233so.com/2020/05/windows-terminal-installation-and-settings/" />
 <meta property="article:published_time" content="2020-05-21T08:46:40+08:00" />
-<meta property="article:modified_time" content="2020-05-21T08:46:40+08:00" />
+<meta property="article:modified_time" content="2020-05-22T22:02:45+08:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Windows Terminal 安装和配置手记"/>
 <meta name="twitter:description" content="Windows Terminal"/>
@@ -32,8 +32,8 @@
                 "url": "https:\/\/blog.233so.com\/cover.png",
                 "width":  800 ,
                 "height":  600 
-            },"genre": "posts","keywords": "Terminal, Shell, 终端, PowerShell, WSL","wordcount":  776 ,
-        "url": "https:\/\/blog.233so.com\/2020\/05\/windows-terminal-installation-and-settings\/","datePublished": "2020-05-21T08:46:40+08:00","dateModified": "2020-05-21T08:46:40+08:00","license": "This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.","publisher": {
+            },"genre": "posts","keywords": "Terminal, Shell, 终端, PowerShell, WSL","wordcount":  1384 ,
+        "url": "https:\/\/blog.233so.com\/2020\/05\/windows-terminal-installation-and-settings\/","datePublished": "2020-05-21T08:46:40+08:00","dateModified": "2020-05-22T22:02:45+08:00","license": "This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.","publisher": {
                 "@type": "Organization",
                 "name": "Jay",
                 "logo": {
@@ -120,8 +120,8 @@
                                 <i class="far fa-folder fa-fw"></i>Windows
                             </a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-05-21>2020-05-21</time>&nbsp;
-                <i class="fas fa-pencil-alt fa-fw"></i>约 776 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>预计阅读 2 分钟&nbsp;<span id="/2020/05/windows-terminal-installation-and-settings/" class="leancloud_visitors" data-flag-title="Windows Terminal 安装和配置手记">
+                <i class="fas fa-pencil-alt fa-fw"></i>约 1384 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>预计阅读 3 分钟&nbsp;<span id="/2020/05/windows-terminal-installation-and-settings/" class="leancloud_visitors" data-flag-title="Windows Terminal 安装和配置手记">
                         <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
         </div><div class="featured-image"><img
@@ -144,6 +144,9 @@
         <li><a href="#安装-powerline-字体">安装 Powerline 字体</a></li>
         <li><a href="#在-powershell-中设置-powerline">在 PowerShell 中设置 Powerline</a></li>
         <li><a href="#自定义-powershell-提示符">自定义 PowerShell 提示符</a></li>
+        <li><a href="#修改配色主题">修改配色主题</a></li>
+        <li><a href="#修改背景图片">修改背景图片</a></li>
+        <li><a href="#毛玻璃效果">毛玻璃效果</a></li>
       </ul>
     </li>
   </ul>
@@ -241,11 +244,116 @@
         });
       }
       document.addEventListener('DOMContentLoaded', loadDPlayer, !1);
-    </script></div><div class="post-footer" id="post-footer">
+    </script>
+<h3 id="修改配色主题">修改配色主题</h3>
+<p>要修改配色主题，只需要在全局配置或者对应 <code>Shell</code> 配置中加入 <code>colorScheme</code> 属性，并将配色方案的 <code>name</code> 作为值。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json"><span class="s2">&#34;colorScheme&#34;</span><span class="err">:</span> <span class="s2">&#34;COLOR SCHEME NAME&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><code>Windows Terminal</code> 自带了几款主题:</p>
+<p><strong>Campbell</strong></p>
+<figure>
+    <img src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/campbell-color-scheme.png"/> 
+</figure>
+
+<p><strong>Campbell Powershell</strong></p>
+<figure>
+    <img src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/campbell-powershell-color-scheme.png"/> 
+</figure>
+
+<p><strong>Vintage</strong></p>
+<figure>
+    <img src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/vintage-color-scheme.png"/> 
+</figure>
+
+<p><strong>One Half Dark</strong></p>
+<figure>
+    <img src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/one-half-dark-color-scheme.png"/> 
+</figure>
+
+<p><strong>One Half Light</strong></p>
+<figure>
+    <img src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/one-half-light-color-scheme.png"/> 
+</figure>
+
+<p><strong>Solarized Dark</strong></p>
+<figure>
+    <img src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/solarized-dark-color-scheme.png"/> 
+</figure>
+
+<p><strong>Solarized Light</strong></p>
+<figure>
+    <img src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/solarized-light-color-scheme.png"/> 
+</figure>
+
+<p><strong>Tango Dark</strong></p>
+<figure>
+    <img src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/tango-dark-color-scheme.png"/> 
+</figure>
+
+<p><strong>Tango Light</strong></p>
+<figure>
+    <img src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/tango-light-color-scheme.png"/> 
+</figure>
+
+<p>更多配色主题参考 <code>iTerm2-Color-Schemes</code> 项目：<a href="https://github.com/mbadolato/iTerm2-Color-Schemes">https://github.com/mbadolato/iTerm2-Color-Schemes</a></p>
+<p>将该项目 <code>windowsterminal</code> 文件夹下面对应主题的 <code>json</code> 文件内容完整复制到 <code>settings.json</code> 文件的 <code>schemes</code> 数组内，然后配置 <code>colorScheme</code> 为配色名字即可。</p>
+<h3 id="修改背景图片">修改背景图片</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json"><span class="err">//</span> <span class="err">图片位置，可以是</span> <span class="err">.jpg、.png</span> <span class="err">或</span> <span class="err">.gif</span> <span class="err">文件</span>
+<span class="s2">&#34;backgroundImage&#34;</span><span class="err">:</span> <span class="s2">&#34;C:/Users/Jay/Pictures/Saved Pictures/xxx.jpg&#34;</span><span class="err">,</span>
+<span class="err">//</span> <span class="err">图像拉伸模式，默认值：</span> <span class="s2">&#34;uniformToFill&#34;</span><span class="err">，还可以是</span><span class="s2">&#34;none&#34;</span><span class="err">、</span><span class="s2">&#34;fill&#34;</span><span class="err">、</span><span class="s2">&#34;uniform&#34;</span>
+<span class="s2">&#34;backgroundImageStretchMode&#34;</span><span class="err">:</span> <span class="s2">&#34;uniformToFill&#34;</span><span class="err">,</span>
+<span class="err">//</span> <span class="err">图像对齐方式，默认值：</span> <span class="s2">&#34;center&#34;</span><span class="err">，还可以是</span><span class="s2">&#34;left&#34;</span><span class="err">、</span><span class="s2">&#34;top&#34;</span><span class="err">、</span><span class="s2">&#34;right&#34;</span><span class="err">、</span>
+<span class="err">//</span> <span class="s2">&#34;bottom&#34;</span><span class="err">、</span><span class="s2">&#34;topLeft&#34;</span><span class="err">、</span><span class="s2">&#34;topRight&#34;</span><span class="err">、</span><span class="s2">&#34;bottomLeft&#34;</span><span class="err">、</span><span class="s2">&#34;bottomRight&#34;</span>
+<span class="s2">&#34;backgroundImageAlignment&#34;</span><span class="err">:</span> <span class="s2">&#34;center&#34;</span><span class="err">,</span>
+<span class="err">//</span> <span class="err">图像不透明度，默认值：</span> <span class="mf">1.0</span><span class="err">（完全透明），接受：</span> <span class="mi">0-1</span> <span class="err">的浮点值的数字</span>
+<span class="s2">&#34;backgroundImageOpacity&#34;</span> <span class="err">:</span> <span class="mf">0.3</span>
+</code></pre></td></tr></table>
+</div>
+</div><figure>
+    <img src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/QQ%e6%8b%bc%e9%9f%b3%e6%88%aa%e5%9b%be20200522220158.png"/> 
+</figure>
+
+<h3 id="毛玻璃效果">毛玻璃效果</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json"><span class="err">//</span> <span class="err">可选值：</span><span class="kc">false</span><span class="err">（正常背景），</span><span class="kc">true</span><span class="err">（毛玻璃效果）</span>
+<span class="s2">&#34;useAcrylic&#34;</span><span class="err">:</span> <span class="kc">true</span><span class="err">,</span>
+<span class="err">//</span> <span class="err">不透明度，默认值：</span> <span class="mf">0.5</span><span class="err">，接受：</span> <span class="mi">0-1</span> <span class="err">的浮点值的数字，数字越大不透明度越高</span>
+<span class="s2">&#34;acrylicOpacity&#34;</span><span class="err">:</span> <span class="mf">0.5</span>
+</code></pre></td></tr></table>
+</div>
+</div><figure>
+    <img src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/%e5%b1%8f%e5%b9%95%e6%88%aa%e5%9b%be%285%29.png"/> 
+</figure></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>本文于 2020-05-21 更新</span>
+                <span>本文于 2020-05-22 更新</span>
             </div>
             <div class="post-info-license"><span>采用 <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh" target="_blank">CC BY-NC 4.0</a> 协议发布</span></div>
         </div>

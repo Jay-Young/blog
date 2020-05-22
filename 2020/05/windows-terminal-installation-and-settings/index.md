@@ -70,3 +70,79 @@ $DefaultUser = 'yourUsernameHere'
 
 {{< video id="a" url="https://player.cdn.downk.cc/playlist/5ec5f00fc2a9a83be5315ce9.m3u8" >}}
 
+### 修改配色主题
+
+要修改配色主题，只需要在全局配置或者对应 `Shell` 配置中加入 `colorScheme` 属性，并将配色方案的 `name` 作为值。
+
+```json
+"colorScheme": "COLOR SCHEME NAME"
+```
+
+`Windows Terminal` 自带了几款主题:
+
+**Campbell**
+
+{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/campbell-color-scheme.png" >}}
+
+**Campbell Powershell**
+
+{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/campbell-powershell-color-scheme.png" >}}
+
+**Vintage**
+
+{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/vintage-color-scheme.png" >}}
+
+**One Half Dark**
+
+{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/one-half-dark-color-scheme.png" >}}
+
+**One Half Light**
+
+{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/one-half-light-color-scheme.png" >}}
+
+**Solarized Dark**
+
+{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/solarized-dark-color-scheme.png" >}}
+
+**Solarized Light**
+
+{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/solarized-light-color-scheme.png" >}}
+
+**Tango Dark**
+
+{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/tango-dark-color-scheme.png" >}}
+
+**Tango Light**
+
+{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/tango-light-color-scheme.png" >}}
+
+更多配色主题参考 `iTerm2-Color-Schemes` 项目：<https://github.com/mbadolato/iTerm2-Color-Schemes>
+
+将该项目 `windowsterminal` 文件夹下面对应主题的 `json` 文件内容完整复制到 `settings.json` 文件的 `schemes` 数组内，然后配置 `colorScheme` 为配色名字即可。
+
+### 修改背景图片
+
+```json
+// 图片位置，可以是 .jpg、.png 或 .gif 文件
+"backgroundImage": "C:/Users/Jay/Pictures/Saved Pictures/xxx.jpg",
+// 图像拉伸模式，默认值： "uniformToFill"，还可以是"none"、"fill"、"uniform"
+"backgroundImageStretchMode": "uniformToFill",
+// 图像对齐方式，默认值： "center"，还可以是"left"、"top"、"right"、
+// "bottom"、"topLeft"、"topRight"、"bottomLeft"、"bottomRight"
+"backgroundImageAlignment": "center",
+// 图像不透明度，默认值： 1.0（完全透明），接受： 0-1 的浮点值的数字
+"backgroundImageOpacity" : 0.3
+```
+
+{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/QQ拼音截图20200522220158.png" >}}
+
+### 毛玻璃效果
+
+```json
+// 可选值：false（正常背景），true（毛玻璃效果）
+"useAcrylic": true,
+// 不透明度，默认值： 0.5，接受： 0-1 的浮点值的数字，数字越大不透明度越高
+"acrylicOpacity": 0.5
+```
+
+{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/屏幕截图(5).png" >}}

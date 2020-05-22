@@ -26,11 +26,11 @@
 
 直接通过 [ `App Center` ] 应用中心安装:
 
-![](https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517143450.png)
+{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517143450.png" >}}
 
-![](https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517143543.png)
+{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517143543.png" >}}
 
-![](https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517143624.png)
+{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517143624.png" >}}
 
 ## 创建 QPKG
 
@@ -49,7 +49,7 @@
   shared/  x86/  x86_64/  x86_ce53xx/
   ```
 
-![](https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517152423.png)
+{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517152423.png" >}}
 
 ### 修改配置
 
@@ -60,7 +60,7 @@
 
 可以使用 `vi` 或者其他文本编辑器进行编辑
 
-![](https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517153124.png)
+{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517153124.png" >}}
 
 ### 自定义 QPKG 安装命令
 
@@ -75,11 +75,11 @@
   - `Start` : 当启动应用时执行的命令
   - `Stop` : 当停止应用时执行的命令
 
-![](https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517154214.png)
+{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517154214.png" >}}
 
 ### 添加文件到 QPKG
 
-- 根据不同的功能分类将应用所需的文件复制到下面相应的目录 : 
+- 根据不同的功能分类将应用所需的文件复制到下面相应的目录 :
   - `shared/` : 不同架构平台共享的文件
   - `arm_64/ arm-x19/ arm-x31/ arm-x41/ x86/ x86_64/ x86_ce53xx/` : 对应架构平台私有的文件
   - `icons/` : 图标文件, 需要三个 `gif` 文件, 分别是:
@@ -107,8 +107,9 @@
   MyQPKG_0.1.qpkg  MyQPKG_0.1.qpkg.md5
   ```
 
-![](https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517160058.png)
+{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517160058.png" >}}
 
 ## 关于更多详细开发内容
 
 [完整开发文档英文版](https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/docs/hugo/qdk-quick-start-guide-zh/QDK_2.0.pdf)
+
