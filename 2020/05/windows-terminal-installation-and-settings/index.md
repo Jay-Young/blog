@@ -146,3 +146,4 @@ $DefaultUser = 'yourUsernameHere'
 ```
 
 {{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/屏幕截图(5).png" >}}
+

@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/posts/</link>
         <description>所有文章 | Jay</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 21 May 2020 08:46:40 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 24 May 2020 16:02:29 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+                <title>免费申请 Let&#39;s Encrypt 泛域名证书</title>
+                <link>https://blog.233so.com/2020/05/apply-lets-encrypt-ca/</link>
+                <pubDate>Sun, 24 May 2020 16:02:29 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/05/apply-lets-encrypt-ca/</guid>
+                <description>Let’s Encrypt 是一家免费、开放、自动化的证书颁发机构（CA），为公众的利益而运行。它是一项由 Internet Security Research Group（ISRG）提供的服务。[1]
+</description>
+            </item><item>
                 <title>Windows Terminal 安装和配置手记</title>
                 <link>https://blog.233so.com/2020/05/windows-terminal-installation-and-settings/</link>
                 <pubDate>Thu, 21 May 2020 08:46:40 &#43;0800</pubDate>
@@ -74,14 +82,6 @@
                 <author>Jay</author>
                 <guid>https://blog.233so.com/2020/04/hugo-loveit-with-more-video-share-shortcodes-supported/</guid>
                 <description>Hugo LoveIt 主题虽然支持了 bilibili 视频的插入，再加上 hugo 自带的 youtube 和 vimeo 视频，但是也还是有点少。没有国内视频三大巨头（优酷现在掉队有点严重，可能名不副实了）似乎有些遗憾。又加上最近 B 站去 av 化，正好看到 LoveIt 项目的 issue#208 中有人提到这一点，我就试着看看能不能改改，并加点东西进去。
-</description>
-            </item><item>
-                <title>威联通：内网穿透服务之蒲公英 X1 和 KSA</title>
-                <link>https://blog.233so.com/2020/03/intranet-penetration-with-pgyx1-or-ksa/</link>
-                <pubDate>Fri, 27 Mar 2020 16:28:47 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/03/intranet-penetration-with-pgyx1-or-ksa/</guid>
-                <description>上一篇博文介绍了 nps 内网穿透服务，虽然拥有 Web 配置界面，但对于新手来说可能还是略显不友好，毕竟也还需要拥有一台公网服务器。那么今天要介绍的两款产品或者说服务绝对算得上是开箱即用，老少皆宜。
 </description>
             </item></channel>
 </rss>
