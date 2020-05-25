@@ -5,12 +5,29 @@
         <description>一个博客，简单记录</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
             <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://blog.233so.com/" rel="self" type="application/rss+xml" /><item>
+                <title>威联通：定时任务</title>
+                <link>https://blog.233so.com/2020/05/qnap-crontab/</link>
+                <pubDate>Mon, 25 May 2020 20:15:20 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/05/qnap-crontab/</guid>
+                <description>crontab 是 UNIX / Linux 系统用来执行周期性任务的命令。 crond 命令每分钟会检查是否有要执行的作业，如果有要执行的工作便会自动执行该工作，这类作业一般称为 cronjob 。
+</description>
+            </item><item>
+                <title>Windows 程序包管理器</title>
+                <link>https://blog.233so.com/2020/05/windows-package-manager-guide/</link>
+                <pubDate>Mon, 25 May 2020 10:12:46 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/05/windows-package-manager-guide/</guid>
+                <description>使用 Linux 各大发行版的用户相信对包管理器 [1] 并不陌生， Debian 有 apt, CentOS 有 yum, 而 Windows 平台上第三方的包管理器有 scoop 和 chocolatey，现在微软推出了自己的 Windows 程序包管理器及其命令行工具 winget [2] , 目前处于公共预览版阶段。
+说起来, scoop 默认很多都是连接的 GitHub, 不科学上网速度实在是太慢了，而 chocolatey 默认软件源的版本更新可能不太及时。目前看微软的这个工具有些也是 GitHub, 希望后续官方能够支持更多常用软件，速度能够上来，能够有靠谱的国内镜像源就更好。
+</description>
+            </item><item>
                 <title>免费申请 Let&#39;s Encrypt 泛域名证书</title>
                 <link>https://blog.233so.com/2020/05/apply-lets-encrypt-ca/</link>
                 <pubDate>Sun, 24 May 2020 16:02:29 &#43;0800</pubDate>
                 <author>Jay</author>
                 <guid>https://blog.233so.com/2020/05/apply-lets-encrypt-ca/</guid>
-                <description>Let’s Encrypt 是一家免费、开放、自动化的证书颁发机构（CA），为公众的利益而运行。它是一项由 Internet Security Research Group（ISRG）提供的服务。[1]
+                <description>Let&#39;s Encrypt 是一家免费、开放、自动化的证书颁发机构（CA），为公众的利益而运行。它是一项由 Internet Security Research Group（ISRG）提供的服务。[1]
 </description>
             </item><item>
                 <title>Windows Terminal 安装和配置手记</title>
@@ -66,22 +83,6 @@
                 <author>Jay</author>
                 <guid>https://blog.233so.com/2020/04/upgrade-code-server-to-v3/</guid>
                 <description>Code Server 3.x 版本发布也有几周了，最新版本 3.1.1 看起来应该可用度比较高了，于是就打算升级了。
-</description>
-            </item><item>
-                <title>Hugo 篇三：添加 DPlayer 播放器</title>
-                <link>https://blog.233so.com/2020/04/hugo-loveit-with-dplayer-supported/</link>
-                <pubDate>Tue, 14 Apr 2020 14:19:28 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/04/hugo-loveit-with-dplayer-supported/</guid>
-                <description>DPlayer 是一款支持弹幕的 HTML5 视频播放器，支持 HLS、FLV、MPEG DASH、WebTorrent 和其他自定义流媒体，支持弹幕、截图、热键、清晰度切换、预览图、字幕等多种功能。
-</description>
-            </item><item>
-                <title>Hugo 篇二：为 LoveIt 主题添加更多视频分享 shortcodes</title>
-                <link>https://blog.233so.com/2020/04/hugo-loveit-with-more-video-share-shortcodes-supported/</link>
-                <pubDate>Thu, 02 Apr 2020 18:56:12 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/04/hugo-loveit-with-more-video-share-shortcodes-supported/</guid>
-                <description>Hugo LoveIt 主题虽然支持了 bilibili 视频的插入，再加上 hugo 自带的 youtube 和 vimeo 视频，但是也还是有点少。没有国内视频三大巨头（优酷现在掉队有点严重，可能名不副实了）似乎有些遗憾。又加上最近 B 站去 av 化，正好看到 LoveIt 项目的 issue#208 中有人提到这一点，我就试着看看能不能改改，并加点东西进去。
 </description>
             </item></channel>
 </rss>

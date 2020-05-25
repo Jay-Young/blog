@@ -1,7 +1,7 @@
 # 免费申请 Let's Encrypt 泛域名证书
 
 
-`Let’s Encrypt` 是一家免费、开放、自动化的证书颁发机构（CA），为公众的利益而运行。它是一项由 `Internet Security Research Group`（ISRG）提供的服务。<sup>[[1]](https://letsencrypt.org/zh-cn/)</sup>
+`Let's Encrypt` 是一家免费、开放、自动化的证书颁发机构（CA），为公众的利益而运行。它是一项由 `Internet Security Research Group`（ISRG）提供的服务。<sup>[[1]](https://letsencrypt.org/zh-cn/)</sup>
 
 <!--more-->
 
@@ -86,7 +86,7 @@ cat /etc/stunnel/backup.cert \
 
 更多域名解析服务商设置: <https://github.com/acmesh-official/acme.sh/wiki/dnsapi>
 
-{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/apply-let's-encrypt-ca/QQ拼音截图20200524214006.png" >}}
+{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/apply-let's-encrypt-ca/QQ拼音截图20200524214006.png" title="cert" >}}
 
 ## 引用来源
 

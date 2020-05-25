@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>cron | 标签 | Jay</title>
+        <link>https://blog.233so.com/tags/cron/</link>
+        <description>cron | 标签 | Jay</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 25 May 2020 20:15:20 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/cron/" rel="self" type="application/rss+xml" /><item>
+                <title>威联通：定时任务</title>
+                <link>https://blog.233so.com/2020/05/qnap-crontab/</link>
+                <pubDate>Mon, 25 May 2020 20:15:20 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/05/qnap-crontab/</guid>
+                <description>crontab 是 UNIX / Linux 系统用来执行周期性任务的命令。 crond 命令每分钟会检查是否有要执行的作业，如果有要执行的工作便会自动执行该工作，这类作业一般称为 cronjob 。
+</description>
+            </item></channel>
+</rss>

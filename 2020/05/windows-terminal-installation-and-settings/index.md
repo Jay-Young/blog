@@ -82,39 +82,39 @@ $DefaultUser = 'yourUsernameHere'
 
 **Campbell**
 
-{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/campbell-color-scheme.png" >}}
+{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/campbell-color-scheme.png" title="Campbell" >}}
 
 **Campbell Powershell**
 
-{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/campbell-powershell-color-scheme.png" >}}
+{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/campbell-powershell-color-scheme.png" title="Campbell Powershell" >}}
 
 **Vintage**
 
-{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/vintage-color-scheme.png" >}}
+{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/vintage-color-scheme.png" title="Vintage" >}}
 
 **One Half Dark**
 
-{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/one-half-dark-color-scheme.png" >}}
+{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/one-half-dark-color-scheme.png" title="One Half Dark" >}}
 
 **One Half Light**
 
-{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/one-half-light-color-scheme.png" >}}
+{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/one-half-light-color-scheme.png" title="One Half Light" >}}
 
 **Solarized Dark**
 
-{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/solarized-dark-color-scheme.png" >}}
+{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/solarized-dark-color-scheme.png" title="Solarized Dark" >}}
 
 **Solarized Light**
 
-{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/solarized-light-color-scheme.png" >}}
+{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/solarized-light-color-scheme.png" title="Solarized Light" >}}
 
 **Tango Dark**
 
-{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/tango-dark-color-scheme.png" >}}
+{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/tango-dark-color-scheme.png" title="Tango Dark" >}}
 
 **Tango Light**
 
-{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/tango-light-color-scheme.png" >}}
+{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/tango-light-color-scheme.png" title="Tango Light" >}}
 
 更多配色主题参考 `iTerm2-Color-Schemes` 项目：<https://github.com/mbadolato/iTerm2-Color-Schemes>
 
@@ -134,7 +134,7 @@ $DefaultUser = 'yourUsernameHere'
 "backgroundImageOpacity" : 0.3
 ```
 
-{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/QQ拼音截图20200522220158.png" >}}
+{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/QQ拼音截图20200522220158.png" title="background" >}}
 
 ### 毛玻璃效果
 
@@ -145,5 +145,5 @@ $DefaultUser = 'yourUsernameHere'
 "acrylicOpacity": 0.5
 ```
 
-{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/屏幕截图(5).png" >}}
+{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-terminal-installation-and-settings/屏幕截图(5).png" title="acrylic" >}}
 

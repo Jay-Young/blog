@@ -4,13 +4,21 @@
         <link>https://blog.233so.com/categories/nas/</link>
         <description>NAS | 分类 | Jay</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 24 May 2020 16:02:29 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/categories/nas/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 25 May 2020 20:15:20 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/categories/nas/" rel="self" type="application/rss+xml" /><item>
+                <title>威联通：定时任务</title>
+                <link>https://blog.233so.com/2020/05/qnap-crontab/</link>
+                <pubDate>Mon, 25 May 2020 20:15:20 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/05/qnap-crontab/</guid>
+                <description>crontab 是 UNIX / Linux 系统用来执行周期性任务的命令。 crond 命令每分钟会检查是否有要执行的作业，如果有要执行的工作便会自动执行该工作，这类作业一般称为 cronjob 。
+</description>
+            </item><item>
                 <title>免费申请 Let&#39;s Encrypt 泛域名证书</title>
                 <link>https://blog.233so.com/2020/05/apply-lets-encrypt-ca/</link>
                 <pubDate>Sun, 24 May 2020 16:02:29 &#43;0800</pubDate>
                 <author>Jay</author>
                 <guid>https://blog.233so.com/2020/05/apply-lets-encrypt-ca/</guid>
-                <description>Let’s Encrypt 是一家免费、开放、自动化的证书颁发机构（CA），为公众的利益而运行。它是一项由 Internet Security Research Group（ISRG）提供的服务。[1]
+                <description>Let&#39;s Encrypt 是一家免费、开放、自动化的证书颁发机构（CA），为公众的利益而运行。它是一项由 Internet Security Research Group（ISRG）提供的服务。[1]
 </description>
             </item><item>
                 <title>QDK 快速开发指南中文版</title>

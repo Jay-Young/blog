@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>winget | 标签 | Jay</title>
+        <link>https://blog.233so.com/tags/winget/</link>
+        <description>winget | 标签 | Jay</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 25 May 2020 10:12:46 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/winget/" rel="self" type="application/rss+xml" /><item>
+                <title>Windows 程序包管理器</title>
+                <link>https://blog.233so.com/2020/05/windows-package-manager-guide/</link>
+                <pubDate>Mon, 25 May 2020 10:12:46 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/05/windows-package-manager-guide/</guid>
+                <description>使用 Linux 各大发行版的用户相信对包管理器 [1] 并不陌生， Debian 有 apt, CentOS 有 yum, 而 Windows 平台上第三方的包管理器有 scoop 和 chocolatey，现在微软推出了自己的 Windows 程序包管理器及其命令行工具 winget [2] , 目前处于公共预览版阶段。
+说起来, scoop 默认很多都是连接的 GitHub, 不科学上网速度实在是太慢了，而 chocolatey 默认软件源的版本更新可能不太及时。目前看微软的这个工具有些也是 GitHub, 希望后续官方能够支持更多常用软件，速度能够上来，能够有靠谱的国内镜像源就更好。
+</description>
+            </item></channel>
+</rss>

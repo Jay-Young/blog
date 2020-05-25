@@ -60,7 +60,7 @@
 
 可以使用 `vi` 或者其他文本编辑器进行编辑
 
-{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517153124.png" >}}
+{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517153124.png" title="edit qpkg.cfg" >}}
 
 ### 自定义 QPKG 安装命令
 
@@ -75,7 +75,7 @@
   - `Start` : 当启动应用时执行的命令
   - `Stop` : 当停止应用时执行的命令
 
-{{< figure src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517154214.png" >}}
+{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517154214.png" title="edit install scripts" >}}
 
 ### 添加文件到 QPKG
 
