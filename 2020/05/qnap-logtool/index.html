@@ -5,35 +5,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>威联通：定时任务 | Jay</title>
-        <meta name="Description" content="crontab"><meta property="og:title" content="威联通：定时任务" />
-<meta property="og:description" content="crontab" />
+        <title>威联通：log_tool 命令 | Jay</title>
+        <meta name="Description" content="系统事件日志"><meta property="og:title" content="威联通：log_tool 命令" />
+<meta property="og:description" content="系统事件日志" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.233so.com/2020/05/qnap-crontab/" />
-<meta property="article:published_time" content="2020-05-25T20:15:20+08:00" />
-<meta property="article:modified_time" content="2020-05-25T21:25:36+08:00" />
+<meta property="og:url" content="https://blog.233so.com/2020/05/qnap-logtool/" />
+<meta property="article:published_time" content="2020-05-26T12:06:11+08:00" />
+<meta property="article:modified_time" content="2020-05-26T15:39:36+08:00" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="威联通：定时任务"/>
-<meta name="twitter:description" content="crontab"/>
+<meta name="twitter:title" content="威联通：log_tool 命令"/>
+<meta name="twitter:description" content="系统事件日志"/>
 <meta name="application-name" content="Jay">
 <meta name="apple-mobile-web-app-title" content="Jay"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.233so.com/2020/05/qnap-crontab/" /><link rel="prev" href="https://blog.233so.com/2020/05/windows-package-manager-guide/" /><link rel="next" href="https://blog.233so.com/2020/05/qnap-logtool/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="msvalidate.01" content="9E6BC727410AE14F6E9442F540992717" /><meta name="baidu-site-verification" content="apixhlrtUN" /><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.233so.com/2020/05/qnap-logtool/" /><link rel="prev" href="https://blog.233so.com/2020/05/qnap-crontab/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="msvalidate.01" content="9E6BC727410AE14F6E9442F540992717" /><meta name="baidu-site-verification" content="apixhlrtUN" /><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "威联通：定时任务",
+        "headline": "威联通：log_tool 命令",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/blog.233so.com\/2020\/05\/qnap-crontab\/"
+            "@id": "https:\/\/blog.233so.com\/2020\/05\/qnap-logtool\/"
         },"image": {
                 "@type": "ImageObject",
                 "url": "https:\/\/blog.233so.com\/cover.png",
                 "width":  800 ,
                 "height":  600 
-            },"genre": "posts","keywords": "威联通, QNAP, cron, crontab, cronjob, 定时任务","wordcount":  679 ,
-        "url": "https:\/\/blog.233so.com\/2020\/05\/qnap-crontab\/","datePublished": "2020-05-25T20:15:20+08:00","dateModified": "2020-05-25T21:25:36+08:00","license": "This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.","publisher": {
+            },"genre": "posts","keywords": "威联通, QNAP, log_tool, 日志","wordcount":  264 ,
+        "url": "https:\/\/blog.233so.com\/2020\/05\/qnap-logtool\/","datePublished": "2020-05-26T12:06:11+08:00","dateModified": "2020-05-26T15:39:36+08:00","license": "This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.","publisher": {
                 "@type": "Organization",
                 "name": "Jay",
                 "logo": {
@@ -45,7 +45,7 @@
             },"author": {
                 "@type": "Person",
                 "name": "Jay"
-            },"description": "crontab"
+            },"description": "系统事件日志"
     }
     </script></head>
     <body><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.classList.add('dark');</script>
@@ -114,112 +114,50 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">目录</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">威联通：定时任务</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animated flipInX">威联通：log_tool 命令</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://weibo.com/jayyoung1/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Jay</a></span>&nbsp;
                     <span class="post-category">收录于<a href="/categories/nas/">
                                 <i class="far fa-folder fa-fw"></i>NAS
                             </a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-05-25>2020-05-25</time>&nbsp;
-                <i class="fas fa-pencil-alt fa-fw"></i>约 679 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>预计阅读 2 分钟&nbsp;<span id="/2020/05/qnap-crontab/" class="leancloud_visitors" data-flag-title="威联通：定时任务">
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-05-26>2020-05-26</time>&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 264 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>预计阅读 1 分钟&nbsp;<span id="/2020/05/qnap-logtool/" class="leancloud_visitors" data-flag-title="威联通：log_tool 命令">
                         <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
         src="/svg/loading/normal.min.svg"
         data-sizes="auto"
-        data-srcset="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qnap-crontab/Snipaste_2020-05-25_21-19-12.png, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qnap-crontab/Snipaste_2020-05-25_21-19-12.png 1.5x, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qnap-crontab/Snipaste_2020-05-25_21-19-12.png 2x"
-        data-src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qnap-crontab/Snipaste_2020-05-25_21-19-12.png"
-        alt="crontab"
-        title="crontab" /></div><div class="details toc" id="toc-static">
+        data-srcset="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qnap-logtool/Konachan.com-306433.jpg, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qnap-logtool/Konachan.com-306433.jpg 1.5x, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qnap-logtool/Konachan.com-306433.jpg 2x"
+        data-src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qnap-logtool/Konachan.com-306433.jpg"
+        alt="系统事件日志"
+        title="系统事件日志" /></div><div class="details toc" id="toc-static">
                 <div class="details-summary toc-title">
                     <span>目录</span>
                     <span><i class="details-icon fas fa-angle-down"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
-  <ul>
-    <li><a href="#基本语法">基本语法</a></li>
-    <li><a href="#编辑任务">编辑任务</a></li>
-    <li><a href="#格式说明">格式说明</a></li>
-    <li><a href="#引用来源">引用来源</a></li>
-  </ul>
-</nav></div>
-            </div><div class="content" id="content"><p><code>crontab</code> 是 <code>UNIX</code> / <code>Linux</code> 系统用来执行周期性任务的命令。 <code>crond</code> 命令每分钟会检查是否有要执行的作业，如果有要执行的工作便会自动执行该工作，这类作业一般称为 <code>cronjob</code> 。</p>
-<h2 id="基本语法">基本语法</h2>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><p>最近在解包威联通官方应用的时候，发现了一个命令 <code>log_tool</code>， 可以用来输出事件日志到 <code>Web</code> 界面，构建 <code>QPKG</code> 应用的时候可以派上用场。</p>
+<p>基本用法 :</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">crontab <span class="o">[</span> -u user <span class="o">]</span> <span class="o">{</span> -l <span class="p">|</span> -r <span class="p">|</span> -e <span class="o">}</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">log_tool <span class="o">[</span>-t --type <span class="o">[</span>0-2<span class="o">]]</span> <span class="o">[</span>-a --append MSG<span class="o">]</span>
 </code></pre></td></tr></table>
 </div>
-</div><ul>
-<li><code>-u user</code> : 设定指定 <code>user</code> 的 <code>cronjob</code>, 如果不指定的话，就是表示设定当前用户的</li>
-<li><code>-e</code> : 编辑 <code>crontab</code> 配置, 在威联通 <code>NAS</code> 中不能使用这种方式，因为重启之后会丢失。</li>
-<li><code>-r</code> : 删除所有 <code>cronjob</code>, 谨慎使用，会把系统任务都删除</li>
-<li><code>-l</code> : 列出所有 <code>cronjob</code></li>
-</ul>
-<h2 id="编辑任务">编辑任务</h2>
-<p>想要永久保存自定义任务，应当将任务写入 <code>/etc/config/crontab</code> 文件</p>
-<p>比如 :</p>
-<div class="highlight"><div class="chroma">
+</div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="s2">&#34;1 4 * * * /share/custom/scripts/custom1.sh&#34;</span> &gt;&gt; /etc/config/crontab
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">-t, --type [0-2] 指定日志类型，0 : 消息, 1 : 警告, 2 : 错误, 默认值 : 0
+-a --append MSG 输出消息, MSG 为消息内容
 </code></pre></td></tr></table>
 </div>
-</div><p>或者直接使用文本编辑器打开 <code>/etc/config/crontab</code> 文件直接写入 :</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="m">1</span> <span class="m">4</span> * * * /share/custom/scripts/custom1.sh
-</code></pre></td></tr></table>
-</div>
-</div><p>上面任务配置表示在每天凌晨 4 点 1 分时自动执行后面的 <code>custom1.sh</code> 脚本</p>
-<p>新创建的 <code>cronjob</code> 不会马上执行，至少要过 2 分钟后才可以，当然你可以重启 <code>cron</code> 来马上执行</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">crontab /etc/config/crontab <span class="o">&amp;&amp;</span> /etc/init.d/crond.sh restart
-</code></pre></td></tr></table>
-</div>
-</div><div class="admonition note">
-            <div class="admonition-title"><i class="icon fas fa-pencil-alt"></i>注意</div>
-            <div class="admonition-content">不要忘记给需要周期性执行的程序赋予可执行权限 :
-<code>chmod +x custom1.sh</code></div>
-        </div>
-<p>删除指定 <code>cronjob</code> :</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">sed -i <span class="s2">&#34;\|/share/custom/scripts/custom1.sh|d&#34;</span> /etc/config/crontab
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="格式说明">格式说明</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">f1 f2 f3 f4 f5 program
-</code></pre></td></tr></table>
-</div>
-</div><ul>
-<li>其中 <code>f1</code> 是表示分钟, <code>f2</code> 表示小时, <code>f3</code> 表示一个月份中的第几日, <code>f4</code> 表示月份, <code>f5</code> 表示一个星期中的第几天。 <code>program</code> 表示要执行的程序。</li>
-<li>当 <code>f1</code> 为 <code>*</code> 时表示每分钟都要执行 <code>program</code>, <code>f2</code> 为 <code>*</code> 时表示每小时都要执行程序，其馀类推</li>
-<li>当 <code>f1</code> 为 <code>a-b</code> 时表示从第 <code>a</code> 分钟到第 <code>b</code> 分钟这段时间内要执行, <code>f2</code> 为 <code>a-b</code> 时表示从第 <code>a</code> 到第 <code>b</code> 小时都要执行，其馀类推</li>
-<li>当 <code>f1</code> 为 <code>*/n</code> 时表示每 <code>n</code> 分钟个时间间隔执行一次, <code>f2</code> 为 <code>*/n</code> 表示每 <code>n</code> 小时个时间间隔执行一次，其馀类推</li>
-<li>当 <code>f1</code> 为 <code>a, b, c,...</code> 时表示第 <code>a, b, c,...</code> 分钟要执行, <code>f2</code> 为 <code>a, b, c,...</code> 时表示第 <code>a, b, c...</code>个小时要执行，其余类推</li>
-</ul>
+</div><p>其他选项 :</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -230,49 +168,65 @@
 </span><span class="lnt">6
 </span><span class="lnt">7
 </span><span class="lnt">8
+</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="k">*</span>    <span class="ge">*    *</span>    <span class="ge">*    *</span>
-<span class="k">-</span>    -    -    -    -
-|    |    |    |    |
-|    |    |    |    +----- 星期中星期几 (0 - 7) (星期天 为0)
-|    |    |    +---------- 月份 (1 - 12)
-|    |    +--------------- 一个月中的第几天 (1 - 31)
-|    +-------------------- 小时 (0 - 23)
-+------------------------- 分钟 (0 - 59)
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">-T, --time TIMESTAMP 指定记录时间
+-u, --user USER 指定来源用户
+-p, --ip IP 指定来源 IP
+-m, --comp NAME 指定设备名称
+-x, --msgid MSGID 指定消息 ID
+-A, --app_id APPID 指定来源应用 ID
+-N, --app_name APP Name 指定来源应用名称
+-C, --category_id category ID 指定消息分类 ID
+-G, --category category 指定消息分类
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="引用来源">引用来源</h2>
-<ul>
-<li><a href="https://wiki.qnap.com/wiki/Add_items_to_crontab?setlang=zh">https://wiki.qnap.com/wiki/Add_items_to_crontab?setlang=zh</a></li>
-<li><a href="https://www.runoob.com/linux/linux-comm-crontab.html">https://www.runoob.com/linux/linux-comm-crontab.html</a></li>
-</ul></div><div class="post-footer" id="post-footer">
+</div><p>更多用法可以通过 <code>log_tool [-h --help]</code> 帮助命令查看</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">log_tool -t <span class="m">1</span> -N <span class="s2">&#34;myapp&#34;</span> -G <span class="s2">&#34;status&#34;</span> -a <span class="s2">&#34;this is a test message&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>在 <code>Web</code> 管理界面显示结果如下 :</p>
+<a class="lightgallery" href="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qnap-logtool/Snipaste_2020-05-26_15-25-32.png" title="系统事件日志" data-thumbnail="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qnap-logtool/Snipaste_2020-05-26_15-25-32.png">
+        <img
+            class="lazyload"
+            src="/svg/loading/normal.min.svg"
+            data-sizes="auto"
+            data-srcset="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qnap-logtool/Snipaste_2020-05-26_15-25-32.png, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qnap-logtool/Snipaste_2020-05-26_15-25-32.png 1.5x, https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qnap-logtool/Snipaste_2020-05-26_15-25-32.png 2x"
+            data-src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qnap-logtool/Snipaste_2020-05-26_15-25-32.png"
+            alt="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qnap-logtool/Snipaste_2020-05-26_15-25-32.png" />
+    </a>
+</div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>本文于 2020-05-25 更新</span>
+                <span>本文于 2020-05-26 更新</span>
             </div>
             <div class="post-info-license"><span>采用 <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh" target="_blank">CC BY-NC 4.0</a> 协议发布</span></div>
         </div>
         <div class="post-info-line">
             <div class="post-info-md"><span>
-                            <a class="link-to-markdown" href="/2020/05/qnap-crontab/index.md" target="_blank">阅读原始文档</a>
+                            <a class="link-to-markdown" href="/2020/05/qnap-logtool/index.md" target="_blank">阅读原始文档</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://blog.233so.com/2020/05/qnap-crontab/" data-title="威联通：定时任务" data-hashtags="威联通,QNAP,cron,crontab,cronjob,定时任务"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://blog.233so.com/2020/05/qnap-crontab/" data-title="威联通：定时任务" data-image="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qnap-crontab/Snipaste_2020-05-25_21-19-12.png"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="https://blog.233so.com/2020/05/qnap-crontab/" data-title="威联通：定时任务"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微信" data-sharer="weixin" data-url="https://blog.233so.com/2020/05/qnap-crontab/"><i class="fab fa-weixin fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://blog.233so.com/2020/05/qnap-logtool/" data-title="威联通：log_tool 命令" data-hashtags="威联通,QNAP,log_tool,日志"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://blog.233so.com/2020/05/qnap-logtool/" data-title="威联通：log_tool 命令" data-image="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/qnap-logtool/Konachan.com-306433.jpg"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="https://blog.233so.com/2020/05/qnap-logtool/" data-title="威联通：log_tool 命令"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微信" data-sharer="weixin" data-url="https://blog.233so.com/2020/05/qnap-logtool/"><i class="fab fa-weixin fa-fw"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/%E5%A8%81%E8%81%94%E9%80%9A/">威联通</a>,&nbsp;<a href="/tags/qnap/">QNAP</a>,&nbsp;<a href="/tags/cron/">cron</a>,&nbsp;<a href="/tags/crontab/">crontab</a>,&nbsp;<a href="/tags/cronjob/">cronjob</a>,&nbsp;<a href="/tags/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/">定时任务</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/%E5%A8%81%E8%81%94%E9%80%9A/">威联通</a>,&nbsp;<a href="/tags/qnap/">QNAP</a>,&nbsp;<a href="/tags/log_tool/">log_tool</a>,&nbsp;<a href="/tags/%E6%97%A5%E5%BF%97/">日志</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/2020/05/windows-package-manager-guide/" class="prev" rel="prev" title="Windows 程序包管理器"><i class="fas fa-angle-left fa-fw"></i>Windows 程序包管理器</a>
-            <a href="/2020/05/qnap-logtool/" class="next" rel="next" title="威联通：log_tool 命令">威联通：log_tool 命令<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/2020/05/qnap-crontab/" class="prev" rel="prev" title="威联通：定时任务"><i class="fas fa-angle-left fa-fw"></i>威联通：定时任务</a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.

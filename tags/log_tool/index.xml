@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>log_tool | 标签 | Jay</title>
+        <link>https://blog.233so.com/tags/log_tool/</link>
+        <description>log_tool | 标签 | Jay</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 26 May 2020 12:06:11 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/log_tool/" rel="self" type="application/rss+xml" /><item>
+                <title>威联通：log_tool 命令</title>
+                <link>https://blog.233so.com/2020/05/qnap-logtool/</link>
+                <pubDate>Tue, 26 May 2020 12:06:11 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/05/qnap-logtool/</guid>
+                <description>最近在解包威联通官方应用的时候，发现了一个命令 log_tool， 可以用来输出事件日志到 Web 界面，构建 QPKG 应用的时候可以派上用场。 基本用法 : 1 log_tool [-t</description>
+            </item></channel>
+</rss>
