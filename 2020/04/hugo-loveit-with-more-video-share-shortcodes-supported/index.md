@@ -51,7 +51,7 @@ player.bilibili.com/player.html?aid=[av号]&page=[分p号]
 
 那么拿到 `bv` 时代的官方分享链接就可以了。
 
-{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/hugo-loveit-with-more-video-share-shortcodes-supported/bilibili-share-iframe-code.png" title="获取分享链接" >}}
+{{< image src="/images/hugo/hugo-loveit-with-more-video-share-shortcodes-supported/bilibili-share-iframe-code.png" title="获取分享链接" >}}
 
 获取的原始分享链接是下面这个样子的：
 

@@ -37,7 +37,7 @@
 
 ## 用法
 
-{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/windows-package-manager-guide/Snipaste_2020-05-25_16-39-27.png" title="winget" >}}
+{{< image src="/images/hugo/windows-package-manager-guide/Snipaste_2020-05-25_16-39-27.png" title="winget" >}}
 
 常用命令 <sup>[[11]](https://docs.microsoft.com/zh-cn/windows/package-manager/winget/hash)</sup> :
 

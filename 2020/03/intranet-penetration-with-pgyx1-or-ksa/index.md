@@ -9,11 +9,11 @@
 
 蒲公英 X1 是贝锐科技公司旗下一款采用 Cloud VPN 技术的企业级智能组网路由器。没错，它是一台路由器。而贝锐科技旗下还拥有花生壳、向日葵等知名的产品。以前上大学的时候用过 2233.org 的二级域名 ddns 服务，印象中好像是这家公司的早期产品。
 
-{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201808240935145249.jpg" title="蒲公英 X1 外观" >}}
+{{< image src="/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201808240935145249.jpg" title="蒲公英 X1 外观" >}}
 
-{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201905061953093581.png" title="接口图示" >}}
+{{< image src="/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201905061953093581.png" title="接口图示" >}}
 
-{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201905061953189315.png" title="接口说明" >}}
+{{< image src="/images/hugo/intranet-penetration-with-pgyx1-or-ksa/201905061953189315.png" title="接口说明" >}}
 
 {{< admonition info "蒲公英 X1 简要参数" false >}}
 
@@ -27,9 +27,9 @@
 
 日常价格 ￥ 108，一般活动价格 ￥ 98，我是 ￥ 78 拿下的。看参数想要拿它做主路由我觉得还是算了吧，反正我看上的也只是它的旁路组网功能，即不改变现有的家庭网络结构直接通过组网实现专属内网穿透隧道。
 
-{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/LW7xN1Evem2ZGMh.png" title="指示灯说明" >}}
+{{< image src="/images/hugo/intranet-penetration-with-pgyx1-or-ksa/LW7xN1Evem2ZGMh.png" title="指示灯说明" >}}
 
-{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/ah5qIjkzwOyPo6Q.png" title="旁路组网" >}}
+{{< image src="/images/hugo/intranet-penetration-with-pgyx1-or-ksa/ah5qIjkzwOyPo6Q.png" title="旁路组网" >}}
 
 1. 电源线插电，通过网线直接将 X1 LAN 口与主路由 LAN 口连接（DHCP 功能需开启），
 2. 打开 [https://pgybox.oray.com/](https://pgybox.oray.com/)，通过 SN 码登录（可在路由器背面查看），默认密码是 admin
@@ -59,13 +59,13 @@ KAS 是安全社区[看雪论坛](https://ksa.kanxue.com/)开发的一款内网�
 
 双击运行可执行文件 ksa_win.exe，左半部分 KSA 服务端已经默认生成好 KSA ID 和密码，记住这个 KSA ID 和密码即可。点击**启动服务**开始运行服务端：
 
-{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/01.png" title="Windows 客户端" >}}
+{{< image src="/images/hugo/intranet-penetration-with-pgyx1-or-ksa/01.png" title="Windows 客户端" >}}
 
 ### MacOS
 
 与 Windows 类似，左侧是服务端，右侧是客户端，右侧的“远程接入到 KSA 服务端”中输入 KSA ID 和密码，点击“接入服务端”即可。接入成功后如下图所示：
 
-{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/02.png" title="MacOS 客户端" >}}
+{{< image src="/images/hugo/intranet-penetration-with-pgyx1-or-ksa/02.png" title="MacOS 客户端" >}}
 
 ### Linux
 
@@ -78,7 +78,7 @@ chmod +x ksa*
 
 服务端即会开启并运行，KSA ID 和 PSK 都会出现。也可以查看同目录下的 ksa.log 文件，启动日志已经写入到该文件中。
 
-{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_R3BAW5WHHK2HU2W.png" title="Linux 服务端运行" >}}
+{{< image src="/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_R3BAW5WHHK2HU2W.png" title="Linux 服务端运行" >}}
 
 Linux 客户端需要先配置 `ksa.conf` 文件。
 
@@ -86,13 +86,13 @@ Linux 客户端需要先配置 `ksa.conf` 文件。
 
 将被访问设备服务端生成的 KSA ID 和 PSK 对应填到 [uid] 和 [psk] 后面并取消注释 # 号，使其生效。最终效果如下图：
 
-{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_DXKCHPVK42VZBPY.png" title="Linux 配置文件" >}}
+{{< image src="/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_DXKCHPVK42VZBPY.png" title="Linux 配置文件" >}}
 
 配置完成之后，运行 `./ksa_x64` 来启动即可。
 
 连接成功之后服务端所在的局域网的 IP（我们假设为 192.168.1.\*），在客户端机器上都可以直接访问了，比如内网网络邻居也可以打开：
 
-{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_XMY2BMBQZ2XEUVV.png" title="成功访问内网" >}}
+{{< image src="/images/hugo/intranet-penetration-with-pgyx1-or-ksa/722081_XMY2BMBQZ2XEUVV.png" title="成功访问内网" >}}
 
 {{< admonition note "" false >}}
 

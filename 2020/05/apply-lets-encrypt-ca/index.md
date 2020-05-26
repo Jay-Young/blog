@@ -86,7 +86,7 @@ cat /etc/stunnel/backup.cert \
 
 更多域名解析服务商设置: <https://github.com/acmesh-official/acme.sh/wiki/dnsapi>
 
-{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/apply-let's-encrypt-ca/QQ拼音截图20200524214006.png" title="cert" >}}
+{{< image src="/images/hugo/apply-let's-encrypt-ca/QQ拼音截图20200524214006.png" title="cert" >}}
 
 ## 引用来源
 
