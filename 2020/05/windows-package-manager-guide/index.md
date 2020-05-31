@@ -42,6 +42,7 @@
 常用命令 <sup>[[11]](https://docs.microsoft.com/zh-cn/windows/package-manager/winget/hash)</sup> :
 
 - `winget install <package name>` : 安装应用程序
+  - `winget install -exact` : 使用严格匹配的字符串安装应用
 - `winget show <package name>` : 显示应用程序详细信息
 - `winget search <keyword>` : 根据关键词搜索所有匹配的应用
 - `winget source` : 管理应用源
