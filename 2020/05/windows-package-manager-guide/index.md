@@ -7,6 +7,11 @@
 
 <!--more-->
 
+> WinGet “借鉴”了加拿大开发者 Keivan Beigi 的开源项目（已不再维护）<sup>[[3]](https://github.com/appget/appget)</sup>，微软高级项目经理 Andrew 却没兑现当初的承诺，甚至连差旅费都没给报销，在被作者本人爆出来后才发了个不解决实质问题的感谢声明。<br>
+> 详情可阅读 Keivan Beigi 和 Andrew 的博文。<br>
+> <https://medium.com/@keivan/the-day-appget-died-e9a5c96c8b22><br>
+> <https://devblogs.microsoft.com/commandline/winget-install-learning/><br>
+
 ## 安装
 
 {{< admonition note "" false >}}
@@ -17,21 +22,21 @@
 
 - 微软应用商店（推荐）
 
-  winget 内置于应用安装程序 <sup>[[3]](https://www.microsoft.com/zh-cn/p/app-installer/9nblggh4nns1)</sup> , 需要使用 Windows 10 预览版 <sup>[[4]](https://insider.windows.com/)</sup> 或加入预览通道 <sup>[[5]](http://aka.ms/winget-InsiderProgram)</sup>
+  winget 内置于应用安装程序 <sup>[[4]](https://www.microsoft.com/zh-cn/p/app-installer/9nblggh4nns1)</sup> , 需要使用 Windows 10 预览版 <sup>[[5]](https://insider.windows.com/)</sup> 或加入预览通道 <sup>[[6]](http://aka.ms/winget-InsiderProgram)</sup>
 
 - `Github Release`
 
-  从 `Release` <sup>[[6]](https://github.com/microsoft/winget-cli/releases)</sup> 下载最新安装程序，缺点就是不会自动更新。如果安装报错，需要安装 `Desktop Bridge VC++ v14 Redistributable Package` <sup>[[7]](https://www.microsoft.com/en-us/download/details.aspx?id=53175)</sup> 和 `Microsoft.VCLibs.140.00.UWPDesktop package`
+  从 `Release` <sup>[[7]](https://github.com/microsoft/winget-cli/releases)</sup> 下载最新安装程序，缺点就是不会自动更新。如果安装报错，需要安装 `Desktop Bridge VC++ v14 Redistributable Package` <sup>[[8]](https://www.microsoft.com/en-us/download/details.aspx?id=53175)</sup> 和 `Microsoft.VCLibs.140.00.UWPDesktop package`
 
 - 从源码编译
 
   满足以下条件，使用 `Visual Studio 2019` 自行编译最新源码后安装:
 
   - `Windows 10 1709 (16299)` 或更新版本
-  - 开发者选项中打开开发人员模式 <sup>[[8]](https://docs.microsoft.com/zh-cn/windows/uwp/get-started/enable-your-device-for-development#developer-mode)</sup>
-  - `Visual Studio 2019` <sup>[[9]](https://visualstudio.microsoft.com/downloads/)</sup>
+  - 开发者选项中打开开发人员模式 <sup>[[9]](https://docs.microsoft.com/zh-cn/windows/uwp/get-started/enable-your-device-for-development#developer-mode)</sup>
+  - `Visual Studio 2019` <sup>[[10]](https://visualstudio.microsoft.com/downloads/)</sup>
   - `.NET` 桌面开发基础、 `C++` 桌面开发基础、 `UWP` 平台开发基础
-  - `Microsoft Visual Studio Installer Projects` 插件 <sup>[[10]](https://marketplace.visualstudio.com/items?itemName=VisualStudioClient.MicrosoftVisualStudio2017InstallerProjects)</sup>
+  - `Microsoft Visual Studio Installer Projects` 插件 <sup>[[11]](https://marketplace.visualstudio.com/items?itemName=VisualStudioClient.MicrosoftVisualStudio2017InstallerProjects)</sup>
 
 在我的笔记本和台式机上通过应用商店安装，笔记本上的自动加入了环境变量，而台式机上的并没有，此前的 `Windows Terminal` 也是这种情况，表现形式都是无法通过命令直接使用或者 `Win + R` 无法快捷打开。解决方式就是手动将 `%USERPROFILE%\AppData\Local\Microsoft\WindowsApps` 加入环境变量。
 
@@ -39,7 +44,7 @@
 
 {{< image src="/images/hugo/windows-package-manager-guide/Snipaste_2020-05-25_16-39-27.png" title="winget" >}}
 
-常用命令 <sup>[[11]](https://docs.microsoft.com/zh-cn/windows/package-manager/winget/hash)</sup> :
+常用命令 <sup>[[12]](https://docs.microsoft.com/zh-cn/windows/package-manager/winget/hash)</sup> :
 
 - `winget install <package name>` : 安装应用程序
   - `winget install -exact` : 使用严格匹配的字符串安装应用
@@ -74,7 +79,7 @@ Installers:
 # ManifestVersion: 0.1.0
 ```
 
-官方也提供了两个工具 `YamlCreate.ps1` <sup>[[12]](https://github.com/microsoft/winget-pkgs/blob/master/Tools/YamlCreate.ps1)</sup> 和 `Windows Package Manager YAML Generator` <sup>[[13]](https://www.microsoft.com/zh-cn/p/windows-package-manager-yaml-generator/9p3n60fs22k5)</sup> 来生成模板文件。
+官方也提供了两个工具 `YamlCreate.ps1` <sup>[[13]](https://github.com/microsoft/winget-pkgs/blob/master/Tools/YamlCreate.ps1)</sup> 和 `Windows Package Manager YAML Generator` <sup>[[14]](https://www.microsoft.com/zh-cn/p/windows-package-manager-yaml-generator/9p3n60fs22k5)</sup> 来生成模板文件。
 
 最后通过 `winget validate <manifest>` 和 `winget install -m <manifest>` 来测试是否有效，通过测试后就可以提交了。
 

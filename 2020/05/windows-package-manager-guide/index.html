@@ -32,7 +32,7 @@
                 "url": "https:\/\/blog.233so.com\/cover.png",
                 "width":  800 ,
                 "height":  600 
-            },"genre": "posts","keywords": "winget, 包管理器","wordcount":  829 ,
+            },"genre": "posts","keywords": "winget, 包管理器","wordcount":  932 ,
         "url": "https:\/\/blog.233so.com\/2020\/05\/windows-package-manager-guide\/","datePublished": "2020-05-25T10:12:46+08:00","dateModified": "2020-05-25T10:12:46+08:00","license": "This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.","publisher": {
                 "@type": "Organization",
                 "name": "Jay",
@@ -120,7 +120,7 @@
                                 <i class="far fa-folder fa-fw"></i>Windows
                             </a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-05-25>2020-05-25</time>&nbsp;
-                <i class="fas fa-pencil-alt fa-fw"></i>约 829 字&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 932 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>预计阅读 2 分钟&nbsp;<span id="/2020/05/windows-package-manager-guide/" class="leancloud_visitors" data-flag-title="Windows 程序包管理器">
                         <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
@@ -145,6 +145,12 @@
 </nav></div>
             </div><div class="content" id="content"><p>使用 <code>Linux</code> 各大发行版的用户相信对包管理器 <sup><a href="https://en.wikipedia.org/wiki/Package_manager" target="_blank" rel="noopener noreffer">[1]</a></sup> 并不陌生， <code>Debian</code> 有 <code>apt</code>, <code>CentOS</code> 有 <code>yum</code>, 而 <code>Windows</code> 平台上第三方的包管理器有 <code>scoop</code> 和 <code>chocolatey</code>，现在微软推出了自己的 <code>Windows</code> 程序包管理器及其命令行工具 <code>winget</code> <sup><a href="https://github.com/microsoft/winget-cli" target="_blank" rel="noopener noreffer">[2]</a></sup> , 目前处于公共预览版阶段。</p>
 <p>说起来, <code>scoop</code> 默认很多都是连接的 <code>GitHub</code>, 不科学上网速度实在是太慢了，而 <code>chocolatey</code> 默认软件源的版本更新可能不太及时。目前看微软的这个工具有些也是 <code>GitHub</code>, 希望后续官方能够支持更多常用软件，速度能够上来，能够有靠谱的国内镜像源就更好。</p>
+<blockquote>
+<p>WinGet “借鉴”了加拿大开发者 Keivan Beigi 的开源项目（已不再维护）<sup><a href="https://github.com/appget/appget" target="_blank" rel="noopener noreffer">[3]</a></sup>，微软高级项目经理 Andrew 却没兑现当初的承诺，甚至连差旅费都没给报销，在被作者本人爆出来后才发了个不解决实质问题的感谢声明。<br>
+详情可阅读 Keivan Beigi 和 Andrew 的博文。<br>
+<a href="https://medium.com/@keivan/the-day-appget-died-e9a5c96c8b22">https://medium.com/@keivan/the-day-appget-died-e9a5c96c8b22</a><br>
+<a href="https://devblogs.microsoft.com/commandline/winget-install-learning/">https://devblogs.microsoft.com/commandline/winget-install-learning/</a><br></p>
+</blockquote>
 <h2 id="安装">安装</h2>
 <div class="admonition note">
             <div class="admonition-title"><i class="icon fas fa-pencil-alt"></i>注意</div>
@@ -154,21 +160,21 @@
 <ul>
 <li>
 <p>微软应用商店（推荐）</p>
-<p>winget 内置于应用安装程序 <sup><a href="https://www.microsoft.com/zh-cn/p/app-installer/9nblggh4nns1" target="_blank" rel="noopener noreffer">[3]</a></sup> , 需要使用 Windows 10 预览版 <sup><a href="https://insider.windows.com/" target="_blank" rel="noopener noreffer">[4]</a></sup> 或加入预览通道 <sup><a href="http://aka.ms/winget-InsiderProgram" target="_blank" rel="noopener noreffer">[5]</a></sup></p>
+<p>winget 内置于应用安装程序 <sup><a href="https://www.microsoft.com/zh-cn/p/app-installer/9nblggh4nns1" target="_blank" rel="noopener noreffer">[4]</a></sup> , 需要使用 Windows 10 预览版 <sup><a href="https://insider.windows.com/" target="_blank" rel="noopener noreffer">[5]</a></sup> 或加入预览通道 <sup><a href="http://aka.ms/winget-InsiderProgram" target="_blank" rel="noopener noreffer">[6]</a></sup></p>
 </li>
 <li>
 <p><code>Github Release</code></p>
-<p>从 <code>Release</code> <sup><a href="https://github.com/microsoft/winget-cli/releases" target="_blank" rel="noopener noreffer">[6]</a></sup> 下载最新安装程序，缺点就是不会自动更新。如果安装报错，需要安装 <code>Desktop Bridge VC++ v14 Redistributable Package</code> <sup><a href="https://www.microsoft.com/en-us/download/details.aspx?id=53175" target="_blank" rel="noopener noreffer">[7]</a></sup> 和 <code>Microsoft.VCLibs.140.00.UWPDesktop package</code></p>
+<p>从 <code>Release</code> <sup><a href="https://github.com/microsoft/winget-cli/releases" target="_blank" rel="noopener noreffer">[7]</a></sup> 下载最新安装程序，缺点就是不会自动更新。如果安装报错，需要安装 <code>Desktop Bridge VC++ v14 Redistributable Package</code> <sup><a href="https://www.microsoft.com/en-us/download/details.aspx?id=53175" target="_blank" rel="noopener noreffer">[8]</a></sup> 和 <code>Microsoft.VCLibs.140.00.UWPDesktop package</code></p>
 </li>
 <li>
 <p>从源码编译</p>
 <p>满足以下条件，使用 <code>Visual Studio 2019</code> 自行编译最新源码后安装:</p>
 <ul>
 <li><code>Windows 10 1709 (16299)</code> 或更新版本</li>
-<li>开发者选项中打开开发人员模式 <sup><a href="https://docs.microsoft.com/zh-cn/windows/uwp/get-started/enable-your-device-for-development#developer-mode" target="_blank" rel="noopener noreffer">[8]</a></sup></li>
-<li><code>Visual Studio 2019</code> <sup><a href="https://visualstudio.microsoft.com/downloads/" target="_blank" rel="noopener noreffer">[9]</a></sup></li>
+<li>开发者选项中打开开发人员模式 <sup><a href="https://docs.microsoft.com/zh-cn/windows/uwp/get-started/enable-your-device-for-development#developer-mode" target="_blank" rel="noopener noreffer">[9]</a></sup></li>
+<li><code>Visual Studio 2019</code> <sup><a href="https://visualstudio.microsoft.com/downloads/" target="_blank" rel="noopener noreffer">[10]</a></sup></li>
 <li><code>.NET</code> 桌面开发基础、 <code>C++</code> 桌面开发基础、 <code>UWP</code> 平台开发基础</li>
-<li><code>Microsoft Visual Studio Installer Projects</code> 插件 <sup><a href="https://marketplace.visualstudio.com/items?itemName=VisualStudioClient.MicrosoftVisualStudio2017InstallerProjects" target="_blank" rel="noopener noreffer">[10]</a></sup></li>
+<li><code>Microsoft Visual Studio Installer Projects</code> 插件 <sup><a href="https://marketplace.visualstudio.com/items?itemName=VisualStudioClient.MicrosoftVisualStudio2017InstallerProjects" target="_blank" rel="noopener noreffer">[11]</a></sup></li>
 </ul>
 </li>
 </ul>
@@ -183,7 +189,7 @@
             data-src="/images/hugo/windows-package-manager-guide/Snipaste_2020-05-25_16-39-27.png"
             alt="/images/hugo/windows-package-manager-guide/Snipaste_2020-05-25_16-39-27.png" />
     </a>
-<p>常用命令 <sup><a href="https://docs.microsoft.com/zh-cn/windows/package-manager/winget/hash" target="_blank" rel="noopener noreffer">[11]</a></sup> :</p>
+<p>常用命令 <sup><a href="https://docs.microsoft.com/zh-cn/windows/package-manager/winget/hash" target="_blank" rel="noopener noreffer">[12]</a></sup> :</p>
 <ul>
 <li><code>winget install &lt;package name&gt;</code> : 安装应用程序
 <ul>
@@ -234,7 +240,7 @@
 </span><span class="w"></span><span class="c"># ManifestVersion: 0.1.0</span><span class="w">
 </span></code></pre></td></tr></table>
 </div>
-</div><p>官方也提供了两个工具 <code>YamlCreate.ps1</code> <sup><a href="https://github.com/microsoft/winget-pkgs/blob/master/Tools/YamlCreate.ps1" target="_blank" rel="noopener noreffer">[12]</a></sup> 和 <code>Windows Package Manager YAML Generator</code> <sup><a href="https://www.microsoft.com/zh-cn/p/windows-package-manager-yaml-generator/9p3n60fs22k5" target="_blank" rel="noopener noreffer">[13]</a></sup> 来生成模板文件。</p>
+</div><p>官方也提供了两个工具 <code>YamlCreate.ps1</code> <sup><a href="https://github.com/microsoft/winget-pkgs/blob/master/Tools/YamlCreate.ps1" target="_blank" rel="noopener noreffer">[13]</a></sup> 和 <code>Windows Package Manager YAML Generator</code> <sup><a href="https://www.microsoft.com/zh-cn/p/windows-package-manager-yaml-generator/9p3n60fs22k5" target="_blank" rel="noopener noreffer">[14]</a></sup> 来生成模板文件。</p>
 <p>最后通过 <code>winget validate &lt;manifest&gt;</code> 和 <code>winget install -m &lt;manifest&gt;</code> 来测试是否有效，通过测试后就可以提交了。</p>
 <h2 id="引用来源">引用来源</h2>
 <ul>

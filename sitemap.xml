@@ -2,10 +2,16 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://blog.233so.com/categories/</loc><lastmod>2020-05-31T22:54:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.233so.com/</loc><lastmod>2020-05-31T22:54:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.233so.com/posts/</loc><lastmod>2020-05-31T22:54:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.233so.com/tags/</loc><lastmod>2020-05-31T22:54:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/categories/</loc><lastmod>2020-06-02T18:09:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/hyper-v/</loc><lastmod>2020-06-02T18:09:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/</loc><lastmod>2020-06-02T18:09:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/posts/</loc><lastmod>2020-06-02T18:09:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/</loc><lastmod>2020-06-02T18:09:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/windows/</loc><lastmod>2020-06-02T18:09:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/categories/windows/</loc><lastmod>2020-06-02T18:09:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/wtg/</loc><lastmod>2020-06-02T18:09:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/2020/06/windows-to-go-update/</loc><lastmod>2020-06-02T18:09:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc><lastmod>2020-06-02T18:09:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/%E4%BA%94%E6%9C%88%E5%A4%A9/</loc><lastmod>2020-05-31T22:54:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/2020/05/mayday-31st/</loc><lastmod>2020-05-31T22:54:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/categories/%E7%94%9F%E6%B4%BB/</loc><lastmod>2020-05-31T22:54:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -22,7 +28,6 @@
             <loc>https://blog.233so.com/tags/crontab/</loc><lastmod>2020-05-25T20:15:20&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/2020/05/qnap-crontab/</loc><lastmod>2020-05-25T20:15:20&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</loc><lastmod>2020-05-25T20:15:20&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.233so.com/categories/windows/</loc><lastmod>2020-05-25T10:12:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/2020/05/windows-package-manager-guide/</loc><lastmod>2020-05-25T10:12:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/winget/</loc><lastmod>2020-05-25T10:12:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/</loc><lastmod>2020-05-25T10:12:46&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>

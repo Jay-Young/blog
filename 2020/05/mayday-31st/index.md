@@ -9,5 +9,5 @@
 
 {{< image src="/images/hugo/mayday-31st/v2-2f9ddd06a4b6b09cc244e837f2882d0f_r.jpg" title="12weeks-training-plan" >}}
 
-{{< qqvideo e0975za7bh1 >}}
+{{< iqiyi 16571698300 >}}
 

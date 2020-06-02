@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>WTG | 标签 | Jay</title>
+        <link>https://blog.233so.com/tags/wtg/</link>
+        <description>WTG | 标签 | Jay</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 02 Jun 2020 18:09:43 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/wtg/" rel="self" type="application/rss+xml" /><item>
+                <title>借助 Hyper-V 虚拟机升级 Windows To Go 系统</title>
+                <link>https://blog.233so.com/2020/06/windows-to-go-update/</link>
+                <pubDate>Tue, 02 Jun 2020 18:09:43 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/06/windows-to-go-update/</guid>
+                <description>Windows To Go[1]是 Windows 10 企业版和 Windows 10 教育版中的一项功能，支持创建可从电脑上 USB 连接的外部驱动器启动的 Windows To Go 工作区。事实上 Windows 10 专业版也是可以用的，但是默认所有版本都是没有办法常规升级大版本的。
+</description>
+            </item></channel>
+</rss>
