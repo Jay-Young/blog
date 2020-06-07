@@ -21,7 +21,31 @@ Windows 10 微软拼音的词库设置在设置 → 时间和语言 → 语言 �
 
 {{< image src="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_16-40-44.png" title="微软拼音词库设置" >}}
 
+{{< admonition tip "点击展开更多技巧" true >}}
+基于 Windows 10 Build 1909，以下快捷模式需要在中文模式下
+
+{{< image src="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_19-00-29.png" title="高级设置" >}}
+
+- 简繁输入切换，默认 `Ctrl+Shift+F`
+- 打开 emoji 输入，默认 `Ctrl+Shift+E`
+
+  {{< image src="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_19-03-30.png" title="emoji" >}}
+
+- 人名输入，例如全拼模式下输入 `liuying` 后面跟上 `;r` 进入人名选择
+
+  {{< image src="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_18-52-16.png" title="人名输入" >}}
+
+- U 模式输入，全拼模式下输入 U 进入，可根据笔画、拆分的方式输入汉字以及输入多种符号。例如：输入 `uhs` 表示“十”（笔画模式：横竖），`ushuishuishui` 表示“淼”，还有 `uudw`、`uuxh`、`uuts`、`uubd`、`uusx`、`uujh` 和 `uuzm` 等多种符号模式。
+
+  {{< image src="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_18-52-24.png" title="U 模式" >}}
+
+- V 模式输入，全拼模式下输入 V 进入，可以输入中文格式数字、日期和时间等。例如：输入 `v123` 可以选择“一百二十三”、“壹佰贰拾叁”中文格式数字，`v2020.6.7` 可以选择 2020 年 6 月 7 日、二〇二〇年六月七日等多种日期格式，`v1+2` 可以选择结果“3”或者公式“1+2=3”。
+
+  {{< image src="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_18-55-53.png" title="V 模式" >}}
+
+{{< /admonition >}}
+
 <span id="qqpinyin"></span>
 
-> 2013年09月16日，腾讯4.48亿美元注资搜狗，宣布将搜搜和QQ输入法业务与搜狗现有业务进行合并。<sup>[[3]](https://baike.baidu.com/item/QQ%E6%8B%BC%E9%9F%B3%E8%BE%93%E5%85%A5%E6%B3%95/7556813)</sup> 所以目前官方的 QQ 拼音输入法应该还是搜狗的换皮版本，据说也不干净。
+> 2013 年 09 月 16 日，腾讯 4.48 亿美元注资搜狗，宣布将搜搜和 QQ 输入法业务与搜狗现有业务进行合并。<sup>[[3]](https://baike.baidu.com/item/QQ%E6%8B%BC%E9%9F%B3%E8%BE%93%E5%85%A5%E6%B3%95/7556813)</sup> 所以目前官方的 QQ 拼音输入法应该还是搜狗的换皮版本，据说也不干净。
 
