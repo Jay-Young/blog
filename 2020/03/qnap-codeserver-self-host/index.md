@@ -13,6 +13,7 @@
 
 {{< admonition info "说明" false >}}
 本文基于以下软硬件系统测试，不能完全保证其他系统的兼容性。
+
 - QNAP TS-453Bmini 2+8G 内存
 - QTS 4.4.1.1216
 - code-server 1.41.1 with chinese-language-pack 1.41.0
@@ -36,7 +37,7 @@ SSH 连接到 NAS 系统，切换到 code-server 所在目录。[如何开启 SS
 
 首先我们先安装中文语言包插件，从 [vscode官方市场](https://marketplace.visualstudio.com/) 下载适配的中文语言包。目前 code-server 最新的版本是 1.41.1，我测试了 1.41.0 版本的中文语言包能够正常使用，通过浏览器抓包（F12）得到下载地址，替换相应的版本号即可构造需要版本的地址。
 
-```
+```markdown
 https://marketplace.visualstudio.com/_apis/public/gallery/publishers/MS-CEINTL/vsextensions/vscode-language-pack-zh-hans/<version>/vspackage
 ```
 
@@ -126,7 +127,7 @@ daemon_mgr code-server start "/<your-shell-script-path>/<you-shell-script> start
 {{< /admonition >}}
 
 {{< admonition info "搜索 issues 来解决问题" false >}}
-https://github.com/cdr/code-server/issues
+<https://github.com/cdr/code-server/issues>
 {{< /admonition >}}
 
 本文只是介绍编辑器的安装，不是集成开发环境的 IDE 的部署，所以能不能兼容大多数开发环境就不清楚了。

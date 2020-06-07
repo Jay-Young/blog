@@ -151,7 +151,7 @@ nps 支持配置文件和无配置文件使用，这里介绍无配置文件，�
 
 内网 TS 453Bmini 上将 npc 客户端安装到系统服务，[查看客户端命令](#client-command)：
 
-```
+```bash
 wget https://github.com/ehang-io/nps/releases/download/v0.26.6/linux_amd64_client.tar.gz
 mkdir npc && cd npc
 ./npc install -server=云服务器IP:8024 -vkey=客户端的密钥 -type=tcp
@@ -164,7 +164,7 @@ npc start
 
 解压下载下来的压缩包 `windows_amd64_client.tar.gz`，在目录下管理员运行 `powershell` 或 `cmd` 执行以下命令将 npc 安装到系统服务：
 
-```
+```bash
 ./npc.exe install
 ```
 

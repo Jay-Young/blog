@@ -2,13 +2,19 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://blog.233so.com/categories/</loc><lastmod>2020-06-02T18:09:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/categories/</loc><lastmod>2020-06-07T15:45:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/</loc><lastmod>2020-06-07T15:45:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/posts/</loc><lastmod>2020-06-07T15:45:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/</loc><lastmod>2020-06-07T15:45:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/categories/windows/</loc><lastmod>2020-06-07T15:45:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/%E5%BE%AE%E8%BD%AF%E6%8B%BC%E9%9F%B3/</loc><lastmod>2020-06-07T15:45:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/%E6%90%9C%E7%8B%97/</loc><lastmod>2020-06-07T15:45:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/2020/06/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/</loc><lastmod>2020-06-07T15:45:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/%E6%B7%B1%E8%93%9D%E8%AF%8D%E5%BA%93/</loc><lastmod>2020-06-07T15:45:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/%E8%AF%8D%E5%BA%93/</loc><lastmod>2020-06-07T15:45:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/%E8%BE%93%E5%85%A5%E6%B3%95/</loc><lastmod>2020-06-07T15:45:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/hyper-v/</loc><lastmod>2020-06-02T18:09:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.233so.com/</loc><lastmod>2020-06-02T18:09:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.233so.com/posts/</loc><lastmod>2020-06-02T18:09:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.233so.com/tags/</loc><lastmod>2020-06-02T18:09:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/windows/</loc><lastmod>2020-06-02T18:09:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.233so.com/categories/windows/</loc><lastmod>2020-06-02T18:09:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/wtg/</loc><lastmod>2020-06-02T18:09:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/2020/06/windows-to-go-update/</loc><lastmod>2020-06-02T18:09:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc><lastmod>2020-06-02T18:09:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>

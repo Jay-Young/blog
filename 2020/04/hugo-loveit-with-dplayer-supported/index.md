@@ -17,7 +17,7 @@ DPlayer 是一款支持弹幕的 HTML5 视频播放器，支持 HLS、FLV、MPEG
 
 新建 `LoveIt/assets/lib/dplayer` 文件夹，将下面的 css 和 js 文件下载保存在此位置：
 
-```
+```markdown
 https://cdn.jsdelivr.net/npm/hls.js@0.13.2/dist/hls.min.js
 https://cdn.jsdelivr.net/npm/flv.js@1.5.0/dist/flv.min.js
 https://cdn.jsdelivr.net/npm/dplayer@1.25.0/dist/DPlayer.min.css
@@ -132,6 +132,7 @@ https://cdn.jsdelivr.net/npm/dplayer@1.25.0/dist/DPlayer.min.js
   text-align: center;
 }
 ```
+
 在 `LoveIt/assets/css/_page/_single.scss` 以下位置引入新建的 `_video.scss`：
 
 ```scss
@@ -191,8 +192,6 @@ color|可选，"#b7daff"|字幕颜色
 整个代码还是简单粗糙地引入，尤其是对同页面多个播放器的处理，新手不会优化，就这样能用就行了。
 
 **参考内容：**
-> 
 > [DPlayer 官方文档](http://dplayer.js.org/zh/guide.html)
-> 
 > [DPlayer-Typecho](https://github.com/MoePlayer/DPlayer-Typecho)
 

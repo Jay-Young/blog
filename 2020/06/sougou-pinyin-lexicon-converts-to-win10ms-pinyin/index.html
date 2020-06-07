@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>搜狗输入法词库转换成微软拼音自定义短语 | Jay</title>
+        <meta name="Description" content="一个博客，简单记录"><meta property="og:title" content="搜狗输入法词库转换成微软拼音自定义短语" />
+<meta property="og:description" content="搜狗输入法应该是目前中文拼音输入法中最流行的，最近的一件事让它更加“火”了。很多用户发现电脑不断出现托盘闪烁弹窗，点击后即为淘宝天猫的 6.18 促销网页。火绒工程师溯源调查后发现，该弹窗均来自于常用软件“搜狗输入法”，该广告配置通过云控下发，无法通过设置关闭。进一步分析发现，该软件除了疯狂弹窗，还存在统计用户浏览器浏览历史数据等越位行为，符合广告程序的定义。目前，火绒已对该软件中广告模块进行拦截查杀。[1]" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.233so.com/2020/06/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/" />
+<meta property="article:published_time" content="2020-06-07T15:45:18+08:00" />
+<meta property="article:modified_time" content="2020-06-07T15:45:18+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="搜狗输入法词库转换成微软拼音自定义短语"/>
+<meta name="twitter:description" content="搜狗输入法应该是目前中文拼音输入法中最流行的，最近的一件事让它更加“火”了。很多用户发现电脑不断出现托盘闪烁弹窗，点击后即为淘宝天猫的 6.18 促销网页。火绒工程师溯源调查后发现，该弹窗均来自于常用软件“搜狗输入法”，该广告配置通过云控下发，无法通过设置关闭。进一步分析发现，该软件除了疯狂弹窗，还存在统计用户浏览器浏览历史数据等越位行为，符合广告程序的定义。目前，火绒已对该软件中广告模块进行拦截查杀。[1]"/>
+<meta name="application-name" content="Jay">
+<meta name="apple-mobile-web-app-title" content="Jay"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.233so.com/2020/06/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/" /><link rel="prev" href="https://blog.233so.com/2020/06/windows-to-go-update/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="msvalidate.01" content="9E6BC727410AE14F6E9442F540992717" /><meta name="baidu-site-verification" content="apixhlrtUN" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "搜狗输入法词库转换成微软拼音自定义短语",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/blog.233so.com\/2020\/06\/sougou-pinyin-lexicon-converts-to-win10ms-pinyin\/"
+        },"image": {
+                "@type": "ImageObject",
+                "url": "https:\/\/blog.233so.com\/cover.png",
+                "width":  800 ,
+                "height":  600 
+            },"genre": "posts","keywords": "搜狗, 输入法, 词库, 微软拼音, 深蓝词库","wordcount":  1033 ,
+        "url": "https:\/\/blog.233so.com\/2020\/06\/sougou-pinyin-lexicon-converts-to-win10ms-pinyin\/","datePublished": "2020-06-07T15:45:18+08:00","dateModified": "2020-06-07T15:45:18+08:00","license": "This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.","publisher": {
+                "@type": "Organization",
+                "name": "Jay",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/blog.233so.com\/logo.png",
+                "width":  127 ,
+                "height":  40 
+                }
+            },"author": {
+                "@type": "Person",
+                "name": "Jay"
+            },"description": ""
+    }
+    </script></head>
+    <body><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.classList.add('dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Jay">Jay</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/"> 首页 </a><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/friends/"> 友链 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Jay">Jay</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/" title="">首页</a><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/friends/" title="">友链</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">搜狗输入法词库转换成微软拼音自定义短语</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://weibo.com/jayyoung1/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Jay</a></span>&nbsp;
+                    <span class="post-category">收录于<a href="/categories/windows/">
+                                <i class="far fa-folder fa-fw"></i>Windows
+                            </a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-06-07>2020-06-07</time>&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 1033 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>预计阅读 3 分钟&nbsp;<span id="/2020/06/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/" class="leancloud_visitors" data-flag-title="搜狗输入法词库转换成微软拼音自定义短语">
+                        <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading/normal.min.svg"
+        data-sizes="auto"
+        data-srcset="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/aerial-photography-of-ocean-1968267.jpg, /images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/aerial-photography-of-ocean-1968267.jpg 1.5x, /images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/aerial-photography-of-ocean-1968267.jpg 2x"
+        data-src="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/aerial-photography-of-ocean-1968267.jpg"
+        alt="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/aerial-photography-of-ocean-1968267.jpg"
+        title="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/aerial-photography-of-ocean-1968267.jpg" /></div><div class="details toc" id="toc-static">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-down"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><p>搜狗输入法应该是目前中文拼音输入法中最流行的，最近的一件事让它更加“火”了。很多用户发现电脑不断出现托盘闪烁弹窗，点击后即为淘宝天猫的 6.18 促销网页。火绒工程师溯源调查后发现，该弹窗均来自于常用软件“搜狗输入法”，该广告配置通过云控下发，无法通过设置关闭。进一步分析发现，该软件除了疯狂弹窗，还存在统计用户浏览器浏览历史数据等越位行为，符合广告程序的定义。目前，火绒已对该软件中广告模块进行拦截查杀。<sup><a href="https://zhuanlan.zhihu.com/p/146179800" target="_blank" rel="noopener noreffer">[1]</a></sup></p>
+<p>其实这种劣迹也不是搜狗第一次了，如果用关键词“搜狗输入法 流氓”搜索下会有很多用户反馈事件。所以呢，早点放弃搜狗输入法是唯一的解决办法。说起来，2008 年我开始使用搜狗输入法，那时候还是喜欢换皮肤的年纪。后来用过一段时间的谷歌拼音和必应输入法，因为都不维护了，期间也用过一段时间 QQ 拼音纯净版<sup><a href="#qqpinyin" rel="">[2]</a></sup>，后来也不维护了。这么多年来，用的时间最长的还是我现在用的 Windows 10 微软拼音以及前辈微软拼音 2010 等。微软的所有词库都打开的情况下，用了这么多年了并没有感觉什么不适，反正也不是什么新闻媒体速记员，不觉得有什么缺少的内容。可能从词库的完整性来说，肯定没有搜狗的词库强大，但是可以通过“深蓝词库”转换器这款软件将搜狗的词库转换成微软拼音可用的用户定义的短语导入。至于其他所谓技巧性的功能对我来说好像不是刚需。</p>
+<p>深蓝词库转换器下载: <a href="https://github.com/studyzy/imewlconverter/releases">https://github.com/studyzy/imewlconverter/releases</a></p>
+<p>搜狗细胞词库下载: <a href="https://pinyin.sogou.com/dict/">https://pinyin.sogou.com/dict/</a></p>
+<p>可以直接使用下载的细胞词库，或者将正在使用的词库备份为 bin 文件或导出为 txt 文件。然后，将词库文件拖拽到转换器会自动识别来源，在右侧选择目标格式“Win10 微软拼音（自定义短语）”或“Win10 微软拼音（自学习词库）”，注意后者只能支持最多 2 万个词条，所以建议通过高级设置中的词条过滤来控制源词条数量。如果喜欢使用双拼，工具还提供了多种双拼方案，以便在生成短语的拼音时生成对应的双拼。</p>
+<a class="lightgallery" href="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_16-28-54.png" title="深蓝词库转换" data-thumbnail="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_16-28-54.png">
+        <img
+            class="lazyload"
+            src="/svg/loading/normal.min.svg"
+            data-sizes="auto"
+            data-srcset="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_16-28-54.png, /images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_16-28-54.png 1.5x, /images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_16-28-54.png 2x"
+            data-src="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_16-28-54.png"
+            alt="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_16-28-54.png" />
+    </a>
+<p>如果源词条数量很多的话，导入以后打开用户自定义短语界面会变得很卡，所以我是不推荐导入那些行业分类的细胞词库，反正微软这边也有，不会差到哪里去。下定决心要从搜狗切换到微软的话，只需要把自己的个人词库导入就应该够用了。</p>
+<p>Windows 10 微软拼音的词库设置在设置 → 时间和语言 → 语言 → 首选语言中文选项 → 键盘微软拼音选项 → 词库和自学习。在这个界面可以导入导出词库，自定义短语，打开云候选，启用所有的专业词典。</p>
+<a class="lightgallery" href="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_16-40-44.png" title="微软拼音词库设置" data-thumbnail="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_16-40-44.png">
+        <img
+            class="lazyload"
+            src="/svg/loading/normal.min.svg"
+            data-sizes="auto"
+            data-srcset="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_16-40-44.png, /images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_16-40-44.png 1.5x, /images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_16-40-44.png 2x"
+            data-src="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_16-40-44.png"
+            alt="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_16-40-44.png" />
+    </a>
+<p><span id="qqpinyin"></span></p>
+<blockquote>
+<p>2013年09月16日，腾讯4.48亿美元注资搜狗，宣布将搜搜和QQ输入法业务与搜狗现有业务进行合并。<sup><a href="https://baike.baidu.com/item/QQ%E6%8B%BC%E9%9F%B3%E8%BE%93%E5%85%A5%E6%B3%95/7556813" target="_blank" rel="noopener noreffer">[3]</a></sup> 所以目前官方的 QQ 拼音输入法应该还是搜狗的换皮版本，据说也不干净。</p>
+</blockquote></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>本文于 2020-06-07 更新</span>
+            </div>
+            <div class="post-info-license"><span>采用 <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh" target="_blank">CC BY-NC 4.0</a> 协议发布</span></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/2020/06/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://blog.233so.com/2020/06/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/" data-title="搜狗输入法词库转换成微软拼音自定义短语" data-hashtags="搜狗,输入法,词库,微软拼音,深蓝词库"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://blog.233so.com/2020/06/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/" data-title="搜狗输入法词库转换成微软拼音自定义短语" data-image="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/aerial-photography-of-ocean-1968267.jpg"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="https://blog.233so.com/2020/06/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/" data-title="搜狗输入法词库转换成微软拼音自定义短语"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微信" data-sharer="weixin" data-url="https://blog.233so.com/2020/06/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/"><i class="fab fa-weixin fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/%E6%90%9C%E7%8B%97/">搜狗</a>,&nbsp;<a href="/tags/%E8%BE%93%E5%85%A5%E6%B3%95/">输入法</a>,&nbsp;<a href="/tags/%E8%AF%8D%E5%BA%93/">词库</a>,&nbsp;<a href="/tags/%E5%BE%AE%E8%BD%AF%E6%8B%BC%E9%9F%B3/">微软拼音</a>,&nbsp;<a href="/tags/%E6%B7%B1%E8%93%9D%E8%AF%8D%E5%BA%93/">深蓝词库</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/2020/06/windows-to-go-update/" class="prev" rel="prev" title="借助 Hyper-V 虚拟机升级 Windows To Go 系统"><i class="fas fa-angle-left fa-fw"></i>借助 Hyper-V 虚拟机升级 Windows To Go 系统</a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.70.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.0"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://weibo.com/jayyoung1/" target="_blank">Jay</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css"><script type="text/javascript">
+    window.config = {"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"valine":{"appId":"iRP94IPVb6nLbnvVlYl3acIX-gzGzoHsz","appKey":"cMInmDt3V8IqJDnkANRw9Faf","avatar":"mp","el":"#valine","lang":"zh-cn","pageSize":10,"placeholder":"请留下你善意的评论……","recordIP":true,"visitor":true}},"headerMode":{"desktop":"fixed","mobile":"fixed"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"99SEOT1H0K","algoliaIndex":"index","algoliaSearchKey":"5f32c3a605ca6aba6c73407aa305e495","noResultsFound":"没有找到结果","type":"algolia"},"twemoji":true};
+</script><script src="https://cdn.jsdelivr.net/npm/valine@1.4.9/dist/Valine.min.js"></script><script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script><script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js"></script><script src="https://cdn.jsdelivr.net/npm/twemoji@12.1.5/dist/twemoji.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/js/lightgallery.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sachinchoolur/lg-thumbnail.js@1.1.0/dist/lg-thumbnail.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sachinchoolur/lg-zoom.js@1.0.1/dist/lg-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/js/sharer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js"></script><script type="text/javascript" src="/js/custom.js"></script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-16630170-6','auto');ga('set', 'anonymizeIp', true);ga('send', 'pageview');
+        </script><script type="text/javascript" src="https://www.google-analytics.com/analytics.js" async></script></body>
+</html>

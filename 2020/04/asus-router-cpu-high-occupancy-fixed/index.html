@@ -32,7 +32,7 @@
                 "url": "https:\/\/blog.233so.com\/cover.png",
                 "width":  800 ,
                 "height":  600 
-            },"genre": "posts","keywords": "威联通, QNAP, 华硕, 路由器, dnsmasq, ksoftirqd, kworker","wordcount":  452 ,
+            },"genre": "posts","keywords": "威联通, QNAP, 华硕, 路由器, dnsmasq, ksoftirqd, kworker","wordcount":  473 ,
         "url": "https:\/\/blog.233so.com\/2020\/04\/asus-router-cpu-high-occupancy-fixed\/","datePublished": "2020-04-19T00:25:02+08:00","dateModified": "2020-04-19T00:25:02+08:00","license": "This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.","publisher": {
                 "@type": "Organization",
                 "name": "Jay",
@@ -120,7 +120,7 @@
                                 <i class="far fa-folder fa-fw"></i>NAS
                             </a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-04-19>2020-04-19</time>&nbsp;
-                <i class="fas fa-pencil-alt fa-fw"></i>约 452 字&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 473 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>预计阅读 1 分钟&nbsp;<span id="/2020/04/asus-router-cpu-high-occupancy-fixed/" class="leancloud_visitors" data-flag-title="解决华硕路由器 CPU 核心占用 100% 问题的崎岖之路">
                         <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
@@ -152,7 +152,7 @@
 <p>问题是确定 NAS 引起的了，于是开始全网搜索解决方案，虽然找到了一些同样症状的帖子，但是基本也没什么用。</p>
 <p>尝试了停用 NAS 所有应用、将 NAS 从 DHCP 改为固定、重启 NAS、重置路由器、指定内网 DNS 等各种骚操作依旧不行。</p>
 <p>然后在各种外网论坛里翻阅，终于决定从 NAS 的 dnsmasq 服务入手。</p>
-<p>找到 <code>/etc/dnsmasq.conf</code> <code>/etc/resolv.conf</code> <code>/etc/resolv.dnsmasq</code> 三个配置文件，看到 <code>127.0.1.1</code> 就觉得很奇怪，顺手把它改成 <code>127.0.0.1</code>，然后奇迹就出现了，路由器 CPU 核心的占用马上降下来了。</p>
+<p>找到 <code>/etc/dnsmasq.conf</code> <code>/etc/resolv.conf</code> <code>/etc/resolv.dnsmasq</code> 三个配置文件，看到 <code>127.0.1.1</code> 就觉得很奇怪，虽然查了资料说是正常的配置，但还是顺手把它改成其他的 DNS <code>223.5.5.5</code>，然后奇迹就出现了，路由器 CPU 核心的占用马上降下来了。</p>
 <p>附上最终折腾的解决方案：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -169,11 +169,11 @@
 <pre class="chroma"><code class="language-fallback" data-lang="fallback"># /etc/dnsmasq.conf 找到下面内容所在行注释掉
 #listen-address
 
-# /etc/resolv.conf 把 127.0.1.1 改成 127.0.0.1
-nameserver 127.0.0.1
+# /etc/resolv.conf 把 127.0.1.1 改成 223.5.5.5
+nameserver 223.5.5.5
 
-# /etc/resolv.dnsmasq 把 127.0.1.1 改成 127.0.0.1
-nameserver 127.0.0.1
+# /etc/resolv.dnsmasq 把 127.0.1.1 改成 223.5.5.5
+nameserver 223.5.5.5
 </code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">

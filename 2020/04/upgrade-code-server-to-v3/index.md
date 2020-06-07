@@ -22,7 +22,7 @@ V3 has some significant changes that will need to be accounted for in your scrip
 
 - V2 cannot update to V3 automatically due to the structural changes so you’ll need to manually download and restart code-server in order to update.
 
-- If you want to build or develop please check out https://github.com/cdr/code-server/blob/3.0.0/doc/CONTRIBUTING.md as the steps have changed.
+- If you want to build or develop please check out <https://github.com/cdr/code-server/blob/3.0.0/doc/CONTRIBUTING.md> as the steps have changed.
   {{< /admonition >}}
 
 首先停止运行 2.x 版本进程，删掉开机脚本和计划任务。
@@ -49,14 +49,14 @@ export ITEM_URL=https://marketplace.visualstudio.com/items
 
 安装完成以后，`SSH` 连接到 NAS，测试安装是否成功：
 
-```
+```bash
 qbuild -V
 # 返回信息：qbuild 2.3.10 表示安装成功
 ```
 
 创建项目，名字随便取，比如 codeserver：
 
-```
+```bash
 qbuild --create-env codeserver
 ```
 
@@ -83,7 +83,7 @@ qbuild --create-env codeserver
 
 arm 以及 x86 开头的目录是存放相应架构的文件，shared 目录是存放所有架构通用的文件，如果不需要同时开发跨架构的程序，可以直接删除所有架构对应的目录：
 
-```
+```bash
 cd codeserver
 rm -rf ./arm* & rm -rf ./x86* & rm -rf ./config
 ```
@@ -125,14 +125,14 @@ QPKG_VISIBLE="2"
 
 将所有文件复制到项目新建 `/shared/bin/` 目录下：
 
-```
+```bash
 mkdir ./shared/bin
 cp -rf <code-server目录绝对路径>/* ./shared/bin
 ```
 
 配置初始化脚本，其他的代码保持默认即可：
 
-```
+```bash
 vi ./shared/codeserver.sh
 ```
 
@@ -190,7 +190,7 @@ codeserver_gray.gif 64×64 px 灰色 App Center 未启用状态时显示
 
 在项目根目录运行下面的命令构建安装包，完成后从 `App Center` 手动安装即可：
 
-```
+```bash
 qbuild
 ```
 

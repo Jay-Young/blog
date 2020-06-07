@@ -409,9 +409,9 @@ nps-update update
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">wget https://github.com/ehang-io/nps/releases/download/v0.26.6/linux_amd64_client.tar.gz
-mkdir npc &amp;&amp; cd npc
-./npc install -server=云服务器IP:8024 -vkey=客户端的密钥 -type=tcp
+<pre class="chroma"><code class="language-bash" data-lang="bash">wget https://github.com/ehang-io/nps/releases/download/v0.26.6/linux_amd64_client.tar.gz
+mkdir npc <span class="o">&amp;&amp;</span> <span class="nb">cd</span> npc
+./npc install -server<span class="o">=</span>云服务器IP:8024 -vkey<span class="o">=</span>客户端的密钥 -type<span class="o">=</span>tcp
 npc start
 </code></pre></td></tr></table>
 </div>
@@ -423,7 +423,7 @@ npc start
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">./npc.exe install
+<pre class="chroma"><code class="language-bash" data-lang="bash">./npc.exe install
 </code></pre></td></tr></table>
 </div>
 </div><p>编写批处理文件控制访问连接，或者直接在 <code>cmd</code> 中直接运行：</p>

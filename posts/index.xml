@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/posts/</link>
         <description>所有文章 | Jay</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 02 Jun 2020 18:09:43 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 07 Jun 2020 15:45:18 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+                <title>搜狗输入法词库转换成微软拼音自定义短语</title>
+                <link>https://blog.233so.com/2020/06/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/</link>
+                <pubDate>Sun, 07 Jun 2020 15:45:18 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/06/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/</guid>
+                <description>搜狗输入法应该是目前中文拼音输入法中最流行的，最近的一件事让它更加“火”了。很多用户发现电脑不断出现托盘闪烁弹窗，点击后即为淘宝天猫的 6.18 促销网页。火绒工程师溯源调查后发现，该弹窗均来自于常用软件“搜狗输入法”，该广告配置通过云控下发，无法通过设置关闭。进一步分析发现，该软件除了疯狂弹窗，还存在统计用户浏览器浏览历史数据等越位行为，符合广告程序的定义。目前，火绒已对该软件中广告模块进行拦截查杀。[1]
+</description>
+            </item><item>
                 <title>借助 Hyper-V 虚拟机升级 Windows To Go 系统</title>
                 <link>https://blog.233so.com/2020/06/windows-to-go-update/</link>
                 <pubDate>Tue, 02 Jun 2020 18:09:43 &#43;0800</pubDate>
@@ -75,14 +83,6 @@
                 <author>Jay</author>
                 <guid>https://blog.233so.com/2020/05/my-own-qnap-apps-list/</guid>
                 <description>个人用 QDK 将一些开源项目打包成了威联通可以直接安装的 QPKG 安装程序，方便使用，留个备份，不定时更新。
-</description>
-            </item><item>
-                <title>Hugo 篇四：添加友链卡片 shortcodes</title>
-                <link>https://blog.233so.com/2020/04/friend-link-shortcodes-for-hugo-loveit/</link>
-                <pubDate>Sat, 25 Apr 2020 23:08:48 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/04/friend-link-shortcodes-for-hugo-loveit/</guid>
-                <description>在前辈大佬的基础上，为本博客使用的主题实现友链卡片功能，并加入简单的移动页面适配。代码借鉴来自 kissshot 和 数学小兵儿 两位大佬。
 </description>
             </item></channel>
 </rss>

@@ -204,8 +204,8 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">qbuild -V
-# 返回信息：qbuild 2.3.10 表示安装成功
+<pre class="chroma"><code class="language-bash" data-lang="bash">qbuild -V
+<span class="c1"># 返回信息：qbuild 2.3.10 表示安装成功</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>创建项目，名字随便取，比如 codeserver：</p>
@@ -214,7 +214,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">qbuild --create-env codeserver
+<pre class="chroma"><code class="language-bash" data-lang="bash">qbuild --create-env codeserver
 </code></pre></td></tr></table>
 </div>
 </div><p>查看 codeserver 目录文件结果如下：</p>
@@ -263,8 +263,8 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">cd codeserver
-rm -rf ./arm* &amp; rm -rf ./x86* &amp; rm -rf ./config
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> codeserver
+rm -rf ./arm* <span class="p">&amp;</span> rm -rf ./x86* <span class="p">&amp;</span> rm -rf ./config
 </code></pre></td></tr></table>
 </div>
 </div><div class="admonition warning">
@@ -331,7 +331,7 @@ rm -rf ./arm* &amp; rm -rf ./x86* &amp; rm -rf ./config
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">mkdir ./shared/bin
+<pre class="chroma"><code class="language-bash" data-lang="bash">mkdir ./shared/bin
 cp -rf &lt;code-server目录绝对路径&gt;/* ./shared/bin
 </code></pre></td></tr></table>
 </div>
@@ -341,7 +341,7 @@ cp -rf &lt;code-server目录绝对路径&gt;/* ./shared/bin
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">vi ./shared/codeserver.sh
+<pre class="chroma"><code class="language-bash" data-lang="bash">vi ./shared/codeserver.sh
 </code></pre></td></tr></table>
 </div>
 </div><div class="details admonition info">
@@ -447,7 +447,7 @@ codeserver_gray.gif 64×64 px 灰色 App Center 未启用状态时显示
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">qbuild
+<pre class="chroma"><code class="language-bash" data-lang="bash">qbuild
 </code></pre></td></tr></table>
 </div>
 </div><p>以 Web App 形式运行从外观上看和本地的 vs code 也没什么区别了</p>
