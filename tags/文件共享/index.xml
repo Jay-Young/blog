@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>文件共享 | 标签 | Jay</title>
+        <link>https://blog.233so.com/tags/%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB/</link>
+        <description>文件共享 | 标签 | Jay</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 25 Jun 2020 11:31:00 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB/" rel="self" type="application/rss+xml" /><item>
+                <title>威联通：Directory Lister 搭建简单的软件库</title>
+                <link>https://blog.233so.com/2020/06/build-application-archive-with-directory-lister/</link>
+                <pubDate>Thu, 25 Jun 2020 11:31:00 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/06/build-application-archive-with-directory-lister/</guid>
+                <description>最近整理了以前下载的一些软件安装包，想起来在 QNAP NAS 上做个 Web 端下载目录站，就类似 everything 那种一个简单的目录列出的吧。看中了最简单的 Directory Lister [1], 下载源码到 Web 目录即可使用。
+</description>
+            </item></channel>
+</rss>
