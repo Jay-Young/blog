@@ -180,12 +180,12 @@ color|可选，"#b7daff"|字幕颜色
 使用方法：
 
 ```markdown
-{{</* video id="a" url="https://onedrive.gimhoy.com/sharepoint/aHR0cHM6Ly96anVlZHVjbi1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9qYXlfeW91bmdfemp1X2VkdV9jbi9FZFlDRDBuNkxWQkxzRGVUU19NaDhSTUJSQm5ybF9lUDJGRnhEVmc2WGhSelV3P2U9cHNBR1F3.mp4" sub="https://onedrive.gimhoy.com/sharepoint/aHR0cHM6Ly96anVlZHVjbi1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9qYXlfeW91bmdfemp1X2VkdV9jbi9FUkxXYm4yaFd5ZEFsck5JRHdOVk92TUJVU2ktSC0wZkh1aDk3RkRhOGtUNHlBP2U9bmtUZXlk.vtt" */>}}
+{{</* video id="a" url="/videos/Wakin.Chau.Any.song.reminds.you.or.me.mp4" sub="/videos/Wakin.Chau.Any.song.reminds.you.or.me.vtt" */>}}
 ```
 
 实际页面显示效果：
 
-{{< video id="a" url="https://onedrive.gimhoy.com/sharepoint/aHR0cHM6Ly96anVlZHVjbi1teS5zaGFyZXBvaW50LmNvbS86djovZy9wZXJzb25hbC9qYXlfeW91bmdfemp1X2VkdV9jbi9FZFlDRDBuNkxWQkxzRGVUU19NaDhSTUJSQm5ybF9lUDJGRnhEVmc2WGhSelV3P2U9cHNBR1F3.mp4" sub="https://onedrive.gimhoy.com/sharepoint/aHR0cHM6Ly96anVlZHVjbi1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9qYXlfeW91bmdfemp1X2VkdV9jbi9FUkxXYm4yaFd5ZEFsck5JRHdOVk92TUJVU2ktSC0wZkh1aDk3RkRhOGtUNHlBP2U9bmtUZXlk.vtt" >}}
+{{< video id="a" url="/videos/Wakin.Chau.Any.song.reminds.you.or.me.mp4" sub="/videos/Wakin.Chau.Any.song.reminds.you.or.me.vtt" >}}
 
 ## 后记
 
