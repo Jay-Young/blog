@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/posts/</link>
         <description>所有文章 | Jay</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 29 Jun 2020 23:22:09 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 11 Jul 2020 11:43:51 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+                <title>启蒙积木国玩系列太空创想：长征五号运载火箭</title>
+                <link>https://blog.233so.com/2020/07/enlighten-keeppley-k10203-long-march-5-series-launch-vehicle/</link>
+                <pubDate>Sat, 11 Jul 2020 11:43:51 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/07/enlighten-keeppley-k10203-long-march-5-series-launch-vehicle/</guid>
+                <description>“启蒙”创立于 1994 年。 自成立以来, 启蒙一直致力于成为中国玩具行业顶尖的积木品牌，为消费者提供优质、创新的产品。经过 25 年的努力，启蒙已发展成为国内积木行业的领军品牌，并发展成一家拥有 900 多名员工、极具竞争力的企业。 启蒙现拥有 700 多名技术工人的工厂，在广州和汕头两地，拥有超 60 人的顶尖研发设计团队，以及一支超过 100 人的销售团队。 今天，可以在 70,000 多个线下店找到启蒙积木。[1]
+</description>
+            </item><item>
                 <title>关闭私有地址解决 iOS 14 无法连接 WiFi</title>
                 <link>https://blog.233so.com/2020/06/fix-wifi-connection-failure-in-ios14/</link>
                 <pubDate>Mon, 29 Jun 2020 23:22:09 &#43;0800</pubDate>
@@ -72,15 +80,6 @@
                 <author>Jay</author>
                 <guid>https://blog.233so.com/2020/05/qnap-crontab/</guid>
                 <description>crontab 是 UNIX / Linux 系统用来执行周期性任务的命令。 crond 命令每分钟会检查是否有要执行的作业，如果有要执行的工作便会自动执行该工作，这类作业一般称为 cronjob 。
-</description>
-            </item><item>
-                <title>Windows 程序包管理器</title>
-                <link>https://blog.233so.com/2020/05/windows-package-manager-guide/</link>
-                <pubDate>Mon, 25 May 2020 10:12:46 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/05/windows-package-manager-guide/</guid>
-                <description>使用 Linux 各大发行版的用户相信对包管理器 [1] 并不陌生， Debian 有 apt, CentOS 有 yum, 而 Windows 平台上第三方的包管理器有 scoop 和 chocolatey，现在微软推出了自己的 Windows 程序包管理器及其命令行工具 winget [2] , 目前处于公共预览版阶段。
-说起来, scoop 默认很多都是连接的 GitHub, 不科学上网速度实在是太慢了，而 chocolatey 默认软件源的版本更新可能不太及时。目前看微软的这个工具有些也是 GitHub, 希望后续官方能够支持更多常用软件，速度能够上来，能够有靠谱的国内镜像源就更好。
 </description>
             </item></channel>
 </rss>
