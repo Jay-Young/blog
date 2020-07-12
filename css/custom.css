@@ -1,0 +1,12 @@
+/* iconfront 图标库样式 */
+svg.icon {
+	width: 1em;
+	height: 1em;
+	vertical-align: -0.15em;
+	fill: currentColor;
+	overflow: hidden;
+}
+svg.icon:hover {
+	font-size: 100px;
+}
+/* iconfront 图标库样式 */

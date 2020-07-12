@@ -9,16 +9,20 @@
 
 太空创想系列目前一共三个产品，分别是 K10201 训练服航天员，K10202 任务服航天员和 K10203 长征五号运载火箭。拼多多入手，两个方头仔实付￥ 38，长征五号实付￥ 95。
 
+{{< admonition info "点击展开图片" true >}}
 {{< image src="/images/hugo/Enlighten-Keeppley-K10203-Long-March-5-Series-Launch-Vehicle/K10201-front.jpg" title="训练服宇航员正面" >}}
 {{< image src="/images/hugo/Enlighten-Keeppley-K10203-Long-March-5-Series-Launch-Vehicle/K10202-front.jpg" title="任务服宇航员正面" >}}
 {{< image src="/images/hugo/Enlighten-Keeppley-K10203-Long-March-5-Series-Launch-Vehicle/K10203-rocket.jpg" title="长征五号火箭" >}}
 {{< image src="/images/hugo/Enlighten-Keeppley-K10203-Long-March-5-Series-Launch-Vehicle/K10203-launch-platfom.jpg" title="发射平台" >}}
+{{< /admonition >}}
 
-长征五号运载火箭共 346 块，数量不算很多，拼接也不复杂。先拼发射平台，再拼火箭本体，接着拼好四个助推器，然后把这几个拼合起来就大功告成了。
+长征五号运载火箭共 346 块，数量不算很多，拼接也不复杂。先拼发射平台，再拼火箭本体，接着拼好四个助推器，然后把这几个拼合起来就大功告成了。与真实的“胖五”对比，涂装、外形方面区别还是有的。首先没有采用国旗，中国航天<svg class="icon" aria-hidden="true"><use xlink:href="#icon-CASCICON"></use></svg>和长征五号的标志也没有，替代的可能是一个原创的火箭标志（查不到），这些原因可能是有授权方面的问题。其次，助推器的顶部没有采用特殊零件来模仿真实的不对称顶部。从比例来看，整体还是比较协调的。
 
+{{< admonition info "点击展开图片" true >}}
 {{< image src="/images/hugo/Enlighten-Keeppley-K10203-Long-March-5-Series-Launch-Vehicle/IMG_20200711_112157.jpg" title="发射平台" >}}
 {{< image src="/images/hugo/Enlighten-Keeppley-K10203-Long-March-5-Series-Launch-Vehicle/IMG_20200711_112356.jpg" title="火箭本体" >}}
 {{< image src="/images/hugo/Enlighten-Keeppley-K10203-Long-March-5-Series-Launch-Vehicle/IMG_20200711_112303.jpg" title="助推器" >}}
 {{< image src="/images/hugo/Enlighten-Keeppley-K10203-Long-March-5-Series-Launch-Vehicle/IMG_20200711_112024.jpg" title="合照" >}}
 {{< image src="/images/hugo/Enlighten-Keeppley-K10203-Long-March-5-Series-Launch-Vehicle/IMG_20200711_112720.jpg" title="完整体" >}}
+{{< /admonition >}}
 
