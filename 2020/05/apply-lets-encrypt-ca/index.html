@@ -32,7 +32,7 @@
                 "url": "https:\/\/blog.233so.com\/cover.png",
                 "width":  800 ,
                 "height":  600 
-            },"genre": "posts","keywords": "威联通, QNAP, NAS, 证书, SSL, Let\x27s Encrypt","wordcount":  803 ,
+            },"genre": "posts","keywords": "威联通, QNAP, NAS, 证书, SSL, Let\x27s Encrypt","wordcount":  998 ,
         "url": "https:\/\/blog.233so.com\/2020\/05\/apply-lets-encrypt-ca\/","datePublished": "2020-05-24T16:02:29+08:00","dateModified": "2020-05-24T16:02:29+08:00","license": "This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.","publisher": {
                 "@type": "Organization",
                 "name": "Jay",
@@ -120,7 +120,7 @@
                                 <i class="far fa-folder fa-fw"></i>NAS
                             </a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-05-24>2020-05-24</time>&nbsp;
-                <i class="fas fa-pencil-alt fa-fw"></i>约 803 字&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 998 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>预计阅读 2 分钟&nbsp;<span id="/2020/05/apply-lets-encrypt-ca/" class="leancloud_visitors" data-flag-title="免费申请 Let&#39;s Encrypt 泛域名证书">
                         <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
@@ -141,6 +141,7 @@
     <li><a href="#前言">前言</a></li>
     <li><a href="#安装脚本工具">安装脚本工具</a></li>
     <li><a href="#申请安装证书">申请安装证书</a></li>
+    <li><a href="#oscp-域名污染">OSCP 域名污染</a></li>
     <li><a href="#引用来源">引用来源</a></li>
   </ul>
 </nav></div>
@@ -268,11 +269,67 @@ cat /etc/stunnel/backup.cert <span class="se">\
             data-src="/images/hugo/apply-let%27s-encrypt-ca/QQ%e6%8b%bc%e9%9f%b3%e6%88%aa%e5%9b%be20200524214006.png"
             alt="/images/hugo/apply-let&#39;s-encrypt-ca/QQ拼音截图20200524214006.png" />
     </a>
-<h2 id="引用来源">引用来源</h2>
+<h2 id="oscp-域名污染">OSCP 域名污染</h2>
+<p>目前 Let&rsquo;s Encrypty OCSP 调用的域名在国内部分地区没有被正确解析，原因是 Let&rsquo;s Encrypty 使用的 Akamai a771 节点被污染。鉴于国内的运营商可能会劫持 DNS 查询，所以改 DNS 服务器地址未必有用，只能修改 hosts 指向记录来解决。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="err">❯</span> <span class="n">nslookup</span> <span class="n">ocsp</span><span class="p">.</span><span class="n">int-x3</span><span class="p">.</span><span class="n">letsencrypt</span><span class="p">.</span><span class="n">org</span> <span class="n">223</span><span class="p">.</span><span class="n">5</span><span class="p">.</span><span class="n">5</span><span class="p">.</span><span class="n">5</span>
+<span class="n">服务器</span><span class="err">:</span>  <span class="n">public1</span><span class="p">.</span><span class="n">alidns</span><span class="p">.</span><span class="n">com</span>
+<span class="n">Address</span><span class="err">:</span>  <span class="n">223</span><span class="p">.</span><span class="n">5</span><span class="p">.</span><span class="n">5</span><span class="p">.</span><span class="n">5</span>
+
+<span class="n">非权威应答</span><span class="err">:</span>
+<span class="n">名称</span><span class="err">:</span>    <span class="n">a771</span><span class="p">.</span><span class="n">dscq</span><span class="p">.</span><span class="n">akamai</span><span class="p">.</span><span class="n">net</span>
+<span class="n">Addresses</span><span class="err">:</span>  <span class="n">2001</span><span class="p">::</span><span class="n">1f0d</span><span class="err">:</span><span class="n">4021</span>
+          <span class="n">69</span><span class="p">.</span><span class="n">171</span><span class="p">.</span><span class="n">244</span><span class="p">.</span><span class="n">15</span>
+<span class="n">Aliases</span><span class="err">:</span>  <span class="n">ocsp</span><span class="p">.</span><span class="n">int-x3</span><span class="p">.</span><span class="n">letsencrypt</span><span class="p">.</span><span class="n">org</span>
+          <span class="n">ocsp</span><span class="p">.</span><span class="n">int-x3</span><span class="p">.</span><span class="n">letsencrypt</span><span class="p">.</span><span class="n">org</span><span class="p">.</span><span class="n">edgesuite</span><span class="p">.</span><span class="n">net</span>
+
+<span class="err">❯</span> <span class="n">nslookup</span> <span class="n">a771</span><span class="p">.</span><span class="n">dscq</span><span class="p">.</span><span class="n">akamai</span><span class="p">.</span><span class="n">net</span> <span class="n">223</span><span class="p">.</span><span class="n">5</span><span class="p">.</span><span class="n">5</span><span class="p">.</span><span class="n">5</span>
+<span class="n">服务器</span><span class="err">:</span>  <span class="n">public1</span><span class="p">.</span><span class="n">alidns</span><span class="p">.</span><span class="n">com</span>
+<span class="n">Address</span><span class="err">:</span>  <span class="n">223</span><span class="p">.</span><span class="n">5</span><span class="p">.</span><span class="n">5</span><span class="p">.</span><span class="n">5</span>
+
+<span class="n">非权威应答</span><span class="err">:</span>
+<span class="n">名称</span><span class="err">:</span>    <span class="n">a771</span><span class="p">.</span><span class="n">dscq</span><span class="p">.</span><span class="n">akamai</span><span class="p">.</span><span class="n">net</span>
+<span class="n">Addresses</span><span class="err">:</span>  <span class="n">2001</span><span class="p">::</span><span class="n">1f0d</span><span class="err">:</span><span class="n">4520</span>
+          <span class="n">31</span><span class="p">.</span><span class="n">13</span><span class="p">.</span><span class="n">73</span><span class="p">.</span><span class="n">23</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>使用 IPIP 的 ping 工具，可以选择香港地区的服务器获取 ocsp.int-x3.letsencrypt.org 的正确解析记录。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">23.219.172.106 ocsp.int-x3.letsencrypt.org
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="引用来源">引用来源</h2>
 <ul>
 <li><a href="https://github.com/acmesh-official/acme.sh">https://github.com/acmesh-official/acme.sh</a></li>
 <li><a href="https://github.com/Yannik/qnap-letsencrypt">https://github.com/Yannik/qnap-letsencrypt</a></li>
 <li><a href="https://forum.qnap.com/viewtopic.php?t=149687">https://forum.qnap.com/viewtopic.php?t=149687</a></li>
+<li><a href="https://www.landiannews.com/archives/72082.html">https://www.landiannews.com/archives/72082.html</a></li>
 </ul></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">

@@ -88,9 +88,42 @@ cat /etc/stunnel/backup.cert \
 
 {{< image src="/images/hugo/apply-let's-encrypt-ca/QQ拼音截图20200524214006.png" title="cert" >}}
 
+## OSCP 域名污染
+
+目前 Let's Encrypty OCSP 调用的域名在国内部分地区没有被正确解析，原因是 Let's Encrypty 使用的 Akamai a771 节点被污染。鉴于国内的运营商可能会劫持 DNS 查询，所以改 DNS 服务器地址未必有用，只能修改 hosts 指向记录来解决。
+
+```powershell
+❯ nslookup ocsp.int-x3.letsencrypt.org 223.5.5.5
+服务器:  public1.alidns.com
+Address:  223.5.5.5
+
+非权威应答:
+名称:    a771.dscq.akamai.net
+Addresses:  2001::1f0d:4021
+          69.171.244.15
+Aliases:  ocsp.int-x3.letsencrypt.org
+          ocsp.int-x3.letsencrypt.org.edgesuite.net
+
+❯ nslookup a771.dscq.akamai.net 223.5.5.5
+服务器:  public1.alidns.com
+Address:  223.5.5.5
+
+非权威应答:
+名称:    a771.dscq.akamai.net
+Addresses:  2001::1f0d:4520
+          31.13.73.23
+```
+
+使用 IPIP 的 ping 工具，可以选择香港地区的服务器获取 ocsp.int-x3.letsencrypt.org 的正确解析记录。
+
+```markdown
+23.219.172.106 ocsp.int-x3.letsencrypt.org
+```
+
 ## 引用来源
 
 - <https://github.com/acmesh-official/acme.sh>
 - <https://github.com/Yannik/qnap-letsencrypt>
 - <https://forum.qnap.com/viewtopic.php?t=149687>
+- <https://www.landiannews.com/archives/72082.html>
 
