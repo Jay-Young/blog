@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>云笔记 | 标签 | Jay</title>
+        <link>https://blog.233so.com/tags/%E4%BA%91%E7%AC%94%E8%AE%B0/</link>
+        <description>云笔记 | 标签 | Jay</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 19 Jul 2020 11:27:56 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/%E4%BA%91%E7%AC%94%E8%AE%B0/" rel="self" type="application/rss+xml" /><item>
+                <title>威联通：将 Joplin 笔记同步到 NAS</title>
+                <link>https://blog.233so.com/2020/07/joplin-webdav-synchronisation-for-qnap-nas/</link>
+                <pubDate>Sun, 19 Jul 2020 11:27:56 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/07/joplin-webdav-synchronisation-for-qnap-nas/</guid>
+                <description>Joplin 是一个免费的开源笔记应用。笔记使用 Markdown 格式，支持外部编辑器（比如 VS Code），支持全文搜索，支持端对端加密，支持 Evernote、Markdown 格式导入，支持 JEX 专有格式、Markdown、HTML、PDF 等多种格式导出，支持 Nextcloud、Dropbox、OneDrive、WebDAV 等多种方式同步（默认本地存储），支持全平台客户端和浏览器扩展剪藏。[1]
+</description>
+            </item></channel>
+</rss>

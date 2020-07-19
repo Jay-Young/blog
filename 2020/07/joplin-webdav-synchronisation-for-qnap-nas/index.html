@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>威联通：将 Joplin 笔记同步到 NAS | Jay</title>
+        <meta name="Description" content="WebDAV同步解决方案"><meta property="og:title" content="威联通：将 Joplin 笔记同步到 NAS" />
+<meta property="og:description" content="WebDAV同步解决方案" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.233so.com/2020/07/joplin-webdav-synchronisation-for-qnap-nas/" />
+<meta property="article:published_time" content="2020-07-19T11:27:56+08:00" />
+<meta property="article:modified_time" content="2020-07-19T11:27:56+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="威联通：将 Joplin 笔记同步到 NAS"/>
+<meta name="twitter:description" content="WebDAV同步解决方案"/>
+<meta name="application-name" content="Jay">
+<meta name="apple-mobile-web-app-title" content="Jay"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.233so.com/2020/07/joplin-webdav-synchronisation-for-qnap-nas/" /><link rel="prev" href="https://blog.233so.com/2020/07/onethingpcs-box3/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="msvalidate.01" content="9E6BC727410AE14F6E9442F540992717" /><meta name="baidu-site-verification" content="apixhlrtUN" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "威联通：将 Joplin 笔记同步到 NAS",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/blog.233so.com\/2020\/07\/joplin-webdav-synchronisation-for-qnap-nas\/"
+        },"image": {
+                "@type": "ImageObject",
+                "url": "https:\/\/blog.233so.com\/cover.png",
+                "width":  800 ,
+                "height":  600 
+            },"genre": "posts","keywords": "Joplin, WebDAV, 威联通, 云笔记","wordcount":  767 ,
+        "url": "https:\/\/blog.233so.com\/2020\/07\/joplin-webdav-synchronisation-for-qnap-nas\/","datePublished": "2020-07-19T11:27:56+08:00","dateModified": "2020-07-19T11:27:56+08:00","license": "This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.","publisher": {
+                "@type": "Organization",
+                "name": "Jay",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/blog.233so.com\/logo.png",
+                "width":  127 ,
+                "height":  40 
+                }
+            },"author": {
+                "@type": "Person",
+                "name": "Jay"
+            },"description": "WebDAV同步解决方案"
+    }
+    </script></head>
+    <body><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.classList.add('dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Jay">Jay</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/"> 首页 </a><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/friends/"> 友链 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Jay">Jay</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/" title="">首页</a><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/friends/" title="">友链</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">威联通：将 Joplin 笔记同步到 NAS</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://weibo.com/jayyoung1/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Jay</a></span>&nbsp;
+                    <span class="post-category">收录于<a href="/categories/nas/">
+                                <i class="far fa-folder fa-fw"></i>NAS
+                            </a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-07-19>2020-07-19</time>&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 767 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>预计阅读 2 分钟&nbsp;<span id="/2020/07/joplin-webdav-synchronisation-for-qnap-nas/" class="leancloud_visitors" data-flag-title="威联通：将 Joplin 笔记同步到 NAS">
+                        <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading/normal.min.svg"
+        data-sizes="auto"
+        data-srcset="/images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/AllClients.jpg, /images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/AllClients.jpg 1.5x, /images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/AllClients.jpg 2x"
+        data-src="/images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/AllClients.jpg"
+        alt="WebDAV同步解决方案"
+        title="WebDAV同步解决方案" /></div><div class="details toc" id="toc-static">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-down"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#同步到-nas">同步到 NAS</a></li>
+    <li><a href="#同步到坚果云">同步到坚果云</a></li>
+    <li><a href="#webdav-备份">WebDAV 备份</a></li>
+    <li><a href="#已知问题">已知问题</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Joplin 是一个免费的开源笔记应用。笔记使用 Markdown 格式，支持外部编辑器（比如 VS Code），支持全文搜索，支持端对端加密，支持 Evernote、Markdown 格式导入，支持 JEX 专有格式、Markdown、HTML、PDF 等多种格式导出，支持 Nextcloud、Dropbox、OneDrive、WebDAV 等多种方式同步（默认本地存储），支持全平台客户端和浏览器扩展剪藏。<sup><a href="https://joplinapp.org/" target="_blank" rel="noopener noreffer">[1]</a></sup></p>
+<h2 id="同步到-nas">同步到 NAS</h2>
+<ul>
+<li>启用 Web 服务器</li>
+</ul>
+<div class="mermaid" id="id-bcd0b0"></div>
+<a class="lightgallery" href="/images/hugo/build-application-archive-with-directory-lister/Snipaste_2020-06-25_18-58-43.png" title="启用 Web 服务器" data-thumbnail="/images/hugo/build-application-archive-with-directory-lister/Snipaste_2020-06-25_18-58-43.png">
+        <img
+            class="lazyload"
+            src="/svg/loading/normal.min.svg"
+            data-sizes="auto"
+            data-srcset="/images/hugo/build-application-archive-with-directory-lister/Snipaste_2020-06-25_18-58-43.png, /images/hugo/build-application-archive-with-directory-lister/Snipaste_2020-06-25_18-58-43.png 1.5x, /images/hugo/build-application-archive-with-directory-lister/Snipaste_2020-06-25_18-58-43.png 2x"
+            data-src="/images/hugo/build-application-archive-with-directory-lister/Snipaste_2020-06-25_18-58-43.png"
+            alt="/images/hugo/build-application-archive-with-directory-lister/Snipaste_2020-06-25_18-58-43.png" />
+    </a>
+<a class="lightgallery" href="/images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-00-13.png" title="启用 WebDAV" data-thumbnail="/images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-00-13.png">
+        <img
+            class="lazyload"
+            src="/svg/loading/normal.min.svg"
+            data-sizes="auto"
+            data-srcset="/images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-00-13.png, /images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-00-13.png 1.5x, /images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-00-13.png 2x"
+            data-src="/images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-00-13.png"
+            alt="/images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-00-13.png" />
+    </a>
+<ul>
+<li>启用共享文件夹的 WebDAV 权限</li>
+</ul>
+<div class="mermaid" id="id-8fdf7e"></div>
+<a class="lightgallery" href="/images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-07-46.png" title="设置权限" data-thumbnail="/images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-07-46.png">
+        <img
+            class="lazyload"
+            src="/svg/loading/normal.min.svg"
+            data-sizes="auto"
+            data-srcset="/images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-07-46.png, /images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-07-46.png 1.5x, /images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-07-46.png 2x"
+            data-src="/images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-07-46.png"
+            alt="/images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-07-46.png" />
+    </a>
+<ul>
+<li>Joplin 客户端设置（以 Windows 平台为例）</li>
+</ul>
+<div class="mermaid" id="id-b0ec5d"></div>
+<p>设置参考如下</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">WebDAV URL: https://mydomain.com:5008/joplin
+WebDAV 用户名: admin
+WebDAV 密码: password
+</code></pre></td></tr></table>
+</div>
+</div><p>如果使用 HTTPS 连接，遇到了如下错误，查了项目 issue 说是自签名证书的问题，但是我明明用的是 Let&rsquo;s Encrypt 的免费证书。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">request to https://mydomain.com:5008/joplin/ failed, reason: unable to verify the first certificate (Code UNABLE_TO_VERIFY_LEAF_SIGNATURE)
+</code></pre></td></tr></table>
+</div>
+</div><p>解决方案是打开高级选项，勾选忽略 TLS 证书错误或者自定义 TLS 证书，搜了一圈没找到更完美的解决方法。</p>
+<a class="lightgallery" href="/images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-27-23.png" title="Joplin 客户端设置" data-thumbnail="/images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-27-23.png">
+        <img
+            class="lazyload"
+            src="/svg/loading/normal.min.svg"
+            data-sizes="auto"
+            data-srcset="/images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-27-23.png, /images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-27-23.png 1.5x, /images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-27-23.png 2x"
+            data-src="/images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-27-23.png"
+            alt="/images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-27-23.png" />
+    </a>
+<h2 id="同步到坚果云">同步到坚果云</h2>
+<p>除了 NAS，坚果云也同样支持 WebDAV 同步。</p>
+<div class="mermaid" id="id-769b0b"></div>
+<p>Joplin 设置参考如下</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">WebDAV URL: https://dav.jianguoyun.com/dav/
+WebDAV 用户名: example@mail.com
+WebDAV 密码: password
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="webdav-备份">WebDAV 备份</h2>
+<p>更改 WebDAV URL 时，请确保新位置具有与旧位置完全相同的内容（即将所有 Joplin 数据复制到新位置）。否则，如果新位置没有任何内容，Joplin 会认为您已删除所有数据，并将删除本地数据。因此，要更改 WebDAV URL，请按照以下步骤操作：</p>
+<ol>
+<li>备份 Joplin 数据，以防出现问题。例如，导出为 JEX 存档。</li>
+<li>最后一次同步来自 Joplin 客户端的所有最新数据（例如，来自桌面客户端）</li>
+<li>关闭 Joplin 客户端。</li>
+<li>在 WebDAV 服务中，将所有 Joplin 文件从旧位置复制到新位置。请确保复制所有目录，因为它包含您的图像和其他附件。比如<code>.resource</code>等隐藏文件夹。</li>
+<li>完成后，再次打开 Joplin 并更改 WebDAV URL。</li>
+<li>同步以验证一切是否正常工作。</li>
+<li>对于需要同步的所有其他 Joplin 客户端重复执行步骤 5 和 6。</li>
+</ol>
+<h2 id="已知问题">已知问题</h2>
+<ul>
+<li>大于 10 MB 的资源当前在移动设备上不受支持，因为它们可能会使应用程序崩溃。</li>
+<li>非字母字符（如中文或阿拉伯语）可能会在 Windows 上的终端中产生故障。这是当前 Windows 控制台的限制。</li>
+</ul></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>本文于 2020-07-19 更新</span>
+            </div>
+            <div class="post-info-license"><span>采用 <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh" target="_blank">CC BY-NC 4.0</a> 协议发布</span></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/2020/07/joplin-webdav-synchronisation-for-qnap-nas/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://blog.233so.com/2020/07/joplin-webdav-synchronisation-for-qnap-nas/" data-title="威联通：将 Joplin 笔记同步到 NAS" data-hashtags="Joplin,WebDAV,威联通,云笔记"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://blog.233so.com/2020/07/joplin-webdav-synchronisation-for-qnap-nas/" data-title="威联通：将 Joplin 笔记同步到 NAS" data-image="/images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/AllClients.jpg"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="https://blog.233so.com/2020/07/joplin-webdav-synchronisation-for-qnap-nas/" data-title="威联通：将 Joplin 笔记同步到 NAS"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微信" data-sharer="weixin" data-url="https://blog.233so.com/2020/07/joplin-webdav-synchronisation-for-qnap-nas/"><i class="fab fa-weixin fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/joplin/">Joplin</a>,&nbsp;<a href="/tags/webdav/">WebDAV</a>,&nbsp;<a href="/tags/%E5%A8%81%E8%81%94%E9%80%9A/">威联通</a>,&nbsp;<a href="/tags/%E4%BA%91%E7%AC%94%E8%AE%B0/">云笔记</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/2020/07/onethingpcs-box3/" class="prev" rel="prev" title="网心云现金版盒子：赚钱宝3代收益分析"><i class="fas fa-angle-left fa-fw"></i>网心云现金版盒子：赚钱宝3代收益分析</a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.70.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.0"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://weibo.com/jayyoung1/" target="_blank">Jay</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css"><link rel="stylesheet" href="/lib/mermaid/mermaid.min.css"><link rel="stylesheet" href="/css/custom.css"><script type="text/javascript">
+    window.config = {"code":{"copyTitle":"复制到剪贴板","maxShownLines":20},"comment":{"valine":{"appId":"iRP94IPVb6nLbnvVlYl3acIX-gzGzoHsz","appKey":"cMInmDt3V8IqJDnkANRw9Faf","avatar":"mp","el":"#valine","lang":"zh-cn","pageSize":10,"placeholder":"请留下你善意的评论……","recordIP":true,"visitor":true}},"data":{"id-769b0b":"\r\ngraph LR;\r\nA(账户信息) --\u003e B(安全选项)\r\nB --\u003e C(添加应用)\r\nC --\u003e D(填写应用名字)\r\nD --\u003e E(生成密码)\r","id-8fdf7e":"\r\ngraph LR;\r\nA(控制台) --\u003e B(权限)\r\nB --\u003e C(共享文件夹)\r\nC --\u003e D(编辑权限)\r\nD --\u003e E(权限类别: WebDAV)\r\nE --\u003e F(无限制, 勾选允许的用户)\r","id-b0ec5d":"\r\ngraph LR;\r\nA(工具菜单) --\u003e B(打开选项)\r\nB --\u003e C(选择同步选项卡)\r\nC --\u003e D(同步目标设置为 WebDAV)\r","id-bcd0b0":"\r\ngraph LR;\r\nA(控制台) --\u003e B(应用服务)\r\nB --\u003e C(Web 服务器)\r\nB --\u003e D(WebDAV)\r\nC --\u003e E(启用 Web 服务器)\r\nD --\u003e F(勾选 WebDAV 权限和专用端口)\r"},"headerMode":{"desktop":"fixed","mobile":"fixed"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"99SEOT1H0K","algoliaIndex":"index","algoliaSearchKey":"5f32c3a605ca6aba6c73407aa305e495","noResultsFound":"没有找到结果","type":"algolia"},"twemoji":true};
+</script><script src="https://cdn.jsdelivr.net/npm/valine@1.4.9/dist/Valine.min.js"></script><script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script><script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js"></script><script src="https://cdn.jsdelivr.net/npm/twemoji@12.1.5/dist/twemoji.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/js/lightgallery.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sachinchoolur/lg-thumbnail.js@1.1.0/dist/lg-thumbnail.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sachinchoolur/lg-zoom.js@1.0.1/dist/lg-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js"></script><script src="https://cdn.jsdelivr.net/npm/mermaid@8.5.0/dist/mermaid.min.js"></script><script type="text/javascript" src="/js/custom.js"></script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-16630170-6','auto');ga('set', 'anonymizeIp', true);ga('send', 'pageview');
+        </script><script type="text/javascript" src="https://www.google-analytics.com/analytics.js" async></script></body>
+</html>

@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/tags/%E5%A8%81%E8%81%94%E9%80%9A/</link>
         <description>威联通 | 标签 | Jay</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 26 May 2020 12:06:11 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/%E5%A8%81%E8%81%94%E9%80%9A/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 19 Jul 2020 11:27:56 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/%E5%A8%81%E8%81%94%E9%80%9A/" rel="self" type="application/rss+xml" /><item>
+                <title>威联通：将 Joplin 笔记同步到 NAS</title>
+                <link>https://blog.233so.com/2020/07/joplin-webdav-synchronisation-for-qnap-nas/</link>
+                <pubDate>Sun, 19 Jul 2020 11:27:56 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/07/joplin-webdav-synchronisation-for-qnap-nas/</guid>
+                <description>Joplin 是一个免费的开源笔记应用。笔记使用 Markdown 格式，支持外部编辑器（比如 VS Code），支持全文搜索，支持端对端加密，支持 Evernote、Markdown 格式导入，支持 JEX 专有格式、Markdown、HTML、PDF 等多种格式导出，支持 Nextcloud、Dropbox、OneDrive、WebDAV 等多种方式同步（默认本地存储），支持全平台客户端和浏览器扩展剪藏。[1]
+</description>
+            </item><item>
                 <title>威联通：log_tool 命令</title>
                 <link>https://blog.233so.com/2020/05/qnap-logtool/</link>
                 <pubDate>Tue, 26 May 2020 12:06:11 &#43;0800</pubDate>
@@ -74,12 +82,5 @@
                 <guid>https://blog.233so.com/2020/03/install-nps-on-qnap-nas/</guid>
                 <description>nps 是一款轻量级、高性能、功能强大的内网穿透代理服务器。目前支持 tcp、udp 流量转发，可支持任何 tcp、udp 上层协议（访问内网网站、本地支付接口调试、ssh 访问、远程桌面，内网 dns 解析等等……），此外还支持内网 http 代理、内网 socks5 代理、p2p 等，并带有功能强大的 web 管理端。
 </description>
-            </item><item>
-                <title>Hugo 篇一：在威联通 NAS 上生成博客并部署 Pages 服务</title>
-                <link>https://blog.233so.com/2020/03/install-hugo-on-qnap-nas/</link>
-                <pubDate>Sat, 21 Mar 2020 18:27:28 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/03/install-hugo-on-qnap-nas/</guid>
-                <description>Hugo 是一个用 Go 语言实现的静态博客系统生成工具。基于 Markdown 撰写博文，不改变你已有的习惯，拥有快速部署、简单易用、主题丰富、易扩展等特点。你可以在任何地方启动 Hugo，实现毫秒级渲染。</description>
             </item></channel>
 </rss>

@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/posts/</link>
         <description>所有文章 | Jay</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 18 Jul 2020 15:15:59 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 19 Jul 2020 11:27:56 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+                <title>威联通：将 Joplin 笔记同步到 NAS</title>
+                <link>https://blog.233so.com/2020/07/joplin-webdav-synchronisation-for-qnap-nas/</link>
+                <pubDate>Sun, 19 Jul 2020 11:27:56 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/07/joplin-webdav-synchronisation-for-qnap-nas/</guid>
+                <description>Joplin 是一个免费的开源笔记应用。笔记使用 Markdown 格式，支持外部编辑器（比如 VS Code），支持全文搜索，支持端对端加密，支持 Evernote、Markdown 格式导入，支持 JEX 专有格式、Markdown、HTML、PDF 等多种格式导出，支持 Nextcloud、Dropbox、OneDrive、WebDAV 等多种方式同步（默认本地存储），支持全平台客户端和浏览器扩展剪藏。[1]
+</description>
+            </item><item>
                 <title>网心云现金版盒子：赚钱宝3代收益分析</title>
                 <link>https://blog.233so.com/2020/07/onethingpcs-box3/</link>
                 <pubDate>Sat, 18 Jul 2020 15:15:59 &#43;0800</pubDate>
@@ -74,12 +82,5 @@
                 <guid>https://blog.233so.com/2020/05/mayday-31st/</guid>
                 <description>五月的最后一天，在没有比赛的日子里，没有动力，荒废了一个多月后，因为五月天的线上演唱会，决定从今天开始恢复跑步计划。
 </description>
-            </item><item>
-                <title>威联通：log_tool 命令</title>
-                <link>https://blog.233so.com/2020/05/qnap-logtool/</link>
-                <pubDate>Tue, 26 May 2020 12:06:11 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/05/qnap-logtool/</guid>
-                <description>最近在解包威联通官方应用的时候，发现了一个命令 log_tool， 可以用来输出事件日志到 Web 界面，构建 QPKG 应用的时候可以派上用场。 基本用法 : 1 log_tool [-t</description>
             </item></channel>
 </rss>
