@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>VNC | 标签 | Jay</title>
+        <link>https://blog.233so.com/tags/vnc/</link>
+        <description>VNC | 标签 | Jay</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 23 Jul 2020 16:22:20 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/vnc/" rel="self" type="application/rss+xml" /><item>
+                <title>威联通：VNC连接Linux客户端曲线救国使用百度网盘</title>
+                <link>https://blog.233so.com/2020/07/qnap-baidunetdisk-vnc/</link>
+                <pubDate>Thu, 23 Jul 2020 16:22:20 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/07/qnap-baidunetdisk-vnc/</guid>
+                <description>目前威联通 NAS 上面没有官方的百度网盘程序，第三方的 baidupcs-go-web 也似乎处于不可用的状态，目前能够勉强能用的曲线救国的方法是使用百度官方的 Linux 客户端，然后通过远程桌面连接的方式来使用。得益于 docker 镜像，目前不需要通过安装 Linux 虚拟机这种笨重的方式来实现，这里介绍两个 docker 镜像。
+</description>
+            </item></channel>
+</rss>

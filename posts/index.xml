@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/posts/</link>
         <description>所有文章 | Jay</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 19 Jul 2020 14:05:19 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 23 Jul 2020 16:22:20 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+                <title>威联通：VNC连接Linux客户端曲线救国使用百度网盘</title>
+                <link>https://blog.233so.com/2020/07/qnap-baidunetdisk-vnc/</link>
+                <pubDate>Thu, 23 Jul 2020 16:22:20 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/07/qnap-baidunetdisk-vnc/</guid>
+                <description>目前威联通 NAS 上面没有官方的百度网盘程序，第三方的 baidupcs-go-web 也似乎处于不可用的状态，目前能够勉强能用的曲线救国的方法是使用百度官方的 Linux 客户端，然后通过远程桌面连接的方式来使用。得益于 docker 镜像，目前不需要通过安装 Linux 虚拟机这种笨重的方式来实现，这里介绍两个 docker 镜像。
+</description>
+            </item><item>
                 <title>威联通：部署免费开源的协同办公套件 DzzOffice</title>
                 <link>https://blog.233so.com/2020/07/dzzoffice-installation-for-qnap-nas/</link>
                 <pubDate>Sun, 19 Jul 2020 14:05:19 &#43;0800</pubDate>
@@ -73,14 +81,6 @@
                 <author>Jay</author>
                 <guid>https://blog.233so.com/2020/06/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/</guid>
                 <description>搜狗输入法应该是目前中文拼音输入法中最流行的，最近的一件事让它更加“火”了。很多用户发现电脑不断出现托盘闪烁弹窗，点击后即为淘宝天猫的 6.18 促销网页。火绒工程师溯源调查后发现，该弹窗均来自于常用软件“搜狗输入法”，该广告配置通过云控下发，无法通过设置关闭。进一步分析发现，该软件除了疯狂弹窗，还存在统计用户浏览器浏览历史数据等越位行为，符合广告程序的定义。目前，火绒已对该软件中广告模块进行拦截查杀。[1]
-</description>
-            </item><item>
-                <title>借助 Hyper-V 虚拟机升级 Windows To Go 系统</title>
-                <link>https://blog.233so.com/2020/06/windows-to-go-update/</link>
-                <pubDate>Tue, 02 Jun 2020 18:09:43 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/06/windows-to-go-update/</guid>
-                <description>Windows To Go[1]是 Windows 10 企业版和 Windows 10 教育版中的一项功能，支持创建可从电脑上 USB 连接的外部驱动器启动的 Windows To Go 工作区。事实上 Windows 10 专业版也是可以用的，但是默认所有版本都是没有办法常规升级大版本的。
 </description>
             </item></channel>
 </rss>

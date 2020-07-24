@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/categories/nas/</link>
         <description>NAS | 分类 | Jay</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 19 Jul 2020 14:05:19 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/categories/nas/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 23 Jul 2020 16:22:20 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/categories/nas/" rel="self" type="application/rss+xml" /><item>
+                <title>威联通：VNC连接Linux客户端曲线救国使用百度网盘</title>
+                <link>https://blog.233so.com/2020/07/qnap-baidunetdisk-vnc/</link>
+                <pubDate>Thu, 23 Jul 2020 16:22:20 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/07/qnap-baidunetdisk-vnc/</guid>
+                <description>目前威联通 NAS 上面没有官方的百度网盘程序，第三方的 baidupcs-go-web 也似乎处于不可用的状态，目前能够勉强能用的曲线救国的方法是使用百度官方的 Linux 客户端，然后通过远程桌面连接的方式来使用。得益于 docker 镜像，目前不需要通过安装 Linux 虚拟机这种笨重的方式来实现，这里介绍两个 docker 镜像。
+</description>
+            </item><item>
                 <title>威联通：部署免费开源的协同办公套件 DzzOffice</title>
                 <link>https://blog.233so.com/2020/07/dzzoffice-installation-for-qnap-nas/</link>
                 <pubDate>Sun, 19 Jul 2020 14:05:19 &#43;0800</pubDate>
@@ -74,13 +82,5 @@
                 <author>Jay</author>
                 <guid>https://blog.233so.com/2020/04/asus-router-cpu-high-occupancy-fixed/</guid>
                 <description>今天手机正愉快地刷着 B 站，突然发现视频卡顿，于是到电脑上打开网页测试发现 DNS 解析有问题了，解析时好时坏，就像乌龟一样。 跑到路由器里一看 CPU 其中一</description>
-            </item><item>
-                <title>威联通：升级 Code Server 编辑器 3.x</title>
-                <link>https://blog.233so.com/2020/04/upgrade-code-server-to-v3/</link>
-                <pubDate>Fri, 17 Apr 2020 11:26:01 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/04/upgrade-code-server-to-v3/</guid>
-                <description>Code Server 3.x 版本发布也有几周了，最新版本 3.1.1 看起来应该可用度比较高了，于是就打算升级了。
-</description>
             </item></channel>
 </rss>
