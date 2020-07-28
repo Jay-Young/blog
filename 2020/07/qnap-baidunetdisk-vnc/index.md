@@ -45,5 +45,5 @@
 
 {{< image src="/images/hugo/qnap-baidunetdisk-vnc/Snipaste_2020-07-24_23-30-14.png" title="Linux客户端" >}}
 
-百度的官方 Linux 客户端似乎对会员也是有限速的，最大只能到 3M/S 左右了。
+百度的官方 Linux 客户端似乎对会员也是有限速的，第一个 docker 镜像似乎最大只能到 3M/S 左右了，后一个镜像倒是没有限速，可能跟客户端版本有关系。
 
