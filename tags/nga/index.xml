@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>NGA | 标签 | Jay</title>
+        <link>https://blog.233so.com/tags/nga/</link>
+        <description>NGA | 标签 | Jay</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 02 Aug 2020 03:10:25 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/nga/" rel="self" type="application/rss+xml" /><item>
+                <title>NGA社区子域名证书过期引发的UI爆炸惨案</title>
+                <link>https://blog.233so.com/2020/08/nga-sub-domain-cert-expired/</link>
+                <pubDate>Sun, 02 Aug 2020 03:10:25 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/08/nga-sub-domain-cert-expired/</guid>
+                <description>NGA 社区 PC 网页端爆炸了一天了，到现在还没解决，果然是移动端 App &amp;gt; 小程序 &amp;gt; PC 端 &amp;gt; Web 端。 打开浏览器开发者工具，不难发现所有的 js 文件都加载失败了。点开</description>
+            </item></channel>
+</rss>
