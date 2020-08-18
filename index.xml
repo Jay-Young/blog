@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/</link>
         <description>一个博客，简单记录</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 02 Aug 2020 03:10:25 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 18 Aug 2020 11:27:53 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/" rel="self" type="application/rss+xml" /><item>
+                <title>9元订阅港区 Xbox Game Pass for PC 畅玩 Microsoft Flight 标准版一个月</title>
+                <link>https://blog.233so.com/2020/08/join-xbox-game-pass-for-pc-and-play-microsoft-flight-2020/</link>
+                <pubDate>Tue, 18 Aug 2020 11:27:53 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/08/join-xbox-game-pass-for-pc-and-play-microsoft-flight-2020/</guid>
+                <description>微软模拟飞行 2020 是微软公司发行的最新模拟飞行游戏，拥有精细的全球真实地景、众多机型和飞机场。Xbox Game Pass for PC 是微软推出的游戏增值服务，在订阅期间可以免费畅玩超过 100 款游戏大作。本文介绍如何通过订阅港区 XGP 来获得一个月的游戏使用资格，首月优惠价格HK$10，续费价格每月HK$39。
+</description>
+            </item><item>
                 <title>NGA社区子域名证书过期引发的UI爆炸惨案</title>
                 <link>https://blog.233so.com/2020/08/nga-sub-domain-cert-expired/</link>
                 <pubDate>Sun, 02 Aug 2020 03:10:25 &#43;0800</pubDate>
@@ -74,12 +82,5 @@
                 <guid>https://blog.233so.com/2020/06/bandizip-archive/</guid>
                 <description>Bandizip is a powerful archiver which provides an ultrafast processing speed and convenient features. Available free of charge, and its paid editions support a variety of advanced features.
 </description>
-            </item><item>
-                <title>卸载偷跑的后台服务 TenorshareWinAdService</title>
-                <link>https://blog.233so.com/2020/06/uninstall-windows-service-tenorsharewinadservice/</link>
-                <pubDate>Mon, 08 Jun 2020 19:17:07 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/06/uninstall-windows-service-tenorsharewinadservice/</guid>
-                <description>昨天闲来没事打开卡巴斯基的查看应用程序活动工具，发现一个可疑程序“TenorshareService Application”。打开相应目录后</description>
             </item></channel>
 </rss>
