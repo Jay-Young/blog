@@ -5,7 +5,7 @@
 
 <!--more-->
 
-{{< bilibilibv BV18z4y1Q75Y >}}
+{{< video id="a" url="/videos/Microsoft.Flight.Simulator.A.History.flv" >}}
 
 - 首先，你当然需要一个微软账号。
 - 访问港区[订阅连接](https://www.microsoft.com/zh-hk/p/xbox-game-pass/CFQ7TTC0KGQ8/0002)，选择加入。
