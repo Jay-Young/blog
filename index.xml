@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/</link>
         <description>一个博客，简单记录</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 18 Aug 2020 11:27:53 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 01 Sep 2020 22:24:44 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/" rel="self" type="application/rss+xml" /><item>
+                <title>微软小冰：X Studio 人工智能歌手</title>
+                <link>https://blog.233so.com/2020/09/microsoft-xiaobing-xstudio-voice-review/</link>
+                <pubDate>Tue, 01 Sep 2020 22:24:44 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/09/microsoft-xiaobing-xstudio-voice-review/</guid>
+                <description>歌手 1.0 软件，为音乐创作者们提供具有不同音色和唱腔的虚拟歌手，他们能迅速读懂乐谱，并像人类歌手一样，自然地演唱出来。
+</description>
+            </item><item>
                 <title>9元订阅港区 Xbox Game Pass for PC 畅玩 Microsoft Flight 标准版一个月</title>
                 <link>https://blog.233so.com/2020/08/join-xbox-game-pass-for-pc-and-play-microsoft-flight-2020/</link>
                 <pubDate>Tue, 18 Aug 2020 11:27:53 &#43;0800</pubDate>
@@ -73,14 +81,6 @@
                 <author>Jay</author>
                 <guid>https://blog.233so.com/2020/06/build-application-archive-with-directory-lister/</guid>
                 <description>最近整理了以前下载的一些软件安装包，想起来在 QNAP NAS 上做个 Web 端下载目录站，就类似 everything 那种一个简单的目录列出的吧。看中了最简单的 Directory Lister [1], 下载源码到 Web 目录即可使用。
-</description>
-            </item><item>
-                <title>【备份】Bandizip 6.x 旧版本</title>
-                <link>https://blog.233so.com/2020/06/bandizip-archive/</link>
-                <pubDate>Mon, 22 Jun 2020 19:41:17 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/06/bandizip-archive/</guid>
-                <description>Bandizip is a powerful archiver which provides an ultrafast processing speed and convenient features. Available free of charge, and its paid editions support a variety of advanced features.
 </description>
             </item></channel>
 </rss>

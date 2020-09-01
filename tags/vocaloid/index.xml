@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>VOCALOID | 标签 | Jay</title>
+        <link>https://blog.233so.com/tags/vocaloid/</link>
+        <description>VOCALOID | 标签 | Jay</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 01 Sep 2020 22:24:44 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/vocaloid/" rel="self" type="application/rss+xml" /><item>
+                <title>微软小冰：X Studio 人工智能歌手</title>
+                <link>https://blog.233so.com/2020/09/microsoft-xiaobing-xstudio-voice-review/</link>
+                <pubDate>Tue, 01 Sep 2020 22:24:44 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/09/microsoft-xiaobing-xstudio-voice-review/</guid>
+                <description>歌手 1.0 软件，为音乐创作者们提供具有不同音色和唱腔的虚拟歌手，他们能迅速读懂乐谱，并像人类歌手一样，自然地演唱出来。
+</description>
+            </item></channel>
+</rss>
