@@ -4,7 +4,14 @@
         <link>https://blog.233so.com/posts/</link>
         <description>所有文章 | Jay</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 01 Sep 2020 22:24:44 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 04 Sep 2020 05:02:21 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+                <title>达芬奇中开启CUDA加速及硬解H.264/H.265</title>
+                <link>https://blog.233so.com/2020/09/davinci.resolve.studio.cuda.acceleration/</link>
+                <pubDate>Fri, 04 Sep 2020 05:02:21 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/09/davinci.resolve.studio.cuda.acceleration/</guid>
+                <description>以 DaVinci Resolve Studio 16.2.6.005 为例，开启 CUDA 和硬件加速解码 H.264/H.265。 左上角菜单栏或者默认快捷键 CTRL&#43;, 打开偏好设置 内存和 GPU 页面，GPU 处理模式选择 CUDA</description>
+            </item><item>
                 <title>微软小冰：X Studio 人工智能歌手</title>
                 <link>https://blog.233so.com/2020/09/microsoft-xiaobing-xstudio-voice-review/</link>
                 <pubDate>Tue, 01 Sep 2020 22:24:44 &#43;0800</pubDate>
@@ -74,13 +81,5 @@
                 <author>Jay</author>
                 <guid>https://blog.233so.com/2020/06/fix-wifi-connection-failure-in-ios14/</guid>
                 <description>iOS 14 引入了 WiFi 的私有地址防止网络运营商追踪你的设备，所以导致无法成功连接到使用了 MAC 地址白名单的路由器，解决办法就是关闭这个功能或者将私有 MAC 地址</description>
-            </item><item>
-                <title>威联通：Directory Lister 搭建简单的软件库</title>
-                <link>https://blog.233so.com/2020/06/build-application-archive-with-directory-lister/</link>
-                <pubDate>Thu, 25 Jun 2020 11:31:00 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/06/build-application-archive-with-directory-lister/</guid>
-                <description>最近整理了以前下载的一些软件安装包，想起来在 QNAP NAS 上做个 Web 端下载目录站，就类似 everything 那种一个简单的目录列出的吧。看中了最简单的 Directory Lister [1], 下载源码到 Web 目录即可使用。
-</description>
             </item></channel>
 </rss>
