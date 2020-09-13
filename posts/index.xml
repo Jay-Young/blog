@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/posts/</link>
         <description>所有文章 | Jay</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 04 Sep 2020 05:02:21 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 13 Sep 2020 14:52:35 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+                <title>Windows 10 中的“使用技巧”入门</title>
+                <link>https://blog.233so.com/2020/09/windows-10-get-started-with-tips/</link>
+                <pubDate>Sun, 13 Sep 2020 14:52:35 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/09/windows-10-get-started-with-tips/</guid>
+                <description>今天终于收到了 2020 年 5 月 27 日发布的 Windows 10 版本 2004 更新，看来微软已经解决了部分软硬件兼容问题又开始新一批推送了🐶。更新完毕重启首先弹了一个“使用技巧”的应用出来，好像是官方做的让用户熟悉 Windows 10 新增功能和技巧的。网上搜了下，这个应用几经更新，似乎越来越简单，以前还有很多介绍基础性功能的内容。
+</description>
+            </item><item>
                 <title>达芬奇中开启CUDA加速及硬解H.264/H.265</title>
                 <link>https://blog.233so.com/2020/09/davinci.resolve.studio.cuda.acceleration/</link>
                 <pubDate>Fri, 04 Sep 2020 05:02:21 &#43;0800</pubDate>
@@ -74,12 +82,5 @@
                 <guid>https://blog.233so.com/2020/07/enlighten-keeppley-k10203-long-march-5-series-launch-vehicle/</guid>
                 <description>“启蒙”创立于 1994 年。 自成立以来, 启蒙一直致力于成为中国玩具行业顶尖的积木品牌，为消费者提供优质、创新的产品。经过 25 年的努力，启蒙已发展成为国内积木行业的领军品牌，并发展成一家拥有 900 多名员工、极具竞争力的企业。 启蒙现拥有 700 多名技术工人的工厂，在广州和汕头两地，拥有超 60 人的顶尖研发设计团队，以及一支超过 100 人的销售团队。 今天，可以在 70,000 多个线下店找到启蒙积木。[1]
 </description>
-            </item><item>
-                <title>关闭私有地址解决 iOS 14 无法连接 WiFi</title>
-                <link>https://blog.233so.com/2020/06/fix-wifi-connection-failure-in-ios14/</link>
-                <pubDate>Mon, 29 Jun 2020 23:22:09 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/06/fix-wifi-connection-failure-in-ios14/</guid>
-                <description>iOS 14 引入了 WiFi 的私有地址防止网络运营商追踪你的设备，所以导致无法成功连接到使用了 MAC 地址白名单的路由器，解决办法就是关闭这个功能或者将私有 MAC 地址</description>
             </item></channel>
 </rss>

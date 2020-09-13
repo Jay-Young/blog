@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>最新功能 | 标签 | Jay</title>
+        <link>https://blog.233so.com/tags/%E6%9C%80%E6%96%B0%E5%8A%9F%E8%83%BD/</link>
+        <description>最新功能 | 标签 | Jay</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 13 Sep 2020 14:52:35 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/%E6%9C%80%E6%96%B0%E5%8A%9F%E8%83%BD/" rel="self" type="application/rss+xml" /><item>
+                <title>Windows 10 中的“使用技巧”入门</title>
+                <link>https://blog.233so.com/2020/09/windows-10-get-started-with-tips/</link>
+                <pubDate>Sun, 13 Sep 2020 14:52:35 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/09/windows-10-get-started-with-tips/</guid>
+                <description>今天终于收到了 2020 年 5 月 27 日发布的 Windows 10 版本 2004 更新，看来微软已经解决了部分软硬件兼容问题又开始新一批推送了🐶。更新完毕重启首先弹了一个“使用技巧”的应用出来，好像是官方做的让用户熟悉 Windows 10 新增功能和技巧的。网上搜了下，这个应用几经更新，似乎越来越简单，以前还有很多介绍基础性功能的内容。
+</description>
+            </item></channel>
+</rss>
