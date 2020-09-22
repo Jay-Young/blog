@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/posts/</link>
         <description>所有文章 | Jay</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 21 Sep 2020 23:59:59 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 22 Sep 2020 23:11:44 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+                <title>阴阳师：干掉网易安全系统 NEProtect？</title>
+                <link>https://blog.233so.com/2020/09/kill-onmyoji-neprotect/</link>
+                <pubDate>Tue, 22 Sep 2020 23:11:44 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/09/kill-onmyoji-neprotect/</guid>
+                <description>最近突然想解压，于是打开好久没玩的猪场著名游戏阴阳师的桌面版，更新后启动发现右下角有个有个熟悉的玩意闪过，定睛一看咋那么像鹅厂那个“大名鼎鼎”的 TP 系统呢，猪场鹅厂化？
+</description>
+            </item><item>
                 <title>【转载】汪海林：我与流量的战争</title>
                 <link>https://blog.233so.com/2020/09/wang-hailin-speech-at-guan-school/</link>
                 <pubDate>Mon, 21 Sep 2020 23:59:59 &#43;0800</pubDate>
@@ -73,14 +81,6 @@
                 <author>Jay</author>
                 <guid>https://blog.233so.com/2020/07/joplin-webdav-synchronisation-for-qnap-nas/</guid>
                 <description>Joplin 是一个免费的开源笔记应用。笔记使用 Markdown 格式，支持外部编辑器（比如 VS Code），支持全文搜索，支持端对端加密，支持 Evernote、Markdown 格式导入，支持 JEX 专有格式、Markdown、HTML、PDF 等多种格式导出，支持 Nextcloud、Dropbox、OneDrive、WebDAV 等多种方式同步（默认本地存储），支持全平台客户端和浏览器扩展剪藏。[1]
-</description>
-            </item><item>
-                <title>网心云现金版盒子：赚钱宝3代收益分析</title>
-                <link>https://blog.233so.com/2020/07/onethingpcs-box3/</link>
-                <pubDate>Sat, 18 Jul 2020 15:15:59 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/07/onethingpcs-box3/</guid>
-                <description>赚钱宝 3 代（现金版盒子）是迅雷网心科技赚钱宝团队倾心打造的产品，是一款能将闲置网络流量变现的创新型智能硬件产品。共享家庭闲置带宽，日日赚取现金收益，广受千万用户欢迎。通过迅雷网心科技自研的边缘计算技术，可将闲置的网络带宽、存储等计算资源转化成有价值的共享云计算服务，形成闲置资源再利用的“共享计算”循环模式。[1]
 </description>
             </item></channel>
 </rss>
