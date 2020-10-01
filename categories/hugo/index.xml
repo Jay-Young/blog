@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/categories/hugo/</link>
         <description>Hugo | 分类 | Jay</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 25 Apr 2020 23:08:48 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/categories/hugo/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 01 Oct 2020 09:17:40 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/categories/hugo/" rel="self" type="application/rss+xml" /><item>
+                <title>迁移博客评论至 LeanCloud 国际版</title>
+                <link>https://blog.233so.com/2020/10/migrate-blog-comments-data-to-leancloud-international/</link>
+                <pubDate>Thu, 01 Oct 2020 09:17:40 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/10/migrate-blog-comments-data-to-leancloud-international/</guid>
+                <description>LeanCloud 国内版老早就在通知将不再支持 xxx.leancloud.cn 的二级域名，需要自行绑定个人域名（需备案）1。今天 10 月 1 日即是期限的最后一天，于是起了个早准备把国内版的评论数据迁移到国际版去。
+</description>
+            </item><item>
                 <title>Hugo 篇四：添加友链卡片 shortcodes</title>
                 <link>https://blog.233so.com/2020/04/friend-link-shortcodes-for-hugo-loveit/</link>
                 <pubDate>Sat, 25 Apr 2020 23:08:48 &#43;0800</pubDate>

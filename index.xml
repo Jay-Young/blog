@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/</link>
         <description>一个博客，简单记录</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 22 Sep 2020 23:11:44 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 01 Oct 2020 09:17:40 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/" rel="self" type="application/rss+xml" /><item>
+                <title>迁移博客评论至 LeanCloud 国际版</title>
+                <link>https://blog.233so.com/2020/10/migrate-blog-comments-data-to-leancloud-international/</link>
+                <pubDate>Thu, 01 Oct 2020 09:17:40 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/10/migrate-blog-comments-data-to-leancloud-international/</guid>
+                <description>LeanCloud 国内版老早就在通知将不再支持 xxx.leancloud.cn 的二级域名，需要自行绑定个人域名（需备案）1。今天 10 月 1 日即是期限的最后一天，于是起了个早准备把国内版的评论数据迁移到国际版去。
+</description>
+            </item><item>
                 <title>阴阳师：干掉网易安全系统 NEProtect？</title>
                 <link>https://blog.233so.com/2020/09/kill-onmyoji-neprotect/</link>
                 <pubDate>Tue, 22 Sep 2020 23:11:44 &#43;0800</pubDate>
@@ -73,14 +81,6 @@
                 <author>Jay</author>
                 <guid>https://blog.233so.com/2020/07/dzzoffice-installation-for-qnap-nas/</guid>
                 <description>DzzOffice 是一套开源办公套件，适用于企业、团队搭建自己的 类似“Google 企业应用套件”、“微软 Office365”的企业协同办公平台。1
-</description>
-            </item><item>
-                <title>威联通：将 Joplin 笔记同步到 NAS</title>
-                <link>https://blog.233so.com/2020/07/joplin-webdav-synchronisation-for-qnap-nas/</link>
-                <pubDate>Sun, 19 Jul 2020 11:27:56 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/07/joplin-webdav-synchronisation-for-qnap-nas/</guid>
-                <description>Joplin 是一个免费的开源笔记应用。笔记使用 Markdown 格式，支持外部编辑器（比如 VS Code），支持全文搜索，支持端对端加密，支持 Evernote、Markdown 格式导入，支持 JEX 专有格式、Markdown、HTML、PDF 等多种格式导出，支持 Nextcloud、Dropbox、OneDrive、WebDAV 等多种方式同步（默认本地存储），支持全平台客户端和浏览器扩展剪藏。[1]
 </description>
             </item></channel>
 </rss>
