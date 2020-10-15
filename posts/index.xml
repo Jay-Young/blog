@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/posts/</link>
         <description>所有文章 | Jay</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 01 Oct 2020 09:17:40 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 15 Oct 2020 22:08:24 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+                <title>微软 Edge 内置冲浪小游戏的三个小秘技</title>
+                <link>https://blog.233so.com/2020/10/microsoft-edge-game-surf-cheat-code/</link>
+                <pubDate>Thu, 15 Oct 2020 22:08:24 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/10/microsoft-edge-game-surf-cheat-code/</guid>
+                <description>正如谷歌浏览器内置的恐龙彩蛋游戏，微软的新版 Edge 浏览器也同样内置了一款小游戏——让我们网上冲浪吧。这个名字很有年代感，与“你是 GG 还是 MM”同属于上古时代的网络用语了。
+</description>
+            </item><item>
                 <title>迁移博客评论至 LeanCloud 国际版</title>
                 <link>https://blog.233so.com/2020/10/migrate-blog-comments-data-to-leancloud-international/</link>
                 <pubDate>Thu, 01 Oct 2020 09:17:40 &#43;0800</pubDate>
@@ -73,14 +81,6 @@
                 <author>Jay</author>
                 <guid>https://blog.233so.com/2020/07/qnap-baidunetdisk-vnc/</guid>
                 <description>目前威联通 NAS 上面没有官方的百度网盘程序，第三方的 baidupcs-go-web 也似乎处于不可用的状态，目前能够勉强能用的曲线救国的方法是使用百度官方的 Linux 客户端，然后通过远程桌面连接的方式来使用。得益于 docker 镜像，目前不需要通过安装 Linux 虚拟机这种笨重的方式来实现，这里介绍两个 docker 镜像。
-</description>
-            </item><item>
-                <title>威联通：部署免费开源的协同办公套件 DzzOffice</title>
-                <link>https://blog.233so.com/2020/07/dzzoffice-installation-for-qnap-nas/</link>
-                <pubDate>Sun, 19 Jul 2020 14:05:19 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/07/dzzoffice-installation-for-qnap-nas/</guid>
-                <description>DzzOffice 是一套开源办公套件，适用于企业、团队搭建自己的 类似“Google 企业应用套件”、“微软 Office365”的企业协同办公平台。1
 </description>
             </item></channel>
 </rss>
