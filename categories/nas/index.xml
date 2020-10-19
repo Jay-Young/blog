@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/categories/nas/</link>
         <description>NAS | 分类 | Jay</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 23 Jul 2020 16:22:20 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/categories/nas/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 19 Oct 2020 23:41:00 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/categories/nas/" rel="self" type="application/rss+xml" /><item>
+                <title>威联通：Podcast 播客那些事儿</title>
+                <link>https://blog.233so.com/2020/10/qnap-podcast-rss-feed/</link>
+                <pubDate>Mon, 19 Oct 2020 23:41:00 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/10/qnap-podcast-rss-feed/</guid>
+                <description>在短视频内容为王的时代，以声音为专有传播媒介的播客似乎也在这几年受到了一些的关注。和博客一样作为 Web2.0 的传媒形态，却在中国很长一段时间里一直不温不火。
+</description>
+            </item><item>
                 <title>威联通：VNC连接Linux客户端曲线救国使用百度网盘</title>
                 <link>https://blog.233so.com/2020/07/qnap-baidunetdisk-vnc/</link>
                 <pubDate>Thu, 23 Jul 2020 16:22:20 &#43;0800</pubDate>
@@ -75,12 +83,5 @@
                 <guid>https://blog.233so.com/2020/05/my-own-qnap-apps-list/</guid>
                 <description>个人用 QDK 将一些开源项目打包成了威联通可以直接安装的 QPKG 安装程序，方便使用，留个备份，不定时更新。
 </description>
-            </item><item>
-                <title>解决华硕路由器 CPU 核心占用 100% 问题的崎岖之路</title>
-                <link>https://blog.233so.com/2020/04/asus-router-cpu-high-occupancy-fixed/</link>
-                <pubDate>Sun, 19 Apr 2020 00:25:02 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/04/asus-router-cpu-high-occupancy-fixed/</guid>
-                <description>今天手机正愉快地刷着 B 站，突然发现视频卡顿，于是到电脑上打开网页测试发现 DNS 解析有问题了，解析时好时坏，就像乌龟一样。 跑到路由器里一看 CPU 其中一</description>
             </item></channel>
 </rss>
