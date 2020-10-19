@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/posts/</link>
         <description>所有文章 | Jay</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 15 Oct 2020 22:08:24 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 19 Oct 2020 23:41:00 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+                <title>威联通：Podcast 播客那些事儿</title>
+                <link>https://blog.233so.com/2020/10/qnap-podcast-rss-feed/</link>
+                <pubDate>Mon, 19 Oct 2020 23:41:00 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/10/qnap-podcast-rss-feed/</guid>
+                <description>在短视频内容为王的时代，以声音为专有传播媒介的播客似乎也在这几年受到了一些的关注。和博客一样作为 Web2.0 的传媒形态，却在中国很长一段时间里一直不温不火。
+</description>
+            </item><item>
                 <title>微软 Edge 内置冲浪小游戏的三个小秘技</title>
                 <link>https://blog.233so.com/2020/10/microsoft-edge-game-surf-cheat-code/</link>
                 <pubDate>Thu, 15 Oct 2020 22:08:24 &#43;0800</pubDate>
@@ -74,13 +82,5 @@
                 <author>Jay</author>
                 <guid>https://blog.233so.com/2020/08/nga-sub-domain-cert-expired/</guid>
                 <description>NGA 社区 PC 网页端爆炸了一天了，到现在还没解决，果然是移动端 App &amp;gt; 小程序 &amp;gt; PC 端 &amp;gt; Web 端。 打开浏览器开发者工具，不难发现所有的 js 文件都加载失败了。点开</description>
-            </item><item>
-                <title>威联通：VNC连接Linux客户端曲线救国使用百度网盘</title>
-                <link>https://blog.233so.com/2020/07/qnap-baidunetdisk-vnc/</link>
-                <pubDate>Thu, 23 Jul 2020 16:22:20 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/07/qnap-baidunetdisk-vnc/</guid>
-                <description>目前威联通 NAS 上面没有官方的百度网盘程序，第三方的 baidupcs-go-web 也似乎处于不可用的状态，目前能够勉强能用的曲线救国的方法是使用百度官方的 Linux 客户端，然后通过远程桌面连接的方式来使用。得益于 docker 镜像，目前不需要通过安装 Linux 虚拟机这种笨重的方式来实现，这里介绍两个 docker 镜像。
-</description>
             </item></channel>
 </rss>
