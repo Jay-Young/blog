@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>安全 | 分类 | Jay</title>
+        <link>https://blog.233so.com/categories/%E5%AE%89%E5%85%A8/</link>
+        <description>安全 | 分类 | Jay</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 24 Oct 2020 19:37:12 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/categories/%E5%AE%89%E5%85%A8/" rel="self" type="application/rss+xml" /><item>
+                <title>【蹭热点】新手尝试解题首届哔哩哔哩安全挑战赛</title>
+                <link>https://blog.233so.com/2020/10/bilibili-sec1024-2020/</link>
+                <pubDate>Sat, 24 Oct 2020 19:37:12 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/10/bilibili-sec1024-2020/</guid>
+                <description>作为一个外行选手也来玩玩这个首届哔哩哔哩安全挑战赛，1-5 题只要一个浏览器就够了。6-10 似乎需要用工具了，反正我也不会，看了别人的解题思路也不懂。从目前公开的信息来看第 8 题和第 10 题已经有思路了。怎么说来着，知道答案的都在榜上呢。1
+</description>
+            </item></channel>
+</rss>
