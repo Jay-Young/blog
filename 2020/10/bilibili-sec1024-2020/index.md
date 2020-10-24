@@ -113,5 +113,7 @@ for (let index = 100336889; index < 100336939; index++) {
 
 接下来的题目就需要工具了，需要 PHP 知识，扫目录、扫端口，我就不会了，只能摊手。
 
+一切的一切似乎都跟第 6 题有关，不知道是不是要用 XSS 攻击来解决。
+
 [^1]: [https://github.com/interesting-1024/end/issues](https://github.com/interesting-1024/end/issues)
 
