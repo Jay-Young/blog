@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/</link>
         <description>一个博客，简单记录</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 24 Oct 2020 19:37:12 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 11 Jan 2021 23:20:10 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/" rel="self" type="application/rss+xml" /><item>
+                <title>【转载】华为 Mate40 Pro 安装谷歌服务</title>
+                <link>https://blog.233so.com/2021/01/install.gms.on.mate40pro.emui11.20201117/</link>
+                <pubDate>Mon, 11 Jan 2021 23:20:10 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2021/01/install.gms.on.mate40pro.emui11.20201117/</guid>
+                <description>由于众所周知的原因，华为 Mate40 Pro 手机没有自带谷歌服务，需要 Play 商店或者玩外服游戏的话就必须想办法装。常规的谷歌服务安装助手已经无法在新华为手机上直接搞定，目前常见的办法就是备份恢复大法了。本教程来自S.P.B UV 手工全膠專門店，放在自己的博客作为备份。
+</description>
+            </item><item>
                 <title>【蹭热点】新手尝试解题首届哔哩哔哩安全挑战赛</title>
                 <link>https://blog.233so.com/2020/10/bilibili-sec1024-2020/</link>
                 <pubDate>Sat, 24 Oct 2020 19:37:12 &#43;0800</pubDate>
@@ -74,14 +82,6 @@
                 <author>Jay</author>
                 <guid>https://blog.233so.com/2020/09/microsoft-xiaobing-xstudio-voice-review/</guid>
                 <description>歌手 1.0 软件，为音乐创作者们提供具有不同音色和唱腔的虚拟歌手，他们能迅速读懂乐谱，并像人类歌手一样，自然地演唱出来。
-</description>
-            </item><item>
-                <title>9元订阅港区 Xbox Game Pass for PC 畅玩 Microsoft Flight 标准版一个月</title>
-                <link>https://blog.233so.com/2020/08/join-xbox-game-pass-for-pc-and-play-microsoft-flight-2020/</link>
-                <pubDate>Tue, 18 Aug 2020 11:27:53 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/08/join-xbox-game-pass-for-pc-and-play-microsoft-flight-2020/</guid>
-                <description>微软模拟飞行 2020 是微软公司发行的最新模拟飞行游戏，拥有精细的全球真实地景、众多机型和飞机场。Xbox Game Pass for PC 是微软推出的游戏增值服务，在订阅期间可以免费畅玩超过 100 款游戏大作。本文介绍如何通过订阅港区 XGP 来获得一个月的游戏使用资格，首月优惠价格HK$10，续费价格每月HK$39。
 </description>
             </item></channel>
 </rss>

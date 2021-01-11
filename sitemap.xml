@@ -2,14 +2,24 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://blog.233so.com/categories/</loc><lastmod>2021-01-11T23:20:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/emui/</loc><lastmod>2021-01-11T23:20:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/gms/</loc><lastmod>2021-01-11T23:20:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/google/</loc><lastmod>2021-01-11T23:20:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/googleplay/</loc><lastmod>2021-01-11T23:20:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/</loc><lastmod>2021-01-11T23:20:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/mate40pro/</loc><lastmod>2021-01-11T23:20:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/posts/</loc><lastmod>2021-01-11T23:20:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/</loc><lastmod>2021-01-11T23:20:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/2021/01/install.gms.on.mate40pro.emui11.20201117/</loc><lastmod>2021-01-11T23:20:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA/</loc><lastmod>2021-01-11T23:20:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/categories/%E6%89%8B%E6%9C%BA/</loc><lastmod>2021-01-11T23:20:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/%E8%B0%B7%E6%AD%8C%E6%9C%8D%E5%8A%A1/</loc><lastmod>2021-01-11T23:20:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/%E8%B0%B7%E6%AD%8C%E6%A1%86%E6%9E%B6/</loc><lastmod>2021-01-11T23:20:10&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/1024/</loc><lastmod>2020-10-24T19:37:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/bilibili/</loc><lastmod>2020-10-24T19:37:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.233so.com/categories/</loc><lastmod>2020-10-24T19:37:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/ctf/</loc><lastmod>2020-10-24T19:37:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.233so.com/</loc><lastmod>2020-10-24T19:37:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/php/</loc><lastmod>2020-10-24T19:37:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.233so.com/posts/</loc><lastmod>2020-10-24T19:37:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.233so.com/tags/</loc><lastmod>2020-10-24T19:37:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/2020/10/bilibili-sec1024-2020/</loc><lastmod>2020-10-24T19:37:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/categories/%E5%AE%89%E5%85%A8/</loc><lastmod>2020-10-24T19:37:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/%E6%B3%A8%E5%85%A5/</loc><lastmod>2020-10-24T19:37:12&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>

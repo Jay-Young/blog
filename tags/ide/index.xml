@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>IDE | 标签 | Jay</title>
+        <link>https://blog.233so.com/tags/ide/</link>
+        <description>IDE | 标签 | Jay</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 31 Oct 2020 09:58:01 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/ide/" rel="self" type="application/rss+xml" /><item>
+                <title>VS Code 文档：代码片段</title>
+                <link>https://blog.233so.com/2020/10/snippets-in-visual-studio-code/</link>
+                <pubDate>Sat, 31 Oct 2020 09:58:01 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/10/snippets-in-visual-studio-code/</guid>
+                <description>代码片段是可以方便用户重复使用的代码模板，例如一些通用的循环或条件语句。在 Visual Studio Code 中，代码片段可以在 IntelliSense（智能提示）中出现，也可以在命令面板（Ctrl &#43; Shift &#43; P）中通过 Insert Snippet（插入片段）调用。打开“启用 Tab 补全”设置选项，在输入 trigger text 的时候按下 Tab 即可自动插入。
+</description>
+            </item></channel>
+</rss>

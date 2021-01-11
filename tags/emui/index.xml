@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>EMUI | 标签 | Jay</title>
+        <link>https://blog.233so.com/tags/emui/</link>
+        <description>EMUI | 标签 | Jay</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 11 Jan 2021 23:20:10 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/emui/" rel="self" type="application/rss+xml" /><item>
+                <title>【转载】华为 Mate40 Pro 安装谷歌服务</title>
+                <link>https://blog.233so.com/2021/01/install.gms.on.mate40pro.emui11.20201117/</link>
+                <pubDate>Mon, 11 Jan 2021 23:20:10 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2021/01/install.gms.on.mate40pro.emui11.20201117/</guid>
+                <description>由于众所周知的原因，华为 Mate40 Pro 手机没有自带谷歌服务，需要 Play 商店或者玩外服游戏的话就必须想办法装。常规的谷歌服务安装助手已经无法在新华为手机上直接搞定，目前常见的办法就是备份恢复大法了。本教程来自S.P.B UV 手工全膠專門店，放在自己的博客作为备份。
+</description>
+            </item></channel>
+</rss>
