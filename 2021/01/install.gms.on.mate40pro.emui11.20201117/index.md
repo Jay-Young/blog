@@ -7,7 +7,7 @@
 
 {{< video id="a" url="/videos/Install.GMS.on.Mate40Pro.EMUI11.20201117/playlist.m3u8" >}}
 
-所需工具下载：[https://pan.baidu.com/s/1D2T_c161ubIO1vqoJ53a5w](https://pan.baidu.com/s/1D2T_c161ubIO1vqoJ53a5w)
+所需工具下载：[https://reurl.cc/ygblgl](https://reurl.cc/ygblgl)
 
 提取码 ht16
 
