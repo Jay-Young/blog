@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>云同步 | 标签 | Jay</title>
+        <link>https://blog.233so.com/tags/%E4%BA%91%E5%90%8C%E6%AD%A5/</link>
+        <description>云同步 | 标签 | Jay</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 21 Jan 2021 11:04:54 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/%E4%BA%91%E5%90%8C%E6%AD%A5/" rel="self" type="application/rss+xml" /><item>
+                <title>银河麒麟系统安装微力同步</title>
+                <link>https://blog.233so.com/2021/01/install.verysync.on.kylin.desktop.v10/</link>
+                <pubDate>Thu, 21 Jan 2021 11:04:54 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2021/01/install.verysync.on.kylin.desktop.v10/</guid>
+                <description>基于飞腾平台预装银河麒麟 V10 桌面系统的国产电脑，目前和 Windows 平台的电脑并行使用，没有完全替换，所以有一定的文件同步需求。银河麒麟内置的麒麟传书好像没有 Windows 平台，也不兼容其他 ipmsg 的软件。想了想还是用微力同步来进行文件同步好了。然而官方提供的安装脚本似乎有点问题，简单改了改能够用了。
+</description>
+            </item></channel>
+</rss>
