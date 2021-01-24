@@ -4,7 +4,16 @@
         <link>https://blog.233so.com/posts/</link>
         <description>所有文章 | Jay</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 21 Jan 2021 11:04:54 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 24 Jan 2021 23:49:16 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+                <title>【魔兽世界】彩虹UI插件整合包：解决界面消失问题</title>
+                <link>https://blog.233so.com/2021/01/resolve-rainbowui-addons-bug/</link>
+                <pubDate>Sun, 24 Jan 2021 23:49:16 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2021/01/resolve-rainbowui-addons-bug/</guid>
+                <description>魔兽世界 9.0 资料片暗影国度上线 2 个月了。正所谓工欲善其事，必先利其器，插件已经是魔兽世界居家旅行必不可少的东西了。以前都是用 curse 下单体插件，但是 curse 和 twitch 整合以后不再好用了，所以这次找了一个叫“彩虹 UI”的整合包。
+在前夕上线的时候还是挺好用的，后来不知道是加了几个其他的单体插件还是更新了一些插件版本的原因，总是会频繁地出现界面消失，就是类似按了 CTRL&#43;Z 的效果，重载界面后就会恢复，反复出现很影响游戏体验。
+</description>
+            </item><item>
                 <title>银河麒麟系统安装微力同步</title>
                 <link>https://blog.233so.com/2021/01/install.verysync.on.kylin.desktop.v10/</link>
                 <pubDate>Thu, 21 Jan 2021 11:04:54 &#43;0800</pubDate>
@@ -76,12 +85,5 @@
                 <guid>https://blog.233so.com/2020/09/windows-10-get-started-with-tips/</guid>
                 <description>今天终于收到了 2020 年 5 月 27 日发布的 Windows 10 版本 2004 更新，看来微软已经解决了部分软硬件兼容问题又开始新一批推送了🐶。更新完毕重启首先弹了一个“使用技巧”的应用出来，好像是官方做的让用户熟悉 Windows 10 新增功能和技巧的。网上搜了下，这个应用几经更新，似乎越来越简单，以前还有很多介绍基础性功能的内容。
 </description>
-            </item><item>
-                <title>达芬奇中开启CUDA加速及硬解H.264/H.265</title>
-                <link>https://blog.233so.com/2020/09/davinci.resolve.studio.cuda.acceleration/</link>
-                <pubDate>Fri, 04 Sep 2020 05:02:21 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/09/davinci.resolve.studio.cuda.acceleration/</guid>
-                <description>以 DaVinci Resolve Studio 16.2.6.005 为例，开启 CUDA 和硬件加速解码 H.264/H.265。 左上角菜单栏或者默认快捷键 CTRL&#43;, 打开偏好设置 内存和 GPU 页面，GPU 处理模式选择 CUDA</description>
             </item></channel>
 </rss>

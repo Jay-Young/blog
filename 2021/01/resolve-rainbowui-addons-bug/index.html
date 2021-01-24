@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>【魔兽世界】彩虹UI插件整合包：解决界面消失问题 | Jay</title>
+        <meta name="Description" content="彩虹UI"><meta property="og:title" content="【魔兽世界】彩虹UI插件整合包：解决界面消失问题" />
+<meta property="og:description" content="彩虹UI" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.233so.com/2021/01/resolve-rainbowui-addons-bug/" />
+<meta property="article:published_time" content="2021-01-24T23:49:16+08:00" />
+<meta property="article:modified_time" content="2021-01-24T23:49:16+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="【魔兽世界】彩虹UI插件整合包：解决界面消失问题"/>
+<meta name="twitter:description" content="彩虹UI"/>
+<meta name="application-name" content="Jay">
+<meta name="apple-mobile-web-app-title" content="Jay"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.233so.com/2021/01/resolve-rainbowui-addons-bug/" /><link rel="prev" href="https://blog.233so.com/2021/01/install.verysync.on.kylin.desktop.v10/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="msvalidate.01" content="9E6BC727410AE14F6E9442F540992717" /><meta name="baidu-site-verification" content="apixhlrtUN" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "【魔兽世界】彩虹UI插件整合包：解决界面消失问题",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/blog.233so.com\/2021\/01\/resolve-rainbowui-addons-bug\/"
+        },"image": {
+                "@type": "ImageObject",
+                "url": "https:\/\/blog.233so.com\/cover.png",
+                "width":  800 ,
+                "height":  600 
+            },"genre": "posts","keywords": "魔兽世界, 暗影国度, 彩虹UI, 插件","wordcount":  597 ,
+        "url": "https:\/\/blog.233so.com\/2021\/01\/resolve-rainbowui-addons-bug\/","datePublished": "2021-01-24T23:49:16+08:00","dateModified": "2021-01-24T23:49:16+08:00","license": "This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.","publisher": {
+                "@type": "Organization",
+                "name": "Jay",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/blog.233so.com\/logo.png",
+                "width":  127 ,
+                "height":  40 
+                }
+            },"author": {
+                "@type": "Person",
+                "name": "Jay"
+            },"description": "彩虹UI"
+    }
+    </script></head>
+    <body><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.classList.add('dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Jay">Jay</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/"> 首页 </a><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/friends/"> 友链 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Jay">Jay</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/" title="">首页</a><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/friends/" title="">友链</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">【魔兽世界】彩虹UI插件整合包：解决界面消失问题</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://weibo.com/jayyoung1/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Jay</a></span>&nbsp;
+                    <span class="post-category">收录于<a href="/categories/%E6%B8%B8%E6%88%8F/">
+                                <i class="far fa-folder fa-fw"></i>游戏
+                            </a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2021-01-24>2021-01-24</time>&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 597 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>预计阅读 2 分钟&nbsp;<span id="/2021/01/resolve-rainbowui-addons-bug/" class="leancloud_visitors" data-flag-title="【魔兽世界】彩虹UI插件整合包：解决界面消失问题">
+                        <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading/normal.min.svg"
+        data-sizes="auto"
+        data-srcset="/images/hugo/resolve-rainbowui-addons-bug/art_wallpaper_1_1920x1080_zhcn.jpg, /images/hugo/resolve-rainbowui-addons-bug/art_wallpaper_1_1920x1080_zhcn.jpg 1.5x, /images/hugo/resolve-rainbowui-addons-bug/art_wallpaper_1_1920x1080_zhcn.jpg 2x"
+        data-src="/images/hugo/resolve-rainbowui-addons-bug/art_wallpaper_1_1920x1080_zhcn.jpg"
+        alt="彩虹UI"
+        title="彩虹UI" /></div><div class="details toc" id="toc-static">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-down"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><p>魔兽世界 9.0 资料片暗影国度上线 2 个月了。正所谓工欲善其事，必先利其器，插件已经是魔兽世界居家旅行必不可少的东西了。以前都是用 curse 下单体插件，但是 curse 和 twitch 整合以后不再好用了，所以这次找了一个叫“彩虹 UI”的整合包。</p>
+<p>在前夕上线的时候还是挺好用的，后来不知道是加了几个其他的单体插件还是更新了一些插件版本的原因，总是会频繁地出现界面消失，就是类似按了 CTRL+Z 的效果，重载界面后就会恢复，反复出现很影响游戏体验。</p>
+<p>一个人在野外做任务还好，要是下本就很尴尬了（虽然我也懒得打，不是因为要做任务的话随机本都不打）。</p>
+<p>在忍受了一段时间后，终于选择一个周末来查找这个问题。思路也很简单，就是先备份整个 WTF 文件夹，然后删除要测试的角色的 SavedVariables 文件夹（重置插件设置为默认值），最后禁用全部插件，一个个启用观察一段时间，来找出有问题的插件<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>。</p>
+<p>几十个插件，一个个启用的话很费时间，因为这个 bug 的出现至少也要十几分钟才能观察到。这个时候传说中的“二分法”猜数字游戏思维就很好用了。</p>
+<p>先启用前一半或者前几类插件，看看是不是会出问题，如果不出问题，那么再接着启用后一半或者后几类插件中的前一半，以此类推，直到定位到会引起问题的那一个插件。</p>
+<p>最后，功夫不负有心人，问题的罪魁祸首是“聊天按钮和功能增强”插件，有可能是更新了版本的问题导致插件有冲突吧，反正这个插件也不是必须的，直接不用了就 OK 了。</p>
+<figure><a class="lightgallery" href="/images/hugo/resolve-rainbowui-addons-bug/Snipaste_2021-01-25_00-12-12.png" title="聊天按钮和功能增强" data-thumbnail="/images/hugo/resolve-rainbowui-addons-bug/Snipaste_2021-01-25_00-12-12.png" data-sub-html="<h2>聊天按钮和功能增强</h2><p>聊天按钮和功能增强</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading/normal.min.svg"
+            data-sizes="auto"
+            data-srcset="/images/hugo/resolve-rainbowui-addons-bug/Snipaste_2021-01-25_00-12-12.png, /images/hugo/resolve-rainbowui-addons-bug/Snipaste_2021-01-25_00-12-12.png 1.5x, /images/hugo/resolve-rainbowui-addons-bug/Snipaste_2021-01-25_00-12-12.png 2x"
+            data-src="/images/hugo/resolve-rainbowui-addons-bug/Snipaste_2021-01-25_00-12-12.png"
+            alt="聊天按钮和功能增强" width="100%" />
+    </a><figcaption class="image-caption">聊天按钮和功能增强</figcaption>
+    </figure>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://addons.miliui.com/show/1/all#q15" target="_blank" rel="noopener noreffer">https://addons.miliui.com/show/1/all#q15</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>本文于 2021-01-24 更新</span>
+            </div>
+            <div class="post-info-license"><span>采用 <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh" target="_blank">CC BY-NC 4.0</a> 协议发布</span></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/2021/01/resolve-rainbowui-addons-bug/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://blog.233so.com/2021/01/resolve-rainbowui-addons-bug/" data-title="【魔兽世界】彩虹UI插件整合包：解决界面消失问题" data-hashtags="魔兽世界,暗影国度,彩虹UI,插件"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://blog.233so.com/2021/01/resolve-rainbowui-addons-bug/" data-title="【魔兽世界】彩虹UI插件整合包：解决界面消失问题" data-image="/images/hugo/resolve-rainbowui-addons-bug/art_wallpaper_1_1920x1080_zhcn.jpg"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="https://blog.233so.com/2021/01/resolve-rainbowui-addons-bug/" data-title="【魔兽世界】彩虹UI插件整合包：解决界面消失问题"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微信" data-sharer="weixin" data-url="https://blog.233so.com/2021/01/resolve-rainbowui-addons-bug/"><i class="fab fa-weixin fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/%E9%AD%94%E5%85%BD%E4%B8%96%E7%95%8C/">魔兽世界</a>,&nbsp;<a href="/tags/%E6%9A%97%E5%BD%B1%E5%9B%BD%E5%BA%A6/">暗影国度</a>,&nbsp;<a href="/tags/%E5%BD%A9%E8%99%B9ui/">彩虹UI</a>,&nbsp;<a href="/tags/%E6%8F%92%E4%BB%B6/">插件</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/2021/01/install.verysync.on.kylin.desktop.v10/" class="prev" rel="prev" title="银河麒麟系统安装微力同步"><i class="fas fa-angle-left fa-fw"></i>银河麒麟系统安装微力同步</a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.70.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.0"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://weibo.com/jayyoung1/" target="_blank">Jay</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css"><link rel="stylesheet" href="/css/custom.css"><script type="text/javascript">
+    window.config = {"code":{"copyTitle":"复制到剪贴板","maxShownLines":20},"comment":{"valine":{"appId":"Sf4T6gi3eP4X3GQdabpBRynC-MdYXbMMI","appKey":"hb0lul2CELPY7AdhROqRtqW4","avatar":"retro","el":"#valine","lang":"zh-cn","pageSize":10,"placeholder":"请留下你善意的评论……","recordIP":true,"visitor":true}},"headerMode":{"desktop":"fixed","mobile":"fixed"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"99SEOT1H0K","algoliaIndex":"index","algoliaSearchKey":"5f32c3a605ca6aba6c73407aa305e495","noResultsFound":"没有找到结果","type":"algolia"},"twemoji":true};
+</script><script src="https://cdn.jsdelivr.net/npm/valine@1.4.9/dist/Valine.min.js"></script><script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script><script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js"></script><script src="https://cdn.jsdelivr.net/npm/twemoji@12.1.5/dist/twemoji.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/js/lightgallery.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sachinchoolur/lg-thumbnail.js@1.1.0/dist/lg-thumbnail.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sachinchoolur/lg-zoom.js@1.0.1/dist/lg-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js"></script><script type="text/javascript" src="/js/custom.js"></script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-16630170-6','auto');ga('set', 'anonymizeIp', true);ga('send', 'pageview');
+        </script><script type="text/javascript" src="https://www.google-analytics.com/analytics.js" async></script></body>
+</html>

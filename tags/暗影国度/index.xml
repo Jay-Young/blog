@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>暗影国度 | 标签 | Jay</title>
+        <link>https://blog.233so.com/tags/%E6%9A%97%E5%BD%B1%E5%9B%BD%E5%BA%A6/</link>
+        <description>暗影国度 | 标签 | Jay</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 24 Jan 2021 23:49:16 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/%E6%9A%97%E5%BD%B1%E5%9B%BD%E5%BA%A6/" rel="self" type="application/rss+xml" /><item>
+                <title>【魔兽世界】彩虹UI插件整合包：解决界面消失问题</title>
+                <link>https://blog.233so.com/2021/01/resolve-rainbowui-addons-bug/</link>
+                <pubDate>Sun, 24 Jan 2021 23:49:16 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2021/01/resolve-rainbowui-addons-bug/</guid>
+                <description>魔兽世界 9.0 资料片暗影国度上线 2 个月了。正所谓工欲善其事，必先利其器，插件已经是魔兽世界居家旅行必不可少的东西了。以前都是用 curse 下单体插件，但是 curse 和 twitch 整合以后不再好用了，所以这次找了一个叫“彩虹 UI”的整合包。
+在前夕上线的时候还是挺好用的，后来不知道是加了几个其他的单体插件还是更新了一些插件版本的原因，总是会频繁地出现界面消失，就是类似按了 CTRL&#43;Z 的效果，重载界面后就会恢复，反复出现很影响游戏体验。
+</description>
+            </item></channel>
+</rss>
