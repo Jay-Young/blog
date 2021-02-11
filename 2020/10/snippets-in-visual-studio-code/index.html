@@ -11,14 +11,14 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.233so.com/2020/10/snippets-in-visual-studio-code/" />
 <meta property="article:published_time" content="2020-10-31T09:58:01+08:00" />
-<meta property="article:modified_time" content="2020-10-31T09:58:01+08:00" />
+<meta property="article:modified_time" content="2021-02-11T09:58:01+08:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="VS Code 文档：代码片段"/>
 <meta name="twitter:description" content="用户代码片段"/>
 <meta name="application-name" content="Jay">
 <meta name="apple-mobile-web-app-title" content="Jay"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.233so.com/2020/10/snippets-in-visual-studio-code/" /><link rel="prev" href="https://blog.233so.com/2020/10/bilibili-sec1024-2020/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="msvalidate.01" content="9E6BC727410AE14F6E9442F540992717" /><meta name="baidu-site-verification" content="apixhlrtUN" /><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.233so.com/2020/10/snippets-in-visual-studio-code/" /><link rel="prev" href="https://blog.233so.com/2020/10/bilibili-sec1024-2020/" /><link rel="next" href="https://blog.233so.com/2021/01/install.gms.on.mate40pro.emui11.20201117/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="msvalidate.01" content="9E6BC727410AE14F6E9442F540992717" /><meta name="baidu-site-verification" content="apixhlrtUN" /><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -32,8 +32,8 @@
                 "url": "https:\/\/blog.233so.com\/cover.png",
                 "width":  800 ,
                 "height":  600 
-            },"genre": "posts","keywords": "VSC, 代码编辑器, IDE, python, 用户注释头","wordcount":  780 ,
-        "url": "https:\/\/blog.233so.com\/2020\/10\/snippets-in-visual-studio-code\/","datePublished": "2020-10-31T09:58:01+08:00","dateModified": "2020-10-31T09:58:01+08:00","license": "This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.","publisher": {
+            },"genre": "posts","keywords": "VSC, 代码编辑器, IDE, python, 用户注释头","wordcount":  793 ,
+        "url": "https:\/\/blog.233so.com\/2020\/10\/snippets-in-visual-studio-code\/","datePublished": "2020-10-31T09:58:01+08:00","dateModified": "2021-02-11T09:58:01+08:00","license": "This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.","publisher": {
                 "@type": "Organization",
                 "name": "Jay",
                 "logo": {
@@ -56,7 +56,7 @@
             <a href="/" title="Jay">Jay</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/"> 首页 </a><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/friends/"> 友链 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+            <div class="menu-inner"><a class="menu-item" href="/"> 首页 </a><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/friends/"> 传送门 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
                         <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
                         <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
                             <i class="fas fa-search fa-fw"></i>
@@ -99,7 +99,7 @@
                     <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
                         取消
                     </a>
-                </div><a class="menu-item" href="/" title="">首页</a><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/friends/" title="">友链</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                </div><a class="menu-item" href="/" title="">首页</a><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/friends/" title="">传送门</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
                 <i class="fas fa-adjust fa-fw"></i>
             </a></div>
     </div>
@@ -120,7 +120,7 @@
                                 <i class="far fa-folder fa-fw"></i>文档
                             </a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-10-31>2020-10-31</time>&nbsp;
-                <i class="fas fa-pencil-alt fa-fw"></i>约 780 字&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 793 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>预计阅读 2 分钟&nbsp;<span id="/2020/10/snippets-in-visual-studio-code/" class="leancloud_visitors" data-flag-title="VS Code 文档：代码片段">
                         <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
@@ -143,7 +143,7 @@
     <li><a href="#创建用户自定义片段">创建用户自定义片段</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>代码片段是可以方便用户重复使用的代码模板，例如一些通用的循环或条件语句。在 <code>Visual Studio Code</code> 中，代码片段可以在 <code>IntelliSense</code>（智能提示）中出现，也可以在命令面板（<code>Ctrl + Shift + P</code>）中通过 <code>Insert Snippet</code>（插入片段）调用。打开“启用 Tab 补全”设置选项，在输入 <code>trigger text</code> 的时候按下 <code>Tab</code> 即可自动插入。</p>
+            </div><div class="content" id="content"><p>代码片段是可以方便用户重复使用的代码模板，例如一些通用的循环或条件语句。在 <code>Visual Studio Code</code> 中，代码片段可以在 <code>IntelliSense</code>（智能提示）中出现，也可以在命令面板（<code>Ctrl + Shift + P</code>）中通过 <code>Insert Snippet</code>（插入片段）调用。打开“启用 Tab 补全”设置选项，在输入 <code>trigger text</code> 的时候按下 <code>Tab</code> 即可自动插入。<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 <p>代码片段语法遵循 <a href="https://manual.macromates.com/en/snippets" target="_blank" rel="noopener noreffer">TextMate snippet syntax</a>，但不支持 <code>interpolated shell code</code> 和 <code>\u</code> 用法。</p>
 <figure><a class="lightgallery" href="/images/hugo/Snippets-in-Visual-Studio-Code/ajax-snippet.gif" title="ajax-snippet" data-thumbnail="/images/hugo/Snippets-in-Visual-Studio-Code/ajax-snippet.gif" data-sub-html="<h2>ajax-snippet</h2><p>ajax-snippet</p>">
         <img
@@ -254,16 +254,16 @@
 <td class="lntd">
 <pre class="chroma"><code class="language-json" data-lang="json"><span class="err">//</span> <span class="err">in</span> <span class="err">file</span> <span class="err">&#39;Code/User/snippets/javascript.json&#39;</span>
 <span class="p">{</span>
-	<span class="nt">&#34;For Loop&#34;</span><span class="p">:</span> <span class="p">{</span>
-		<span class="nt">&#34;prefix&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;for&#34;</span><span class="p">,</span> <span class="s2">&#34;for-const&#34;</span><span class="p">],</span>
-		<span class="nt">&#34;body&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;for (const ${2:element} of ${1:array}) {&#34;</span><span class="p">,</span> <span class="s2">&#34;\t$0&#34;</span><span class="p">,</span> <span class="s2">&#34;}&#34;</span><span class="p">],</span>
-		<span class="nt">&#34;description&#34;</span><span class="p">:</span> <span class="s2">&#34;A for loop.&#34;</span>
-	<span class="p">}</span>
+ <span class="nt">&#34;For Loop&#34;</span><span class="p">:</span> <span class="p">{</span>
+  <span class="nt">&#34;prefix&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;for&#34;</span><span class="p">,</span> <span class="s2">&#34;for-const&#34;</span><span class="p">],</span>
+  <span class="nt">&#34;body&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;for (const ${2:element} of ${1:array}) {&#34;</span><span class="p">,</span> <span class="s2">&#34;\t$0&#34;</span><span class="p">,</span> <span class="s2">&#34;}&#34;</span><span class="p">],</span>
+  <span class="nt">&#34;description&#34;</span><span class="p">:</span> <span class="s2">&#34;A for loop.&#34;</span>
+ <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
 </div><ul>
-<li><code>For Loop</code> 定义片段的名字，用户如果没有定义 <code>description</code>，那么名字将会代替在智能提示中显示。</li>
+<li><code>For Loop</code> 定义片段的名字，用户如果没有定义 <code>description</code>，那么名字将会代替 0 在智能提示中显示。</li>
 <li><code>prefix</code> 定义显示在智能提示中的一个或多个触发关键词。<code>prefix</code> 支持模糊匹配，例如，<code>fx</code> 可以匹配 <code>for-const</code>。</li>
 <li><code>body</code> 定义插入片段的具体内容。</li>
 <li><code>description</code> 定义智能提示中的描述（可选）。</li>
@@ -278,11 +278,20 @@
             data-src="/images/hugo/Snippets-in-Visual-Studio-Code/cursor-position.gif"
             alt="cursor-position" width="100%" />
     </a><figcaption class="image-caption">cursor-position</figcaption>
-    </figure></div><div class="post-footer" id="post-footer">
+    </figure>
+<p>未完待续 🔜</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://code.visualstudio.com/docs/editor/userdefinedsnippets" target="_blank" rel="noopener noreffer">Snippets in Visual Studio Code</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>本文于 2020-10-31 更新</span>
+                <span>本文于 2021-02-11 更新</span>
             </div>
             <div class="post-info-license"><span>采用 <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh" target="_blank">CC BY-NC 4.0</a> 协议发布</span></div>
         </div>
@@ -303,14 +312,15 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/2020/10/bilibili-sec1024-2020/" class="prev" rel="prev" title="【蹭热点】新手尝试解题首届哔哩哔哩安全挑战赛"><i class="fas fa-angle-left fa-fw"></i>【蹭热点】新手尝试解题首届哔哩哔哩安全挑战赛</a></div>
+    <div class="post-nav"><a href="/2020/10/bilibili-sec1024-2020/" class="prev" rel="prev" title="【蹭热点】新手尝试解题首届哔哩哔哩安全挑战赛"><i class="fas fa-angle-left fa-fw"></i>【蹭热点】新手尝试解题首届哔哩哔哩安全挑战赛</a>
+            <a href="/2021/01/install.gms.on.mate40pro.emui11.20201117/" class="next" rel="next" title="【转载】华为 Mate40 Pro 安装谷歌服务">【转载】华为 Mate40 Pro 安装谷歌服务<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.70.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.0"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
-                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://weibo.com/jayyoung1/" target="_blank">Jay</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://weibo.com/jayyoung1/" target="_blank">Jay</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 

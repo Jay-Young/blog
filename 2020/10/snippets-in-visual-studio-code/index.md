@@ -1,7 +1,7 @@
 # VS Code 文档：代码片段
 
 
-代码片段是可以方便用户重复使用的代码模板，例如一些通用的循环或条件语句。在 `Visual Studio Code` 中，代码片段可以在 `IntelliSense`（智能提示）中出现，也可以在命令面板（`Ctrl + Shift + P`）中通过 `Insert Snippet`（插入片段）调用。打开“启用 Tab 补全”设置选项，在输入 `trigger text` 的时候按下 `Tab` 即可自动插入。
+代码片段是可以方便用户重复使用的代码模板，例如一些通用的循环或条件语句。在 `Visual Studio Code` 中，代码片段可以在 `IntelliSense`（智能提示）中出现，也可以在命令面板（`Ctrl + Shift + P`）中通过 `Insert Snippet`（插入片段）调用。打开“启用 Tab 补全”设置选项，在输入 `trigger text` 的时候按下 `Tab` 即可自动插入。[^1]
 
 <!--more-->
 
@@ -46,15 +46,15 @@ VS Code 已经为一些常用语言，例如 `JavaScript`, `TypeScript`, `Markdo
 ```json
 // in file 'Code/User/snippets/javascript.json'
 {
-	"For Loop": {
-		"prefix": ["for", "for-const"],
-		"body": ["for (const ${2:element} of ${1:array}) {", "\t$0", "}"],
-		"description": "A for loop."
-	}
+ "For Loop": {
+  "prefix": ["for", "for-const"],
+  "body": ["for (const ${2:element} of ${1:array}) {", "\t$0", "}"],
+  "description": "A for loop."
+ }
 }
 ```
 
-- `For Loop` 定义片段的名字，用户如果没有定义 `description`，那么名字将会代替在智能提示中显示。
+- `For Loop` 定义片段的名字，用户如果没有定义 `description`，那么名字将会代替 0 在智能提示中显示。
 - `prefix` 定义显示在智能提示中的一个或多个触发关键词。`prefix` 支持模糊匹配，例如，`fx` 可以匹配 `for-const`。
 - `body` 定义插入片段的具体内容。
 - `description` 定义智能提示中的描述（可选）。
@@ -62,4 +62,8 @@ VS Code 已经为一些常用语言，例如 `JavaScript`, `TypeScript`, `Markdo
 此外，`body` 标签中有 3 个占位字符：`${1:array}`, `${2:element}`, 和 `$0`。通过 `Tab` 切换到需要编辑的占位符位置。`${2:element}` 中的 `element` 是占位符的默认内容。占位符遍历从 `1` 开始升序。`0` 是可选的保留占位字符序号，它的顺序永远是最后，当 `Tab` 切换完毕的时候，表示光标所处的位置。
 
 {{< image src="/images/hugo/Snippets-in-Visual-Studio-Code/cursor-position.gif" alt="cursor-position" caption="cursor-position" title="cursor-position" width=100% >}}
+
+未完待续 🔜
+
+[^1]: [Snippets in Visual Studio Code](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
 

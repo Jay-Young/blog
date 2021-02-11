@@ -38,6 +38,14 @@
                 <description>由于众所周知的原因，华为 Mate40 Pro 手机没有自带谷歌服务，需要 Play 商店或者玩外服游戏的话就必须想办法装。常规的谷歌服务安装助手已经无法在新华为手机上直接搞定，目前常见的办法就是备份恢复大法了。本教程来自S.P.B UV 手工全膠專門店，放在自己的博客作为备份。
 </description>
             </item><item>
+                <title>VS Code 文档：代码片段</title>
+                <link>https://blog.233so.com/2020/10/snippets-in-visual-studio-code/</link>
+                <pubDate>Sat, 31 Oct 2020 09:58:01 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/10/snippets-in-visual-studio-code/</guid>
+                <description>代码片段是可以方便用户重复使用的代码模板，例如一些通用的循环或条件语句。在 Visual Studio Code 中，代码片段可以在 IntelliSense（智能提示）中出现，也可以在命令面板（Ctrl &#43; Shift &#43; P）中通过 Insert Snippet（插入片段）调用。打开“启用 Tab 补全”设置选项，在输入 trigger text 的时候按下 Tab 即可自动插入。1
+</description>
+            </item><item>
                 <title>【蹭热点】新手尝试解题首届哔哩哔哩安全挑战赛</title>
                 <link>https://blog.233so.com/2020/10/bilibili-sec1024-2020/</link>
                 <pubDate>Sat, 24 Oct 2020 19:37:12 &#43;0800</pubDate>
@@ -76,14 +84,6 @@
                 <author>Jay</author>
                 <guid>https://blog.233so.com/2020/09/kill-onmyoji-neprotect/</guid>
                 <description>最近突然想解压，于是打开好久没玩的猪场著名游戏阴阳师的桌面版，更新后启动发现右下角有个有个熟悉的玩意闪过，定睛一看咋那么像鹅厂那个“大名鼎鼎”的 TP 系统呢，猪场鹅厂化？
-</description>
-            </item><item>
-                <title>【转载】汪海林：我与流量的战争</title>
-                <link>https://blog.233so.com/2020/09/wang-hailin-speech-at-guan-school/</link>
-                <pubDate>Mon, 21 Sep 2020 23:59:59 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/09/wang-hailin-speech-at-guan-school/</guid>
-                <description>与流量的战争，现在已经成为了一场人民战争的一部分。资本媒体一体横行霸道，流量明星没有演技，知识精英缺位。希望在这流量时代，我们有所坚守，有所追求。我们已经退无可退，唯望往前走，不要停息，让我们像飞鸟一样思考，如道路一般行走。1
 </description>
             </item></channel>
 </rss>
