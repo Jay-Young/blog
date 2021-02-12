@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Plex | 标签 | Jay</title>
+        <link>https://blog.233so.com/tags/plex/</link>
+        <description>Plex | 标签 | Jay</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 12 Feb 2021 21:36:13 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/plex/" rel="self" type="application/rss+xml" /><item>
+                <title>自动更新威联通上的 Plex Media Server</title>
+                <link>https://blog.233so.com/2021/02/plex-media-server-auto-update/</link>
+                <pubDate>Fri, 12 Feb 2021 21:36:13 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2021/02/plex-media-server-auto-update/</guid>
+                <description>在威联通上的 Plex Media Server 虽然会提示新版本升级，但是无法自动下载并安装。Plex 本身更新算是比较频繁的，这就比较难受了。于是想了想能不能通过计划任务来实现自动下载安装更新。
+</description>
+            </item></channel>
+</rss>

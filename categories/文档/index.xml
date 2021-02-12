@@ -13,7 +13,7 @@
                 <description>代码片段是可以方便用户重复使用的代码模板，例如一些通用的循环或条件语句。在 Visual Studio Code 中，代码片段可以在 IntelliSense（智能提示）中出现，也可以在命令面板（Ctrl &#43; Shift &#43; P）中通过 Insert Snippet（插入片段）调用。打开“启用 Tab 补全”设置选项，在输入 trigger text 的时候按下 Tab 即可自动插入。1
 </description>
             </item><item>
-                <title>【备份】Bandizip 6.x 旧版本</title>
+                <title>Bandizip 6.x 旧版本</title>
                 <link>https://blog.233so.com/2020/06/bandizip-archive/</link>
                 <pubDate>Mon, 22 Jun 2020 19:41:17 &#43;0800</pubDate>
                 <author>Jay</author>

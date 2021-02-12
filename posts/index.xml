@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/posts/</link>
         <description>所有文章 | Jay</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 10 Feb 2021 22:04:48 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 12 Feb 2021 21:36:13 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+                <title>自动更新威联通上的 Plex Media Server</title>
+                <link>https://blog.233so.com/2021/02/plex-media-server-auto-update/</link>
+                <pubDate>Fri, 12 Feb 2021 21:36:13 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2021/02/plex-media-server-auto-update/</guid>
+                <description>在威联通上的 Plex Media Server 虽然会提示新版本升级，但是无法自动下载并安装。Plex 本身更新算是比较频繁的，这就比较难受了。于是想了想能不能通过计划任务来实现自动下载安装更新。
+</description>
+            </item><item>
                 <title>中国移动电视频道直播源</title>
                 <link>https://blog.233so.com/2021/02/iptv-live-list/</link>
                 <pubDate>Wed, 10 Feb 2021 22:04:48 &#43;0800</pubDate>
@@ -13,7 +21,7 @@
                 <description>通过黑鸟扫源工具1扫了一些移动的直播源，稍微整理了下。建议使用黑鸟播放器在 playlist 目录添加播放列表后观看，这样可以直接支持回看。
 </description>
             </item><item>
-                <title>【魔兽世界】彩虹UI插件整合包：解决界面消失问题</title>
+                <title>魔兽世界彩虹UI插件整合包：解决界面消失问题</title>
                 <link>https://blog.233so.com/2021/01/resolve-rainbowui-addons-bug/</link>
                 <pubDate>Sun, 24 Jan 2021 23:49:16 &#43;0800</pubDate>
                 <author>Jay</author>
@@ -30,7 +38,7 @@
                 <description>基于飞腾平台预装银河麒麟 V10 桌面系统的国产电脑，目前和 Windows 平台的电脑并行使用，没有完全替换，所以有一定的文件同步需求。银河麒麟内置的麒麟传书好像没有 Windows 平台，也不兼容其他 ipmsg 的软件。想了想还是用微力同步来进行文件同步好了。然而官方提供的安装脚本似乎有点问题，简单改了改能够用了。
 </description>
             </item><item>
-                <title>【转载】华为 Mate40 Pro 安装谷歌服务</title>
+                <title>华为 Mate40 Pro 安装谷歌服务</title>
                 <link>https://blog.233so.com/2021/01/install.gms.on.mate40pro.emui11.20201117/</link>
                 <pubDate>Mon, 11 Jan 2021 23:20:10 &#43;0800</pubDate>
                 <author>Jay</author>
@@ -46,7 +54,7 @@
                 <description>代码片段是可以方便用户重复使用的代码模板，例如一些通用的循环或条件语句。在 Visual Studio Code 中，代码片段可以在 IntelliSense（智能提示）中出现，也可以在命令面板（Ctrl &#43; Shift &#43; P）中通过 Insert Snippet（插入片段）调用。打开“启用 Tab 补全”设置选项，在输入 trigger text 的时候按下 Tab 即可自动插入。1
 </description>
             </item><item>
-                <title>【蹭热点】新手尝试解题首届哔哩哔哩安全挑战赛</title>
+                <title>新手尝试解题首届哔哩哔哩安全挑战赛</title>
                 <link>https://blog.233so.com/2020/10/bilibili-sec1024-2020/</link>
                 <pubDate>Sat, 24 Oct 2020 19:37:12 &#43;0800</pubDate>
                 <author>Jay</author>
@@ -76,14 +84,6 @@
                 <author>Jay</author>
                 <guid>https://blog.233so.com/2020/10/migrate-blog-comments-data-to-leancloud-international/</guid>
                 <description>LeanCloud 国内版老早就在通知将不再支持 xxx.leancloud.cn 的二级域名，需要自行绑定个人域名（需备案）1。今天 10 月 1 日即是期限的最后一天，于是起了个早准备把国内版的评论数据迁移到国际版去。
-</description>
-            </item><item>
-                <title>阴阳师：干掉网易安全系统 NEProtect？</title>
-                <link>https://blog.233so.com/2020/09/kill-onmyoji-neprotect/</link>
-                <pubDate>Tue, 22 Sep 2020 23:11:44 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/09/kill-onmyoji-neprotect/</guid>
-                <description>最近突然想解压，于是打开好久没玩的猪场著名游戏阴阳师的桌面版，更新后启动发现右下角有个有个熟悉的玩意闪过，定睛一看咋那么像鹅厂那个“大名鼎鼎”的 TP 系统呢，猪场鹅厂化？
 </description>
             </item></channel>
 </rss>

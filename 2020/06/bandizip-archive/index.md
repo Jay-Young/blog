@@ -1,4 +1,4 @@
-# 【备份】Bandizip 6.x 旧版本
+# Bandizip 6.x 旧版本
 
 
 Bandizip is a powerful archiver which provides an ultrafast processing speed and convenient features. Available free of charge, and its paid editions support a variety of advanced features.

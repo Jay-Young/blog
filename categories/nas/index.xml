@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/categories/nas/</link>
         <description>NAS | 分类 | Jay</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 19 Oct 2020 23:41:00 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/categories/nas/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 12 Feb 2021 21:36:13 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/categories/nas/" rel="self" type="application/rss+xml" /><item>
+                <title>自动更新威联通上的 Plex Media Server</title>
+                <link>https://blog.233so.com/2021/02/plex-media-server-auto-update/</link>
+                <pubDate>Fri, 12 Feb 2021 21:36:13 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2021/02/plex-media-server-auto-update/</guid>
+                <description>在威联通上的 Plex Media Server 虽然会提示新版本升级，但是无法自动下载并安装。Plex 本身更新算是比较频繁的，这就比较难受了。于是想了想能不能通过计划任务来实现自动下载安装更新。
+</description>
+            </item><item>
                 <title>威联通：Podcast 播客那些事儿</title>
                 <link>https://blog.233so.com/2020/10/qnap-podcast-rss-feed/</link>
                 <pubDate>Mon, 19 Oct 2020 23:41:00 &#43;0800</pubDate>
@@ -74,14 +82,6 @@
                 <author>Jay</author>
                 <guid>https://blog.233so.com/2020/05/qdk-quick-start-guide-zh/</guid>
                 <description>QDK 是用于构建威联通 QTS 系统 QPKG 应用的一套开发工具. QPKG 应用不仅能让用户方便地安装和删除软件包，还能让应用开发者/维护者完全控制应用在 NAS 上的安装过程.
-</description>
-            </item><item>
-                <title>个人打包的 QNAP QPKG 应用下载汇总</title>
-                <link>https://blog.233so.com/2020/05/my-own-qnap-apps-list/</link>
-                <pubDate>Tue, 12 May 2020 21:34:34 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/05/my-own-qnap-apps-list/</guid>
-                <description>个人用 QDK 将一些开源项目打包成了威联通可以直接安装的 QPKG 安装程序，方便使用，留个备份，不定时更新。
 </description>
             </item></channel>
 </rss>
