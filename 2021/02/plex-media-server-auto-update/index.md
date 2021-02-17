@@ -102,6 +102,10 @@ if [ $Installed_Version \< $Latest_Version ]; then
 fi
 ```
 
+{{< admonition tip "注意" false >}}
+如果网络不好，curl 一直下载失败会进入死循环，可以考虑自行去除循环。
+{{< /admonition >}}
+
 `downloads.plex.tv` 这个域名是套了 `Cloudflare` 的 `CDN` 的，国内某些网络下访问可能会有干扰，导致下载失败。
 
 如果你有 `socks5` 代理，可以尝试代理下载 `curl --socks5 127.0.0.1:1080`

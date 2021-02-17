@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/posts/</link>
         <description>所有文章 | Jay</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 12 Feb 2021 21:36:13 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 17 Feb 2021 17:47:29 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+                <title>威联通：域名证书有效性检查脚本</title>
+                <link>https://blog.233so.com/2021/02/domain-check-ssl/</link>
+                <pubDate>Wed, 17 Feb 2021 17:47:29 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2021/02/domain-check-ssl/</guid>
+                <description>鉴于 NAS 的解析指向本地局域网，所以需要在本地搭一个检测域名证书有效期并开启微信推送的服务，防止证书自动续期出问题导致证书过期。
+</description>
+            </item><item>
                 <title>自动更新威联通上的 Plex Media Server</title>
                 <link>https://blog.233so.com/2021/02/plex-media-server-auto-update/</link>
                 <pubDate>Fri, 12 Feb 2021 21:36:13 &#43;0800</pubDate>
@@ -76,14 +84,6 @@
                 <author>Jay</author>
                 <guid>https://blog.233so.com/2020/10/microsoft-edge-game-surf-cheat-code/</guid>
                 <description>正如谷歌浏览器内置的恐龙彩蛋游戏，微软的新版 Edge 浏览器也同样内置了一款小游戏——让我们网上冲浪吧。这个名字很有年代感，与“你是 GG 还是 MM”同属于上古时代的网络用语了。
-</description>
-            </item><item>
-                <title>迁移博客评论至 LeanCloud 国际版</title>
-                <link>https://blog.233so.com/2020/10/migrate-blog-comments-data-to-leancloud-international/</link>
-                <pubDate>Thu, 01 Oct 2020 09:17:40 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/10/migrate-blog-comments-data-to-leancloud-international/</guid>
-                <description>LeanCloud 国内版老早就在通知将不再支持 xxx.leancloud.cn 的二级域名，需要自行绑定个人域名（需备案）1。今天 10 月 1 日即是期限的最后一天，于是起了个早准备把国内版的评论数据迁移到国际版去。
 </description>
             </item></channel>
 </rss>

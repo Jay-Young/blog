@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/tags/%E8%AF%81%E4%B9%A6/</link>
         <description>证书 | 标签 | Jay</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 02 Aug 2020 03:10:25 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/%E8%AF%81%E4%B9%A6/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 17 Feb 2021 17:47:29 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/%E8%AF%81%E4%B9%A6/" rel="self" type="application/rss+xml" /><item>
+                <title>威联通：域名证书有效性检查脚本</title>
+                <link>https://blog.233so.com/2021/02/domain-check-ssl/</link>
+                <pubDate>Wed, 17 Feb 2021 17:47:29 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2021/02/domain-check-ssl/</guid>
+                <description>鉴于 NAS 的解析指向本地局域网，所以需要在本地搭一个检测域名证书有效期并开启微信推送的服务，防止证书自动续期出问题导致证书过期。
+</description>
+            </item><item>
                 <title>NGA社区子域名证书过期引发的UI爆炸惨案</title>
                 <link>https://blog.233so.com/2020/08/nga-sub-domain-cert-expired/</link>
                 <pubDate>Sun, 02 Aug 2020 03:10:25 &#43;0800</pubDate>
