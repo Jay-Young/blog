@@ -38,7 +38,8 @@ chmod +x /opt/sslstatus/runcheck.sh /opt/sslstatus/token.sh
 # 获取鉴权调用者身份的登录凭证 ACCESS_TOKEN
 if [ ! -f /opt/sslstatus/*.token ];then
     /opt/sslstatus/token.sh
-elif [ $(expr $(date +%s) - $(basename /opt/sslstatus/*.token .token)) \> 7200 ];then
+elif [ $(expr $(date +%s) - $(basename /opt/sslstatus/*.token .token)) -gt 7200 ];then
+    rm -f /opt/sslstatus/*.token
     /opt/sslstatus/token.sh
 fi
 

@@ -32,7 +32,7 @@
                 "url": "https:\/\/blog.233so.com\/cover.png",
                 "width":  800 ,
                 "height":  600 
-            },"genre": "posts","keywords": "域名, 证书, 企业微信, 消息推送","wordcount":  1744 ,
+            },"genre": "posts","keywords": "域名, 证书, 企业微信, 消息推送","wordcount":  1748 ,
         "url": "https:\/\/blog.233so.com\/2021\/02\/domain-check-ssl\/","datePublished": "2021-02-17T17:47:29+08:00","dateModified": "2021-02-17T17:47:29+08:00","license": "This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.","publisher": {
                 "@type": "Organization",
                 "name": "Jay",
@@ -120,7 +120,7 @@
                                 <i class="far fa-folder fa-fw"></i>NAS
                             </a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2021-02-17>2021-02-17</time>&nbsp;
-                <i class="fas fa-pencil-alt fa-fw"></i>约 1744 字&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 1748 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>预计阅读 4 分钟&nbsp;<span id="/2021/02/domain-check-ssl/" class="leancloud_visitors" data-flag-title="威联通：域名证书有效性检查脚本">
                         <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
@@ -220,6 +220,7 @@ crontab /etc/config/crontab <span class="o">&amp;&amp;</span> /etc/init.d/crond.
 </span><span class="lnt">38
 </span><span class="lnt">39
 </span><span class="lnt">40
+</span><span class="lnt">41
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-shell" data-lang="shell"><span class="cp">#!/bin/sh
@@ -228,7 +229,8 @@ crontab /etc/config/crontab <span class="o">&amp;&amp;</span> /etc/init.d/crond.
 <span class="c1"># 获取鉴权调用者身份的登录凭证 ACCESS_TOKEN</span>
 <span class="k">if</span> <span class="o">[</span> ! -f /opt/sslstatus/*.token <span class="o">]</span><span class="p">;</span><span class="k">then</span>
     /opt/sslstatus/token.sh
-<span class="k">elif</span> <span class="o">[</span> <span class="k">$(</span>expr <span class="k">$(</span>date +%s<span class="k">)</span> - <span class="k">$(</span>basename /opt/sslstatus/*.token .token<span class="k">))</span> <span class="se">\&gt;</span> <span class="m">7200</span> <span class="o">]</span><span class="p">;</span><span class="k">then</span>
+<span class="k">elif</span> <span class="o">[</span> <span class="k">$(</span>expr <span class="k">$(</span>date +%s<span class="k">)</span> - <span class="k">$(</span>basename /opt/sslstatus/*.token .token<span class="k">))</span> -gt <span class="m">7200</span> <span class="o">]</span><span class="p">;</span><span class="k">then</span>
+    rm -f /opt/sslstatus/*.token
     /opt/sslstatus/token.sh
 <span class="k">fi</span>
 
