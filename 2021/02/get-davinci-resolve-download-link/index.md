@@ -207,7 +207,7 @@ main
 
 ## Windows Batch 脚本
 
-只在 `Windows 10 Pro 19041.804` 上测试通过。
+只在 `Windows 10 Pro 19041.804` 上测试通过，需要自行安装 [curl](https://curl.haxx.se/windows/)。
 
 ```batch
 @echo off
