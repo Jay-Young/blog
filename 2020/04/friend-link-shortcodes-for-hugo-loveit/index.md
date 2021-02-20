@@ -141,5 +141,5 @@
 
 移动端隐藏说明文字，只留下名称：
 
-{{< figure src="/images/hugo/friend-link-shortcodes-for-hugo-loveit/QQ拼音截图20200425232808.png" >}}
+{{< figure src="/images/hugo/friend-link-shortcodes-for-hugo-loveit/QQ拼音截图20200425232808.webp" >}}
 

@@ -196,7 +196,7 @@ qbuild
 
 以 Web App 形式运行从外观上看和本地的 vs code 也没什么区别了
 
-![屏幕截图(9).png](https://i.loli.net/2020/04/18/zCayub6Y5P4IH1E.png)
+![屏幕截图(9).webp](/images/hugo/upgrade-code-server-to-V3/zCayub6Y5P4IH1E.webp)
 
-![企业微信截图_20200417110813.png](https://i.loli.net/2020/04/18/AVm6nX9p4g8rCNH.png)
+![企业微信截图_20200417110813.webp](/images/hugo/upgrade-code-server-to-V3/AVm6nX9p4g8rCNH.webp)
 

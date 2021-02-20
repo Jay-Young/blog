@@ -13,35 +13,35 @@
 
 可以直接使用下载的细胞词库，或者将正在使用的词库备份为 bin 文件或导出为 txt 文件。然后，将词库文件拖拽到转换器会自动识别来源，在右侧选择目标格式“Win10 微软拼音（自定义短语）”或“Win10 微软拼音（自学习词库）”，注意后者只能支持最多 2 万个词条，所以建议通过高级设置中的词条过滤来控制源词条数量。如果喜欢使用双拼，工具还提供了多种双拼方案，以便在生成短语的拼音时生成对应的双拼。
 
-{{< image src="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_16-28-54.png" title="深蓝词库转换" >}}
+{{< image src="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_16-28-54.webp" title="深蓝词库转换" >}}
 
 如果源词条数量很多的话，导入以后打开用户自定义短语界面会变得很卡，所以我是不推荐导入那些行业分类的细胞词库，反正微软这边也有，不会差到哪里去。下定决心要从搜狗切换到微软的话，只需要把自己的个人词库导入就应该够用了。
 
 Windows 10 微软拼音的词库设置在设置 → 时间和语言 → 语言 → 首选语言中文选项 → 键盘微软拼音选项 → 词库和自学习。在这个界面可以导入导出词库，自定义短语，打开云候选，启用所有的专业词典。
 
-{{< image src="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_16-40-44.png" title="微软拼音词库设置" >}}
+{{< image src="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_16-40-44.webp" title="微软拼音词库设置" >}}
 
 {{< admonition tip "点击展开更多技巧" true >}}
 基于 Windows 10 Build 1909，以下快捷模式需要在中文模式下
 
-{{< image src="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_19-00-29.png" title="高级设置" >}}
+{{< image src="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_19-00-29.webp" title="高级设置" >}}
 
 - 简繁输入切换，默认 `Ctrl+Shift+F`
 - 打开 emoji 输入，默认 `Ctrl+Shift+E`
 
-  {{< image src="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_19-03-30.png" title="emoji" >}}
+  {{< image src="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_19-03-30.webp" title="emoji" >}}
 
 - 人名输入，例如全拼模式下输入 `liuying` 后面跟上 `;r` 进入人名选择
 
-  {{< image src="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_18-52-16.png" title="人名输入" >}}
+  {{< image src="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_18-52-16.webp" title="人名输入" >}}
 
 - U 模式输入，全拼模式下输入 U 进入，可根据笔画、拆分的方式输入汉字以及输入多种符号。例如：输入 `uhs` 表示“十”（笔画模式：横竖），`ushuishuishui` 表示“淼”，还有 `uudw`、`uuxh`、`uuts`、`uubd`、`uusx`、`uujh` 和 `uuzm` 等多种符号模式。
 
-  {{< image src="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_18-52-24.png" title="U 模式" >}}
+  {{< image src="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_18-52-24.webp" title="U 模式" >}}
 
 - V 模式输入，全拼模式下输入 V 进入，可以输入中文格式数字、日期和时间等。例如：输入 `v123` 可以选择“一百二十三”、“壹佰贰拾叁”中文格式数字，`v2020.6.7` 可以选择 2020 年 6 月 7 日、二〇二〇年六月七日等多种日期格式，`v1+2` 可以选择结果“3”或者公式“1+2=3”。
 
-  {{< image src="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_18-55-53.png" title="V 模式" >}}
+  {{< image src="/images/hugo/sougou-pinyin-lexicon-converts-to-win10ms-pinyin/Snipaste_2020-06-07_18-55-53.webp" title="V 模式" >}}
 
 {{< /admonition >}}
 

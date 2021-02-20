@@ -46,7 +46,7 @@ nps 分为服务端和客户端。服务端安装需要一台公有云服务器�
 
 [release](https://github.com/ehang-io/nps/releases/) 页面 TS 453Bmini 对应版本服务端和客户端。
 
-{{< image src="https://i.loli.net/2020/03/24/hPjpzXRe7JOo6kc.png" title="客户端和服务端" >}}
+{{< image src="/images/hugo/install-nps-on-qnap-nas/hPjpzXRe7JOo6kc.webp" title="客户端和服务端" >}}
 
 ### 服务端
 
@@ -118,24 +118,24 @@ nps 支持配置文件和无配置文件使用，这里介绍无配置文件，�
 
 登录 web 界面（云服务器 ip:8080），默认用户名：admin，默认密码：123。如果之前安装服务端时有修改`web_password`和`web_username`，请自行修改。
 
-{{< image src="https://i.loli.net/2020/03/27/YPyvrejJt8ZMqzf.png" title="web 管理界面" >}}
+{{< image src="/images/hugo/install-nps-on-qnap-nas/YPyvrejJt8ZMqzf.webp" title="web 管理界面" >}}
 
 添加一个客户端，根据需求进行配置，无论访问端使用何种模式，这一步都是必须的设置。
 
-{{< image src="https://i.loli.net/2020/03/27/ZLjniV9QubNKx7a.png" title="新增客户端" >}}
+{{< image src="/images/hugo/install-nps-on-qnap-nas/ZLjniV9QubNKx7a.webp" title="新增客户端" >}}
 
 如果不需要客户端配置文件连接，可以按照如下设置：
 
-{{< image src="https://i.loli.net/2020/03/27/h9zIYqfBiuOtkpd.png" title="客户端配置" >}}
+{{< image src="/images/hugo/install-nps-on-qnap-nas/h9zIYqfBiuOtkpd.webp" title="客户端配置" >}}
 
 <span id="client-command"></span>
 新增保存后，点击客户端记录前面的 `+` 号，主要关注`客户端命令`这一行，稍后会用到。顺带可以看下配置是否正确，如果需要修改可以点击`选项`下面的`编辑`按钮。
 
-{{< image src="https://i.loli.net/2020/03/27/2GPmYnecQEKM56L.png" title="客户端命令" >}}
+{{< image src="/images/hugo/install-nps-on-qnap-nas/2GPmYnecQEKM56L.webp" title="客户端命令" >}}
 
 接下来创建一个 p2p 连接，在刚创建的客户端`查看`下面点击`隧道`，新增一个 p2p 隧道。
 
-{{< image src="https://i.loli.net/2020/03/27/EbyMK9vZIoBfXH8.png" title="p2p 隧道设置">}}
+{{< image src="/images/hugo/install-nps-on-qnap-nas/EbyMK9vZIoBfXH8.webp" title="p2p 隧道设置">}}
 
 模式选择 p2p，目标填写被访问内网机器的 `IP:端口`（比如 192.168.50.100:8080），唯一标识密钥随便填。
 

@@ -275,7 +275,7 @@ hugo
 
 vscode 打开 public 目录，安装 Live Server 插件，点击状态栏右下角的 go live 启动本地站点，在浏览器中输入`http://127.0.0.1:5500/`访问。
 
-{{< figure src="https://i.loli.net/2020/03/21/L4ZHcNxepdg7vOG.png" title="站点运行效果" >}}
+{{< figure src="/images/hugo/install-hugo-on-qnap-nas/L4ZHcNxepdg7vOG.webp" title="站点运行效果" >}}
 
 ### 发布到 Coding Pages
 
@@ -298,7 +298,7 @@ git config --global user.email "你的邮箱"
 
 例如你的 Coding 账户昵称叫『大黑』，用户信息配置为：『名称 – 大白』，『邮箱 – dabai@coding.net 』。当你推送代码到 Coding 仓库后，动态显示如下图：
 
-{{< figure src="https://i.loli.net/2020/03/22/gRCm7v81YSAtIrL.png" title="用户信息" >}}
+{{< figure src="/images/hugo/install-hugo-on-qnap-nas/gRCm7v81YSAtIrL.webp" title="用户信息" >}}
 
 头像和『大黑』是 Coding 账户的用户头像和昵称，『大白』是配置的提交代码时的用户名称信息。
 

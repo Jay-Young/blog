@@ -128,8 +128,8 @@
         class="lazyload"
         src="/svg/loading/normal.min.svg"
         data-sizes="auto"
-        data-srcset="/images/hugo/domain-check-ssl/Konachan.com-322544.jpg, /images/hugo/domain-check-ssl/Konachan.com-322544.jpg 1.5x, /images/hugo/domain-check-ssl/Konachan.com-322544.jpg 2x"
-        data-src="/images/hugo/domain-check-ssl/Konachan.com-322544.jpg"
+        data-srcset="/images/hugo/domain-check-ssl/Konachan.com-322544.webp, /images/hugo/domain-check-ssl/Konachan.com-322544.webp 1.5x, /images/hugo/domain-check-ssl/Konachan.com-322544.webp 2x"
+        data-src="/images/hugo/domain-check-ssl/Konachan.com-322544.webp"
         alt="证书检查"
         title="证书检查" /></div><div class="details toc" id="toc-static">
                 <div class="details-summary toc-title">
@@ -148,13 +148,13 @@
 <p>自动申请并安装证书可以参考另一篇博文 <a href="/2020/05/apply-lets-encrypt-ca/" rel="">免费申请 Let&rsquo;s Encrypt 泛域名证书</a>。</p>
 <p>找了个现成的项目 <a href="https://github.com/SukkaW/CheckSSL" target="_blank" rel="noopener noreffer">CheckSSL</a>，稍微修改下，并接入了威联通的系统日志推送和企业微信的消息推送服务。<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 <h2 id="效果预览">效果预览</h2>
-<figure><a class="lightgallery" href="/images/hugo/domain-check-ssl/message-pushed.jpg" title="效果预览" data-thumbnail="/images/hugo/domain-check-ssl/message-pushed.jpg" data-sub-html="<h2>效果预览</h2><p>效果预览</p>">
+<figure><a class="lightgallery" href="/images/hugo/domain-check-ssl/message-pushed.webp" title="效果预览" data-thumbnail="/images/hugo/domain-check-ssl/message-pushed.webp" data-sub-html="<h2>效果预览</h2><p>效果预览</p>">
         <img
             class="lazyload"
             src="/svg/loading/normal.min.svg"
             data-sizes="auto"
-            data-srcset="/images/hugo/domain-check-ssl/message-pushed.jpg, /images/hugo/domain-check-ssl/message-pushed.jpg 1.5x, /images/hugo/domain-check-ssl/message-pushed.jpg 2x"
-            data-src="/images/hugo/domain-check-ssl/message-pushed.jpg"
+            data-srcset="/images/hugo/domain-check-ssl/message-pushed.webp, /images/hugo/domain-check-ssl/message-pushed.webp 1.5x, /images/hugo/domain-check-ssl/message-pushed.webp 2x"
+            data-src="/images/hugo/domain-check-ssl/message-pushed.webp"
             alt="效果预览" width="100%" />
     </a><figcaption class="image-caption">效果预览</figcaption>
     </figure>
@@ -473,7 +473,7 @@ errorMsg<span class="o">()</span> <span class="o">{</span>
 </span><span class="s1">                        &#34;title&#34;: &#34;域名证书检查错误&#34;,
 </span><span class="s1">                        &#34;description&#34;: &#34;&#39;</span><span class="nv">$WechatDate</span><span class="s1">&#39;：&#39;</span><span class="nv">$domain</span><span class="s1">&#39; 域名证书检查发生错误，请检查是否网络问题。&#34;,
 </span><span class="s1">                        &#34;url&#34;: &#34;https://qnap.233so.com/apps/sslstatus&#34;,
-</span><span class="s1">                        &#34;picurl&#34;: &#34;https://cdn.jsdelivr.net/gh/Jay-Young/jay-young.github.io@master/images/hugo/friend-link-shortcodes-for-hugo-loveit/Konachan.com-304807.jpg&#34;
+</span><span class="s1">                        &#34;picurl&#34;: &#34;https://cdn.jsdelivr.net/gh/Jay-Young/jay-young.github.io@master/images/hugo/friend-link-shortcodes-for-hugo-loveit/Konachan.com-304807.webp&#34;
 </span><span class="s1">                    }
 </span><span class="s1">                ]
 </span><span class="s1">            }
@@ -495,7 +495,7 @@ expiredMsg<span class="o">()</span> <span class="o">{</span>
 </span><span class="s1">                        &#34;title&#34;: &#34;域名证书已经过期&#34;,
 </span><span class="s1">                        &#34;description&#34;: &#34;&#39;</span><span class="nv">$WechatDate</span><span class="s1">&#39;：&#39;</span><span class="nv">$domain</span><span class="s1">&#39; 域名证书已经过期，请立即更新证书，避免访问错误。&#34;,
 </span><span class="s1">                        &#34;url&#34;: &#34;https://qnap.233so.com/apps/sslstatus&#34;,
-</span><span class="s1">                        &#34;picurl&#34;: &#34;https://cdn.jsdelivr.net/gh/Jay-Young/jay-young.github.io@master/images/hugo/friend-link-shortcodes-for-hugo-loveit/Konachan.com-304807.jpg&#34;
+</span><span class="s1">                        &#34;picurl&#34;: &#34;https://cdn.jsdelivr.net/gh/Jay-Young/jay-young.github.io@master/images/hugo/friend-link-shortcodes-for-hugo-loveit/Konachan.com-304807.webp&#34;
 </span><span class="s1">                    }
 </span><span class="s1">                ]
 </span><span class="s1">            }
@@ -517,7 +517,7 @@ warningMsg<span class="o">()</span> <span class="o">{</span>
 </span><span class="s1">                        &#34;title&#34;: &#34;域名证书即将过期&#34;,
 </span><span class="s1">                        &#34;description&#34;: &#34;&#39;</span><span class="nv">$WechatDate</span><span class="s1">&#39;：&#39;</span><span class="nv">$domain</span><span class="s1">&#39; 域名证书有效期不足 &#39;</span><span class="nv">$expireday</span><span class="s1">&#39; 天，请注意及时更新证书。&#34;,
 </span><span class="s1">                        &#34;url&#34;: &#34;https://qnap.233so.com/apps/sslstatus&#34;,
-</span><span class="s1">                        &#34;picurl&#34;: &#34;https://cdn.jsdelivr.net/gh/Jay-Young/jay-young.github.io@master/images/hugo/friend-link-shortcodes-for-hugo-loveit/Konachan.com-304807.jpg&#34;
+</span><span class="s1">                        &#34;picurl&#34;: &#34;https://cdn.jsdelivr.net/gh/Jay-Young/jay-young.github.io@master/images/hugo/friend-link-shortcodes-for-hugo-loveit/Konachan.com-304807.webp&#34;
 </span><span class="s1">                    }
 </span><span class="s1">                ]
 </span><span class="s1">            }
@@ -626,7 +626,7 @@ warningMsg<span class="o">()</span> <span class="o">{</span>
                             <a class="link-to-markdown" href="/2021/02/domain-check-ssl/index.md" target="_blank">阅读原始文档</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://blog.233so.com/2021/02/domain-check-ssl/" data-title="威联通：域名证书有效性检查脚本" data-hashtags="域名,证书,企业微信,消息推送"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://blog.233so.com/2021/02/domain-check-ssl/" data-title="威联通：域名证书有效性检查脚本" data-image="/images/hugo/domain-check-ssl/Konachan.com-322544.jpg"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="https://blog.233so.com/2021/02/domain-check-ssl/" data-title="威联通：域名证书有效性检查脚本"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微信" data-sharer="weixin" data-url="https://blog.233so.com/2021/02/domain-check-ssl/"><i class="fab fa-weixin fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://blog.233so.com/2021/02/domain-check-ssl/" data-title="威联通：域名证书有效性检查脚本" data-hashtags="域名,证书,企业微信,消息推送"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://blog.233so.com/2021/02/domain-check-ssl/" data-title="威联通：域名证书有效性检查脚本" data-image="/images/hugo/domain-check-ssl/Konachan.com-322544.webp"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="https://blog.233so.com/2021/02/domain-check-ssl/" data-title="威联通：域名证书有效性检查脚本"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微信" data-sharer="weixin" data-url="https://blog.233so.com/2021/02/domain-check-ssl/"><i class="fab fa-weixin fa-fw"></i></a></span>
             </div>
         </div>
     </div>

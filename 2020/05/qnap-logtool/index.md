@@ -36,5 +36,5 @@ log_tool -t 1 -N "myapp" -G "status" -a "this is a test message"
 
 在 `Web` 管理界面显示结果如下 :
 
-{{< image src="/images/hugo/qnap-logtool/Snipaste_2020-05-26_15-25-32.png" title="系统事件日志" >}}
+{{< image src="/images/hugo/qnap-logtool/Snipaste_2020-05-26_15-25-32.webp" title="系统事件日志" >}}
 

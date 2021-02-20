@@ -11,7 +11,7 @@
 
 ## 效果预览
 
-{{< image src="/images/hugo/domain-check-ssl/message-pushed.jpg" alt="效果预览" caption="效果预览" title="效果预览" width=100% >}}
+{{< image src="/images/hugo/domain-check-ssl/message-pushed.webp" alt="效果预览" caption="效果预览" title="效果预览" width=100% >}}
 
 首先，注册 [企业微信](https://work.weixin.qq.com/) 并在应用管理里自建一个应用。
 
@@ -143,7 +143,7 @@ errorMsg() {
                         "title": "域名证书检查错误",
                         "description": "'$WechatDate'：'$domain' 域名证书检查发生错误，请检查是否网络问题。",
                         "url": "https://qnap.233so.com/apps/sslstatus",
-                        "picurl": "https://cdn.jsdelivr.net/gh/Jay-Young/jay-young.github.io@master/images/hugo/friend-link-shortcodes-for-hugo-loveit/Konachan.com-304807.jpg"
+                        "picurl": "https://cdn.jsdelivr.net/gh/Jay-Young/jay-young.github.io@master/images/hugo/friend-link-shortcodes-for-hugo-loveit/Konachan.com-304807.webp"
                     }
                 ]
             }
@@ -165,7 +165,7 @@ expiredMsg() {
                         "title": "域名证书已经过期",
                         "description": "'$WechatDate'：'$domain' 域名证书已经过期，请立即更新证书，避免访问错误。",
                         "url": "https://qnap.233so.com/apps/sslstatus",
-                        "picurl": "https://cdn.jsdelivr.net/gh/Jay-Young/jay-young.github.io@master/images/hugo/friend-link-shortcodes-for-hugo-loveit/Konachan.com-304807.jpg"
+                        "picurl": "https://cdn.jsdelivr.net/gh/Jay-Young/jay-young.github.io@master/images/hugo/friend-link-shortcodes-for-hugo-loveit/Konachan.com-304807.webp"
                     }
                 ]
             }
@@ -187,7 +187,7 @@ warningMsg() {
                         "title": "域名证书即将过期",
                         "description": "'$WechatDate'：'$domain' 域名证书有效期不足 '$expireday' 天，请注意及时更新证书。",
                         "url": "https://qnap.233so.com/apps/sslstatus",
-                        "picurl": "https://cdn.jsdelivr.net/gh/Jay-Young/jay-young.github.io@master/images/hugo/friend-link-shortcodes-for-hugo-loveit/Konachan.com-304807.jpg"
+                        "picurl": "https://cdn.jsdelivr.net/gh/Jay-Young/jay-young.github.io@master/images/hugo/friend-link-shortcodes-for-hugo-loveit/Konachan.com-304807.webp"
                     }
                 ]
             }

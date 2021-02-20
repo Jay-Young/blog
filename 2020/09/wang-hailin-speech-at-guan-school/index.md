@@ -15,7 +15,7 @@
 
 **音频版：**
 
-{{< music url="/audios/汪海林：我与流量的战争.mp3" name=我与流量的战争 artist=汪海林 cover="/images/hugo/Wang-Hailin-Speech-at-Guan-School/guan-school.jpg" >}}
+{{< music url="/audios/汪海林：我与流量的战争.mp3" name=我与流量的战争 artist=汪海林 cover="/images/hugo/Wang-Hailin-Speech-at-Guan-School/guan-school.webp" >}}
 
 [^1]: [https://www.bilibili.com/video/BV1xD4y1o7TS](https://www.bilibili.com/video/BV1xD4y1o7TS)
 

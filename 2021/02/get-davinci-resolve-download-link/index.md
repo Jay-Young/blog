@@ -9,7 +9,7 @@
 
 预览效果：
 
-{{< image src="https://cdn.jsdelivr.net/gh/Jay-Young/jay-young.github.io/images/hugo/get-davinci-resolve-download-link/Snipaste_2021-02-19_22-49-02.png" alt="预览效果" caption="预览效果" title="预览效果" width=100% >}}
+{{< image src="/images/hugo/get-davinci-resolve-download-link/Snipaste_2021-02-19_22-49-02.webp" alt="预览效果" caption="预览效果" title="预览效果" width=100% >}}
 
 ## 基本思路
 
@@ -23,15 +23,15 @@
 
 ```json
 {
- "windows": {
-  "releaseId": "c5a5295d23814624828cdac1ecd34f4a",
-  "downloadId": "fd6f89e2ccb743d2a2d59ce5f9508fd8",
-  "major": 17,
-  "minor": 0,
-  "releaseNum": 0,
-  "build": 33,
-  "beta": 9
- }
+	"windows": {
+		"releaseId": "c5a5295d23814624828cdac1ecd34f4a",
+		"downloadId": "fd6f89e2ccb743d2a2d59ce5f9508fd8",
+		"major": 17,
+		"minor": 0,
+		"releaseNum": 0,
+		"build": 33,
+		"beta": 9
+	}
 }
 ```
 
@@ -189,9 +189,9 @@ showUrl() {
     -H 'Content-Type: application/json;charset=UTF-8' \
     -d '{"product":"null","country":"cn","firstname":"null","lastname":"null","email":"null@null.com","phone":"1","city":"null"}')
   if [ $VERSION = "latest-stable-version" ]; then
-    echo -e "\e[1;35m您选择的产品是 $DISPLAY_NAME $PLATFORM 16: \e[0m"
+    echo -e "\e[1;35m您选择的产品是 $DISPLAY_NAME 16 $PLATFORM 版本: \e[0m"
   elif [ $VERSION = "latest-version" ]; then
-    echo -e "\e[1;35m您选择的产品是 $DISPLAY_NAME $PLATFORM 17: \e[0m"
+    echo -e "\e[1;35m您选择的产品是 $DISPLAY_NAME 17 $PLATFORM 版本: \e[0m"
   fi
   echo $downloadUrl
 }
@@ -306,7 +306,7 @@ curl -s "http://www.blackmagicdesign.com/api/support/%VERSION%/%EDITION%/%PLATFO
 set "downloadIdFile=downloadId.json"
 set "psCmd="add-type -As System.Web.Extensions;$JSON = new-object Web.Script.Serialization.JavaScriptSerializer;$JSON.DeserializeObject($input).%PLATFORM%.downloadId""
 for /f %%I in ('^<"%downloadIdFile%" powershell -noprofile %psCmd%') do set "downloadId=%%I"
-echo 您选择的产品是 %EDITION_NAME% %PLATFORM% %VERSION_NAME%:  > url.txt
+echo 您选择的产品是 %EDITION_NAME% %VERSION_NAME% %PLATFORM% 版本:  > url.txt
 curl -s "http://www.blackmagicdesign.com/api/register/cn/download/%downloadId%" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36 Edg/88.0.705.74" -H "Content-Type: application/json;charset=UTF-8" -d "{\"product\":\"null\",\"country\":\"cn\",\"firstname\":\"null\",\"lastname\":\"null\",\"email\":\"null@null.com\",\"phone\":\"1\",\"city\":\"null\"}" >> url.txt
 start notepad url.txt
 goto menu

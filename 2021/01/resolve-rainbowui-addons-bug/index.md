@@ -17,7 +17,7 @@
 
 最后，功夫不负有心人，问题的罪魁祸首是“聊天按钮和功能增强”插件，有可能是更新了版本的问题导致插件有冲突吧，反正这个插件也不是必须的，直接不用了就 OK 了。
 
-{{< image src="/images/hugo/resolve-rainbowui-addons-bug/Snipaste_2021-01-25_00-12-12.png"   alt="聊天按钮和功能增强" caption="聊天按钮和功能增强" title="聊天按钮和功能增强" width=100% >}}
+{{< image src="/images/hugo/resolve-rainbowui-addons-bug/Snipaste_2021-01-25_00-12-12.webp"   alt="聊天按钮和功能增强" caption="聊天按钮和功能增强" title="聊天按钮和功能增强" width=100% >}}
 
 [^1]: [https://addons.miliui.com/show/1/all#q15](https://addons.miliui.com/show/1/all#q15)
 

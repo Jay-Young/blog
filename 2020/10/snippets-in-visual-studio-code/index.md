@@ -13,7 +13,7 @@
 
 VS Code 已经为一些常用语言，例如 `JavaScript`, `TypeScript`, `Markdown` 和 `PHP`, 内置了大量常用代码片段。
 
-{{< image src="/images/hugo/Snippets-in-Visual-Studio-Code/builtin-javascript-snippets.png" alt="builtin-javascript-snippets" caption="builtin-javascript-snippets" title="builtin-javascript-snippets" width=100% >}}
+{{< image src="/images/hugo/Snippets-in-Visual-Studio-Code/builtin-javascript-snippets.webp" alt="builtin-javascript-snippets" caption="builtin-javascript-snippets" title="builtin-javascript-snippets" width=100% >}}
 
 在命令面板中输入 `Insert Snippet` 可以查看支持当前文件的所有代码片段，包括用户自定义片段和已安装扩展内置的片段。
 
@@ -37,7 +37,7 @@ VS Code 已经为一些常用语言，例如 `JavaScript`, `TypeScript`, `Markdo
 
 用户可以轻松自定义片段，通过选择文件 → 首选项 → 用户片段，然后选择为此片段关联的语言或者设置为全局片段。
 
-{{< image src="/images/hugo/Snippets-in-Visual-Studio-Code/snippet-dropdown.png" alt="snippet-dropdown" caption="snippet-dropdown" title="snippet-dropdown" width=100% >}}
+{{< image src="/images/hugo/Snippets-in-Visual-Studio-Code/snippet-dropdown.webp" alt="snippet-dropdown" caption="snippet-dropdown" title="snippet-dropdown" width=100% >}}
 
 代码片段文件以 JSON 文件定义，支持 C-style 注释，不限制代码片段数量上限。
 

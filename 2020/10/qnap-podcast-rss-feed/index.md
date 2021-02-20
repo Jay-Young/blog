@@ -11,7 +11,7 @@
 
 威联通官方的 Download Station 是支持订阅链接的解析的，所以将津津乐道播客的订阅链接 `https://feeds.jjldbk.com/all.xml` 添加到 RSS 里面，然后选择需要下载的节目添加到下载任务，至于后续节目更新了也是需要手动来下载的。
 
-{{< image src="/images/hugo/qnap-podcast-rss-feed/Snipaste_2020-10-20_00-03-12.png"  alt="ds5" caption="ds5" title="ds5" width=100% >}}
+{{< image src="/images/hugo/qnap-podcast-rss-feed/Snipaste_2020-10-20_00-03-12.webp"  alt="ds5" caption="ds5" title="ds5" width=100% >}}
 
 ## 脚本自动化
 
@@ -79,7 +79,7 @@ Podcast Generator [^1] 是一个基于 Web 的播客系统，本身似乎支持 
 
 当然作为一个播客系统，Podcast Generator 可以将已经下载的播客节目索引以后直接在其提供的 Web 界面上收听。只要将 `config.php` 中的 `$upload_dir` 指向存储播客节目的目录，然后在管理界面通过 `FTP Auto Indexing` 来自动添加即可。
 
-{{< image src="/images/hugo/qnap-podcast-rss-feed/Snipaste_2020-10-20_00-39-44.png"  alt="Podcast Generator" caption="Podcast Generator" title="Podcast Generator" width=100% >}}
+{{< image src="/images/hugo/qnap-podcast-rss-feed/Snipaste_2020-10-20_00-39-44.webp"  alt="Podcast Generator" caption="Podcast Generator" title="Podcast Generator" width=100% >}}
 
 这个默认界面是丑了点，而且从功能性来讲也不好用，还不如使用 Plex 或者 Kodi 这种媒体服务器。如果只是想要在 NAS 上收听播客，Plex 本身也是支持订阅链接的，在 Plex 的设置——在线媒体资源界面启用 PODCASTS 功能。
 

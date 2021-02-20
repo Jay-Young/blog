@@ -26,11 +26,11 @@
 
 直接通过 [ `App Center` ] 应用中心安装:
 
-{{< figure src="/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517143450.png" >}}
+{{< figure src="/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517143450.webp" >}}
 
-{{< figure src="/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517143543.png" >}}
+{{< figure src="/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517143543.webp" >}}
 
-{{< figure src="/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517143624.png" >}}
+{{< figure src="/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517143624.webp" >}}
 
 ## 创建 QPKG
 
@@ -49,7 +49,7 @@
   shared/  x86/  x86_64/  x86_ce53xx/
   ```
 
-{{< figure src="/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517152423.png" >}}
+{{< figure src="/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517152423.webp" >}}
 
 ### 修改配置
 
@@ -60,7 +60,7 @@
 
 可以使用 `vi` 或者其他文本编辑器进行编辑
 
-{{< image src="/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517153124.png" title="edit qpkg.cfg" >}}
+{{< image src="/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517153124.webp" title="edit qpkg.cfg" >}}
 
 ### 自定义 QPKG 安装命令
 
@@ -75,7 +75,7 @@
   - `Start` : 当启动应用时执行的命令
   - `Stop` : 当停止应用时执行的命令
 
-{{< image src="/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517154214.png" title="edit install scripts" >}}
+{{< image src="/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517154214.webp" title="edit install scripts" >}}
 
 ### 添加文件到 QPKG
 
@@ -107,7 +107,7 @@
   MyQPKG_0.1.qpkg  MyQPKG_0.1.qpkg.md5
   ```
 
-{{< figure src="/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517160058.png" >}}
+{{< figure src="/images/hugo/qdk-quick-start-guide-zh/QQ拼音截图20200517160058.webp" >}}
 
 ## 关于更多详细开发内容
 

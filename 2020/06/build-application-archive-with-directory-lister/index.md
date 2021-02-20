@@ -20,7 +20,7 @@
 
 - 启用 Web 服务器
   - 控制台 → 应用服务 → Web 服务器，启用 Web 服务器，根据需求修改端口和是否启用 HTTPS
-    {{< image src="/images/hugo/build-application-archive-with-directory-lister/Snipaste_2020-06-25_18-58-43.png" title="" >}}
+    {{< image src="/images/hugo/build-application-archive-with-directory-lister/Snipaste_2020-06-25_18-58-43.webp" title="" >}}
 - PHP 版本 >= 7.2
   - 开启压缩下载功能，需要启用 Zip 扩展
   - 开启 Readme 文件渲染功能，需要启用 DOM 和 Fileinfo 扩展

@@ -41,7 +41,7 @@ SSH 连接到 NAS 系统，切换到 code-server 所在目录。[如何开启 SS
 https://marketplace.visualstudio.com/_apis/public/gallery/publishers/MS-CEINTL/vsextensions/vscode-language-pack-zh-hans/<version>/vspackage
 ```
 
-{{< figure src="https://i.loli.net/2020/02/27/wkrBYj5EfAZ6DoU.png" title="Chinese-Language-Pack" >}}
+{{< figure src="/images/hugo/qnap-codeserver-self-host/wkrBYj5EfAZ6DoU.webp" title="Chinese-Language-Pack" >}}
 
 插件安装命令
 
@@ -116,7 +116,7 @@ daemon_mgr code-server start "/<your-shell-script-path>/<you-shell-script> start
 
 重启 NAS 后，管理脚本会自动运行 code-server，浏览器打开`http://<your-nas-ip>:8080/`即可使用。
 
-{{< figure src="https://i.loli.net/2020/02/28/G3PyStwl6h7TVdq.png" title="code-server-online-in-browser" >}}
+{{< figure src="/images/hugo/qnap-codeserver-self-host/G3PyStwl6h7TVdq.webp" title="code-server-online-in-browser" >}}
 
 ## 后记
 

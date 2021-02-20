@@ -95,11 +95,11 @@
 
 另外，设备的 Web 管理界面是运行在 9999 端口上的，其他固定开放的端口还有 1988, 4321, 6881, 8900, 39531, 其他端口似乎是特定服务运行时开启，每次都不一样。
 
-{{< image src="/images/hugo/onethingpcs-box3/Snipaste_2020-07-17_03-04-10.png" title="开放的端口" >}}
+{{< image src="/images/hugo/onethingpcs-box3/Snipaste_2020-07-17_03-04-10.webp" title="开放的端口" >}}
 
 偶然一次发现瞬时能跑到 40Mbps 上行带宽，然而坚持了 1 分钟都不到，看起来应该是连上了的某个 BT 上传服务。
 
-{{< image src="/images/hugo/onethingpcs-box3/Snipaste_2020-07-18_09-02-37.png" title="瞬时带宽" >}}
+{{< image src="/images/hugo/onethingpcs-box3/Snipaste_2020-07-18_09-02-37.webp" title="瞬时带宽" >}}
 
 目前（7 月 18 日），官方全新价格 180 元，官方 99 新无外包装盒 79 元，闲鱼二手价格 75-85/台，10 台起售的 69/台。固态硬盘虽好，但是成本也高，500G 或 1TB 的二手机械硬盘（品牌机拆机盘）+ SATA 转 USB 看起来是非常廉价的方案。
 

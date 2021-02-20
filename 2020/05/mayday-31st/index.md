@@ -5,7 +5,7 @@
 
 <!--more-->
 
-{{< image src="/images/hugo/mayday-31st/IMG_1562.JPG" title="10km" >}}
+{{< image src="/images/hugo/mayday-31st/IMG_1562.webp" title="10km" >}}
 
 > 实测最大心率: 190, 静息心率: 50, 储备心率: 140
 

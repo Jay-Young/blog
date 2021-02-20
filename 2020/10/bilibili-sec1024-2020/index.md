@@ -10,7 +10,7 @@
 题目地址: [http://45.113.201.36/index.html](http://45.113.201.36/index.html)
 
 直接 F12 审查元素，搜索 `flag1` 即可。是个输入框被隐藏了，它的值就是答案了。
-{{< image src="/images/hugo/bilibili-sec1024-2020/flag1.png"   alt="flag1" caption="flag1" title="flag1" width=100% >}}
+{{< image src="/images/hugo/bilibili-sec1024-2020/flag1.webp"   alt="flag1" caption="flag1" title="flag1" width=100% >}}
 
 ## 0x02 真正的秘密只有特殊的设备才能看到
 
@@ -19,7 +19,7 @@
 还是这个页面，页面都很直白地提示需要使用 `bilibili Security Browser` 浏览器访问～
 
 那么就是把浏览器 UA 改成 `bilibili Security Browser` 就可以了。
-{{< image src="/images/hugo/bilibili-sec1024-2020/flag2.png"   alt="flag2" caption="flag2" title="flag2" width=100% >}}
+{{< image src="/images/hugo/bilibili-sec1024-2020/flag2.webp"   alt="flag2" caption="flag2" title="flag2" width=100% >}}
 
 前面两题开胃小菜还是比较容易的，基本上审查下网页就知道解题关键在哪里了。
 
@@ -30,7 +30,7 @@
 用字典暴力破解，不存在的，就是猜，肯定是个弱密码或者和 b 站有关的。
 
 管理员の账号猜测用户名就是常见的 `admin` 啦，密码就是 `bilibili` 了。
-{{< image src="/images/hugo/bilibili-sec1024-2020/flag3.png"   alt="flag3" caption="flag3" title="flag3" width=100% >}}
+{{< image src="/images/hugo/bilibili-sec1024-2020/flag3.webp"   alt="flag3" caption="flag3" title="flag3" width=100% >}}
 
 ## 0x04 对不起，权限不足
 
@@ -47,7 +47,7 @@ F12 检视下 `cookie` 有哪些值，看到 `role` 就知道要修改这个为�
 看到默认的这些字符首先考虑是 md5 算法以后的，那么试试页面地址的这个 `superadmin`，好像不对。
 
 最后看了别人的提示是 Windows 的默认管理员用户名 `Administrator` 经 md5 算法后。
-{{< image src="/images/hugo/bilibili-sec1024-2020/flag4.png"   alt="flag4" caption="flag4" title="flag4" width=100% >}}
+{{< image src="/images/hugo/bilibili-sec1024-2020/flag4.webp"   alt="flag4" caption="flag4" title="flag4" width=100% >}}
 
 ## 0x05 别人的秘密
 
@@ -100,7 +100,7 @@ $(function () {
 
 接下来就简单了，循环遍历就可以。先循环个 50 次再说。
 
-{{< image src="/images/hugo/bilibili-sec1024-2020/flag5.png"   alt="flag5" caption="flag5" title="flag5" width=100% >}}
+{{< image src="/images/hugo/bilibili-sec1024-2020/flag5.webp"   alt="flag5" caption="flag5" title="flag5" width=100% >}}
 
 ```javascript
 for (let index = 100336889; index < 100336939; index++) {

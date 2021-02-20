@@ -9,19 +9,19 @@ Windows To Go<sup>[[1]](https://docs.microsoft.com/zh-cn/windows/deployment/plan
 
 之前升级过一次 Windows To Go 系统, 是从 1709 升级到 1803, 记得好像用的是 VMware Workstation 15 Player。现在 1803 早就过了服务终止日期<sup>[[2]](https://support.microsoft.com/zh-cn/help/13853/windows-lifecycle-fact-sheet)</sup>，这次试着用 Hyper-V 来升级下。
 
-{{< image src="/images/hugo/windows-to-go-update/Snipaste_2020-06-02_18-54-32.png" title="Windows 10 1803" >}}
+{{< image src="/images/hugo/windows-to-go-update/Snipaste_2020-06-02_18-54-32.webp" title="Windows 10 1803" >}}
 
 ## 启用 Hyper-V
 
 打开控制面板 → 程序和功能 → 启用或关闭 Windows 功能，勾选 Hyper-V，等待加载完毕后重启电脑。
 
-{{< image src="/images/hugo/windows-to-go-update/Snipaste_2020-06-01_23-19-50.png" title="启用 Hyper-V" >}}
+{{< image src="/images/hugo/windows-to-go-update/Snipaste_2020-06-01_23-19-50.webp" title="启用 Hyper-V" >}}
 
 ## 设置 WTG 优盘
 
 WTG 优盘连接以后，打开磁盘管理，将优盘设置为脱机。
 
-{{< image src="/images/hugo/windows-to-go-update/Snipaste_2020-06-02_23-42-13.png" title="设置脱机" >}}
+{{< image src="/images/hugo/windows-to-go-update/Snipaste_2020-06-02_23-42-13.webp" title="设置脱机" >}}
 
 ## 新建虚拟机
 
@@ -39,23 +39,23 @@ WTG 优盘连接以后，打开磁盘管理，将优盘设置为脱机。
 
 完成设置后，我这边一开始启动报错，根据提示关闭设置里的检查点就可以了。
 
-{{< image src="/images/hugo/windows-to-go-update/Snipaste_2020-06-02_19-49-31.png" title="加载硬盘驱动器" >}}
+{{< image src="/images/hugo/windows-to-go-update/Snipaste_2020-06-02_19-49-31.webp" title="加载硬盘驱动器" >}}
 
-{{< image src="/images/hugo/windows-to-go-update/Snipaste_2020-06-02_19-50-05.png" title="新建虚拟交换机" >}}
+{{< image src="/images/hugo/windows-to-go-update/Snipaste_2020-06-02_19-50-05.webp" title="新建虚拟交换机" >}}
 
-{{< image src="/images/hugo/windows-to-go-update/Snipaste_2020-06-02_19-50-24.png" title="设置网络适配器" >}}
+{{< image src="/images/hugo/windows-to-go-update/Snipaste_2020-06-02_19-50-24.webp" title="设置网络适配器" >}}
 
-{{< image src="/images/hugo/windows-to-go-update/Snipaste_2020-06-02_19-49-54.png" title="关闭检查点" >}}
+{{< image src="/images/hugo/windows-to-go-update/Snipaste_2020-06-02_19-49-54.webp" title="关闭检查点" >}}
 
 ## 更新系统
 
 登入系统后，进入正常自动更新的流程或者通过加载系统镜像来手动更新。
 
-{{< image src="/images/hugo/windows-to-go-update/Snipaste_2020-06-02_20-28-56.png" title="检查更新" >}}
+{{< image src="/images/hugo/windows-to-go-update/Snipaste_2020-06-02_20-28-56.webp" title="检查更新" >}}
 
-{{< image src="/images/hugo/windows-to-go-update/Snipaste_2020-06-02_20-31-12.png" title="安装更新" >}}
+{{< image src="/images/hugo/windows-to-go-update/Snipaste_2020-06-02_20-31-12.webp" title="安装更新" >}}
 
-{{< image src="/images/hugo/windows-to-go-update/Snipaste_2020-06-02_23-37-56.png" title="Windows 10 1903" >}}
+{{< image src="/images/hugo/windows-to-go-update/Snipaste_2020-06-02_23-37-56.webp" title="Windows 10 1903" >}}
 
 ## 结论
 

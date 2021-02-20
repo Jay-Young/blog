@@ -31,19 +31,19 @@ Microsoft Edge v83 已经正式支持扩展同步功能！
 
 1. 打开[https://robwu.nl/crxviewer](https://robwu.nl/crxviewer/)这个网址，上传你的 crx 文件
 
-{{< figure src="https://i.loli.net/2020/02/22/uvQZoR1SAzhPLXB.png" title="robwu网站" >}}
+{{< figure src="/images/hugo/install-edge-extensions-via-registry/uvQZoR1SAzhPLXB.webp" title="robwu网站" >}}
 
 2. 在左边栏点击`manifest.json`，记录下`version`后面的版本号
 
-{{< figure src="https://i.loli.net/2020/02/22/qUWBm7Xi5kQFCgK.png" title="manifest.json" >}}
+{{< figure src="/images/hugo/install-edge-extensions-via-registry/qUWBm7Xi5kQFCgK.webp" title="manifest.json" >}}
 
 3. 点击上方的`Show analysis`，记录下`Extension ID`后面那一串唯一 ID
 
-{{< figure src="https://i.loli.net/2020/02/22/qsklcopI4idROwt.png" title="Show analysis" >}}
+{{< figure src="/images/hugo/install-edge-extensions-via-registry/qsklcopI4idROwt.webp" title="Show analysis" >}}
 
 4. 打开注册表，Edge 在`HKEY_CURRENT_USER\Software\Microsoft\Edge\Extensions`下面新建项，命名为第 3 步中记录的唯一 ID
 
-{{< figure src="https://i.loli.net/2020/02/22/fLK5OSnUv9pi3xr.png" title="regedit_edge" >}}
+{{< figure src="/images/hugo/install-edge-extensions-via-registry/fLK5OSnUv9pi3xr.webp" title="regedit_edge" >}}
 
 5. 在右边新建一个字符串`path`，将它的值修改为 crx 文件在你电脑上的绝对路径，比如`C:\Program Files (x86)\Internet Download Manager\IDMGCExt.crx`（IDM 的扩展就是在安装软件的时候这样被自动安装上去的）
 
@@ -61,7 +61,7 @@ Microsoft Edge v83 已经正式支持扩展同步功能！
 
 3. 右边新建两个字符串`path`和`update_url`，`path`的值是第 1 步的网址，而`update_url`的值，Edge 商店是`https://extensionwebstorebase.edgesv.net/v1/crx`，Chrome 商店是`http://clients2.google.com/service/update2/crx`
 
-{{< figure src="https://i.loli.net/2020/02/22/AyzlIhwC3PrxQeK.png" title="regedit_online" >}}
+{{< figure src="/images/hugo/install-edge-extensions-via-registry/AyzlIhwC3PrxQeK.webp" title="regedit_online" >}}
 
 4. 等待扩展安装成功，然后手动启用下扩展。在线版的扩展后续应该能够自动更新，这个要等待时间验证了。
 

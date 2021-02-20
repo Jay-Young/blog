@@ -19,7 +19,7 @@ DzzOffice 是一套开源办公套件，适用于企业、团队搭建自己的 
 
 ## 功能
 
-{{< image src="/images/hugo/DzzOffice-Installation-for-QNAP-NAS/Snipaste_2020-07-19_14-04-26.png" title="功能" >}}
+{{< image src="/images/hugo/DzzOffice-Installation-for-QNAP-NAS/Snipaste_2020-07-19_14-04-26.webp" title="功能" >}}
 
 - **网盘**: 企业、团队文件集中管理。主要体现的功能是支持企业部门的组织架构建立共享目录，也支持组的方式灵活建立共享目录。支持文件标签，多- 版本，评论，详细的目录权限等协作功能。
 
@@ -76,9 +76,9 @@ C --> E(启用 Web 服务器)
 D --> F(启用 SQL 服务器)
 {{< /mermaid >}}
 
-{{< image src="/images/hugo/build-application-archive-with-directory-lister/Snipaste_2020-06-25_18-58-43.png" title="启用 Web 服务器" >}}
+{{< image src="/images/hugo/build-application-archive-with-directory-lister/Snipaste_2020-06-25_18-58-43.webp" title="启用 Web 服务器" >}}
 
-{{< image src="/images/hugo/DzzOffice-Installation-for-QNAP-NAS/Snipaste_2020-07-19_15-01-17.png" title="启用 SQL 服务器" >}}
+{{< image src="/images/hugo/DzzOffice-Installation-for-QNAP-NAS/Snipaste_2020-07-19_15-01-17.webp" title="启用 SQL 服务器" >}}
 
 ### 部署程序
 
@@ -86,15 +86,15 @@ D --> F(启用 SQL 服务器)
 
 威联通默认数据库用户名为 root，密码是 admin，如果不对可以在控制台的 SQL 服务器设置页面更改根密码。
 
-{{< image src="/images/hugo/DzzOffice-Installation-for-QNAP-NAS/Snipaste_2020-07-19_14-07-29.png" title="开始安装" >}}
-{{< image src="/images/hugo/DzzOffice-Installation-for-QNAP-NAS/Snipaste_2020-07-19_14-08-19.png" title="环境检查" >}}
-{{< image src="/images/hugo/DzzOffice-Installation-for-QNAP-NAS/Snipaste_2020-07-19_14-09-15.png" title="权限检查" >}}
-{{< image src="/images/hugo/DzzOffice-Installation-for-QNAP-NAS/Snipaste_2020-07-19_14-12-15.png" title="数据库设置" >}}
-{{< image src="/images/hugo/DzzOffice-Installation-for-QNAP-NAS/Snipaste_2020-07-19_14-13-35.png" title="管理员设置" >}}
-{{< image src="/images/hugo/DzzOffice-Installation-for-QNAP-NAS/Snipaste_2020-07-19_14-16-18.png" title="安装成功" >}}
-{{< image src="/images/hugo/DzzOffice-Installation-for-QNAP-NAS/Snipaste_2020-07-19_14-17-51.png" title="登录界面" >}}
-{{< image src="/images/hugo/DzzOffice-Installation-for-QNAP-NAS/Snipaste_2020-07-19_14-18-23.png" title="初始安装指导页面" >}}
-{{< image src="/images/hugo/DzzOffice-Installation-for-QNAP-NAS/Snipaste_2020-07-19_14-19-29.png" title="应用市场" >}}
+{{< image src="/images/hugo/DzzOffice-Installation-for-QNAP-NAS/Snipaste_2020-07-19_14-07-29.webp" title="开始安装" >}}
+{{< image src="/images/hugo/DzzOffice-Installation-for-QNAP-NAS/Snipaste_2020-07-19_14-08-19.webp" title="环境检查" >}}
+{{< image src="/images/hugo/DzzOffice-Installation-for-QNAP-NAS/Snipaste_2020-07-19_14-09-15.webp" title="权限检查" >}}
+{{< image src="/images/hugo/DzzOffice-Installation-for-QNAP-NAS/Snipaste_2020-07-19_14-12-15.webp" title="数据库设置" >}}
+{{< image src="/images/hugo/DzzOffice-Installation-for-QNAP-NAS/Snipaste_2020-07-19_14-13-35.webp" title="管理员设置" >}}
+{{< image src="/images/hugo/DzzOffice-Installation-for-QNAP-NAS/Snipaste_2020-07-19_14-16-18.webp" title="安装成功" >}}
+{{< image src="/images/hugo/DzzOffice-Installation-for-QNAP-NAS/Snipaste_2020-07-19_14-17-51.webp" title="登录界面" >}}
+{{< image src="/images/hugo/DzzOffice-Installation-for-QNAP-NAS/Snipaste_2020-07-19_14-18-23.webp" title="初始安装指导页面" >}}
+{{< image src="/images/hugo/DzzOffice-Installation-for-QNAP-NAS/Snipaste_2020-07-19_14-19-29.webp" title="应用市场" >}}
 
 安装完成以后可以按照自己的需求安装应用和设置。
 

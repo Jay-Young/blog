@@ -18,9 +18,9 @@ C --> E(启用 Web 服务器)
 D --> F(勾选 WebDAV 权限和专用端口)
 {{< /mermaid >}}
 
-{{< image src="/images/hugo/build-application-archive-with-directory-lister/Snipaste_2020-06-25_18-58-43.png" title="启用 Web 服务器" >}}
+{{< image src="/images/hugo/build-application-archive-with-directory-lister/Snipaste_2020-06-25_18-58-43.webp" title="启用 Web 服务器" >}}
 
-{{< image src="/images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-00-13.png" title="启用 WebDAV" >}}
+{{< image src="/images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-00-13.webp" title="启用 WebDAV" >}}
 
 - 启用共享文件夹的 WebDAV 权限
 
@@ -33,7 +33,7 @@ D --> E(权限类别: WebDAV)
 E --> F(无限制, 勾选允许的用户)
 {{< /mermaid >}}
 
-{{< image src="/images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-07-46.png" title="设置权限" >}}
+{{< image src="/images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-07-46.webp" title="设置权限" >}}
 
 - Joplin 客户端设置（以 Windows 平台为例）
 
@@ -60,7 +60,7 @@ request to https://mydomain.com:5008/joplin/ failed, reason: unable to verify th
 
 解决方案是打开高级选项，勾选忽略 TLS 证书错误或者自定义 TLS 证书，搜了一圈没找到更完美的解决方法。
 
-{{< image src="/images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-27-23.png" title="Joplin 客户端设置" >}}
+{{< image src="/images/hugo/Joplin-WebDAV-Synchronisation-for-QNAP-NAS/Snipaste_2020-07-19_13-27-23.webp" title="Joplin 客户端设置" >}}
 
 ## 同步到坚果云
 

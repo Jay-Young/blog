@@ -7,9 +7,9 @@ iOS 14 引入了 WiFi 的私有地址防止网络运营商追踪你的设备，�
 
 关闭前：
 
-{{< image src="/images/hugo/fix-wifi-connection-failure-in-ios14/IMG_1610.PNG" title="关闭前" >}}
+{{< image src="/images/hugo/fix-wifi-connection-failure-in-ios14/IMG_1610.webp" title="关闭前" >}}
 
 关闭后：
 
-{{< image src="/images/hugo/fix-wifi-connection-failure-in-ios14/IMG_1611.PNG" title="关闭后" >}}
+{{< image src="/images/hugo/fix-wifi-connection-failure-in-ios14/IMG_1611.webp" title="关闭后" >}}
 

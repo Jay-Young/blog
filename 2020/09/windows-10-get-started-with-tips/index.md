@@ -9,7 +9,7 @@
 
 Windows 10 中附带的“使用技巧”应用在 Windows 中的精彩应用会让你大开眼界。若要查找该应用，请在设备上按“打开‘使用技巧’应用”按钮或选择“开始”菜单 :(fab fa-windows): >“使用技巧 :(fas fa-lightbulb):”。然后在搜索框中键入“Windows”，或选择“浏览所有使用技巧”以查看有关其他功能的使用技巧。也可以在 Web 上转到 [Microsoft 使用技巧](https://www.microsoft.com/tips)。[^1]
 
-{{< image src="/images/hugo/windows-10-get-started-with-tips/Tips.png" alt="使用技巧" caption="使用技巧" title="使用技巧" width=90% >}}
+{{< image src="/images/hugo/windows-10-get-started-with-tips/Tips.webp" alt="使用技巧" caption="使用技巧" title="使用技巧" width=90% >}}
 
 如果你的 Windows 是其他版本或者卸载了此应用，可以从 [Microsoft Store](https://www.microsoft.com/store/productId/9WZDNCRDTBJJ) 免费下载“使用技巧”。
 
@@ -72,7 +72,7 @@ Get-AppxPackage -allusers Microsoft.549981C3F5F10 | Remove-AppxPackage
 
 - 修改完成后请重启系统，重启后转到系统设置应用---系统---显示--图形设置---开启硬件加速 GPU 调度功能。注意开启调度功能后需要再次重启系统才能使该选项生效，同理如需关闭的话需要在关闭后重启系统使之生效等。
 
-{{< image src="/images/hugo/windows-10-get-started-with-tips/Snipaste_2020-09-13_16-43-09.png" alt="GPU 调度" caption="GPU 调度" title="GPU 调度" width=100% >}}
+{{< image src="/images/hugo/windows-10-get-started-with-tips/Snipaste_2020-09-13_16-43-09.webp" alt="GPU 调度" caption="GPU 调度" title="GPU 调度" width=100% >}}
 
 ## 引用
 
