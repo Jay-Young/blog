@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/posts/</link>
         <description>所有文章 | Jay</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 19 Feb 2021 21:58:09 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 24 Feb 2021 19:49:51 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+                <title>Matebook X Pro 2019 固态硬盘扩容手记</title>
+                <link>https://blog.233so.com/2021/02/replace-the-default-ssd-drive-of-matebook-x-pro-2019/</link>
+                <pubDate>Wed, 24 Feb 2021 19:49:51 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2021/02/replace-the-default-ssd-drive-of-matebook-x-pro-2019/</guid>
+                <description>手上有一块差不多去年这个时候购买的海康威视 C2000 Pro 固态硬盘，容量是 2T，方案是慧荣 SM2262EN 主控 &#43; 紫光颗粒（据说是打标的 INTEL 颗粒）。当然，后来海康的事情很多人应该也知道了，再一次偷偷更换颗粒方案，好像现在的产品是打海康标的不知道什么来源颗粒。
+</description>
+            </item><item>
                 <title>脚本获取达芬奇软件下载链接</title>
                 <link>https://blog.233so.com/2021/02/get-davinci-resolve-download-link/</link>
                 <pubDate>Fri, 19 Feb 2021 21:58:09 &#43;0800</pubDate>
@@ -76,14 +84,6 @@
                 <author>Jay</author>
                 <guid>https://blog.233so.com/2020/10/bilibili-sec1024-2020/</guid>
                 <description>作为一个外行选手也来玩玩这个首届哔哩哔哩安全挑战赛，1-5 题只要一个浏览器就够了。6-10 似乎需要用工具了，反正我也不会，看了别人的解题思路也不懂。从目前公开的信息来看第 8 题和第 10 题已经有思路了。怎么说来着，知道答案的都在榜上呢。1
-</description>
-            </item><item>
-                <title>威联通：Podcast 播客那些事儿</title>
-                <link>https://blog.233so.com/2020/10/qnap-podcast-rss-feed/</link>
-                <pubDate>Mon, 19 Oct 2020 23:41:00 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/10/qnap-podcast-rss-feed/</guid>
-                <description>在短视频内容为王的时代，以声音为专有传播媒介的播客似乎也在这几年受到了一些的关注。和博客一样作为 Web2.0 的传媒形态，却在中国很长一段时间里一直不温不火。
 </description>
             </item></channel>
 </rss>

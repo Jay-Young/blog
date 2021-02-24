@@ -1,0 +1,39 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>数码科技 | 分类 | Jay</title>
+        <link>https://blog.233so.com/categories/%E6%95%B0%E7%A0%81%E7%A7%91%E6%8A%80/</link>
+        <description>数码科技 | 分类 | Jay</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 24 Feb 2021 19:49:51 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/categories/%E6%95%B0%E7%A0%81%E7%A7%91%E6%8A%80/" rel="self" type="application/rss+xml" /><item>
+                <title>Matebook X Pro 2019 固态硬盘扩容手记</title>
+                <link>https://blog.233so.com/2021/02/replace-the-default-ssd-drive-of-matebook-x-pro-2019/</link>
+                <pubDate>Wed, 24 Feb 2021 19:49:51 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2021/02/replace-the-default-ssd-drive-of-matebook-x-pro-2019/</guid>
+                <description>手上有一块差不多去年这个时候购买的海康威视 C2000 Pro 固态硬盘，容量是 2T，方案是慧荣 SM2262EN 主控 &#43; 紫光颗粒（据说是打标的 INTEL 颗粒）。当然，后来海康的事情很多人应该也知道了，再一次偷偷更换颗粒方案，好像现在的产品是打海康标的不知道什么来源颗粒。
+</description>
+            </item><item>
+                <title>华为 Mate40 Pro 安装谷歌服务</title>
+                <link>https://blog.233so.com/2021/01/install.gms.on.mate40pro.emui11.20201117/</link>
+                <pubDate>Mon, 11 Jan 2021 23:20:10 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2021/01/install.gms.on.mate40pro.emui11.20201117/</guid>
+                <description>由于众所周知的原因，华为 Mate40 Pro 手机没有自带谷歌服务，需要 Play 商店或者玩外服游戏的话就必须想办法装。常规的谷歌服务安装助手已经无法在新华为手机上直接搞定，目前常见的办法就是备份恢复大法了。本教程来自S.P.B UV 手工全膠專門店，放在自己的博客作为备份。
+</description>
+            </item><item>
+                <title>网心云现金版盒子：赚钱宝3代收益分析</title>
+                <link>https://blog.233so.com/2020/07/onethingpcs-box3/</link>
+                <pubDate>Sat, 18 Jul 2020 15:15:59 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/07/onethingpcs-box3/</guid>
+                <description>赚钱宝 3 代（现金版盒子）是迅雷网心科技赚钱宝团队倾心打造的产品，是一款能将闲置网络流量变现的创新型智能硬件产品。共享家庭闲置带宽，日日赚取现金收益，广受千万用户欢迎。通过迅雷网心科技自研的边缘计算技术，可将闲置的网络带宽、存储等计算资源转化成有价值的共享云计算服务，形成闲置资源再利用的“共享计算”循环模式。[1]
+</description>
+            </item><item>
+                <title>关闭私有地址解决 iOS 14 无法连接 WiFi</title>
+                <link>https://blog.233so.com/2020/06/fix-wifi-connection-failure-in-ios14/</link>
+                <pubDate>Mon, 29 Jun 2020 23:22:09 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2020/06/fix-wifi-connection-failure-in-ios14/</guid>
+                <description>iOS 14 引入了 WiFi 的私有地址防止网络运营商追踪你的设备，所以导致无法成功连接到使用了 MAC 地址白名单的路由器，解决办法就是关闭这个功能或者将私有 MAC 地址</description>
+            </item></channel>
+</rss>
