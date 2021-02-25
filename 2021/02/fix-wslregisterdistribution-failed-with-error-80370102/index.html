@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>安装 WSL2 80370102 错误解决办法 | Jay</title>
+        <meta name="Description" content="WSL2安装"><meta property="og:title" content="安装 WSL2 80370102 错误解决办法" />
+<meta property="og:description" content="WSL2安装" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.233so.com/2021/02/fix-wslregisterdistribution-failed-with-error-80370102/" />
+<meta property="article:published_time" content="2021-02-25T18:32:36+08:00" />
+<meta property="article:modified_time" content="2021-02-25T18:32:36+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="安装 WSL2 80370102 错误解决办法"/>
+<meta name="twitter:description" content="WSL2安装"/>
+<meta name="application-name" content="Jay">
+<meta name="apple-mobile-web-app-title" content="Jay"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.233so.com/2021/02/fix-wslregisterdistribution-failed-with-error-80370102/" /><link rel="prev" href="https://blog.233so.com/2021/02/replace-the-default-ssd-drive-of-matebook-x-pro-2019/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="msvalidate.01" content="9E6BC727410AE14F6E9442F540992717" /><meta name="baidu-site-verification" content="apixhlrtUN" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "安装 WSL2 80370102 错误解决办法",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/blog.233so.com\/2021\/02\/fix-wslregisterdistribution-failed-with-error-80370102\/"
+        },"image": {
+                "@type": "ImageObject",
+                "url": "https:\/\/blog.233so.com\/cover.png",
+                "width":  800 ,
+                "height":  600 
+            },"genre": "posts","keywords": "WSL, Linux, Hyper-V, 虚拟机, 虚拟化","wordcount":  547 ,
+        "url": "https:\/\/blog.233so.com\/2021\/02\/fix-wslregisterdistribution-failed-with-error-80370102\/","datePublished": "2021-02-25T18:32:36+08:00","dateModified": "2021-02-25T18:32:36+08:00","license": "This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.","publisher": {
+                "@type": "Organization",
+                "name": "Jay",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/blog.233so.com\/logo.png",
+                "width":  127 ,
+                "height":  40 
+                }
+            },"author": {
+                "@type": "Person",
+                "name": "Jay"
+            },"description": "WSL2安装"
+    }
+    </script></head>
+    <body><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.classList.add('dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Jay">Jay</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/"> 首页 </a><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/friends/"> 传送门 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Jay">Jay</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/" title="">首页</a><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/friends/" title="">传送门</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">安装 WSL2 80370102 错误解决办法</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://weibo.com/jayyoung1/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Jay</a></span>&nbsp;
+                    <span class="post-category">收录于<a href="/categories/windows/">
+                                <i class="far fa-folder fa-fw"></i>Windows
+                            </a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2021-02-25>2021-02-25</time>&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 547 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>预计阅读 2 分钟&nbsp;<span id="/2021/02/fix-wslregisterdistribution-failed-with-error-80370102/" class="leancloud_visitors" data-flag-title="安装 WSL2 80370102 错误解决办法">
+                        <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading/normal.min.svg"
+        data-sizes="auto"
+        data-srcset="/images/hugo/fix-WslRegisterDistribution-failed-with-error-80370102/Snipaste_2021-02-25_19-11-29.webp, /images/hugo/fix-WslRegisterDistribution-failed-with-error-80370102/Snipaste_2021-02-25_19-11-29.webp 1.5x, /images/hugo/fix-WslRegisterDistribution-failed-with-error-80370102/Snipaste_2021-02-25_19-11-29.webp 2x"
+        data-src="/images/hugo/fix-WslRegisterDistribution-failed-with-error-80370102/Snipaste_2021-02-25_19-11-29.webp"
+        alt="WSL2安装"
+        title="WSL2安装" /></div><div class="details toc" id="toc-static">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-down"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><p>WSL 刚出来的时候开启过，后来就再也没用过了。最近不想在 QNAP 上直接测试脚本，免得出事，所以想搞下 WSL2。没想到按照官方的操作手册，最后启动 Ubuntu 发行版就是报错：<code>WslRegisterDistribution failed with error: 0x80370102</code>。</p>
+<p>按照官方的<a href="https://docs.microsoft.com/zh-cn/windows/wsl/install-win10#troubleshooting-installation" target="_blank" rel="noopener noreffer">排查指南</a>，<code>0x80370102</code> 这个错误代码就是说没有在 BIOS 内开启虚拟化。而事实上，我能够确定是肯定开启的。手上的 Matebook 默认开启虚拟化，进了 BIOS 查看也确实如此。不管是任务管理器的 CPU 信息，还是 <code>msinfo32</code> 的系统信息都显示虚拟化功能正常。</p>
+<figure><a class="lightgallery" href="/images/hugo/fix-WslRegisterDistribution-failed-with-error-80370102/Snipaste_2021-02-25_18-42-09.webp" title="CPU 信息" data-thumbnail="/images/hugo/fix-WslRegisterDistribution-failed-with-error-80370102/Snipaste_2021-02-25_18-42-09.webp" data-sub-html="<h2>CPU 信息</h2><p>CPU 信息</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading/normal.min.svg"
+            data-sizes="auto"
+            data-srcset="/images/hugo/fix-WslRegisterDistribution-failed-with-error-80370102/Snipaste_2021-02-25_18-42-09.webp, /images/hugo/fix-WslRegisterDistribution-failed-with-error-80370102/Snipaste_2021-02-25_18-42-09.webp 1.5x, /images/hugo/fix-WslRegisterDistribution-failed-with-error-80370102/Snipaste_2021-02-25_18-42-09.webp 2x"
+            data-src="/images/hugo/fix-WslRegisterDistribution-failed-with-error-80370102/Snipaste_2021-02-25_18-42-09.webp"
+            alt="CPU 信息" width="100%" />
+    </a><figcaption class="image-caption">CPU 信息</figcaption>
+    </figure>
+<p>那么是不是 WSL2 所需要的功能没有正确开启呢？在“程序与功能”的“启用或关闭 Windows 功能”菜单中确认 Hyper-V、Linux 子系统和虚拟机平台都已经勾选，不存在问题。</p>
+<p>网上的方案大多数都是说叫你去开启 BIOS 的虚拟化，但是都不适用。正当我没办法的时候，去 WSL 的 Github 项目搜了这个错误代码，找到了唯一的结果，其中有一个<a href="https://github.com/microsoft/WSL/issues/4120#issuecomment-646807538" target="_blank" rel="noopener noreffer">高票回复</a>确实有用。</p>
+<p>就是通过管理员运行下面这行代码启用 Hyper-V 服务，然后重启计算机，再进入已经安装的 WSL2 发行版就没有问题了。</p>
+<p><code>bcdedit /set hypervisorlaunchtype auto</code></p>
+<p>看到这行代码的时候，其实我已经大概明白是怎么回事了。之前用过网易的模拟器玩阴阳师，和 Hyper-V 服务有冲突，所以关闭了，估计这也是“启用或关闭 Windows 功能”的 Hyper-V 勾选不起作用的原因。</p>
+<p>完整的 WSL2 安装步骤请务必按照<a href="https://docs.microsoft.com/zh-cn/windows/wsl/install-win10" target="_blank" rel="noopener noreffer">官方手册</a>去进行。</p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>本文于 2021-02-25 更新</span>
+            </div>
+            <div class="post-info-license"><span>采用 <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh" target="_blank">CC BY-NC 4.0</a> 协议发布</span></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/2021/02/fix-wslregisterdistribution-failed-with-error-80370102/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://blog.233so.com/2021/02/fix-wslregisterdistribution-failed-with-error-80370102/" data-title="安装 WSL2 80370102 错误解决办法" data-hashtags="WSL,Linux,Hyper-V,虚拟机,虚拟化"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://blog.233so.com/2021/02/fix-wslregisterdistribution-failed-with-error-80370102/" data-title="安装 WSL2 80370102 错误解决办法" data-image="/images/hugo/fix-WslRegisterDistribution-failed-with-error-80370102/Snipaste_2021-02-25_19-11-29.webp"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="https://blog.233so.com/2021/02/fix-wslregisterdistribution-failed-with-error-80370102/" data-title="安装 WSL2 80370102 错误解决办法"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微信" data-sharer="weixin" data-url="https://blog.233so.com/2021/02/fix-wslregisterdistribution-failed-with-error-80370102/"><i class="fab fa-weixin fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/wsl/">WSL</a>,&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/hyper-v/">Hyper-V</a>,&nbsp;<a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/">虚拟机</a>,&nbsp;<a href="/tags/%E8%99%9A%E6%8B%9F%E5%8C%96/">虚拟化</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/2021/02/replace-the-default-ssd-drive-of-matebook-x-pro-2019/" class="prev" rel="prev" title="Matebook X Pro 2019 固态硬盘扩容手记"><i class="fas fa-angle-left fa-fw"></i>Matebook X Pro 2019 固态硬盘扩容手记</a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.70.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.0"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://weibo.com/jayyoung1/" target="_blank">Jay</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css"><link rel="stylesheet" href="/css/custom.css"><script type="text/javascript">
+    window.config = {"code":{"copyTitle":"复制到剪贴板","maxShownLines":20},"comment":{"valine":{"appId":"Sf4T6gi3eP4X3GQdabpBRynC-MdYXbMMI","appKey":"hb0lul2CELPY7AdhROqRtqW4","avatar":"retro","el":"#valine","lang":"zh-cn","pageSize":10,"placeholder":"请留下你善意的评论……","recordIP":true,"visitor":true}},"headerMode":{"desktop":"fixed","mobile":"fixed"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"99SEOT1H0K","algoliaIndex":"index","algoliaSearchKey":"5f32c3a605ca6aba6c73407aa305e495","noResultsFound":"没有找到结果","type":"algolia"},"twemoji":true};
+</script><script src="https://cdn.jsdelivr.net/npm/valine@1.4.9/dist/Valine.min.js"></script><script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script><script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js"></script><script src="https://cdn.jsdelivr.net/npm/twemoji@12.1.5/dist/twemoji.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/js/lightgallery.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sachinchoolur/lg-thumbnail.js@1.1.0/dist/lg-thumbnail.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sachinchoolur/lg-zoom.js@1.0.1/dist/lg-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Jay-Young/live2d-widget@master/autoload.min.js"></script><script type="text/javascript" src="/js/custom.js"></script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-16630170-6','auto');ga('set', 'anonymizeIp', true);ga('send', 'pageview');
+        </script><script type="text/javascript" src="https://www.google-analytics.com/analytics.js" async></script></body>
+</html>

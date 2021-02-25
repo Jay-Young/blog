@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/tags/hyper-v/</link>
         <description>Hyper-V | 标签 | Jay</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 02 Jun 2020 18:09:43 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/hyper-v/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 25 Feb 2021 18:32:36 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/hyper-v/" rel="self" type="application/rss+xml" /><item>
+                <title>安装 WSL2 80370102 错误解决办法</title>
+                <link>https://blog.233so.com/2021/02/fix-wslregisterdistribution-failed-with-error-80370102/</link>
+                <pubDate>Thu, 25 Feb 2021 18:32:36 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2021/02/fix-wslregisterdistribution-failed-with-error-80370102/</guid>
+                <description>WSL 刚出来的时候开启过，后来就再也没用过了。最近不想在 QNAP 上直接测试脚本，免得出事，所以想搞下 WSL2。没想到按照官方的操作手册，最后启动 Ubuntu 发行版就是报错：WslRegisterDistribution failed with error: 0x80370102。
+</description>
+            </item><item>
                 <title>借助 Hyper-V 虚拟机升级 Windows To Go 系统</title>
                 <link>https://blog.233so.com/2020/06/windows-to-go-update/</link>
                 <pubDate>Tue, 02 Jun 2020 18:09:43 &#43;0800</pubDate>

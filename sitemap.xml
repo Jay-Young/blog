@@ -2,12 +2,19 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://blog.233so.com/categories/</loc><lastmod>2021-02-24T19:49:51&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.233so.com/</loc><lastmod>2021-02-24T19:49:51&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/categories/</loc><lastmod>2021-02-25T18:32:36&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/hyper-v/</loc><lastmod>2021-02-25T18:32:36&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/</loc><lastmod>2021-02-25T18:32:36&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/linux/</loc><lastmod>2021-02-25T18:32:36&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/posts/</loc><lastmod>2021-02-25T18:32:36&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/</loc><lastmod>2021-02-25T18:32:36&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/categories/windows/</loc><lastmod>2021-02-25T18:32:36&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/wsl/</loc><lastmod>2021-02-25T18:32:36&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/2021/02/fix-wslregisterdistribution-failed-with-error-80370102/</loc><lastmod>2021-02-25T18:32:36&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/%E8%99%9A%E6%8B%9F%E5%8C%96/</loc><lastmod>2021-02-25T18:32:36&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://blog.233so.com/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc><lastmod>2021-02-25T18:32:36&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/matebook/</loc><lastmod>2021-02-24T19:49:51&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/2021/02/replace-the-default-ssd-drive-of-matebook-x-pro-2019/</loc><lastmod>2021-02-24T19:49:51&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.233so.com/posts/</loc><lastmod>2021-02-24T19:49:51&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.233so.com/tags/</loc><lastmod>2021-02-24T19:49:51&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/%E5%9B%BA%E6%80%81%E7%A1%AC%E7%9B%98/</loc><lastmod>2021-02-24T19:49:51&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/%E6%8B%86%E6%9C%BA/</loc><lastmod>2021-02-24T19:49:51&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/categories/%E6%95%B0%E7%A0%81%E7%A7%91%E6%8A%80/</loc><lastmod>2021-02-24T19:49:51&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -113,7 +120,6 @@
             <loc>https://blog.233so.com/tags/%E8%B5%84%E6%9C%AC/</loc><lastmod>2020-09-21T23:59:59&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/%E9%A5%AD%E5%9C%88%E6%96%87%E5%8C%96/</loc><lastmod>2020-09-21T23:59:59&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/windows/</loc><lastmod>2020-09-13T14:52:35&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.233so.com/categories/windows/</loc><lastmod>2020-09-13T14:52:35&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/windows-10/</loc><lastmod>2020-09-13T14:52:35&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/2020/09/windows-10-get-started-with-tips/</loc><lastmod>2020-09-13T14:52:35&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</loc><lastmod>2020-09-13T14:52:35&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -191,10 +197,8 @@
             <loc>https://blog.233so.com/tags/%E6%B7%B1%E8%93%9D%E8%AF%8D%E5%BA%93/</loc><lastmod>2020-06-07T15:45:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/%E8%AF%8D%E5%BA%93/</loc><lastmod>2020-06-07T15:45:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/%E8%BE%93%E5%85%A5%E6%B3%95/</loc><lastmod>2020-06-07T15:45:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.233so.com/tags/hyper-v/</loc><lastmod>2020-06-02T18:09:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/wtg/</loc><lastmod>2020-06-02T18:09:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/2020/06/windows-to-go-update/</loc><lastmod>2020-06-02T18:09:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.233so.com/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc><lastmod>2020-06-02T18:09:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/%E4%BA%94%E6%9C%88%E5%A4%A9/</loc><lastmod>2020-05-31T22:54:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/2020/05/mayday-31st/</loc><lastmod>2020-05-31T22:54:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/categories/%E7%94%9F%E6%B4%BB/</loc><lastmod>2020-05-31T22:54:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -218,7 +222,6 @@
             <loc>https://blog.233so.com/tags/shell/</loc><lastmod>2020-05-21T08:46:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/terminal/</loc><lastmod>2020-05-21T08:46:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/2020/05/windows-terminal-installation-and-settings/</loc><lastmod>2020-05-21T08:46:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://blog.233so.com/tags/wsl/</loc><lastmod>2020-05-21T08:46:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/%E7%BB%88%E7%AB%AF/</loc><lastmod>2020-05-21T08:46:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/guide/</loc><lastmod>2020-05-17T13:45:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://blog.233so.com/tags/qdk/</loc><lastmod>2020-05-17T13:45:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
