@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/</link>
         <description>一个博客，简单记录</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 25 Feb 2021 18:32:36 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 26 Feb 2021 21:47:18 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/" rel="self" type="application/rss+xml" /><item>
+                <title>威联通：搭建 Speedtest 内网测速服务</title>
+                <link>https://blog.233so.com/2021/02/qnap-selfhost-speedtest-service-in-local-network/</link>
+                <pubDate>Fri, 26 Feb 2021 21:47:18 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2021/02/qnap-selfhost-speedtest-service-in-local-network/</guid>
+                <description>闲来无事，给 NAS 装个内网测速服务。利用到的项目是 speedtest。
+</description>
+            </item><item>
                 <title>安装 WSL2 80370102 错误解决办法</title>
                 <link>https://blog.233so.com/2021/02/fix-wslregisterdistribution-failed-with-error-80370102/</link>
                 <pubDate>Thu, 25 Feb 2021 18:32:36 &#43;0800</pubDate>
@@ -76,14 +84,6 @@
                 <author>Jay</author>
                 <guid>https://blog.233so.com/2021/01/install.gms.on.mate40pro.emui11.20201117/</guid>
                 <description>由于众所周知的原因，华为 Mate40 Pro 手机没有自带谷歌服务，需要 Play 商店或者玩外服游戏的话就必须想办法装。常规的谷歌服务安装助手已经无法在新华为手机上直接搞定，目前常见的办法就是备份恢复大法了。本教程来自S.P.B UV 手工全膠專門店，放在自己的博客作为备份。
-</description>
-            </item><item>
-                <title>VS Code 文档：代码片段</title>
-                <link>https://blog.233so.com/2020/10/snippets-in-visual-studio-code/</link>
-                <pubDate>Sat, 31 Oct 2020 09:58:01 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/10/snippets-in-visual-studio-code/</guid>
-                <description>代码片段是可以方便用户重复使用的代码模板，例如一些通用的循环或条件语句。在 Visual Studio Code 中，代码片段可以在 IntelliSense（智能提示）中出现，也可以在命令面板（Ctrl &#43; Shift &#43; P）中通过 Insert Snippet（插入片段）调用。打开“启用 Tab 补全”设置选项，在输入 trigger text 的时候按下 Tab 即可自动插入。1
 </description>
             </item></channel>
 </rss>

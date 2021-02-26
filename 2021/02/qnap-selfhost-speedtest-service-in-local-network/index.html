@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>威联通：搭建 Speedtest 内网测速服务 | Jay</title>
+        <meta name="Description" content="测速服务"><meta property="og:title" content="威联通：搭建 Speedtest 内网测速服务" />
+<meta property="og:description" content="测速服务" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.233so.com/2021/02/qnap-selfhost-speedtest-service-in-local-network/" />
+<meta property="article:published_time" content="2021-02-26T21:47:18+08:00" />
+<meta property="article:modified_time" content="2021-02-26T21:47:18+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="威联通：搭建 Speedtest 内网测速服务"/>
+<meta name="twitter:description" content="测速服务"/>
+<meta name="application-name" content="Jay">
+<meta name="apple-mobile-web-app-title" content="Jay"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.233so.com/2021/02/qnap-selfhost-speedtest-service-in-local-network/" /><link rel="prev" href="https://blog.233so.com/2021/02/fix-wslregisterdistribution-failed-with-error-80370102/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><meta name="msvalidate.01" content="9E6BC727410AE14F6E9442F540992717" /><meta name="baidu-site-verification" content="apixhlrtUN" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "威联通：搭建 Speedtest 内网测速服务",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/blog.233so.com\/2021\/02\/qnap-selfhost-speedtest-service-in-local-network\/"
+        },"image": {
+                "@type": "ImageObject",
+                "url": "https:\/\/blog.233so.com\/cover.png",
+                "width":  800 ,
+                "height":  600 
+            },"genre": "posts","keywords": "Speedtest, 测速, 威联通, QNAP","wordcount":  960 ,
+        "url": "https:\/\/blog.233so.com\/2021\/02\/qnap-selfhost-speedtest-service-in-local-network\/","datePublished": "2021-02-26T21:47:18+08:00","dateModified": "2021-02-26T21:47:18+08:00","license": "This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.","publisher": {
+                "@type": "Organization",
+                "name": "Jay",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/blog.233so.com\/logo.png",
+                "width":  127 ,
+                "height":  40 
+                }
+            },"author": {
+                "@type": "Person",
+                "name": "Jay"
+            },"description": "测速服务"
+    }
+    </script></head>
+    <body><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.classList.add('dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Jay">Jay</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/"> 首页 </a><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/friends/"> 传送门 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Jay">Jay</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/" title="">首页</a><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/friends/" title="">传送门</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">威联通：搭建 Speedtest 内网测速服务</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://weibo.com/jayyoung1/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Jay</a></span>&nbsp;
+                    <span class="post-category">收录于<a href="/categories/nas/">
+                                <i class="far fa-folder fa-fw"></i>NAS
+                            </a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2021-02-26>2021-02-26</time>&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 960 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>预计阅读 2 分钟&nbsp;<span id="/2021/02/qnap-selfhost-speedtest-service-in-local-network/" class="leancloud_visitors" data-flag-title="威联通：搭建 Speedtest 内网测速服务">
+                        <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading/normal.min.svg"
+        data-sizes="auto"
+        data-srcset="/images/hugo/qnap-selfhost-speedtest-service-in-local-network/Snipaste_2021-02-26_23-05-20.webp, /images/hugo/qnap-selfhost-speedtest-service-in-local-network/Snipaste_2021-02-26_23-05-20.webp 1.5x, /images/hugo/qnap-selfhost-speedtest-service-in-local-network/Snipaste_2021-02-26_23-05-20.webp 2x"
+        data-src="/images/hugo/qnap-selfhost-speedtest-service-in-local-network/Snipaste_2021-02-26_23-05-20.webp"
+        alt="测速服务"
+        title="测速服务" /></div><div class="details toc" id="toc-static">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-down"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#安装过程">安装过程</a></li>
+    <li><a href="#汉化文本">汉化文本</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>闲来无事，给 <code>NAS</code> 装个内网测速服务。利用到的项目是 <a href="https://github.com/librespeed/speedtest" target="_blank" rel="noopener noreffer">speedtest</a>。</p>
+<h2 id="安装过程">安装过程</h2>
+<p>👉<a href="https://github.com/librespeed/speedtest/wiki/Installation-%28PHP%29" target="_blank" rel="noopener noreffer">官方安装指南</a></p>
+<p>首先参考 <a href="https://blog.233so.com/2020/06/build-application-archive-with-directory-lister/#%E7%8E%AF%E5%A2%83%E9%9C%80%E6%B1%82" target="_blank" rel="noopener noreffer">这篇博文</a> 开启 <code>Web</code> 服务器，并修改 <code>php.ini</code>，在最后一行加入 <code>extension = pdo_mysql.so</code> 以启用 <code>PDO</code> 模块。威联通已经自带项目所需要的 <code>Apache</code> 服务、<code>PHP</code> 服务和 <code>MariaDB</code> 等服务。</p>
+<p>将项目下载下来，放到 <code>/share/Web</code> 目录，具体以 <code>NAS</code> 型号为准。</p>
+<p>然后通过 <code>phpMyAdmin</code> 应用登录数据库管理后台新建一个数据库，命名为 <code>speedtest</code>，然后将项目 <code>results</code> 文件夹里面的 <code>telemetry_mysql.sql</code> 导入 <code>speedtest</code> 数据库。导入成功以后，就会看到 <code>speedtest</code> 数据库中出现 <code>speedtest_users</code> 数据表。</p>
+<p>接着打开 <code>results</code> 文件夹里面的 <code>telemetry_settings.php</code>，配置数据库设置：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php">$db_type = &#39;mysql&#39;;
+$stats_password = &#39;修改成你要设置的密码&#39;;
+$enable_id_obfuscation = false; // 混淆测试 ID，保护隐私，根据自己需要是否设置为 true
+$redact_ip_addresses = false; // 移除分享结果中的 IP 地址显示，保护隐私，根据自己需要是否设置为 true
+
+$Sqlite_db_file = &#39;../../speedtest_telemetry.sql&#39;;
+
+$MySql_username = &#39;你的数据库用户名&#39;;
+$MySql_password = &#39;你的数据库密码&#39;;
+$MySql_hostname = &#39;localhost&#39;; // 一般为 localhost 不用修改
+$MySql_databasename = &#39;speedtest&#39;; // 与你自己新建的数据库名字保持一致
+$MySql_port = &#39;3306&#39;;
+</code></pre></td></tr></table>
+</div>
+</div><p>项目根目录下面有很多 <code>example</code> 开头的首页模板文件，可以根据自己的需求将其重命名为 <code>index.html</code> 作为首页，不同的模板具有不同的样式和功能，可以尝试在浏览器都打开看看效果。</p>
+<p>内网自己用的话选择单服务器 <code>example-singleServer-full.html</code> 完整功能模板或者 <code>example-singleServer-pretty.html</code> 不带分享功能美化模板。</p>
+<h2 id="汉化文本">汉化文本</h2>
+<p>项目默认都是英文的，可以自己修改。首页直接修改上面的模板文件里的内容即可。</p>
+<p>测速数据统计页面 <code>results/stats.php</code> 也可以修改汉化。</p>
+<p>分享结果的图片页面上的文字修改 <code>results/index.php</code>，</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php">$MBPS_TEXT = &#39;Mbps&#39;;
+$MS_TEXT = &#39;ms&#39;;
+$PING_TEXT = &#39;延时&#39;;
+$JIT_TEXT = &#39;抖动&#39;;
+$DL_TEXT = &#39;下载&#39;;
+$UL_TEXT = &#39;上传&#39;;
+$WATERMARK_TEXT = &#39;blog.233so.com&#39;;
+</code></pre></td></tr></table>
+</div>
+</div><p>默认的字体是 <code>OpenSans-Light</code> 和 <code>OpenSans-Semibold</code>，不包含中文，所以需要从电脑上复制一个支持中文显示的字体到 <code>results</code> 目录。如果不是 <code>ttf</code> 字体记得把字体后缀改成 <code>ttf</code>。</p>
+<p>然后修改相应中文对应的字体设置项，比如如下标题文字都改成了 <code>sarasa-mono-sc-regular</code> 字体：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php">$FONT_LABEL = tryFont(&#39;sarasa-mono-sc-regular&#39;);
+$FONT_METER = tryFont(&#39;OpenSans-Light&#39;);
+$FONT_MEASURE = tryFont(&#39;OpenSans-Semibold&#39;);
+$FONT_ISP = tryFont(&#39;OpenSans-Semibold&#39;);
+$FONT_TIMESTAMP = tryFont(&#34;OpenSans-Light&#34;);
+$FONT_WATERMARK = tryFont(&#39;OpenSans-Light&#39;);
+</code></pre></td></tr></table>
+</div>
+</div><figure><a class="lightgallery" href="/images/hugo/qnap-selfhost-speedtest-service-in-local-network/result.webp" title="分享结果" data-thumbnail="/images/hugo/qnap-selfhost-speedtest-service-in-local-network/result.webp" data-sub-html="<h2>分享结果</h2><p>分享结果</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading/normal.min.svg"
+            data-sizes="auto"
+            data-srcset="/images/hugo/qnap-selfhost-speedtest-service-in-local-network/result.webp, /images/hugo/qnap-selfhost-speedtest-service-in-local-network/result.webp 1.5x, /images/hugo/qnap-selfhost-speedtest-service-in-local-network/result.webp 2x"
+            data-src="/images/hugo/qnap-selfhost-speedtest-service-in-local-network/result.webp"
+            alt="分享结果" width="100%" />
+    </a><figcaption class="image-caption">分享结果</figcaption>
+    </figure>
+<table>
+<thead>
+<tr>
+<th align="left">设置项</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">$FONT_LABEL</td>
+<td align="left">对应项目标题文字</td>
+</tr>
+<tr>
+<td align="left">$FONT_METER</td>
+<td align="left">对应测试结果数字</td>
+</tr>
+<tr>
+<td align="left">$FONT_MEASURE</td>
+<td align="left">对应测试结果单位</td>
+</tr>
+<tr>
+<td align="left">$FONT_ISP</td>
+<td align="left">对应 ISP 信息文字</td>
+</tr>
+<tr>
+<td align="left">$FONT_TIMESTAMP</td>
+<td align="left">对应测试时间文字</td>
+</tr>
+<tr>
+<td align="left">$FONT_WATERMARK</td>
+<td align="left">对应右下角水印文字</td>
+</tr>
+</tbody>
+</table>
+<p>如果需要安卓端的测速应用来连接自己的服务器，可以通过 <a href="https://github.com/librespeed/speedtest-android" target="_blank" rel="noopener noreffer">speedtest-android</a> 项目自己配置编译一个。</p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>本文于 2021-02-26 更新</span>
+            </div>
+            <div class="post-info-license"><span>采用 <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh" target="_blank">CC BY-NC 4.0</a> 协议发布</span></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/2021/02/qnap-selfhost-speedtest-service-in-local-network/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://blog.233so.com/2021/02/qnap-selfhost-speedtest-service-in-local-network/" data-title="威联通：搭建 Speedtest 内网测速服务" data-hashtags="Speedtest,测速,威联通,QNAP"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://blog.233so.com/2021/02/qnap-selfhost-speedtest-service-in-local-network/" data-title="威联通：搭建 Speedtest 内网测速服务" data-image="/images/hugo/qnap-selfhost-speedtest-service-in-local-network/Snipaste_2021-02-26_23-05-20.webp"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="https://blog.233so.com/2021/02/qnap-selfhost-speedtest-service-in-local-network/" data-title="威联通：搭建 Speedtest 内网测速服务"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微信" data-sharer="weixin" data-url="https://blog.233so.com/2021/02/qnap-selfhost-speedtest-service-in-local-network/"><i class="fab fa-weixin fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/speedtest/">Speedtest</a>,&nbsp;<a href="/tags/%E6%B5%8B%E9%80%9F/">测速</a>,&nbsp;<a href="/tags/%E5%A8%81%E8%81%94%E9%80%9A/">威联通</a>,&nbsp;<a href="/tags/qnap/">QNAP</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/2021/02/fix-wslregisterdistribution-failed-with-error-80370102/" class="prev" rel="prev" title="安装 WSL2 80370102 错误解决办法"><i class="fas fa-angle-left fa-fw"></i>安装 WSL2 80370102 错误解决办法</a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.70.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.0"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://weibo.com/jayyoung1/" target="_blank">Jay</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css"><link rel="stylesheet" href="/css/custom.css"><script type="text/javascript">
+    window.config = {"code":{"copyTitle":"复制到剪贴板","maxShownLines":20},"comment":{"valine":{"appId":"Sf4T6gi3eP4X3GQdabpBRynC-MdYXbMMI","appKey":"hb0lul2CELPY7AdhROqRtqW4","avatar":"retro","el":"#valine","lang":"zh-cn","pageSize":10,"placeholder":"请留下你善意的评论……","recordIP":true,"visitor":true}},"headerMode":{"desktop":"fixed","mobile":"fixed"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"99SEOT1H0K","algoliaIndex":"index","algoliaSearchKey":"5f32c3a605ca6aba6c73407aa305e495","noResultsFound":"没有找到结果","type":"algolia"},"twemoji":true};
+</script><script src="https://cdn.jsdelivr.net/npm/valine@1.4.9/dist/Valine.min.js"></script><script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script><script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js"></script><script src="https://cdn.jsdelivr.net/npm/twemoji@12.1.5/dist/twemoji.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/js/lightgallery.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sachinchoolur/lg-thumbnail.js@1.1.0/dist/lg-thumbnail.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sachinchoolur/lg-zoom.js@1.0.1/dist/lg-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Jay-Young/live2d-widget@master/autoload.min.js"></script><script type="text/javascript" src="/js/custom.js"></script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-16630170-6','auto');ga('set', 'anonymizeIp', true);ga('send', 'pageview');
+        </script><script type="text/javascript" src="https://www.google-analytics.com/analytics.js" async></script></body>
+</html>
