@@ -61,7 +61,7 @@ http://sw.blackmagicdesign.com/DaVinciResolve/v17.0b9/DaVinci_Resolve_17.0b9_Win
 只在威联通 `QNAP TS-453Bmini` 上测试通过。
 
 ```shell
-#!/bin/sh
+#!/bin/bash
 ################ Version Info ##################
 # File:        达芬奇下载链接
 # Create Date: 2021/02/19 10:22:42
@@ -76,7 +76,7 @@ menu() {
   echo -e "\e[1;35m  欢迎使用获取达芬奇下载链接脚本程序\e[0m"
   echo -e "\e[1;32m======================================\e[0m"
   echo -e "\e[1;32m1.Davinci Resolve\e[0m"
-  echo -e "\e[1;32m2.Davicni Resolev Studio\e[0m"
+  echo -e "\e[1;32m2.Davicni Resolve Studio\e[0m"
   echo -e "\e[1;33m0.退出\e[0m"
   echo -e "\e[1;32m======================================\e[0m"
 }
@@ -171,7 +171,7 @@ get_json_value() {
   local json=$1
   local key=$2
 
-  if [[ -z "$3" ]]; then
+  if [ -z "$3" ]; then
     local num=1
   else
     local num=$3
@@ -220,7 +220,7 @@ echo ======================================
 echo   欢迎使用获取达芬奇下载链接脚本程序
 echo ======================================
 echo 1.Davinci Resolve
-echo 2.Davicni Resolev Studio
+echo 2.Davicni Resolve Studio
 echo 0.退出
 echo ======================================
 set /p edition=请选择产品：

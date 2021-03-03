@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/tags/%E5%A8%81%E8%81%94%E9%80%9A/</link>
         <description>威联通 | 标签 | Jay</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 26 Feb 2021 21:47:18 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/%E5%A8%81%E8%81%94%E9%80%9A/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 03 Mar 2021 20:06:44 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/%E5%A8%81%E8%81%94%E9%80%9A/" rel="self" type="application/rss+xml" /><item>
+                <title>威联通：升级 QTS 4.5.2 踩坑记</title>
+                <link>https://blog.233so.com/2021/03/tips-for-upgrading-to-qts-4.5.2/</link>
+                <pubDate>Wed, 03 Mar 2021 20:06:44 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2021/03/tips-for-upgrading-to-qts-4.5.2/</guid>
+                <description>最近突然想起来，我的 NAS 应用很久都没收到更新了。按照威联通的更新频率不应该，于是去官网的 App Center 看了下，发现最新版本的应用已经屏蔽了 QTS 4.4 系统。手动下载安装是可以，但是在 NAS 的 App Center 上是不会检查到更新的。距离上一次升级 QTS 系统差不多快一年了，于是心血来潮就升级了。
+</description>
+            </item><item>
                 <title>威联通：搭建 Speedtest 内网测速服务</title>
                 <link>https://blog.233so.com/2021/02/qnap-selfhost-speedtest-service-in-local-network/</link>
                 <pubDate>Fri, 26 Feb 2021 21:47:18 &#43;0800</pubDate>
@@ -74,13 +82,5 @@
                 <author>Jay</author>
                 <guid>https://blog.233so.com/2020/04/asus-router-cpu-high-occupancy-fixed/</guid>
                 <description>今天手机正愉快地刷着 B 站，突然发现视频卡顿，于是到电脑上打开网页测试发现 DNS 解析有问题了，解析时好时坏，就像乌龟一样。 跑到路由器里一看 CPU 其中一</description>
-            </item><item>
-                <title>威联通：升级 Code Server 编辑器 3.x</title>
-                <link>https://blog.233so.com/2020/04/upgrade-code-server-to-v3/</link>
-                <pubDate>Fri, 17 Apr 2020 11:26:01 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2020/04/upgrade-code-server-to-v3/</guid>
-                <description>Code Server 3.x 版本发布也有几周了，最新版本 3.1.1 看起来应该可用度比较高了，于是就打算升级了。
-</description>
             </item></channel>
 </rss>

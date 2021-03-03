@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>数字签名 | 标签 | Jay</title>
+        <link>https://blog.233so.com/tags/%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D/</link>
+        <description>数字签名 | 标签 | Jay</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 03 Mar 2021 20:06:44 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/tags/%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D/" rel="self" type="application/rss+xml" /><item>
+                <title>威联通：升级 QTS 4.5.2 踩坑记</title>
+                <link>https://blog.233so.com/2021/03/tips-for-upgrading-to-qts-4.5.2/</link>
+                <pubDate>Wed, 03 Mar 2021 20:06:44 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2021/03/tips-for-upgrading-to-qts-4.5.2/</guid>
+                <description>最近突然想起来，我的 NAS 应用很久都没收到更新了。按照威联通的更新频率不应该，于是去官网的 App Center 看了下，发现最新版本的应用已经屏蔽了 QTS 4.4 系统。手动下载安装是可以，但是在 NAS 的 App Center 上是不会检查到更新的。距离上一次升级 QTS 系统差不多快一年了，于是心血来潮就升级了。
+</description>
+            </item></channel>
+</rss>

@@ -4,7 +4,15 @@
         <link>https://blog.233so.com/posts/</link>
         <description>所有文章 | Jay</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>jayyoung1heaven@gmail.com (Jay)</managingEditor>
-            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 26 Feb 2021 21:47:18 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>jayyoung1heaven@gmail.com (Jay)</webMaster><copyright>This work is licensed under a Creative CommonAttribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 03 Mar 2021 20:06:44 &#43;0800</lastBuildDate><atom:link href="https://blog.233so.com/posts/" rel="self" type="application/rss+xml" /><item>
+                <title>威联通：升级 QTS 4.5.2 踩坑记</title>
+                <link>https://blog.233so.com/2021/03/tips-for-upgrading-to-qts-4.5.2/</link>
+                <pubDate>Wed, 03 Mar 2021 20:06:44 &#43;0800</pubDate>
+                <author>Jay</author>
+                <guid>https://blog.233so.com/2021/03/tips-for-upgrading-to-qts-4.5.2/</guid>
+                <description>最近突然想起来，我的 NAS 应用很久都没收到更新了。按照威联通的更新频率不应该，于是去官网的 App Center 看了下，发现最新版本的应用已经屏蔽了 QTS 4.4 系统。手动下载安装是可以，但是在 NAS 的 App Center 上是不会检查到更新的。距离上一次升级 QTS 系统差不多快一年了，于是心血来潮就升级了。
+</description>
+            </item><item>
                 <title>威联通：搭建 Speedtest 内网测速服务</title>
                 <link>https://blog.233so.com/2021/02/qnap-selfhost-speedtest-service-in-local-network/</link>
                 <pubDate>Fri, 26 Feb 2021 21:47:18 &#43;0800</pubDate>
@@ -76,14 +84,6 @@
                 <author>Jay</author>
                 <guid>https://blog.233so.com/2021/01/install.verysync.on.kylin.desktop.v10/</guid>
                 <description>基于飞腾平台预装银河麒麟 V10 桌面系统的国产电脑，目前和 Windows 平台的电脑并行使用，没有完全替换，所以有一定的文件同步需求。银河麒麟内置的麒麟传书好像没有 Windows 平台，也不兼容其他 ipmsg 的软件。想了想还是用微力同步来进行文件同步好了。然而官方提供的安装脚本似乎有点问题，简单改了改能够用了。
-</description>
-            </item><item>
-                <title>华为 Mate40 Pro 安装谷歌服务</title>
-                <link>https://blog.233so.com/2021/01/install.gms.on.mate40pro.emui11.20201117/</link>
-                <pubDate>Mon, 11 Jan 2021 23:20:10 &#43;0800</pubDate>
-                <author>Jay</author>
-                <guid>https://blog.233so.com/2021/01/install.gms.on.mate40pro.emui11.20201117/</guid>
-                <description>由于众所周知的原因，华为 Mate40 Pro 手机没有自带谷歌服务，需要 Play 商店或者玩外服游戏的话就必须想办法装。常规的谷歌服务安装助手已经无法在新华为手机上直接搞定，目前常见的办法就是备份恢复大法了。本教程来自S.P.B UV 手工全膠專門店，放在自己的博客作为备份。
 </description>
             </item></channel>
 </rss>

@@ -238,7 +238,7 @@ function get_json_value() {
   local json=$1
   local key=$2
 
-  if [[ -z "$3" ]]; then
+  if [ -z "$3" ]; then
     local num=1
   else
     local num=$3
